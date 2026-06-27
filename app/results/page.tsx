@@ -22,56 +22,64 @@ export default function ResultsPage() {
   return (
     <>
       <Header />
-      <section className="bg-navy text-white py-[clamp(54px,7vw,84px)]">
-        <div className="w-full max-w-site mx-auto px-[clamp(18px,4vw,40px)]">
-          <div className="font-mono text-[12px] tracking-[.06em] text-white/50 mb-4">
+
+      {/* Page hero */}
+      <section className="bg-navy text-white py-10 md:py-16 lg:py-20">
+        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
+          <div className="font-mono text-[11px] tracking-[.06em] text-white/50 mb-3">
             <a href="/" className="hover:text-white transition-colors">Home</a> / Results
           </div>
-          <span className="eyebrow block mb-3.5" style={{ color: "#CD8D43" }}>The receipts</span>
-          <h1 className="text-[clamp(30px,4.2vw,52px)] font-extrabold text-white max-w-[760px]">
+          <span className="eyebrow block mb-3" style={{ color: "#CD8D43" }}>The receipts</span>
+          <h1 className="text-[clamp(26px,4.2vw,52px)] font-extrabold text-white max-w-[760px] leading-tight">
             Real campaigns. Real numbers. No screenshots from gurus.
           </h1>
-          <p className="text-[clamp(16px,1.5vw,19px)] text-white/72 mt-4 max-w-[620px]">
+          <p className="text-base md:text-lg text-white/70 mt-3 max-w-[620px]">
             Filter by industry. Every card shows the problem, what changed, what was spent, and the return.
           </p>
         </div>
       </section>
 
-      <section className="py-[clamp(58px,7vw,86px)]">
-        <div className="w-full max-w-site mx-auto px-[clamp(18px,4vw,40px)]">
-          <div className="flex gap-2.5 flex-wrap mb-6">
+      {/* Cases */}
+      <section className="py-12 md:py-16 lg:py-20">
+        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
+          {/* Filter chips — scrollable on mobile */}
+          <div className="flex gap-2 flex-wrap mb-6">
             {filters.map((f) => (
               <button
                 key={f}
                 onClick={() => setActive(f)}
-                className={`font-mono text-[13px] px-4 py-2.5 rounded-full border transition-all ${active === f ? "bg-navy text-white border-navy" : "bg-white text-navy border-ink/20 hover:border-navy"}`}
+                className={`font-mono text-[12px] sm:text-[13px] px-3.5 py-2 rounded-full border transition-all ${
+                  active === f
+                    ? "bg-navy text-white border-navy"
+                    : "bg-white text-navy border-ink/20 hover:border-navy"
+                }`}
               >
                 {f}
               </button>
             ))}
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {visible.map((c) => (
               <div key={c.name} className="bg-white border border-ink/10 rounded-card overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-card-lg transition-all duration-200">
-                <div className="px-5 py-[18px] border-b border-ink/10 flex items-center justify-between gap-2.5">
-                  <span className="font-display font-bold text-navy text-[16px]">{c.name}</span>
-                  <span className="font-mono text-[10.5px] tracking-[.06em] uppercase text-orange bg-orange/10 px-2.5 py-1.5 rounded-md flex-none">{c.cat}</span>
+                <div className="px-4 py-4 border-b border-ink/10 flex items-center justify-between gap-2">
+                  <span className="font-display font-bold text-navy text-[15px] leading-tight">{c.name}</span>
+                  <span className="font-mono text-[10px] tracking-[.06em] uppercase text-orange bg-orange/10 px-2 py-1 rounded-md flex-none">{c.cat}</span>
                 </div>
-                <div className="px-5 py-[18px] flex flex-col gap-3.5 flex-1">
+                <div className="px-4 py-4 flex flex-col gap-3 flex-1">
                   <div>
-                    <div className="font-mono text-[11px] tracking-[.05em] uppercase text-muted">Struggle</div>
-                    <div className="text-[14.5px] text-ink font-medium mt-0.5">{c.struggle}</div>
+                    <div className="font-mono text-[10px] tracking-[.05em] uppercase text-muted">Struggle</div>
+                    <div className="text-sm text-ink font-medium mt-0.5">{c.struggle}</div>
                   </div>
                   <div>
-                    <div className="font-mono text-[11px] tracking-[.05em] uppercase text-muted">What we did</div>
-                    <div className="text-[14.5px] text-ink font-medium mt-0.5">{c.action}</div>
+                    <div className="font-mono text-[10px] tracking-[.05em] uppercase text-muted">What we did</div>
+                    <div className="text-sm text-ink font-medium mt-0.5">{c.action}</div>
                   </div>
-                  <div className="grid grid-cols-2 gap-3 mt-auto pt-4 border-t border-dashed border-ink/20">
+                  <div className="grid grid-cols-2 gap-2 mt-auto pt-3 border-t border-dashed border-ink/20">
                     {c.metrics.map((m) => (
-                      <div key={m.k} className="bg-navy rounded-xl px-3.5 py-3 min-w-0">
+                      <div key={m.k} className="bg-navy rounded-xl px-3 py-2.5 min-w-0">
                         <div className="font-mono text-[10px] tracking-[.06em] uppercase text-white/50">{m.k}</div>
-                        <div className={`font-mono text-[21px] mt-0.5 whitespace-nowrap ${m.color === "mint" ? "text-mint" : m.color === "orange" ? "text-orange" : "text-white"}`}>{m.v}</div>
+                        <div className={`font-mono text-base mt-0.5 ${m.color === "mint" ? "text-mint" : m.color === "orange" ? "text-orange" : "text-white"}`}>{m.v}</div>
                       </div>
                     ))}
                   </div>
@@ -79,8 +87,9 @@ export default function ResultsPage() {
               </div>
             ))}
           </div>
-          <div className="mt-6 text-[13px] text-muted font-mono bg-white border border-dashed border-ink/20 rounded-xl px-4 py-3.5">
-            ⚠ <strong className="text-orange">Sample data.</strong> Every number is a placeholder. Replace with your real, verified Meta Ads figures and get client permission before naming any brand.
+
+          <div className="mt-6 text-[12px] text-muted font-mono bg-white border border-dashed border-ink/20 rounded-xl px-4 py-3">
+            ⚠ <strong className="text-orange">Sample data.</strong> Every number is a placeholder. Replace with your real, verified figures before publishing.
           </div>
         </div>
       </section>

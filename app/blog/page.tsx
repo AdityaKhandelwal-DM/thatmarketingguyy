@@ -14,41 +14,41 @@ export default function BlogPage() {
   return (
     <>
       <Header />
-      <section className="bg-navy text-white py-[clamp(54px,7vw,84px)]">
-        <div className="w-full max-w-site mx-auto px-[clamp(18px,4vw,40px)]">
-          <div className="font-mono text-[12px] tracking-[.06em] text-white/50 mb-4">
+      <section className="bg-navy text-white py-10 md:py-16 lg:py-20">
+        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
+          <div className="font-mono text-[11px] tracking-[.06em] text-white/50 mb-3">
             <a href="/" className="hover:text-white transition-colors">Home</a> / Blog
           </div>
-          <span className="eyebrow block mb-3.5" style={{ color: "#CD8D43" }}>Marketing, made clear</span>
-          <h1 className="text-[clamp(30px,4.2vw,52px)] font-extrabold text-white max-w-[760px]">
+          <span className="eyebrow block mb-3" style={{ color: "#CD8D43" }}>Marketing, made clear</span>
+          <h1 className="text-[clamp(26px,4.2vw,52px)] font-extrabold text-white max-w-[760px] leading-tight">
             Plain-English breakdowns of what actually works.
           </h1>
-          <p className="text-[clamp(16px,1.5vw,19px)] text-white/72 mt-4 max-w-[620px]">
+          <p className="text-base md:text-lg text-white/70 mt-3 max-w-[620px]">
             Real tactics from real ad accounts — no theory, no recycled gyan.
           </p>
         </div>
       </section>
 
-      <section className="py-[clamp(58px,7vw,86px)]">
-        <div className="w-full max-w-site mx-auto px-[clamp(18px,4vw,40px)]">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[22px]">
+      <section className="py-12 md:py-16 lg:py-20">
+        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {posts.map((p) => (
               <article key={p.title} className="bg-white border border-ink/10 rounded-card overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-card-lg transition-all duration-200">
-                <div className="aspect-video bg-canvas flex items-center justify-center text-muted font-mono text-[12.5px] flex-col gap-1">
-                  <span className="text-2xl">📷</span>
+                <div className="aspect-video bg-canvas flex items-center justify-center text-muted font-mono text-[11px] flex-col gap-1">
+                  <span className="text-xl">📷</span>
                   <span>1200×675</span>
                 </div>
-                <div className="p-[22px] flex flex-col gap-2.5 flex-1">
-                  <span className="font-mono text-[11px] tracking-[.06em] uppercase text-orange">{p.cat}</span>
-                  <h3 className="text-[18px] font-bold text-navy leading-snug">{p.title}</h3>
-                  <p className="text-[14px] text-muted flex-1">{p.excerpt}</p>
-                  <span className="font-display font-bold text-[14px] text-navy mt-1">Read →</span>
+                <div className="p-4 md:p-5 flex flex-col gap-2 flex-1">
+                  <span className="font-mono text-[10px] tracking-[.06em] uppercase text-orange">{p.cat}</span>
+                  <h3 className="text-[16px] font-bold text-navy leading-snug">{p.title}</h3>
+                  <p className="text-sm text-muted flex-1">{p.excerpt}</p>
+                  <span className="font-display font-bold text-sm text-navy mt-1">Read →</span>
                 </div>
               </article>
             ))}
           </div>
-          <div className="mt-8 text-[13px] text-muted font-mono bg-white border border-dashed border-ink/20 rounded-xl px-4 py-3.5">
-            💡 <strong className="text-orange">Tip:</strong> A blog is best run on a CMS (WordPress or Framer CMS) so you can publish posts without touching code. Replace these placeholder cards with real posts.
+          <div className="mt-6 text-[12px] text-muted font-mono bg-white border border-dashed border-ink/20 rounded-xl px-4 py-3">
+            💡 <strong className="text-orange">Tip:</strong> A blog is best run on a CMS (WordPress or Framer CMS) so you can publish without touching code.
           </div>
         </div>
       </section>

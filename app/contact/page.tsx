@@ -13,26 +13,26 @@ export default function ContactPage() {
   return (
     <>
       <Header />
-      <section className="bg-navy text-white py-[clamp(54px,7vw,84px)]">
-        <div className="w-full max-w-site mx-auto px-[clamp(18px,4vw,40px)]">
-          <div className="font-mono text-[12px] tracking-[.06em] text-white/50 mb-4">
+      <section className="bg-navy text-white py-10 md:py-16 lg:py-20">
+        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
+          <div className="font-mono text-[11px] tracking-[.06em] text-white/50 mb-3">
             <a href="/" className="hover:text-white transition-colors">Home</a> / Contact
           </div>
-          <span className="eyebrow block mb-3.5" style={{ color: "#CD8D43" }}>Let&apos;s talk</span>
-          <h1 className="text-[clamp(30px,4.2vw,52px)] font-extrabold text-white max-w-[760px]">
+          <span className="eyebrow block mb-3" style={{ color: "#CD8D43" }}>Let&apos;s talk</span>
+          <h1 className="text-[clamp(26px,4.2vw,52px)] font-extrabold text-white max-w-[760px] leading-tight">
             What brings you here?
           </h1>
-          <p className="text-[clamp(16px,1.5vw,19px)] text-white/72 mt-4">
+          <p className="text-base md:text-lg text-white/70 mt-3">
             Pick one so I send you to the right place.
           </p>
         </div>
       </section>
 
-      <section className="py-[clamp(58px,7vw,86px)]">
-        <div className="w-full max-w-site mx-auto px-[clamp(18px,4vw,40px)]">
-          <div className="grid grid-cols-1 md:grid-cols-[.85fr_1.15fr] gap-[clamp(30px,4vw,46px)]">
+      <section className="py-12 md:py-16 lg:py-20">
+        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
+          <div className="grid grid-cols-1 md:grid-cols-[.85fr_1.15fr] gap-6 md:gap-10">
             {/* Intent selector */}
-            <div className="flex flex-col gap-3.5">
+            <div className="flex flex-col gap-3">
               {([
                 { key: "owner", icon: "🏢", title: "I own a business", desc: "I want more leads / customers without an agency." },
                 { key: "learner", icon: "🎓", title: "I want to learn marketing", desc: "I want to run ads myself or build a career." },
@@ -41,66 +41,66 @@ export default function ContactPage() {
                   key={b.key}
                   onClick={() => setIntent(b.key)}
                   className={cn(
-                    "text-left bg-white border rounded-2xl p-[18px_20px] cursor-pointer transition-all flex gap-3.5 items-start",
+                    "text-left bg-white border rounded-2xl p-4 cursor-pointer transition-all flex gap-3 items-start",
                     intent === b.key
-                      ? "border-orange shadow-[0_6px_22px_rgba(205,141,67,.14)]"
+                      ? "border-orange shadow-[0_4px_18px_rgba(205,141,67,.14)]"
                       : "border-ink/20 hover:border-navy"
                   )}
                 >
-                  <span className="text-[22px] flex-none">{b.icon}</span>
+                  <span className="text-2xl flex-none">{b.icon}</span>
                   <div>
-                    <h4 className="text-[16px] font-bold text-navy">{b.title}</h4>
-                    <p className="text-[13.5px] text-muted mt-0.5">{b.desc}</p>
+                    <h4 className="text-[15px] font-bold text-navy">{b.title}</h4>
+                    <p className="text-[13px] text-muted mt-0.5">{b.desc}</p>
                   </div>
                 </button>
               ))}
             </div>
 
             {/* Form */}
-            <div className="bg-white border border-ink/10 rounded-[22px] p-[clamp(24px,3vw,32px)]">
-              <div className="mb-[18px]">
+            <div className="bg-white border border-ink/10 rounded-[22px] p-5 md:p-8">
+              <div className="mb-4">
                 <label className="block text-[13px] font-semibold text-navy mb-1.5">Your name</label>
                 <input
                   type="text"
                   placeholder="e.g. Rohan Sharma"
-                  className="w-full px-4 py-3.5 border border-ink/20 rounded-xl font-sans text-[15px] text-ink bg-warm focus:outline-none focus:border-orange focus:bg-white transition-colors"
+                  className="w-full px-4 py-3 border border-ink/20 rounded-xl font-sans text-[15px] text-ink bg-warm focus:outline-none focus:border-orange focus:bg-white transition-colors"
                 />
               </div>
-              <div className="mb-[18px]">
+              <div className="mb-4">
                 <label className="block text-[13px] font-semibold text-navy mb-1.5">WhatsApp / Email</label>
                 <input
                   type="text"
                   placeholder="So I can reach you"
-                  className="w-full px-4 py-3.5 border border-ink/20 rounded-xl font-sans text-[15px] text-ink bg-warm focus:outline-none focus:border-orange focus:bg-white transition-colors"
+                  className="w-full px-4 py-3 border border-ink/20 rounded-xl font-sans text-[15px] text-ink bg-warm focus:outline-none focus:border-orange focus:bg-white transition-colors"
                 />
               </div>
               {intent === "owner" && (
-                <div className="mb-[18px]">
+                <div className="mb-4">
                   <label className="block text-[13px] font-semibold text-navy mb-1.5">Your business &amp; city</label>
                   <input
                     type="text"
                     placeholder="e.g. Dental clinic, Jaipur"
-                    className="w-full px-4 py-3.5 border border-ink/20 rounded-xl font-sans text-[15px] text-ink bg-warm focus:outline-none focus:border-orange focus:bg-white transition-colors"
+                    className="w-full px-4 py-3 border border-ink/20 rounded-xl font-sans text-[15px] text-ink bg-warm focus:outline-none focus:border-orange focus:bg-white transition-colors"
                   />
                 </div>
               )}
-              <div className="mb-[18px]">
+              <div className="mb-5">
                 <label className="block text-[13px] font-semibold text-navy mb-1.5">What do you need help with?</label>
                 <textarea
                   placeholder="Tell me in one line"
                   rows={4}
-                  className="w-full px-4 py-3.5 border border-ink/20 rounded-xl font-sans text-[15px] text-ink bg-warm focus:outline-none focus:border-orange focus:bg-white transition-colors resize-y"
+                  className="w-full px-4 py-3 border border-ink/20 rounded-xl font-sans text-[15px] text-ink bg-warm focus:outline-none focus:border-orange focus:bg-white transition-colors resize-y"
                 />
               </div>
               <button
                 type="button"
                 onClick={() => alert("Connect this form to ConvertKit, Formspree, or a WhatsApp link before going live.")}
-                className="w-full justify-center inline-flex items-center gap-2 font-display font-bold text-[15px] px-6 py-3.5 rounded-full bg-orange text-white shadow-[0_6px_18px_rgba(205,141,67,.30)] hover:bg-orange-700 hover:-translate-y-0.5 transition-all"
+                className="w-full justify-center inline-flex items-center gap-2 font-display font-bold text-[15px] px-6 py-3.5 rounded-full bg-orange text-white shadow-[0_4px_14px_rgba(205,141,67,.30)] hover:bg-orange-700 transition-all"
               >
                 Send message
               </button>
-              <p className="text-[12.5px] text-muted mt-2 font-mono">
-                // Front-end only. Wire it to ConvertKit / Formspree / a wa.me WhatsApp link before launch.
+              <p className="text-[11px] text-muted mt-2.5 font-mono text-center">
+                // Wire to ConvertKit / Formspree / WhatsApp before launch.
               </p>
             </div>
           </div>
