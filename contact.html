@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — thatmarketingguy</title>
+<meta name="description" content="Get in touch with Aditya Khandelwal — thatmarketingguy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav class="nav">
+      <a class="brand" href="index.html"><span class="dot"></span>thatmarketing<b>guy</b></a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="">Home</a>
+        <a href="results.html" class="">Results</a>
+        <a href="resources.html" class="">Free PDFs</a>
+        <a href="learn.html" class="">Learn</a>
+        <a href="blog.html" class="">Blog</a>
+        <a href="about.html" class="">About</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="resources.html" class="btn btn-primary" style="display:none">Get the free guides</a>
+      </div>
+      <div class="nav-cta"><a href="resources.html" class="btn btn-primary">Get the free guides</a></div>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+<section class="page-hero">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Home</a> / Contact</div>
+    <span class="eyebrow">Let's talk</span>
+    <h1>What brings you here?</h1>
+    <p>Pick one so I send you to the right place.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="intent">
+        <button class="intent-btn active" data-intent="owner"><span class="ic">🏢</span><div><h4>I own a business</h4><p>I want more leads / customers without an agency.</p></div></button>
+        <button class="intent-btn" data-intent="learner"><span class="ic">🎓</span><div><h4>I want to learn marketing</h4><p>I want to run ads myself or build a career.</p></div></button>
+      </div>
+      <div class="form">
+        <div class="field"><label>Your name</label><input type="text" placeholder="e.g. Rohan Sharma"></div>
+        <div class="field"><label>WhatsApp / Email</label><input type="text" placeholder="So I can reach you"></div>
+        <div class="field" id="bizField"><label>Your business &amp; city</label><input type="text" placeholder="e.g. Dental clinic, Jaipur"></div>
+        <div class="field"><label>What do you need help with?</label><textarea placeholder="Tell me in one line"></textarea></div>
+        <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="alert('Connect this form to ConvertKit, Formspree, or a WhatsApp link before going live.')">Send message</button>
+        <p class="form-note">// Front-end only. Wire it to ConvertKit / Formspree / a wa.me WhatsApp link before launch.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">thatmarketing<b>guy</b></div>
+        <p style="font-size:14px;max-width:280px;margin-bottom:10px">Marketing, finally made clear. Performance marketing for SME owners — no agency required.</p>
+        <p style="font-size:13px;font-family:'DM Mono';color:var(--orange)">Aditya Khandelwal</p>
+      </div>
+      <div class="col"><h5>Explore</h5><a href="results.html">Results</a><a href="resources.html">Free PDFs</a><a href="learn.html">Learn</a><a href="blog.html">Blog</a></div>
+      <div class="col"><h5>Products</h5><a href="learn.html">₹99 Blueprints</a><a href="learn.html">₹999 Masterclass</a><a href="resources.html">Free guides</a><a href="about.html">About</a></div>
+      <div class="col"><h5>Connect</h5><a href="#">Instagram</a><a href="#">YouTube</a><a href="#">LinkedIn</a><a href="contact.html">Contact</a></div>
+    </div>
+    <div class="foot-bottom"><span>© <span id="yr"></span> thatmarketingguy · Aditya Khandelwal · Jaipur</span><span class="mono">thatmarketingguy.in</span></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
