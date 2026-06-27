@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-warm text-ink antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight leading-tight;
+  }
+}
+
+@layer utilities {
+  .eyebrow {
+    @apply font-mono text-[12px] tracking-[.12em] uppercase text-orange inline-flex items-center gap-2;
+  }
+  .eyebrow::before {
+    content: "";
+    @apply w-[22px] h-[1.5px] bg-orange flex-none block;
+  }
+}
