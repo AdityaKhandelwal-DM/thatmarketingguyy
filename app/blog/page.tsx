@@ -19,7 +19,7 @@ export default function BlogPage() {
           <div className="font-mono text-[11px] tracking-[.06em] text-white/50 mb-3">
             <a href="/" className="hover:text-white transition-colors">Home</a> / Blog
           </div>
-          <span className="eyebrow block mb-3" style={{ color: "#CD8D43" }}>Marketing, made clear</span>
+          <span className="eyebrow block mb-3" style={{ color: "#F97316" }}>Marketing, made clear</span>
           <h1 className="text-[clamp(26px,4.2vw,52px)] font-extrabold text-white max-w-[760px] leading-tight">
             Plain-English breakdowns of what actually works.
           </h1>

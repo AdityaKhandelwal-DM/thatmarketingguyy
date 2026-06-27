@@ -21,7 +21,7 @@ export default function ResourcesPage() {
           <div className="font-mono text-[11px] tracking-[.06em] text-white/50 mb-3">
             <a href="/" className="hover:text-white transition-colors">Home</a> / Free PDFs
           </div>
-          <span className="eyebrow block mb-3" style={{ color: "#CD8D43" }}>Start free</span>
+          <span className="eyebrow block mb-3" style={{ color: "#F97316" }}>Start free</span>
           <h1 className="text-[clamp(26px,4.2vw,52px)] font-extrabold text-white max-w-[760px] leading-tight">
             7 free guides to stop wasting your ad budget.
           </h1>

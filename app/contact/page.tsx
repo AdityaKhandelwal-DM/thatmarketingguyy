@@ -18,7 +18,7 @@ export default function ContactPage() {
           <div className="font-mono text-[11px] tracking-[.06em] text-white/50 mb-3">
             <a href="/" className="hover:text-white transition-colors">Home</a> / Contact
           </div>
-          <span className="eyebrow block mb-3" style={{ color: "#CD8D43" }}>Let&apos;s talk</span>
+          <span className="eyebrow block mb-3" style={{ color: "#F97316" }}>Let&apos;s talk</span>
           <h1 className="text-[clamp(26px,4.2vw,52px)] font-extrabold text-white max-w-[760px] leading-tight">
             What brings you here?
           </h1>
@@ -43,7 +43,7 @@ export default function ContactPage() {
                   className={cn(
                     "text-left bg-white border rounded-2xl p-4 cursor-pointer transition-all flex gap-3 items-start",
                     intent === b.key
-                      ? "border-orange shadow-[0_4px_18px_rgba(205,141,67,.14)]"
+                      ? "border-orange shadow-[0_4px_18px_rgba(249,115,22,.14)]"
                       : "border-ink/20 hover:border-navy"
                   )}
                 >
@@ -95,7 +95,7 @@ export default function ContactPage() {
               <button
                 type="button"
                 onClick={() => alert("Connect this form to ConvertKit, Formspree, or a WhatsApp link before going live.")}
-                className="w-full justify-center inline-flex items-center gap-2 font-display font-bold text-[15px] px-6 py-3.5 rounded-full bg-orange text-white shadow-[0_4px_14px_rgba(205,141,67,.30)] hover:bg-orange-700 transition-all"
+                className="w-full justify-center inline-flex items-center gap-2 font-display font-bold text-[15px] px-6 py-3.5 rounded-full bg-orange text-white shadow-[0_4px_14px_rgba(249,115,22,.30)] hover:bg-orange-700 transition-all"
               >
                 Send message
               </button>

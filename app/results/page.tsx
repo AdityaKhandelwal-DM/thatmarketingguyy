@@ -29,7 +29,7 @@ export default function ResultsPage() {
           <div className="font-mono text-[11px] tracking-[.06em] text-white/50 mb-3">
             <a href="/" className="hover:text-white transition-colors">Home</a> / Results
           </div>
-          <span className="eyebrow block mb-3" style={{ color: "#CD8D43" }}>The receipts</span>
+          <span className="eyebrow block mb-3" style={{ color: "#F97316" }}>The receipts</span>
           <h1 className="text-[clamp(26px,4.2vw,52px)] font-extrabold text-white max-w-[760px] leading-tight">
             Real campaigns. Real numbers. No screenshots from gurus.
           </h1>

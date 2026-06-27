@@ -29,7 +29,7 @@ export default function LearnPage() {
           <div className="font-mono text-[11px] tracking-[.06em] text-white/50 mb-3">
             <a href="/" className="hover:text-white transition-colors">Home</a> / Learn
           </div>
-          <span className="eyebrow block mb-3" style={{ color: "#CD8D43" }}>Go paid when you&apos;re ready</span>
+          <span className="eyebrow block mb-3" style={{ color: "#F97316" }}>Go paid when you&apos;re ready</span>
           <h1 className="text-[clamp(26px,4.2vw,52px)] font-extrabold text-white max-w-[760px] leading-tight">
             From your first campaign to scaling without an agency.
           </h1>
@@ -70,7 +70,7 @@ export default function LearnPage() {
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="bg-navy rounded-[22px] p-6 md:p-8">
-              <span className="eyebrow block mb-3" style={{ color: "#CD8D43" }}>The masterclass</span>
+              <span className="eyebrow block mb-3" style={{ color: "#F97316" }}>The masterclass</span>
               <h3 className="text-2xl md:text-[28px] font-extrabold text-white leading-snug">Zero to Revenue: Scale Without Agency</h3>
               <p className="text-sm text-white/70 mt-2 mb-5">6 prerecorded modules. Watch at your pace. No upsell, ever.</p>
               <div className="flex items-baseline gap-2.5 mb-6 flex-wrap">

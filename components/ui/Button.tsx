@@ -15,7 +15,7 @@ interface ButtonProps {
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-orange text-white shadow-[0_6px_18px_rgba(205,141,67,.30)] hover:bg-orange-700 hover:-translate-y-0.5",
+    "bg-orange text-white shadow-[0_6px_18px_rgba(249,115,22,.30)] hover:bg-orange-700 hover:-translate-y-0.5",
   ghost:
     "bg-transparent text-navy border border-ink/20 hover:border-navy hover:bg-navy/[.03]",
   mint: "bg-mint text-navy hover:-translate-y-0.5",

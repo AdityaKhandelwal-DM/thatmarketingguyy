@@ -28,7 +28,7 @@ export default function Header() {
             href="/"
             className="flex items-center gap-2 font-display font-extrabold text-[17px] sm:text-[19px] text-navy flex-none"
           >
-            <span className="w-[10px] h-[10px] rounded-full bg-orange shadow-[0_0_0_3px_rgba(205,141,67,.18)] flex-none" />
+            <span className="w-[10px] h-[10px] rounded-full bg-orange shadow-[0_0_0_3px_rgba(249,115,22,.18)] flex-none" />
             thatmarketing<b className="text-orange">guy</b>
           </Link>
 
@@ -54,7 +54,7 @@ export default function Header() {
           <div className="hidden lg:flex items-center flex-none">
             <Link
               href="/resources"
-              className="inline-flex items-center font-display font-bold text-[14px] px-5 py-3 rounded-full bg-orange text-white shadow-[0_4px_14px_rgba(205,141,67,.30)] hover:bg-orange-700 hover:-translate-y-0.5 transition-all"
+              className="inline-flex items-center font-display font-bold text-[14px] px-5 py-3 rounded-full bg-orange text-white shadow-[0_4px_14px_rgba(249,115,22,.30)] hover:bg-orange-700 hover:-translate-y-0.5 transition-all"
             >
               Get the free guides
             </Link>
@@ -94,7 +94,7 @@ export default function Header() {
           <Link
             href="/resources"
             onClick={() => setOpen(false)}
-            className="mt-3 flex justify-center items-center font-display font-bold text-[15px] px-6 py-3.5 rounded-full bg-orange text-white shadow-[0_4px_14px_rgba(205,141,67,.30)]"
+            className="mt-3 flex justify-center items-center font-display font-bold text-[15px] px-6 py-3.5 rounded-full bg-orange text-white shadow-[0_4px_14px_rgba(249,115,22,.30)]"
           >
             Get the free guides
           </Link>

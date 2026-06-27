@@ -233,7 +233,7 @@ export default function Home() {
               <div key={t.initials} className="bg-white border border-ink/10 rounded-card p-5 md:p-6 flex flex-col hover:-translate-y-1 hover:shadow-card transition-all duration-200">
                 <div className="text-orange text-[14px] tracking-[2px] mb-3">★★★★★</div>
                 <p className="text-[15px] text-ink leading-relaxed flex-1">&ldquo;{t.quote}&rdquo;</p>
-                <span className="self-start font-mono text-[12px] text-[#7a5a22] bg-mint-soft px-2.5 py-1.5 rounded-lg mt-3">{t.result}</span>
+                <span className="self-start font-mono text-[12px] text-[#065f46] bg-mint-soft px-2.5 py-1.5 rounded-lg mt-3">{t.result}</span>
                 <div className="flex items-center gap-3 pt-3 mt-3 border-t border-ink/10">
                   <div className="w-10 h-10 rounded-full bg-gradient-to-br from-navy to-navy-700 flex items-center justify-center font-display font-extrabold text-white text-sm flex-none">
                     {t.initials}

@@ -9,16 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        navy: "#242526",
-        "navy-700": "#34353b",
-        orange: "#CD8D43",
-        "orange-700": "#b3742f",
-        mint: "#C99A52",
-        "mint-soft": "#ECEDF2",
-        warm: "#F8F7F4",
-        canvas: "#E1E4EC",
-        ink: "#242526",
-        muted: "#6A6F78",
+        navy: "#0F172A",        // Midnight Slate — authority anchor
+        "navy-700": "#1E293B",  // Rich Gunmetal — slightly lighter for cards
+        orange: "#F97316",      // Signal Orange — conversion driver
+        "orange-700": "#ea6c0a",
+        mint: "#10B981",        // Dashboard Green — ROI indicator
+        "mint-soft": "#ECFDF5", // Light green tint for badges/bg
+        warm: "#F8FAFC",        // Crisp Ghost White — digital canvas
+        canvas: "#F1F5F9",      // Slate-100 — alternate section bg
+        ink: "#1E293B",         // Rich Gunmetal — body text
+        muted: "#64748B",       // Slate-500 — secondary text
       },
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
@@ -32,8 +32,8 @@ const config: Config = {
         card: "18px",
       },
       boxShadow: {
-        card: "0 1px 2px rgba(36,37,38,.04),0 8px 24px rgba(36,37,38,.07)",
-        "card-lg": "0 12px 40px rgba(36,37,38,.14)",
+        card: "0 1px 2px rgba(15,23,42,.04),0 8px 24px rgba(15,23,42,.07)",
+        "card-lg": "0 12px 40px rgba(15,23,42,.14)",
       },
     },
   },
