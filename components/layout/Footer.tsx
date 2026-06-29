@@ -1,71 +1,94 @@
 import Link from "next/link";
 
-const links = {
-  Learn: [
-    { label: "Free PDFs",   href: "/resources" },
-    { label: "Blueprints",  href: "/learn"      },
-    { label: "Masterclass", href: "/learn"      },
-    { label: "Workshops",   href: "/learn"      },
-  ],
-  Work: [
-    { label: "Results",  href: "/results"  },
-    { label: "About",    href: "/about"    },
-    { label: "Careers",  href: "/careers"  },
-    { label: "Contact",  href: "/contact"  },
-  ],
-  Read: [
-    { label: "Blog",       href: "/blog"    },
-    { label: "Instagram",  href: "#"        },
-    { label: "YouTube",    href: "#"        },
-  ],
-};
-
 export default function Footer() {
   return (
-    <footer className="bg-surface-alt border-t border-border mt-0">
-      <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr_1fr_1fr] gap-10 md:gap-8">
+    <footer className="bg-dark text-white/60 pt-14 md:pt-20 pb-8">
+      <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
+
+        {/* Top row */}
+        <div className="flex flex-col md:flex-row md:items-start justify-between gap-10 md:gap-16 mb-12 md:mb-16 pb-12 md:pb-16 border-b border-white/10">
 
           {/* Brand */}
-          <div>
-            <Link href="/" className="font-bold text-[15px] text-text hover:text-secondary transition-colors block mb-3">
-              thatmarketingguy
-            </Link>
-            <p className="text-[13px] text-secondary leading-relaxed max-w-[220px]">
-              Performance marketing for local businesses — no agency jargon.
+          <div className="max-w-[300px]">
+            <div className="font-display font-extrabold text-[22px] text-white mb-3">
+              thatmarketing<span className="text-ember">guy</span>
+            </div>
+            <p className="text-[14px] leading-relaxed mb-4">
+              Marketing, finally made clear. Performance marketing for SME owners — no agency required.
             </p>
-            <p className="text-[12px] text-muted mt-4">Jaipur, India</p>
+            <p className="font-mono text-[12px] text-ember">Aditya Khandelwal · Jaipur</p>
           </div>
 
-          {/* Link columns */}
-          {Object.entries(links).map(([group, items]) => (
-            <div key={group}>
-              <p className="text-[11px] font-semibold tracking-[.1em] uppercase text-muted mb-4">
-                {group}
-              </p>
-              <ul className="flex flex-col gap-2.5">
-                {items.map((item) => (
-                  <li key={item.label}>
-                    <Link
-                      href={item.href}
-                      className="text-[14px] text-secondary hover:text-text transition-colors"
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+          {/* Links */}
+          <div className="grid grid-cols-3 gap-8 md:gap-12 lg:gap-16">
+            <div className="flex flex-col gap-2.5">
+              <h5 className="font-mono text-[10px] tracking-[.14em] uppercase text-white/40 mb-2">
+                Explore
+              </h5>
+              {[
+                { label: "Results",   href: "/results" },
+                { label: "Free PDFs", href: "/resources" },
+                { label: "Learn",     href: "/learn" },
+                { label: "Blog",      href: "/blog" },
+                { label: "Careers",   href: "/careers" },
+              ].map((l) => (
+                <Link
+                  key={l.href}
+                  href={l.href}
+                  className="text-[13px] text-white/50 hover:text-white transition-colors"
+                >
+                  {l.label}
+                </Link>
+              ))}
             </div>
-          ))}
+
+            <div className="flex flex-col gap-2.5">
+              <h5 className="font-mono text-[10px] tracking-[.14em] uppercase text-white/40 mb-2">
+                Products
+              </h5>
+              {[
+                { label: "₹99 Blueprints",   href: "/learn" },
+                { label: "₹999 Masterclass", href: "/learn" },
+                { label: "Free guides",       href: "/resources" },
+                { label: "Workshops",         href: "/#workshops" },
+                { label: "About",             href: "/about" },
+              ].map((l) => (
+                <Link
+                  key={l.label}
+                  href={l.href}
+                  className="text-[13px] text-white/50 hover:text-white transition-colors"
+                >
+                  {l.label}
+                </Link>
+              ))}
+            </div>
+
+            <div className="flex flex-col gap-2.5">
+              <h5 className="font-mono text-[10px] tracking-[.14em] uppercase text-white/40 mb-2">
+                Connect
+              </h5>
+              {[
+                { label: "Instagram", href: "#" },
+                { label: "YouTube",   href: "#" },
+                { label: "LinkedIn",  href: "#" },
+                { label: "Contact",   href: "/contact" },
+              ].map((l) => (
+                <Link
+                  key={l.label}
+                  href={l.href}
+                  className="text-[13px] text-white/50 hover:text-white transition-colors"
+                >
+                  {l.label}
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
 
-        <div className="border-t border-border mt-10 pt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-          <p className="text-[12px] text-muted">
-            © {new Date().getFullYear()} thatmarketingguy. All rights reserved.
-          </p>
-          <p className="text-[12px] text-muted">
-            Built without agency jargon.
-          </p>
+        {/* Bottom */}
+        <div className="flex flex-col sm:flex-row sm:justify-between gap-1.5 text-[12px] text-white/30 font-mono">
+          <span>© {new Date().getFullYear()} thatmarketingguy · All rights reserved</span>
+          <span>thatmarketingguy.in</span>
         </div>
       </div>
     </footer>

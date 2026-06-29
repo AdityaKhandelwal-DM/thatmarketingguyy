@@ -7,22 +7,87 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-bg text-text antialiased;
+    @apply bg-cream text-ink antialiased;
     font-feature-settings: "kern" 1, "liga" 1;
   }
   h1, h2, h3, h4 {
-    @apply font-sans tracking-tight;
+    @apply font-display tracking-tight;
   }
 }
 
 @layer utilities {
-  /* Section label — light bg */
+  /* Label on light bg */
   .eyebrow {
-    @apply font-sans text-[11px] tracking-[.14em] uppercase text-secondary font-medium;
+    @apply font-mono text-[11px] tracking-[.18em] uppercase text-ember
+           inline-flex items-center gap-3;
+  }
+  .eyebrow::before {
+    content: "";
+    @apply w-5 h-px bg-ember flex-none block;
   }
 
-  /* Section label — dark bg */
+  /* Label on dark bg */
   .eyebrow-inv {
-    @apply font-sans text-[11px] tracking-[.14em] uppercase text-white/50 font-medium;
+    @apply font-mono text-[11px] tracking-[.18em] uppercase text-white/50
+           inline-flex items-center gap-3;
   }
+  .eyebrow-inv::before {
+    content: "";
+    @apply w-5 h-px bg-white/30 flex-none block;
+  }
+
+  /* Section rule */
+  .section-rule {
+    @apply border-t border-dark/10;
+  }
+}
+
+/* ── Marquee ─────────────────────────────────────────────────────────────── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 32s linear infinite;
+  will-change: transform;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Marquee (reverse direction for second row) */
+@keyframes marquee-rev {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+.animate-marquee-rev {
+  animation: marquee-rev 28s linear infinite;
+  will-change: transform;
+}
+
+/* ── Float (hero card) ──────────────────────────────────────────────────── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+.animate-float {
+  animation: float 7s ease-in-out infinite;
+}
+
+/* ── Fade-in-up ─────────────────────────────────────────────────────────── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* ── Cursor blink (for nav logo dot) ───────────────────────────────────── */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+.animate-blink {
+  animation: blink 1.2s step-end infinite;
 }

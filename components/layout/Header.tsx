@@ -2,112 +2,118 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
+import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { label: "Results",   href: "/results"   },
+  { label: "Results",   href: "/results" },
   { label: "Free PDFs", href: "/resources" },
-  { label: "Learn",     href: "/learn"     },
-  { label: "Blog",      href: "/blog"      },
-  { label: "About",     href: "/about"     },
+  { label: "Learn",     href: "/learn" },
+  { label: "Blog",      href: "/blog" },
+  { label: "About",     href: "/about" },
+  { label: "Careers",   href: "/careers" },
 ];
 
 export default function Header() {
-  const path = usePathname();
+  const pathname = usePathname();
+  const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 12);
+    const onScroll = () => setScrolled(window.scrollY > 24);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
     <header
-      className={`sticky top-0 z-50 bg-bg transition-shadow duration-200 ${
-        scrolled ? "shadow-[0_1px_0_0_#E2E8F0]" : ""
-      }`}
+      className={cn(
+        "sticky top-0 z-50 bg-cream border-b border-dark/10 transition-shadow duration-300",
+        scrolled && "shadow-[0_1px_24px_rgba(13,13,13,.08)]"
+      )}
     >
-      <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 flex items-center justify-between h-14">
+      <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
+        <nav className="flex items-center justify-between h-[60px] gap-6">
 
-        {/* Logo */}
-        <Link
-          href="/"
-          className="font-sans font-bold text-[15px] text-text tracking-tight hover:text-secondary transition-colors"
-        >
-          thatmarketingguy
-        </Link>
-
-        {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-6">
-          {navLinks.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className={`text-[14px] transition-colors duration-150 ${
-                path === l.href
-                  ? "text-text font-semibold"
-                  : "text-secondary hover:text-text"
-              }`}
-            >
-              {l.label}
-            </Link>
-          ))}
-        </nav>
-
-        {/* CTA + mobile toggle */}
-        <div className="flex items-center gap-3">
+          {/* Brand wordmark */}
           <Link
-            href="/contact"
-            className="hidden md:inline-flex items-center text-[14px] font-semibold bg-text text-white px-4 py-2 rounded-lg hover:bg-slate-800 transition-colors"
+            href="/"
+            className="flex items-center gap-2 font-display font-extrabold text-[17px] sm:text-[19px] text-dark flex-none group"
           >
-            Let&apos;s talk
+            <span className="relative flex-none">
+              <span className="w-[9px] h-[9px] rounded-full bg-ember block" />
+              <span className="w-[9px] h-[9px] rounded-full bg-ember/30 block absolute inset-0 scale-150 group-hover:scale-[2.5] transition-transform duration-500 opacity-0 group-hover:opacity-100" />
+            </span>
+            thatmarketing<span className="text-ember">guy</span>
           </Link>
-          <button
-            className="md:hidden p-1.5 text-secondary hover:text-text transition-colors"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle menu"
-          >
-            {menuOpen ? (
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            ) : (
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            )}
-          </button>
-        </div>
-      </div>
 
-      {/* Mobile menu */}
-      {menuOpen && (
-        <div className="md:hidden border-t border-border bg-bg">
-          <nav className="flex flex-col px-4 py-3 gap-0.5">
+          {/* Desktop nav */}
+          <div className="hidden lg:flex items-center gap-7">
             {navLinks.map((l) => (
               <Link
                 key={l.href}
                 href={l.href}
-                onClick={() => setMenuOpen(false)}
-                className={`px-3 py-2.5 rounded-lg text-[15px] transition-colors ${
-                  path === l.href
-                    ? "bg-surface-alt text-text font-semibold"
-                    : "text-secondary hover:text-text hover:bg-surface-alt"
-                }`}
+                className={cn(
+                  "font-sans text-[13.5px] font-medium transition-all duration-150 relative",
+                  pathname === l.href
+                    ? "text-ember"
+                    : "text-ink/60 hover:text-dark"
+                )}
               >
                 {l.label}
+                {pathname === l.href && (
+                  <span className="absolute -bottom-[22px] left-0 right-0 h-[2px] bg-ember rounded-full" />
+                )}
               </Link>
             ))}
+          </div>
+
+          {/* Desktop CTA */}
+          <div className="hidden lg:flex items-center flex-none">
             <Link
               href="/contact"
-              onClick={() => setMenuOpen(false)}
-              className="mt-2 px-3 py-2.5 rounded-lg text-[15px] font-semibold bg-text text-white text-center hover:bg-slate-800 transition-colors"
+              className="font-sans font-semibold text-[13.5px] px-5 py-2.5 rounded-full bg-dark text-white hover:bg-ember transition-colors duration-200"
             >
-              Let&apos;s talk
+              Let&apos;s talk →
             </Link>
-          </nav>
+          </div>
+
+          {/* Mobile hamburger */}
+          <button
+            className="lg:hidden flex flex-col justify-center gap-[5px] bg-transparent border-none cursor-pointer p-2 -mr-1 flex-none"
+            aria-label="Toggle menu"
+            onClick={() => setOpen((o) => !o)}
+          >
+            <span className={cn("w-5 h-[1.5px] bg-dark rounded block transition-all duration-300", open && "translate-y-[6.5px] rotate-45")} />
+            <span className={cn("w-5 h-[1.5px] bg-dark rounded block transition-all duration-300", open && "opacity-0")} />
+            <span className={cn("w-5 h-[1.5px] bg-dark rounded block transition-all duration-300", open && "-translate-y-[6.5px] -rotate-45")} />
+          </button>
+        </nav>
+      </div>
+
+      {/* Mobile drawer */}
+      {open && (
+        <div className="lg:hidden bg-cream border-t border-dark/10 px-4 py-2 flex flex-col">
+          {[{ label: "Home", href: "/" }, ...navLinks].map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              onClick={() => setOpen(false)}
+              className={cn(
+                "py-3.5 text-[15px] border-b border-dark/[.06] last:border-none",
+                pathname === l.href ? "text-ember font-semibold" : "text-ink"
+              )}
+            >
+              {l.label}
+            </Link>
+          ))}
+          <Link
+            href="/contact"
+            onClick={() => setOpen(false)}
+            className="mt-4 mb-2 flex justify-center items-center font-sans font-semibold text-[15px] px-6 py-3.5 rounded-full bg-dark text-white"
+          >
+            Let&apos;s talk →
+          </Link>
         </div>
       )}
     </header>
