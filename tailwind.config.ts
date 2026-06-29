@@ -9,31 +9,43 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        navy: "#0F172A",        // Midnight Slate — authority anchor
-        "navy-700": "#1E293B",  // Rich Gunmetal — slightly lighter for cards
-        orange: "#F97316",      // Signal Orange — conversion driver
-        "orange-700": "#ea6c0a",
-        mint: "#10B981",        // Dashboard Green — ROI indicator
-        "mint-soft": "#ECFDF5", // Light green tint for badges/bg
-        warm: "#F8FAFC",        // Crisp Ghost White — digital canvas
-        canvas: "#F1F5F9",      // Slate-100 — alternate section bg
-        ink: "#1E293B",         // Rich Gunmetal — body text
-        muted: "#64748B",       // Slate-500 — secondary text
+        // ── Primary palette ───────────────────────────────────────
+        cream:      "#F4F0E8",       // warm parchment — primary bg
+        "cream-alt":"#EAE6DE",       // slightly deeper — alternate sections
+        dark:       "#0D0D0D",       // near-black — primary dark + dark section bg
+        night:      "#090C15",       // very deep navy — for dramatic dark sections
+        ember:      "#FF4500",       // signal orange — primary accent
+        sage:       "#00C880",       // dashboard green — data/positive
+        ink:        "#1A1A1A",       // body text
+        smoke:      "#6E6E6E",       // muted/secondary text
+
+        // ── Aliases so secondary pages keep working ───────────────
+        navy:       "#0D0D0D",       // → dark
+        "navy-700": "#1A1A1A",       // → ink
+        orange:     "#FF4500",       // → ember
+        "orange-700": "#e03d00",     // → ember darker
+        mint:       "#00C880",       // → sage
+        "mint-soft": "rgba(0,200,128,0.10)", // → sage/10
+        warm:       "#F4F0E8",       // → cream
+        canvas:     "#EAE6DE",       // → cream-alt
+        muted:      "#6E6E6E",       // → smoke
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
-        display: ["var(--font-jakarta)", "sans-serif"],
-        mono: ["var(--font-dm-mono)", "monospace"],
+        sans:    ["var(--font-inter)",    "system-ui", "sans-serif"],
+        display: ["var(--font-syne)",     "sans-serif"],
+        mono:    ["var(--font-dm-mono)", "monospace"],
       },
       maxWidth: {
-        site: "1200px",
+        site: "1280px",
       },
       borderRadius: {
-        card: "18px",
+        card: "16px",
       },
       boxShadow: {
-        card: "0 1px 2px rgba(15,23,42,.04),0 8px 24px rgba(15,23,42,.07)",
-        "card-lg": "0 12px 40px rgba(15,23,42,.14)",
+        card:      "0 1px 3px rgba(13,13,13,.04),0 6px 24px rgba(13,13,13,.06)",
+        "card-lg": "0 4px 20px rgba(13,13,13,.08),0 20px 56px rgba(13,13,13,.07)",
+        ember:     "0 4px 24px rgba(255,69,0,.32)",
+        "ember-lg":"0 8px 40px rgba(255,69,0,.25)",
       },
     },
   },

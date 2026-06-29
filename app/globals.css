@@ -7,60 +7,87 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-warm text-ink antialiased;
+    @apply bg-cream text-ink antialiased;
+    font-feature-settings: "kern" 1, "liga" 1;
   }
   h1, h2, h3, h4 {
-    @apply font-display tracking-tight leading-tight;
+    @apply font-display tracking-tight;
   }
 }
 
 @layer utilities {
+  /* Label on light bg */
   .eyebrow {
-    @apply font-mono text-[12px] tracking-[.12em] uppercase text-orange inline-flex items-center gap-2;
+    @apply font-mono text-[11px] tracking-[.18em] uppercase text-ember
+           inline-flex items-center gap-3;
   }
   .eyebrow::before {
     content: "";
-    @apply w-[22px] h-[1.5px] bg-orange flex-none block;
+    @apply w-5 h-px bg-ember flex-none block;
+  }
+
+  /* Label on dark bg */
+  .eyebrow-inv {
+    @apply font-mono text-[11px] tracking-[.18em] uppercase text-white/50
+           inline-flex items-center gap-3;
+  }
+  .eyebrow-inv::before {
+    content: "";
+    @apply w-5 h-px bg-white/30 flex-none block;
+  }
+
+  /* Section rule */
+  .section-rule {
+    @apply border-t border-dark/10;
   }
 }
 
-/* ── Marquee ── */
+/* ── Marquee ─────────────────────────────────────────────────────────────── */
 @keyframes marquee {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
 }
 .animate-marquee {
-  animation: marquee 36s linear infinite;
+  animation: marquee 32s linear infinite;
   will-change: transform;
 }
 .animate-marquee:hover {
   animation-play-state: paused;
 }
 
-/* ── Float (hero illustration) ── */
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50%       { transform: translateY(-12px); }
+/* Marquee (reverse direction for second row) */
+@keyframes marquee-rev {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
 }
-.animate-float {
-  animation: float 6s ease-in-out infinite;
+.animate-marquee-rev {
+  animation: marquee-rev 28s linear infinite;
+  will-change: transform;
 }
 
-/* ── Fade-in-up ── */
+/* ── Float (hero card) ──────────────────────────────────────────────────── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+.animate-float {
+  animation: float 7s ease-in-out infinite;
+}
+
+/* ── Fade-in-up ─────────────────────────────────────────────────────────── */
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(22px); }
+  from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 .animate-fadeInUp {
-  animation: fadeInUp 0.55s ease-out forwards;
+  animation: fadeInUp 0.5s ease-out forwards;
 }
 
-/* ── Orange ping dot (nav logo) ── */
-@keyframes ping-orange {
-  0%   { transform: scale(1);   opacity: 0.75; }
-  75%  { transform: scale(2);   opacity: 0; }
-  100% { transform: scale(2);   opacity: 0; }
+/* ── Cursor blink (for nav logo dot) ───────────────────────────────────── */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
 }
-.animate-ping-orange {
-  animation: ping-orange 2s cubic-bezier(0,0,0.2,1) infinite;
+.animate-blink {
+  animation: blink 1.2s step-end infinite;
 }

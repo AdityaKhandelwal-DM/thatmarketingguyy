@@ -3,11 +3,11 @@ import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
 
 const blueprints = [
-  { icon: "🏥", title: "Clinic blueprint", desc: "Lead ads + Map Pack to fill appointments." },
-  { icon: "🧁", title: "Bakery blueprint", desc: "Local awareness + offers that drive footfall." },
-  { icon: "🎮", title: "FunZone blueprint", desc: "Weekend-fill campaigns for venues." },
-  { icon: "📦", title: "D2C blueprint", desc: "Creative testing + scaling without ROAS drop." },
-  { icon: "🍽️", title: "Restaurant blueprint", desc: "Geo-fenced ads + offer testing." },
+  { icon: "🏥", title: "Clinic blueprint",    desc: "Lead ads + Map Pack to fill appointments." },
+  { icon: "🧁", title: "Bakery blueprint",    desc: "Local awareness + offers that drive footfall." },
+  { icon: "🎮", title: "FunZone blueprint",   desc: "Weekend-fill campaigns for venues." },
+  { icon: "📦", title: "D2C blueprint",       desc: "Creative testing + scaling without ROAS drop." },
+  { icon: "🍽️", title: "Restaurant blueprint",desc: "Geo-fenced ads + offer testing." },
   { icon: "📍", title: "Local SEO blueprint", desc: "Rank in the Map Pack without ad spend." },
 ];
 
@@ -24,69 +24,88 @@ export default function LearnPage() {
   return (
     <>
       <Header />
-      <section className="bg-navy text-white py-10 md:py-16 lg:py-20">
-        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="font-mono text-[11px] tracking-[.06em] text-white/50 mb-3">
-            <a href="/" className="hover:text-white transition-colors">Home</a> / Learn
+
+      {/* Hero */}
+      <section className="bg-dark text-white py-14 md:py-20 lg:py-24 relative overflow-hidden">
+        <div className="absolute -left-24 top-0 w-[500px] h-[500px] rounded-full bg-ember/[.04] blur-3xl pointer-events-none" />
+        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 relative z-10">
+          <div className="font-mono text-[10px] tracking-[.12em] uppercase text-white/30 mb-6">
+            <a href="/" className="hover:text-white/60 transition-colors">Home</a>
+            <span className="mx-2 opacity-30">/</span>Learn
           </div>
-          <span className="eyebrow block mb-3" style={{ color: "#F97316" }}>Go paid when you&apos;re ready</span>
-          <h1 className="text-[clamp(26px,4.2vw,52px)] font-extrabold text-white max-w-[760px] leading-tight">
-            From your first campaign to scaling without an agency.
+          <span className="eyebrow-inv block mb-6">Go paid when you&apos;re ready</span>
+          <h1 className="font-display font-extrabold text-white text-[clamp(36px,5.5vw,68px)] leading-[0.96] tracking-tight max-w-[800px]">
+            From your first campaign to scaling — without an agency.
           </h1>
-          <p className="text-base md:text-lg text-white/70 mt-3 max-w-[620px]">
+          <p className="text-[16px] md:text-[18px] text-white/50 mt-6 max-w-[520px] leading-relaxed">
             No upsell traps. One-time prices. Yours forever.
           </p>
         </div>
       </section>
 
       {/* Blueprints */}
-      <section className="py-12 md:py-16 lg:py-20">
+      <section className="bg-cream py-14 md:py-20 lg:py-24">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="max-w-[720px] mb-8 md:mb-12">
-            <h2 className="text-[clamp(22px,3.2vw,38px)] font-extrabold text-navy">₹99 industry blueprints</h2>
-            <p className="text-base md:text-[17px] text-muted mt-3">
-              Step-by-step, copy-paste campaigns built for one specific business type. Pick yours.
+          <div className="max-w-[680px] mb-10 md:mb-14">
+            <span className="eyebrow block mb-5">₹99 blueprints</span>
+            <h2 className="font-display font-extrabold text-dark text-[clamp(28px,4vw,48px)] leading-[1.0] tracking-tight">
+              Step-by-step, copy-paste campaigns for your industry.
+            </h2>
+            <p className="text-[15px] text-smoke mt-4 leading-relaxed">
+              Pick the blueprint for your business type. One-time ₹99. Yours to keep.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {blueprints.map((b) => (
-              <div key={b.title} className="bg-white border border-ink/10 rounded-card p-5 md:p-6 hover:-translate-y-1 hover:shadow-card hover:border-transparent transition-all duration-200">
-                <div className="w-11 h-11 rounded-xl bg-mint-soft flex items-center justify-center text-xl mb-3.5">{b.icon}</div>
-                <h3 className="text-[17px] text-navy font-bold mb-1.5">{b.title}</h3>
-                <p className="text-sm text-muted">
-                  {b.desc} <strong className="text-navy">₹99</strong>
+              <div
+                key={b.title}
+                className="bg-cream-alt border border-dark/10 rounded-card p-6 hover:-translate-y-px hover:shadow-card hover:border-ember/20 transition-all duration-200 group"
+              >
+                <span className="text-2xl mb-4 block">{b.icon}</span>
+                <h3 className="font-display font-extrabold text-dark text-[18px] mb-1.5 group-hover:text-ember transition-colors">
+                  {b.title}
+                </h3>
+                <p className="text-[13px] text-smoke leading-relaxed">
+                  {b.desc}{" "}
+                  <strong className="text-dark font-semibold">— ₹99</strong>
                 </p>
               </div>
             ))}
           </div>
-          <div className="text-center mt-7">
+          <div className="text-center mt-8">
             <Button href="/contact" variant="ghost">Buy a blueprint →</Button>
           </div>
         </div>
       </section>
 
       {/* Masterclass */}
-      <section className="py-12 md:py-16 lg:py-20 bg-canvas">
+      <section className="bg-cream-alt py-14 md:py-20 lg:py-24">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div className="bg-navy rounded-[22px] p-6 md:p-8">
-              <span className="eyebrow block mb-3" style={{ color: "#F97316" }}>The masterclass</span>
-              <h3 className="text-2xl md:text-[28px] font-extrabold text-white leading-snug">Zero to Revenue: Scale Without Agency</h3>
-              <p className="text-sm text-white/70 mt-2 mb-5">6 prerecorded modules. Watch at your pace. No upsell, ever.</p>
-              <div className="flex items-baseline gap-2.5 mb-6 flex-wrap">
-                <span className="font-mono text-3xl text-white font-medium">₹999</span>
-                <s className="text-lg text-white/50 font-normal">₹4,999</s>
+            {/* Masterclass card — dark */}
+            <div className="bg-dark rounded-[20px] p-7 md:p-8">
+              <span className="eyebrow-inv block mb-4">The masterclass</span>
+              <h3 className="font-display font-extrabold text-white text-[clamp(22px,3vw,34px)] leading-tight tracking-tight mb-2">
+                Zero to Revenue:<br />Scale Without Agency
+              </h3>
+              <p className="text-[14px] text-white/50 mt-2 mb-6 leading-relaxed">
+                6 prerecorded modules. Watch at your pace. No upsell, ever.
+              </p>
+              <div className="flex items-baseline gap-3 mb-8">
+                <span className="font-mono text-[36px] text-white font-medium leading-none">₹999</span>
+                <s className="text-[18px] text-white/30 font-normal">₹4,999</s>
               </div>
-              <Button href="/contact" fullWidth className="sm:w-auto">Join the masterclass</Button>
+              <Button href="/contact" fullWidth>Join the masterclass</Button>
             </div>
 
-            <div className="bg-white rounded-[22px] p-6 md:p-8 border border-ink/10">
-              <h3 className="text-xl font-extrabold text-navy mb-5">What&apos;s inside</h3>
-              <div className="flex flex-col gap-3">
+            {/* Modules card */}
+            <div className="bg-cream rounded-[20px] p-7 md:p-8 border border-dark/10">
+              <h3 className="font-display font-extrabold text-dark text-[20px] mb-6">What&apos;s inside</h3>
+              <div className="flex flex-col divide-y divide-dark/8">
                 {modules.map((m, i) => (
-                  <div key={m} className="flex items-center gap-3 text-[14px] text-ink">
-                    <span className="w-6 h-6 rounded-lg bg-warm border border-ink/10 flex items-center justify-center text-[13px] font-bold flex-none">{i + 1}</span>
-                    {m}
+                  <div key={m} className="flex items-center gap-4 py-3.5">
+                    <span className="font-mono text-[11px] text-smoke/35 w-5 flex-none">{i + 1}</span>
+                    <span className="text-[14px] text-ink">{m}</span>
                   </div>
                 ))}
               </div>
@@ -94,6 +113,7 @@ export default function LearnPage() {
           </div>
         </div>
       </section>
+
       <Footer />
     </>
   );

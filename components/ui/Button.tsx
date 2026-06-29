@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-type Variant = "primary" | "ghost" | "mint" | "light";
+type Variant = "primary" | "ghost" | "ghost-inv" | "light" | "sage";
 
 interface ButtonProps {
   href?: string;
@@ -15,11 +15,15 @@ interface ButtonProps {
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-orange text-white shadow-[0_6px_18px_rgba(249,115,22,.30)] hover:bg-orange-700 hover:-translate-y-0.5",
+    "bg-ember text-white shadow-ember hover:bg-[#e03d00] hover:-translate-y-px active:translate-y-0",
   ghost:
-    "bg-transparent text-navy border border-ink/20 hover:border-navy hover:bg-navy/[.03]",
-  mint: "bg-mint text-navy hover:-translate-y-0.5",
-  light: "bg-white text-navy hover:-translate-y-0.5 hover:shadow-card-lg",
+    "bg-transparent text-dark border border-dark/25 hover:border-dark hover:bg-dark/[.04]",
+  "ghost-inv":
+    "bg-transparent text-white border border-white/20 hover:border-white/60 hover:bg-white/[.05]",
+  light:
+    "bg-white text-dark hover:-translate-y-px hover:shadow-card",
+  sage:
+    "bg-sage text-dark hover:-translate-y-px hover:bg-[#00b374]",
 };
 
 export default function Button({
@@ -32,7 +36,7 @@ export default function Button({
   fullWidth,
 }: ButtonProps) {
   const base = cn(
-    "inline-flex items-center gap-2 font-display font-bold text-[15px] px-6 py-3.5 rounded-full border border-transparent cursor-pointer transition-all duration-150 whitespace-nowrap",
+    "inline-flex items-center gap-2 font-sans font-semibold text-[14px] px-6 py-3 rounded-full border border-transparent cursor-pointer transition-all duration-150 whitespace-nowrap tracking-[-0.01em]",
     variants[variant],
     fullWidth && "w-full justify-center",
     className
