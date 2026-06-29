@@ -1,24 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, Syne, DM_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
   variable: "--font-inter",
-  display: "swap",
-});
-
-const syne = Syne({
-  subsets: ["latin"],
-  weight: ["700", "800"],
-  variable: "--font-syne",
-  display: "swap",
-});
-
-const dmMono = DM_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500"],
-  variable: "--font-dm-mono",
   display: "swap",
 });
 
@@ -34,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${syne.variable} ${dmMono.variable}`}>
-      <body>{children}</body>
+    <html lang="en" className={inter.variable}>
+      <body className="bg-bg text-text antialiased">{children}</body>
     </html>
   );
 }
