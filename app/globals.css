@@ -23,3 +23,44 @@
     @apply w-[22px] h-[1.5px] bg-orange flex-none block;
   }
 }
+
+/* ── Marquee ── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 36s linear infinite;
+  will-change: transform;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* ── Float (hero illustration) ── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-12px); }
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* ── Fade-in-up ── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 0.55s ease-out forwards;
+}
+
+/* ── Orange ping dot (nav logo) ── */
+@keyframes ping-orange {
+  0%   { transform: scale(1);   opacity: 0.75; }
+  75%  { transform: scale(2);   opacity: 0; }
+  100% { transform: scale(2);   opacity: 0; }
+}
+.animate-ping-orange {
+  animation: ping-orange 2s cubic-bezier(0,0,0.2,1) infinite;
+}

@@ -22,10 +22,11 @@ export default function Footer() {
               Explore
             </h5>
             {[
-              { label: "Results", href: "/results" },
+              { label: "Results",   href: "/results" },
               { label: "Free PDFs", href: "/resources" },
-              { label: "Learn", href: "/learn" },
-              { label: "Blog", href: "/blog" },
+              { label: "Learn",     href: "/learn" },
+              { label: "Blog",      href: "/blog" },
+              { label: "Careers",   href: "/careers" },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-[13px] sm:text-sm opacity-70 hover:opacity-100 hover:text-mint transition-opacity">
                 {l.label}
@@ -38,10 +39,11 @@ export default function Footer() {
               Products
             </h5>
             {[
-              { label: "₹99 Blueprints", href: "/learn" },
-              { label: "₹999 Masterclass", href: "/learn" },
-              { label: "Free guides", href: "/resources" },
-              { label: "About", href: "/about" },
+              { label: "₹99 Blueprints",    href: "/learn" },
+              { label: "₹999 Masterclass",  href: "/learn" },
+              { label: "Free guides",        href: "/resources" },
+              { label: "Workshops",          href: "/#workshops" },
+              { label: "About",             href: "/about" },
             ].map((l) => (
               <Link key={l.label} href={l.href} className="text-[13px] sm:text-sm opacity-70 hover:opacity-100 hover:text-mint transition-opacity">
                 {l.label}
@@ -55,9 +57,9 @@ export default function Footer() {
             </h5>
             {[
               { label: "Instagram", href: "#" },
-              { label: "YouTube", href: "#" },
-              { label: "LinkedIn", href: "#" },
-              { label: "Contact", href: "/contact" },
+              { label: "YouTube",   href: "#" },
+              { label: "LinkedIn",  href: "#" },
+              { label: "Contact",   href: "/contact" },
             ].map((l) => (
               <Link key={l.label} href={l.href} className="text-[13px] sm:text-sm opacity-70 hover:opacity-100 hover:text-mint transition-opacity">
                 {l.label}

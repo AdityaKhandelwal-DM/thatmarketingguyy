@@ -6,13 +6,14 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "Results", href: "/results" },
+  { label: "Home",     href: "/" },
+  { label: "Results",  href: "/results" },
   { label: "Free PDFs", href: "/resources" },
-  { label: "Learn", href: "/learn" },
-  { label: "Blog", href: "/blog" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
+  { label: "Learn",    href: "/learn" },
+  { label: "Blog",     href: "/blog" },
+  { label: "About",    href: "/about" },
+  { label: "Careers",  href: "/careers" },
+  { label: "Contact",  href: "/contact" },
 ];
 
 export default function Header() {
