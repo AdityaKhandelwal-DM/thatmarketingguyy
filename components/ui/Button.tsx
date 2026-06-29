@@ -15,15 +15,15 @@ interface ButtonProps {
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-ember text-white shadow-ember hover:bg-[#e03d00] hover:-translate-y-px active:translate-y-0",
+    "bg-text text-white hover:bg-slate-800 active:bg-slate-900",
   ghost:
-    "bg-transparent text-dark border border-dark/25 hover:border-dark hover:bg-dark/[.04]",
+    "bg-transparent text-text border border-border-strong hover:border-text hover:bg-surface-alt",
   "ghost-inv":
-    "bg-transparent text-white border border-white/20 hover:border-white/60 hover:bg-white/[.05]",
+    "bg-transparent text-white border border-white/20 hover:border-white/50 hover:bg-white/[.06]",
   light:
-    "bg-white text-dark hover:-translate-y-px hover:shadow-card",
+    "bg-white text-text hover:bg-surface-alt",
   sage:
-    "bg-sage text-dark hover:-translate-y-px hover:bg-[#00b374]",
+    "bg-sage text-white hover:bg-emerald-700",
 };
 
 export default function Button({
@@ -36,7 +36,7 @@ export default function Button({
   fullWidth,
 }: ButtonProps) {
   const base = cn(
-    "inline-flex items-center gap-2 font-sans font-semibold text-[14px] px-6 py-3 rounded-full border border-transparent cursor-pointer transition-all duration-150 whitespace-nowrap tracking-[-0.01em]",
+    "inline-flex items-center gap-2 font-sans font-semibold text-[14px] px-5 py-2.5 rounded-lg border border-transparent cursor-pointer transition-colors duration-150 whitespace-nowrap",
     variants[variant],
     fullWidth && "w-full justify-center",
     className
