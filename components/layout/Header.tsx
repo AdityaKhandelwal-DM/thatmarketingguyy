@@ -2,112 +2,103 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { label: "Results",   href: "/results"   },
+  { label: "Home",     href: "/" },
+  { label: "Results",  href: "/results" },
   { label: "Free PDFs", href: "/resources" },
-  { label: "Learn",     href: "/learn"     },
-  { label: "Blog",      href: "/blog"      },
-  { label: "About",     href: "/about"     },
+  { label: "Learn",    href: "/learn" },
+  { label: "Blog",     href: "/blog" },
+  { label: "About",    href: "/about" },
+  { label: "Careers",  href: "/careers" },
+  { label: "Contact",  href: "/contact" },
 ];
 
 export default function Header() {
-  const path = usePathname();
-  const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 12);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  const pathname = usePathname();
+  const [open, setOpen] = useState(false);
 
   return (
-    <header
-      className={`sticky top-0 z-50 bg-bg transition-shadow duration-200 ${
-        scrolled ? "shadow-[0_1px_0_0_#E2E8F0]" : ""
-      }`}
-    >
-      <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 flex items-center justify-between h-14">
-
-        {/* Logo */}
-        <Link
-          href="/"
-          className="font-sans font-bold text-[15px] text-text tracking-tight hover:text-secondary transition-colors"
-        >
-          thatmarketingguy
-        </Link>
-
-        {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-6">
-          {navLinks.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className={`text-[14px] transition-colors duration-150 ${
-                path === l.href
-                  ? "text-text font-semibold"
-                  : "text-secondary hover:text-text"
-              }`}
-            >
-              {l.label}
-            </Link>
-          ))}
-        </nav>
-
-        {/* CTA + mobile toggle */}
-        <div className="flex items-center gap-3">
+    <header className="sticky top-0 z-50 bg-warm/90 backdrop-blur-[14px] border-b border-ink/10">
+      <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
+        <nav className="flex items-center justify-between h-16 gap-4">
+          {/* Brand */}
           <Link
-            href="/contact"
-            className="hidden md:inline-flex items-center text-[14px] font-semibold bg-text text-white px-4 py-2 rounded-lg hover:bg-slate-800 transition-colors"
+            href="/"
+            className="flex items-center gap-2 font-display font-extrabold text-[17px] sm:text-[19px] text-navy flex-none"
           >
-            Let&apos;s talk
+            <span className="w-[10px] h-[10px] rounded-full bg-orange shadow-[0_0_0_3px_rgba(249,115,22,.18)] flex-none" />
+            thatmarketing<b className="text-orange">guy</b>
           </Link>
-          <button
-            className="md:hidden p-1.5 text-secondary hover:text-text transition-colors"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle menu"
-          >
-            {menuOpen ? (
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            ) : (
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            )}
-          </button>
-        </div>
-      </div>
 
-      {/* Mobile menu */}
-      {menuOpen && (
-        <div className="md:hidden border-t border-border bg-bg">
-          <nav className="flex flex-col px-4 py-3 gap-0.5">
+          {/* Desktop links */}
+          <div className="hidden lg:flex items-center gap-6">
             {navLinks.map((l) => (
               <Link
                 key={l.href}
                 href={l.href}
-                onClick={() => setMenuOpen(false)}
-                className={`px-3 py-2.5 rounded-lg text-[15px] transition-colors ${
-                  path === l.href
-                    ? "bg-surface-alt text-text font-semibold"
-                    : "text-secondary hover:text-text hover:bg-surface-alt"
-                }`}
+                className={cn(
+                  "text-[13.5px] font-medium text-navy transition-opacity",
+                  pathname === l.href
+                    ? "opacity-100 text-orange font-semibold"
+                    : "opacity-75 hover:opacity-100"
+                )}
               >
                 {l.label}
               </Link>
             ))}
+          </div>
+
+          {/* Desktop CTA */}
+          <div className="hidden lg:flex items-center flex-none">
             <Link
-              href="/contact"
-              onClick={() => setMenuOpen(false)}
-              className="mt-2 px-3 py-2.5 rounded-lg text-[15px] font-semibold bg-text text-white text-center hover:bg-slate-800 transition-colors"
+              href="/resources"
+              className="inline-flex items-center font-display font-bold text-[14px] px-5 py-3 rounded-full bg-orange text-white shadow-[0_4px_14px_rgba(249,115,22,.30)] hover:bg-orange-700 hover:-translate-y-0.5 transition-all"
             >
-              Let&apos;s talk
+              Get the free guides
             </Link>
-          </nav>
+          </div>
+
+          {/* Hamburger */}
+          <button
+            className="lg:hidden flex flex-col justify-center gap-[5px] bg-transparent border-none cursor-pointer p-2 -mr-1"
+            aria-label="Toggle menu"
+            onClick={() => setOpen((o) => !o)}
+          >
+            <span className={cn("w-5 h-[2px] bg-navy rounded block transition-all duration-300", open && "translate-y-[7px] rotate-45")} />
+            <span className={cn("w-5 h-[2px] bg-navy rounded block transition-all duration-300", open && "opacity-0")} />
+            <span className={cn("w-5 h-[2px] bg-navy rounded block transition-all duration-300", open && "-translate-y-[7px] -rotate-45")} />
+          </button>
+        </nav>
+      </div>
+
+      {/* Mobile drawer */}
+      {open && (
+        <div className="lg:hidden bg-warm border-t border-ink/10 px-4 py-3 flex flex-col gap-0.5">
+          {navLinks.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              onClick={() => setOpen(false)}
+              className={cn(
+                "py-3 text-[15px] border-b border-ink/[.07] last:border-none",
+                pathname === l.href
+                  ? "text-orange font-semibold"
+                  : "text-navy"
+              )}
+            >
+              {l.label}
+            </Link>
+          ))}
+          <Link
+            href="/resources"
+            onClick={() => setOpen(false)}
+            className="mt-3 flex justify-center items-center font-display font-bold text-[15px] px-6 py-3.5 rounded-full bg-orange text-white shadow-[0_4px_14px_rgba(249,115,22,.30)]"
+          >
+            Get the free guides
+          </Link>
         </div>
       )}
     </header>

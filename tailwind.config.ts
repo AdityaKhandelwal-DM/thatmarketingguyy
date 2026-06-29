@@ -9,50 +9,31 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // ── Primary palette ──────────────────────────────────────
-        bg:        "#F8FAFC",   // page background  (slate-50)
-        surface:   "#FFFFFF",   // card background
-        "surface-alt": "#F1F5F9", // alternate section (slate-100)
-        border:    "#E2E8F0",   // default border    (slate-200)
-        "border-strong": "#CBD5E1", // stronger border (slate-300)
-        text:      "#0F172A",   // primary text      (slate-900)
-        secondary: "#475569",   // secondary text    (slate-600)
-        muted:     "#94A3B8",   // muted text        (slate-400)
-        dark:      "#0F172A",   // CTA section bg    (slate-900)
-        sage:      "#059669",   // positive / data   (emerald-600)
-
-        // ── Backward-compat aliases ───────────────────────────────
-        cream:       "#F8FAFC",
-        "cream-alt": "#F1F5F9",
-        night:       "#0F172A",
-        ember:       "#0F172A",
-        orange:      "#0F172A",
-        "orange-700":"#1E293B",
-        ink:         "#0F172A",
-        smoke:       "#475569",
-        navy:        "#0F172A",
-        "navy-700":  "#1E293B",
-        warm:        "#F8FAFC",
-        canvas:      "#F1F5F9",
-        mint:        "#059669",
-        "mint-soft": "rgba(5,150,105,0.08)",
-        "mint-100":  "rgba(5,150,105,0.08)",
+        navy: "#0F172A",        // Midnight Slate — authority anchor
+        "navy-700": "#1E293B",  // Rich Gunmetal — slightly lighter for cards
+        orange: "#F97316",      // Signal Orange — conversion driver
+        "orange-700": "#ea6c0a",
+        mint: "#10B981",        // Dashboard Green — ROI indicator
+        "mint-soft": "#ECFDF5", // Light green tint for badges/bg
+        warm: "#F8FAFC",        // Crisp Ghost White — digital canvas
+        canvas: "#F1F5F9",      // Slate-100 — alternate section bg
+        ink: "#1E293B",         // Rich Gunmetal — body text
+        muted: "#64748B",       // Slate-500 — secondary text
       },
       fontFamily: {
-        sans:    ["var(--font-inter)", "system-ui", "sans-serif"],
-        display: ["var(--font-inter)", "system-ui", "sans-serif"],
-        mono:    ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "monospace"],
+        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+        display: ["var(--font-jakarta)", "sans-serif"],
+        mono: ["var(--font-dm-mono)", "monospace"],
       },
       maxWidth: {
-        site: "1100px",
+        site: "1200px",
       },
       borderRadius: {
-        card: "12px",
+        card: "18px",
       },
       boxShadow: {
-        card:    "0 1px 2px rgba(15,23,42,.04), 0 4px 16px rgba(15,23,42,.05)",
-        "card-lg": "0 2px 8px rgba(15,23,42,.06), 0 12px 32px rgba(15,23,42,.08)",
-        ember:   "none",
+        card: "0 1px 2px rgba(15,23,42,.04),0 8px 24px rgba(15,23,42,.07)",
+        "card-lg": "0 12px 40px rgba(15,23,42,.14)",
       },
     },
   },

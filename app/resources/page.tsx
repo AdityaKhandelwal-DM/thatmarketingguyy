@@ -3,90 +3,83 @@ import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
 
 const guides = [
-  { icon: "📊", title: 'Stop Wasting Ad Budget — Checklist'    },
-  { icon: "📍", title: "Google Map Pack Ranking Guide"         },
-  { icon: "📱", title: "Meta Ads Setup for Beginners"          },
-  { icon: "🏥", title: "Clinic Lead-Gen Starter Pack"          },
-  { icon: "🍽️", title: "Restaurant Local-Ads Playbook"         },
-  { icon: "📦", title: "D2C Scaling Cheat-Sheet"              },
-  { icon: "🎯", title: "FunZone Weekend-Fill Template"         },
-];
-
-const steps = [
-  { n: "01", text: "Follow @thatmarketingguy on Instagram" },
-  { n: "02", text: "DM the keyword for the guide you want"  },
-  { n: "03", text: "Get the PDF + a short follow-up tip"    },
+  'The "Stop Wasting Ad Budget" checklist',
+  "Google Map Pack ranking guide",
+  "Meta Ads setup for beginners",
+  "Clinic lead-gen starter pack",
+  "Restaurant local-ads playbook",
+  "D2C scaling cheat-sheet",
+  "FunZone weekend-fill template",
 ];
 
 export default function ResourcesPage() {
   return (
     <>
       <Header />
-
-      {/* Hero */}
-      <section className="py-14 md:py-20 border-b border-border">
+      <section className="bg-navy text-white py-10 md:py-16 lg:py-20">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <p className="eyebrow mb-5">Free PDFs</p>
-          <h1 className="font-sans font-extrabold text-text text-[clamp(28px,4.5vw,50px)] leading-tight tracking-tight max-w-[600px]">
-            7 guides to stop wasting your ad budget.
+          <div className="font-mono text-[11px] tracking-[.06em] text-white/50 mb-3">
+            <a href="/" className="hover:text-white transition-colors">Home</a> / Free PDFs
+          </div>
+          <span className="eyebrow block mb-3" style={{ color: "#F97316" }}>Start free</span>
+          <h1 className="text-[clamp(26px,4.2vw,52px)] font-extrabold text-white max-w-[760px] leading-tight">
+            7 free guides to stop wasting your ad budget.
           </h1>
-          <p className="text-[16px] text-secondary mt-4 max-w-[460px] leading-relaxed">
-            No signup forms. DM a keyword on Instagram and they land in your inbox instantly.
+          <p className="text-base md:text-lg text-white/70 mt-3 max-w-[620px]">
+            No fluff, no email gymnastics. DM a keyword on Instagram and they land in your inbox.
           </p>
         </div>
       </section>
 
-      {/* Content */}
-      <section className="py-12 md:py-16">
+      <section className="py-12 md:py-16 lg:py-20">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-
-            {/* Guides */}
-            <div className="bg-surface border border-border rounded-xl p-6 md:p-7">
-              <h3 className="font-sans font-bold text-text text-[18px] mb-1">7 free guides</h3>
-              <p className="text-[13px] text-secondary mb-5">Delivered to your Instagram DM.</p>
-              <div className="flex flex-col divide-y divide-border mb-5">
+            {/* Free panel */}
+            <div className="bg-mint-soft rounded-[22px] p-6 md:p-8">
+              <h3 className="text-2xl font-extrabold text-navy mb-1.5">7 free guides</h3>
+              <p className="text-sm text-muted mb-5">Delivered instantly to your Instagram DM.</p>
+              <div className="flex flex-col gap-3 mb-5">
                 {guides.map((g) => (
-                  <div key={g.title} className="flex items-center gap-3 py-3">
-                    <span className="text-base flex-none">{g.icon}</span>
-                    <span className="text-[13px] text-secondary">{g.title}</span>
+                  <div key={g} className="flex items-center gap-3 text-[14px] text-ink">
+                    <span className="w-6 h-6 rounded-lg bg-white border border-ink/10 flex items-center justify-center text-[12px] flex-none">📄</span>
+                    {g}
                   </div>
                 ))}
               </div>
-              <p className="text-[13px] text-secondary mb-4">
-                DM{" "}
-                <span className="font-mono bg-surface-alt text-text px-2 py-0.5 rounded border border-border text-[12px]">
-                  GUIDE
-                </span>{" "}
+              <p className="text-sm text-muted mb-4">
+                DM the keyword{" "}
+                <span className="font-mono bg-navy text-white px-2 py-0.5 rounded-md text-[12px]">GUIDE</span>{" "}
                 on Instagram to get all 7.
               </p>
-              <Button href="/contact" variant="sage" fullWidth>Request them now</Button>
+              <Button href="/contact" variant="mint" fullWidth className="sm:w-auto">Request them now</Button>
             </div>
 
             {/* How it works */}
-            <div className="bg-surface-alt border border-border rounded-xl p-6 md:p-7">
-              <h3 className="font-sans font-bold text-text text-[18px] mb-1">How it works</h3>
-              <p className="text-[13px] text-secondary mb-5">Three steps, zero cost.</p>
-              <div className="flex flex-col divide-y divide-border mb-7">
-                {steps.map((s) => (
-                  <div key={s.n} className="flex items-center gap-4 py-4">
-                    <span className="text-[11px] text-muted flex-none">{s.n}</span>
-                    <span className="text-[14px] text-secondary">{s.text}</span>
+            <div className="bg-white rounded-[22px] p-6 md:p-8 border border-ink/10">
+              <h3 className="text-2xl font-extrabold text-navy mb-1.5">How it works</h3>
+              <p className="text-sm text-muted mb-5">Three steps, zero cost.</p>
+              <div className="flex flex-col gap-3 mb-5">
+                {[
+                  { n: "1", text: "Follow @thatmarketingguy" },
+                  { n: "2", text: "DM the keyword for the guide you want" },
+                  { n: "3", text: "Get the PDF + a short follow-up tip" },
+                ].map((s) => (
+                  <div key={s.n} className="flex items-center gap-3 text-[14px] text-ink">
+                    <span className="w-6 h-6 rounded-lg bg-warm border border-ink/10 flex items-center justify-center text-[13px] font-bold flex-none">{s.n}</span>
+                    {s.text}
                   </div>
                 ))}
               </div>
-              <div className="border-t border-border pt-5">
-                <p className="text-[13px] text-secondary mb-4 leading-relaxed">
-                  Want more depth? Paid blueprints go step-by-step for ₹99 each.
+              <div className="border-t border-ink/10 pt-5">
+                <p className="text-sm text-muted mb-4">
+                  Want everything in one place? The paid blueprints go deeper, step-by-step, for ₹99 each.
                 </p>
                 <Button href="/learn" variant="ghost">See the blueprints →</Button>
               </div>
             </div>
-
           </div>
         </div>
       </section>
-
       <Footer />
     </>
   );

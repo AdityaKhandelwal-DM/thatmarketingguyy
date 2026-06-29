@@ -1,71 +1,76 @@
 import Link from "next/link";
 
-const links = {
-  Learn: [
-    { label: "Free PDFs",   href: "/resources" },
-    { label: "Blueprints",  href: "/learn"      },
-    { label: "Masterclass", href: "/learn"      },
-    { label: "Workshops",   href: "/learn"      },
-  ],
-  Work: [
-    { label: "Results",  href: "/results"  },
-    { label: "About",    href: "/about"    },
-    { label: "Careers",  href: "/careers"  },
-    { label: "Contact",  href: "/contact"  },
-  ],
-  Read: [
-    { label: "Blog",       href: "/blog"    },
-    { label: "Instagram",  href: "#"        },
-    { label: "YouTube",    href: "#"        },
-  ],
-};
-
 export default function Footer() {
   return (
-    <footer className="bg-surface-alt border-t border-border mt-0">
-      <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr_1fr_1fr] gap-10 md:gap-8">
-
-          {/* Brand */}
-          <div>
-            <Link href="/" className="font-bold text-[15px] text-text hover:text-secondary transition-colors block mb-3">
-              thatmarketingguy
-            </Link>
-            <p className="text-[13px] text-secondary leading-relaxed max-w-[220px]">
-              Performance marketing for local businesses — no agency jargon.
-            </p>
-            <p className="text-[12px] text-muted mt-4">Jaipur, India</p>
+    <footer className="bg-ink text-white/70 pt-12 md:pt-14 pb-8">
+      <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
+        {/* Brand row on mobile — full width */}
+        <div className="mb-8">
+          <div className="font-display font-extrabold text-xl text-white mb-2">
+            thatmarketing<b className="text-orange">guy</b>
           </div>
-
-          {/* Link columns */}
-          {Object.entries(links).map(([group, items]) => (
-            <div key={group}>
-              <p className="text-[11px] font-semibold tracking-[.1em] uppercase text-muted mb-4">
-                {group}
-              </p>
-              <ul className="flex flex-col gap-2.5">
-                {items.map((item) => (
-                  <li key={item.label}>
-                    <Link
-                      href={item.href}
-                      className="text-[14px] text-secondary hover:text-text transition-colors"
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          <p className="text-sm max-w-[300px] mb-2">
+            Marketing, finally made clear. Performance marketing for SME owners — no agency required.
+          </p>
+          <p className="text-[13px] font-mono text-orange">Aditya Khandelwal</p>
         </div>
 
-        <div className="border-t border-border mt-10 pt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-          <p className="text-[12px] text-muted">
-            © {new Date().getFullYear()} thatmarketingguy. All rights reserved.
-          </p>
-          <p className="text-[12px] text-muted">
-            Built without agency jargon.
-          </p>
+        {/* Links grid — 3 cols on mobile, 3 cols on desktop */}
+        <div className="grid grid-cols-3 lg:grid-cols-3 gap-6 mb-8">
+          <div className="flex flex-col gap-2.5">
+            <h5 className="text-[11px] sm:text-[13px] text-white uppercase tracking-[.08em] font-mono font-medium mb-0.5">
+              Explore
+            </h5>
+            {[
+              { label: "Results",   href: "/results" },
+              { label: "Free PDFs", href: "/resources" },
+              { label: "Learn",     href: "/learn" },
+              { label: "Blog",      href: "/blog" },
+              { label: "Careers",   href: "/careers" },
+            ].map((l) => (
+              <Link key={l.href} href={l.href} className="text-[13px] sm:text-sm opacity-70 hover:opacity-100 hover:text-mint transition-opacity">
+                {l.label}
+              </Link>
+            ))}
+          </div>
+
+          <div className="flex flex-col gap-2.5">
+            <h5 className="text-[11px] sm:text-[13px] text-white uppercase tracking-[.08em] font-mono font-medium mb-0.5">
+              Products
+            </h5>
+            {[
+              { label: "₹99 Blueprints",    href: "/learn" },
+              { label: "₹999 Masterclass",  href: "/learn" },
+              { label: "Free guides",        href: "/resources" },
+              { label: "Workshops",          href: "/#workshops" },
+              { label: "About",             href: "/about" },
+            ].map((l) => (
+              <Link key={l.label} href={l.href} className="text-[13px] sm:text-sm opacity-70 hover:opacity-100 hover:text-mint transition-opacity">
+                {l.label}
+              </Link>
+            ))}
+          </div>
+
+          <div className="flex flex-col gap-2.5">
+            <h5 className="text-[11px] sm:text-[13px] text-white uppercase tracking-[.08em] font-mono font-medium mb-0.5">
+              Connect
+            </h5>
+            {[
+              { label: "Instagram", href: "#" },
+              { label: "YouTube",   href: "#" },
+              { label: "LinkedIn",  href: "#" },
+              { label: "Contact",   href: "/contact" },
+            ].map((l) => (
+              <Link key={l.label} href={l.href} className="text-[13px] sm:text-sm opacity-70 hover:opacity-100 hover:text-mint transition-opacity">
+                {l.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        <div className="border-t border-white/10 pt-5 flex flex-col sm:flex-row sm:justify-between gap-1.5 text-[12px] sm:text-[13px] text-white/50">
+          <span>© {new Date().getFullYear()} thatmarketingguy · Aditya Khandelwal · Jaipur</span>
+          <span className="font-mono">thatmarketingguy.in</span>
         </div>
       </div>
     </footer>
