@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-type Variant = "primary" | "ghost" | "mint" | "light";
+type Variant = "primary" | "secondary" | "light";
 
 interface ButtonProps {
   href?: string;
@@ -14,12 +14,10 @@ interface ButtonProps {
 }
 
 const variants: Record<Variant, string> = {
-  primary:
-    "bg-orange text-white shadow-[0_6px_18px_rgba(249,115,22,.30)] hover:bg-orange-700 hover:-translate-y-0.5",
-  ghost:
-    "bg-transparent text-navy border border-ink/20 hover:border-navy hover:bg-navy/[.03]",
-  mint: "bg-mint text-navy hover:-translate-y-0.5",
-  light: "bg-white text-navy hover:-translate-y-0.5 hover:shadow-card-lg",
+  primary: "bg-primary text-white hover:bg-primary-dark",
+  secondary:
+    "bg-transparent text-primary border-2 border-primary hover:bg-primary hover:text-white",
+  light: "bg-white text-text-primary hover:bg-bg-light",
 };
 
 export default function Button({
@@ -32,7 +30,7 @@ export default function Button({
   fullWidth,
 }: ButtonProps) {
   const base = cn(
-    "inline-flex items-center gap-2 font-display font-bold text-[15px] px-6 py-3.5 rounded-full border border-transparent cursor-pointer transition-all duration-150 whitespace-nowrap",
+    "inline-flex items-center gap-2 font-sans font-semibold text-[16px] px-[28px] py-[16px] rounded-btn border-2 border-transparent cursor-pointer transition-all duration-[250ms] whitespace-nowrap hover:-translate-y-0.5",
     variants[variant],
     fullWidth && "w-full justify-center",
     className

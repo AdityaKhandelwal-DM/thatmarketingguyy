@@ -21,16 +21,16 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-warm/90 backdrop-blur-[14px] border-b border-ink/10">
+    <header className="sticky top-0 z-50 bg-white border-b border-border">
       <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
         <nav className="flex items-center justify-between h-16 gap-4">
           {/* Brand */}
           <Link
             href="/"
-            className="flex items-center gap-2 font-display font-extrabold text-[17px] sm:text-[19px] text-navy flex-none"
+            className="flex items-center gap-2 font-sans font-bold text-[17px] sm:text-[19px] text-text-primary flex-none"
           >
-            <span className="w-[10px] h-[10px] rounded-full bg-orange shadow-[0_0_0_3px_rgba(249,115,22,.18)] flex-none" />
-            thatmarketing<b className="text-orange">guy</b>
+            <span className="w-[10px] h-[10px] rounded-full bg-primary flex-none" />
+            thatmarketing<b className="text-primary">guy</b>
           </Link>
 
           {/* Desktop links */}
@@ -40,9 +40,9 @@ export default function Header() {
                 key={l.href}
                 href={l.href}
                 className={cn(
-                  "text-[13.5px] font-medium text-navy transition-opacity",
+                  "text-[13.5px] font-medium text-text-primary transition-opacity duration-[250ms]",
                   pathname === l.href
-                    ? "opacity-100 text-orange font-semibold"
+                    ? "opacity-100 text-primary font-semibold"
                     : "opacity-75 hover:opacity-100"
                 )}
               >
@@ -55,7 +55,7 @@ export default function Header() {
           <div className="hidden lg:flex items-center flex-none">
             <Link
               href="/resources"
-              className="inline-flex items-center font-display font-bold text-[14px] px-5 py-3 rounded-full bg-orange text-white shadow-[0_4px_14px_rgba(249,115,22,.30)] hover:bg-orange-700 hover:-translate-y-0.5 transition-all"
+              className="inline-flex items-center font-sans font-semibold text-[14px] px-5 py-3 rounded-btn bg-primary text-white hover:bg-primary-dark hover:-translate-y-0.5 transition-all duration-[250ms]"
             >
               Get the free guides
             </Link>
@@ -67,26 +67,26 @@ export default function Header() {
             aria-label="Toggle menu"
             onClick={() => setOpen((o) => !o)}
           >
-            <span className={cn("w-5 h-[2px] bg-navy rounded block transition-all duration-300", open && "translate-y-[7px] rotate-45")} />
-            <span className={cn("w-5 h-[2px] bg-navy rounded block transition-all duration-300", open && "opacity-0")} />
-            <span className={cn("w-5 h-[2px] bg-navy rounded block transition-all duration-300", open && "-translate-y-[7px] -rotate-45")} />
+            <span className={cn("w-5 h-[2px] bg-text-primary rounded block transition-all duration-300", open && "translate-y-[7px] rotate-45")} />
+            <span className={cn("w-5 h-[2px] bg-text-primary rounded block transition-all duration-300", open && "opacity-0")} />
+            <span className={cn("w-5 h-[2px] bg-text-primary rounded block transition-all duration-300", open && "-translate-y-[7px] -rotate-45")} />
           </button>
         </nav>
       </div>
 
       {/* Mobile drawer */}
       {open && (
-        <div className="lg:hidden bg-warm border-t border-ink/10 px-4 py-3 flex flex-col gap-0.5">
+        <div className="lg:hidden bg-white border-t border-border px-4 py-3 flex flex-col gap-0.5">
           {navLinks.map((l) => (
             <Link
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
               className={cn(
-                "py-3 text-[15px] border-b border-ink/[.07] last:border-none",
+                "py-3 text-[15px] border-b border-border last:border-none",
                 pathname === l.href
-                  ? "text-orange font-semibold"
-                  : "text-navy"
+                  ? "text-primary font-semibold"
+                  : "text-text-primary"
               )}
             >
               {l.label}
@@ -95,7 +95,7 @@ export default function Header() {
           <Link
             href="/resources"
             onClick={() => setOpen(false)}
-            className="mt-3 flex justify-center items-center font-display font-bold text-[15px] px-6 py-3.5 rounded-full bg-orange text-white shadow-[0_4px_14px_rgba(249,115,22,.30)]"
+            className="mt-3 flex justify-center items-center font-sans font-semibold text-[15px] px-6 py-3.5 rounded-btn bg-primary text-white"
           >
             Get the free guides
           </Link>

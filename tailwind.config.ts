@@ -9,31 +9,37 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        navy: "#0F172A",        // Midnight Slate — authority anchor
-        "navy-700": "#1E293B",  // Rich Gunmetal — slightly lighter for cards
-        orange: "#F97316",      // Signal Orange — conversion driver
-        "orange-700": "#ea6c0a",
-        mint: "#10B981",        // Dashboard Green — ROI indicator
-        "mint-soft": "#ECFDF5", // Light green tint for badges/bg
-        warm: "#F8FAFC",        // Crisp Ghost White — digital canvas
-        canvas: "#F1F5F9",      // Slate-100 — alternate section bg
-        ink: "#1E293B",         // Rich Gunmetal — body text
-        muted: "#64748B",       // Slate-500 — secondary text
+        primary: "#036D9A",         // Bice Blue — CTAs, links, icons, active states
+        "primary-dark": "#02587A",  // hover state for primary
+        secondary: "#FDEA6F",       // Maize — badges, stat highlights
+        accent: "#CF0000",          // errors / urgency only
+        "bg-light": "#F8FAFC",
+        "text-primary": "#0F172A",
+        "text-secondary": "#475569",
+        "text-muted": "#94A3B8",
+        border: "#E5E7EB",
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
-        display: ["var(--font-jakarta)", "sans-serif"],
-        mono: ["var(--font-dm-mono)", "monospace"],
+        sans: ["var(--font-montserrat)", "Helvetica", "Arial", "sans-serif"],
+      },
+      fontSize: {
+        h1: ["56px", { lineHeight: "1.1", fontWeight: "700" }],
+        h2: ["42px", { lineHeight: "1.15", fontWeight: "700" }],
+        h3: ["32px", { lineHeight: "1.2", fontWeight: "600" }],
+        h4: ["24px", { lineHeight: "1.25", fontWeight: "600" }],
       },
       maxWidth: {
         site: "1200px",
       },
       borderRadius: {
         card: "18px",
+        btn: "10px",
       },
       boxShadow: {
-        card: "0 1px 2px rgba(15,23,42,.04),0 8px 24px rgba(15,23,42,.07)",
-        "card-lg": "0 12px 40px rgba(15,23,42,.14)",
+        card: "0 10px 40px rgba(0,0,0,.08)",
+      },
+      transitionDuration: {
+        DEFAULT: "250ms",
       },
     },
   },
