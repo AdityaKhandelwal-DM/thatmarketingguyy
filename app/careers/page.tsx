@@ -58,7 +58,7 @@ export default function CareersPage() {
 
       {/* ══ HERO ══════════════════════════════════════════════════════════════ */}
       <section className="bg-bg-light py-14 md:py-20 lg:py-28">
-        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 animate-fadeInUp">
           <div className="text-[11px] tracking-[.06em] text-text-muted mb-4">
             <a href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</a> / Careers
           </div>
@@ -78,7 +78,7 @@ export default function CareersPage() {
       {/* ══ PERKS / CULTURE ═══════════════════════════════════════════════════ */}
       <section className="py-14 md:py-20 lg:py-24">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="max-w-[640px] mb-10 md:mb-14">
+          <div className="max-w-[640px] mb-10 md:mb-14 reveal">
             <span className="eyebrow block mb-4">How we work</span>
             <h2 className="text-[clamp(22px,3.3vw,42px)] font-bold text-text-primary">
               No politics. No jargon. Just work.
@@ -87,11 +87,11 @@ export default function CareersPage() {
               We move fast, communicate clearly, and care about the output — not the hours.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 reveal-stagger">
             {perks.map((p) => (
               <Card
                 key={p.title}
-                className="p-6 hover:-translate-y-1 transition-transform duration-[250ms]"
+                className="p-6 hover:-translate-y-1 transition-transform duration-[250ms] reveal"
               >
                 <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                   <p.icon className="w-5 h-5 text-primary" strokeWidth={2} />
@@ -107,7 +107,7 @@ export default function CareersPage() {
       {/* ══ OPEN ROLES ════════════════════════════════════════════════════════ */}
       <section className="py-14 md:py-20 lg:py-24 bg-bg-light">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="max-w-[680px] mb-10 md:mb-14">
+          <div className="max-w-[680px] mb-10 md:mb-14 reveal">
             <span className="eyebrow block mb-4">Open roles</span>
             <h2 className="text-[clamp(22px,3.3vw,42px)] font-bold text-text-primary">
               What we&apos;re looking for
@@ -117,11 +117,11 @@ export default function CareersPage() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 reveal-stagger">
             {roles.map((r) => (
               <Card
                 key={r.title}
-                className="p-7 md:p-8 hover:-translate-y-0.5 transition-transform duration-[250ms]"
+                className="p-7 md:p-8 hover:-translate-y-0.5 transition-transform duration-[250ms] reveal"
               >
                 <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-5">
                   <div>
@@ -160,7 +160,7 @@ export default function CareersPage() {
 
       {/* ══ CLOSING CTA — the one dark band on this page ════════════════════ */}
       <section className="py-14 md:py-20 lg:py-24 bg-text-primary">
-        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 text-center">
+        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 text-center reveal">
           <span className="eyebrow justify-center mb-5 block" style={{ color: "#FDEA6F" }}>
             Not sure which role fits?
           </span>

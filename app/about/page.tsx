@@ -43,7 +43,7 @@ export default function AboutPage() {
 
       {/* ══ HERO ══════════════════════════════════════════════════════════════ */}
       <section className="bg-bg-light py-14 md:py-20 lg:py-24">
-        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 animate-fadeInUp">
           <div className="text-[11px] tracking-[.06em] text-text-muted mb-4">
             <a href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</a> / About
           </div>
@@ -67,7 +67,7 @@ export default function AboutPage() {
             {/* Left — copy */}
             <div>
               {/* 1-line founder moment */}
-              <div className="bg-primary/[.06] border-l-4 border-primary rounded-r-2xl px-6 py-5 mb-10">
+              <div className="bg-primary/[.06] border-l-4 border-primary rounded-r-2xl px-6 py-5 mb-10 reveal">
                 <span className="text-[10px] tracking-[.1em] uppercase text-primary mb-2 block font-semibold">
                   The 1-line story
                 </span>
@@ -81,9 +81,9 @@ export default function AboutPage() {
                 Here&apos;s exactly how I can help:
               </h2>
 
-              <div className="flex flex-col gap-6">
+              <div className="flex flex-col gap-6 reveal-stagger">
                 {helpPillars.map((p) => (
-                  <div key={p.title} className="flex items-start gap-4">
+                  <div key={p.title} className="flex items-start gap-4 reveal">
                     <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center flex-none mt-0.5">
                       <p.icon className="w-5 h-5 text-primary" strokeWidth={2} />
                     </div>
@@ -102,7 +102,7 @@ export default function AboutPage() {
             </div>
 
             {/* Right — photo placeholder */}
-            <div className="max-w-[360px] sm:max-w-[420px] mx-auto md:max-w-none">
+            <div className="max-w-[360px] sm:max-w-[420px] mx-auto md:max-w-none reveal">
               <div className="aspect-[4/5] rounded-[22px] bg-bg-light flex items-center justify-center text-text-muted text-[12px] flex-col gap-2 shadow-card border border-border">
                 <ImageIcon className="w-9 h-9 text-text-muted" strokeWidth={1.5} />
                 <span>Working photo coming soon</span>
@@ -117,7 +117,7 @@ export default function AboutPage() {
       {/* ══ BEST PERFORMING REELS ═════════════════════════════════════════════ */}
       <section className="py-14 md:py-20 lg:py-24 bg-bg-light">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="max-w-[680px] mb-10 md:mb-14">
+          <div className="max-w-[680px] mb-10 md:mb-14 reveal">
             <span className="eyebrow block mb-4">Best performing reels</span>
             <h2 className="text-[clamp(22px,3.3vw,42px)] font-bold text-text-primary">
               Marketing, broken down in minutes.
@@ -126,9 +126,9 @@ export default function AboutPage() {
               Real campaigns. Real numbers. Explained on screen — no theory slides.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal-stagger">
             {reels.map((v) => (
-              <div key={v.title} className="flex flex-col gap-3.5">
+              <div key={v.title} className="flex flex-col gap-3.5 reveal">
                 <div className="relative w-full pt-[56.25%] rounded-2xl overflow-hidden bg-white border border-border shadow-card flex items-center justify-center">
                   <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 text-text-muted">
                     <PlayCircle className="w-9 h-9" strokeWidth={1.5} />
@@ -145,7 +145,7 @@ export default function AboutPage() {
       {/* ══ INSTAGRAM FEED ════════════════════════════════════════════════════ */}
       <section className="py-14 md:py-20 lg:py-24">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 md:mb-14">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 md:mb-14 reveal">
             <div className="max-w-[600px]">
               <span className="eyebrow block mb-4">From the feed</span>
               <h2 className="text-[clamp(22px,3.3vw,42px)] font-bold text-text-primary">
@@ -159,11 +159,11 @@ export default function AboutPage() {
               <Button href="#" variant="secondary">Follow on Instagram →</Button>
             </div>
           </div>
-          <div className="grid grid-cols-3 sm:grid-cols-6 gap-3">
+          <div className="grid grid-cols-3 sm:grid-cols-6 gap-3 reveal-stagger">
             {[1, 2, 3, 4, 5, 6].map((i) => (
               <div
                 key={i}
-                className="aspect-square rounded-2xl bg-bg-light border border-border flex items-center justify-center text-text-muted flex-col gap-1 hover:border-primary/30 hover:shadow-card transition-all duration-[250ms] cursor-pointer"
+                className="aspect-square rounded-2xl bg-bg-light border border-border flex items-center justify-center text-text-muted flex-col gap-1 hover:border-primary/30 hover:shadow-card transition-all duration-[250ms] cursor-pointer reveal"
               >
                 <ImageIcon className="w-6 h-6" strokeWidth={1.5} />
                 <span className="text-[9px]">600×600</span>

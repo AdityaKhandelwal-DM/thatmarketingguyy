@@ -9,7 +9,7 @@ export default function BlogPage() {
 
       {/* ══ HERO ══════════════════════════════════════════════════════════════ */}
       <section className="bg-bg-light py-14 md:py-20 lg:py-24">
-        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 animate-fadeInUp">
           <div className="text-[11px] tracking-[.06em] text-text-muted mb-4">
             <a href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</a> / Blog
           </div>
@@ -26,7 +26,7 @@ export default function BlogPage() {
       {/* ══ EMPTY STATE ═══════════════════════════════════════════════════════ */}
       <section className="py-20 md:py-28 lg:py-32">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="max-w-[440px] mx-auto text-center flex flex-col items-center">
+          <div className="max-w-[440px] mx-auto text-center flex flex-col items-center reveal">
             <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-5">
               <Newspaper className="w-7 h-7 text-primary" strokeWidth={2} />
             </div>

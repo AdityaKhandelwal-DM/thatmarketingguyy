@@ -2,6 +2,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
+import CountUp from "@/components/ui/CountUp";
 import Link from "next/link";
 import {
   HeartPulse,
@@ -241,7 +242,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-[1.1fr_0.9fr] gap-12 md:gap-16 items-center">
 
             {/* Left — copy */}
-            <div>
+            <div className="animate-fadeInUp">
               <span className="eyebrow mb-5 block">Performance marketing · without the mystery</span>
 
               <h1 className="text-[clamp(32px,4.8vw,56px)] font-bold text-text-primary leading-[1.08]">
@@ -270,7 +271,7 @@ export default function Home() {
                   { n: "₹0",  l: "to start learning" },
                 ].map((t) => (
                   <div key={t.l} className="flex flex-col">
-                    <span className="tabular-nums text-[22px] md:text-[28px] font-bold text-text-primary">{t.n}</span>
+                    <CountUp value={t.n} className="tabular-nums text-[22px] md:text-[28px] font-bold text-text-primary" />
                     <span className="text-[11px] sm:text-[12.5px] text-text-secondary mt-0.5">{t.l}</span>
                   </div>
                 ))}
@@ -278,7 +279,7 @@ export default function Home() {
             </div>
 
             {/* Right — dashboard illustration */}
-            <div className="order-first md:order-last">
+            <div className="order-first md:order-last animate-fadeInUp">
               <div className="relative max-w-[440px] mx-auto md:ml-auto">
                 <DashboardIllustration />
                 {/* Floating ROAS badge */}
@@ -301,7 +302,7 @@ export default function Home() {
       {/* ══ QUOTE BAND ════════════════════════════════════════════════════════ */}
       <section className="bg-bg-light py-16 md:py-20">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="relative max-w-3xl mx-auto text-center">
+          <div className="relative max-w-3xl mx-auto text-center reveal">
             <span className="absolute -top-6 -left-2 md:-left-10 text-[90px] md:text-[120px] text-primary/15 font-bold leading-none select-none pointer-events-none">
               &ldquo;
             </span>
@@ -326,9 +327,10 @@ export default function Home() {
               { n: "5.8×",  l: "Average ROAS delivered" },
             ].map((c, i) => (
               <div key={i} className={`px-2 relative ${i > 0 ? "border-l border-border" : ""}`}>
-                <div className="tabular-nums text-xl sm:text-2xl md:text-[clamp(26px,3.2vw,40px)] font-bold text-text-primary">
-                  {c.n}
-                </div>
+                <CountUp
+                  value={c.n}
+                  className="block tabular-nums text-xl sm:text-2xl md:text-[clamp(26px,3.2vw,40px)] font-bold text-text-primary"
+                />
                 <div className="text-[11px] sm:text-[13px] text-text-secondary mt-1">{c.l}</div>
               </div>
             ))}
@@ -339,7 +341,7 @@ export default function Home() {
       {/* ══ STORY STATS ═══════════════════════════════════════════════════════ */}
       <section className="py-16 md:py-20 lg:py-24">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="max-w-[640px] mb-10 md:mb-14">
+          <div className="max-w-[640px] mb-10 md:mb-14 reveal">
             <span className="eyebrow block mb-4">A small backstory</span>
             <h2 className="text-[clamp(24px,3.4vw,42px)] font-bold text-text-primary">
               This is what 5+ years of showing up every day looks like.
@@ -348,14 +350,14 @@ export default function Home() {
               Not a big agency. Just one person, one laptop, and a lot of chai. Here&apos;s the tally.
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 reveal-stagger">
             {storyStats.map((s) => (
               <Card
                 key={s.l}
-                className="p-6 flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-[250ms]"
+                className="p-6 flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-[250ms] reveal"
               >
                 <s.icon className="w-8 h-8 text-primary mb-3" strokeWidth={2} />
-                <span className="tabular-nums text-[clamp(24px,3vw,36px)] font-bold text-text-primary">{s.n}</span>
+                <CountUp value={s.n} className="tabular-nums text-[clamp(24px,3vw,36px)] font-bold text-text-primary" />
                 <span className="text-[13px] text-text-secondary mt-1 leading-snug">{s.l}</span>
               </Card>
             ))}
@@ -366,7 +368,7 @@ export default function Home() {
       {/* ══ WHO THIS IS FOR ═══════════════════════════════════════════════════ */}
       <section className="py-16 md:py-20 lg:py-24 bg-bg-light">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="max-w-[680px] mb-10 md:mb-14">
+          <div className="max-w-[680px] mb-10 md:mb-14 reveal">
             <span className="eyebrow block mb-4">Is this for you?</span>
             <h2 className="text-[clamp(24px,3.4vw,42px)] font-bold text-text-primary">
               I speak walk-ins, orders, and ROAS — not &ldquo;impressions.&rdquo;
@@ -375,11 +377,11 @@ export default function Home() {
               If you&apos;ve been burned by an agency or just want to understand what your money is doing — this is for you.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 reveal-stagger">
             {niches.map((n) => (
               <Card
                 key={n.title}
-                className="p-6 md:p-7 hover:-translate-y-1 hover:border-primary/25 transition-all duration-[250ms] group"
+                className="p-6 md:p-7 hover:-translate-y-1 hover:border-primary/25 transition-all duration-[250ms] group reveal"
               >
                 <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/15 transition-colors duration-[250ms]">
                   <n.icon className="w-6 h-6 text-primary" strokeWidth={2} />
@@ -395,7 +397,7 @@ export default function Home() {
       {/* ══ CASE STUDIES — leaderboard rows, deliberately not a card grid ═══════ */}
       <section className="py-16 md:py-20 lg:py-24">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="max-w-[680px] mb-10 md:mb-14">
+          <div className="max-w-[680px] mb-10 md:mb-14 reveal">
             <span className="eyebrow block mb-4">The receipts</span>
             <h2 className="text-[clamp(24px,3.4vw,42px)] font-bold text-text-primary">
               Real campaigns. Real numbers. No retouching.
@@ -404,9 +406,9 @@ export default function Home() {
               A few below — the full portfolio lives on the Results page.
             </p>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 reveal-stagger">
             {cases.map((c) => (
-              <Card key={c.name} className="p-0 overflow-hidden">
+              <Card key={c.name} className="p-0 overflow-hidden reveal">
                 <div className="flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-8 p-6 md:p-7">
                   <div className="lg:w-[280px] flex-none">
                     <div className="flex items-center gap-2 mb-2">
@@ -439,7 +441,7 @@ export default function Home() {
 
       {/* ══ TESTIMONIALS — manual horizontal scroll, no auto-marquee ═══════════ */}
       <section className="py-16 md:py-20 bg-bg-light">
-        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 mb-8 md:mb-10">
+        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 mb-8 md:mb-10 reveal">
           <span className="eyebrow block mb-4">What clients say</span>
           <h2 className="text-[clamp(24px,3.4vw,42px)] font-bold text-text-primary">
             The proof isn&apos;t my words. It&apos;s theirs.
@@ -476,7 +478,7 @@ export default function Home() {
       {/* ══ WORKSHOPS & WEBINARS ══════════════════════════════════════════════ */}
       <section className="py-16 md:py-20 lg:py-24">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="max-w-[680px] mb-10 md:mb-14">
+          <div className="max-w-[680px] mb-10 md:mb-14 reveal">
             <span className="eyebrow block mb-4">What&apos;s coming up</span>
             <h2 className="text-[clamp(24px,3.4vw,42px)] font-bold text-text-primary">
               Live workshops &amp; webinars.
@@ -485,9 +487,9 @@ export default function Home() {
               Where theory stops and real strategy begins. Show up, ask questions, leave with a plan.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 reveal-stagger">
             {workshops.map((w) => (
-              <Card key={w.title} className="p-7 md:p-8 hover:-translate-y-1 transition-transform duration-[250ms] flex flex-col gap-4">
+              <Card key={w.title} className="p-7 md:p-8 hover:-translate-y-1 transition-transform duration-[250ms] flex flex-col gap-4 reveal">
                 <div className="flex items-start justify-between gap-3">
                   <span
                     className={`text-[10px] tracking-[.08em] uppercase px-2.5 py-1.5 rounded-md font-semibold ${
@@ -517,7 +519,7 @@ export default function Home() {
       {/* ══ FREE RESOURCES ════════════════════════════════════════════════════ */}
       <section className="py-16 md:py-20 lg:py-24 bg-bg-light">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 md:mb-14">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 md:mb-14 reveal">
             <div className="max-w-[600px]">
               <span className="eyebrow block mb-4">Free value, no strings</span>
               <h2 className="text-[clamp(24px,3.4vw,42px)] font-bold text-text-primary">
@@ -559,7 +561,7 @@ export default function Home() {
 
       {/* ══ CTA — the one dark band on this page ════════════════════════════ */}
       <section className="py-16 md:py-24 lg:py-28 bg-text-primary">
-        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 text-center">
+        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 text-center reveal">
           <span className="eyebrow justify-center mb-5 block" style={{ color: "#FDEA6F" }}>
             Ready when you are
           </span>

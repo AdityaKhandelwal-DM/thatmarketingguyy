@@ -39,7 +39,7 @@ export default function ResourcesPage() {
 
       {/* ══ HERO ══════════════════════════════════════════════════════════════ */}
       <section className="bg-bg-light py-14 md:py-20 lg:py-24">
-        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 animate-fadeInUp">
           <div className="text-[11px] tracking-[.06em] text-text-muted mb-4">
             <a href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</a> / Free PDFs
           </div>
@@ -56,10 +56,10 @@ export default function ResourcesPage() {
       {/* ══ GUIDES + HOW IT WORKS ═════════════════════════════════════════════ */}
       <section className="py-14 md:py-20 lg:py-24">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 reveal-stagger">
 
             {/* Free panel */}
-            <div className="bg-secondary/15 border border-border rounded-card p-6 md:p-8">
+            <div className="bg-secondary/15 border border-border rounded-card p-6 md:p-8 reveal">
               <h3 className="text-[22px] md:text-[26px] font-bold text-text-primary mb-1.5">7 free guides</h3>
               <p className="text-[14px] text-text-secondary mb-5">Delivered instantly to your Instagram DM.</p>
               <div className="flex flex-col gap-3 mb-5">
@@ -81,7 +81,7 @@ export default function ResourcesPage() {
             </div>
 
             {/* How it works */}
-            <div className="bg-white border border-border rounded-card p-6 md:p-8">
+            <div className="bg-white border border-border rounded-card p-6 md:p-8 reveal">
               <h3 className="text-[22px] md:text-[26px] font-bold text-text-primary mb-1.5">How it works</h3>
               <p className="text-[14px] text-text-secondary mb-5">Three steps, zero cost.</p>
               <div className="flex flex-col gap-3 mb-5">

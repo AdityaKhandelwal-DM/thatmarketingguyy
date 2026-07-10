@@ -37,7 +37,7 @@ export default function LearnPage() {
 
       {/* ══ HERO ══════════════════════════════════════════════════════════════ */}
       <section className="bg-bg-light py-14 md:py-20 lg:py-24">
-        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 animate-fadeInUp">
           <div className="text-[11px] tracking-[.06em] text-text-muted mb-4">
             <a href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</a> / Learn
           </div>
@@ -54,18 +54,18 @@ export default function LearnPage() {
       {/* ══ ₹99 INDUSTRY BLUEPRINTS ═══════════════════════════════════════════ */}
       <section className="py-14 md:py-20 lg:py-24">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="max-w-[680px] mb-10 md:mb-14">
+          <div className="max-w-[680px] mb-10 md:mb-14 reveal">
             <span className="eyebrow block mb-4">One-time, no subscriptions</span>
             <h2 className="text-[clamp(24px,3.4vw,42px)] font-bold text-text-primary">₹99 industry blueprints</h2>
             <p className="text-[15px] md:text-[17px] text-text-secondary mt-3">
               Step-by-step, copy-paste campaigns built for one specific business type. Pick yours.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 reveal-stagger">
             {blueprints.map((b) => (
               <Card
                 key={b.title}
-                className="p-6 hover:-translate-y-1 hover:border-primary/25 transition-all duration-[250ms] group"
+                className="p-6 hover:-translate-y-1 hover:border-primary/25 transition-all duration-[250ms] group reveal"
               >
                 <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/15 transition-colors duration-[250ms]">
                   <b.icon className="w-6 h-6 text-primary" strokeWidth={2} />
@@ -86,8 +86,8 @@ export default function LearnPage() {
       {/* ══ THE MASTERCLASS ═══════════════════════════════════════════════════ */}
       <section className="py-14 md:py-20 lg:py-24 bg-bg-light">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div className="bg-text-primary rounded-[22px] p-6 md:p-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 reveal-stagger">
+            <div className="bg-text-primary rounded-[22px] p-6 md:p-8 reveal">
               <span className="eyebrow block mb-3" style={{ color: "#FDEA6F" }}>The masterclass</span>
               <h3 className="text-2xl md:text-[28px] font-bold text-white leading-snug">Zero to Revenue: Scale Without Agency</h3>
               <p className="text-[14px] text-white/70 mt-2 mb-5">6 prerecorded modules. Watch at your pace. No upsell, ever.</p>
@@ -98,7 +98,7 @@ export default function LearnPage() {
               <Button href="/contact" fullWidth className="sm:w-auto">Join the masterclass</Button>
             </div>
 
-            <Card className="p-6 md:p-8">
+            <Card className="p-6 md:p-8 reveal">
               <h3 className="text-xl font-bold text-text-primary mb-5">What&apos;s inside</h3>
               <div className="flex flex-col gap-3">
                 {modules.map((m, i) => (

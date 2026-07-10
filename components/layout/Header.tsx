@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
@@ -19,9 +19,22 @@ const navLinks = [
 export default function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-border">
+    <header
+      className={cn(
+        "sticky top-0 z-50 bg-white border-b border-border transition-shadow duration-[250ms]",
+        scrolled && "shadow-[0_2px_16px_rgba(15,23,42,.06)]"
+      )}
+    >
       <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
         <nav className="flex items-center justify-between h-16 gap-4">
           {/* Brand */}

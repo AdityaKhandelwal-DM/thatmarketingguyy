@@ -24,7 +24,7 @@ export default function ContactPage() {
 
       {/* ══ HERO ══════════════════════════════════════════════════════════════ */}
       <section className="bg-bg-light py-14 md:py-20 lg:py-24">
-        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 animate-fadeInUp">
           <div className="text-[11px] tracking-[.06em] text-text-muted mb-4">
             <a href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</a> / Contact
           </div>
@@ -42,8 +42,10 @@ export default function ContactPage() {
       <section className="py-14 md:py-20 lg:py-24">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
           <div className="grid grid-cols-1 md:grid-cols-[.85fr_1.15fr] gap-6 md:gap-10">
-            {/* Intent selector */}
-            <div className="flex flex-col gap-3">
+            {/* Intent selector — `reveal` stays on this container only: the buttons'
+                className changes on selection, which would wipe the `.in` class and
+                leave them stuck invisible. */}
+            <div className="flex flex-col gap-3 reveal">
               {intents.map((b) => (
                 <button
                   key={b.key}
@@ -65,7 +67,7 @@ export default function ContactPage() {
             </div>
 
             {/* Form */}
-            <Card className="p-5 md:p-8">
+            <Card className="p-5 md:p-8 reveal">
               <div className="mb-4">
                 <label className="block text-[13px] font-semibold text-text-primary mb-1.5">Your name</label>
                 <input
