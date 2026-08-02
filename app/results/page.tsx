@@ -8,7 +8,9 @@ import Media from "@/components/ui/Media";
 import CountUp from "@/components/ui/CountUp";
 
 /* ─────────────────────────────────────────────────────────────────────────────
-   Figures come from live Meta Ads reporting, date_preset=maximum.
+   Figures come from two sources:
+     - Meta Ads API, date_preset=maximum, pulled at ad_account level
+     - Google Ads "All time" campaign report export (manager account total)
 
    - The portfolio strip is ACCOUNT-level lifetime totals across all 58
      queryable ad accounts. It excludes 7 accounts that cannot currently be
@@ -32,13 +34,61 @@ const filters = [
 ];
 
 const portfolio = [
-  { k: "Ad spend managed", v: "₹43L" },
-  { k: "Form leads delivered", v: "12,550" },
-  { k: "Impressions delivered", v: "14.8 Cr" },
-  { k: "Ad accounts", v: "62" },
+  { k: "Ad spend managed", v: "₹56.5L" },
+  { k: "Leads & conversions", v: "49,752" },
+  { k: "Impressions delivered", v: "15.3 Cr" },
+  { k: "Ad accounts", v: "75" },
 ];
 
 const cases = [
+  {
+    cat: "Restaurant & Lounge", name: "Restaurant — Google Business Profile", platform: "Google",
+    img: "ind_thali", alt: "Indian thali plated for service",
+    struggle: "Showing up on Maps but the phone still wasn't ringing.",
+    action: "Google Business Profile search ads on general local keywords, run per outlet.",
+    metrics: [
+      { k: "Cost / action", v: "₹2.68", highlight: true },
+      { k: "Actions", v: "3,857", highlight: true },
+      { k: "CTR", v: "6.05%" },
+      { k: "Spend", v: "₹10K" },
+    ],
+  },
+  {
+    cat: "Clinic", name: "Physio Clinic — YouTube", platform: "Google",
+    img: "clinic_consult", alt: "Clinician consulting a patient",
+    struggle: "Video budget going out with nothing measurable coming back.",
+    action: "YouTube campaign optimised to conversions instead of views.",
+    metrics: [
+      { k: "ROAS", v: "18.6×", highlight: true },
+      { k: "Cost / conv", v: "₹4.47", highlight: true },
+      { k: "Conversions", v: "921" },
+      { k: "Spend", v: "₹4.1K" },
+    ],
+  },
+  {
+    cat: "Resort & Farmstay", name: "Hotel — Direction Requests", platform: "Google",
+    img: "resort_hotel", alt: "Hotel exterior at golden hour",
+    struggle: "Guests found the hotel online but never made it to the door.",
+    action: "Performance Max plus Search, tuned for calls and 'get directions'.",
+    metrics: [
+      { k: "Cost / action", v: "₹9.87", highlight: true },
+      { k: "Actions", v: "1,170", highlight: true },
+      { k: "Conv. rate", v: "47.9%" },
+      { k: "Spend", v: "₹12K" },
+    ],
+  },
+  {
+    cat: "Retail", name: "Dry Fruit Retail — Store Visits", platform: "Google",
+    img: "retail_shop", alt: "Dry fruit retail counter",
+    struggle: "Three stores, no idea which ads were driving footfall to which one.",
+    action: "Per-store Search and Performance Max with store-visit tracking.",
+    metrics: [
+      { k: "Store actions", v: "4,050", highlight: true },
+      { k: "Cost / action", v: "₹25.62", highlight: true },
+      { k: "Impressions", v: "3.7L" },
+      { k: "Spend", v: "₹1.04L" },
+    ],
+  },
   {
     cat: "Education", name: "Career Institute — Jaipur", img: "edu_students", alt: "Students working through a course together",
     struggle: "Admission enquiries flat, cost per lead climbing every intake.",
@@ -187,6 +237,16 @@ const cases = [
 // What got killed. Published on purpose — the cuts are the job.
 const cuts = [
   {
+    what: "Education — Google call campaign",
+    signal: "₹3,043 / conv",
+    call: "₹4.79L spent for 157 conversions. The single most expensive mistake in the portfolio — Max Clicks bidding on broad course keywords with no negative list.",
+  },
+  {
+    what: "Nightlife venue — Google Smart campaign",
+    signal: "₹12,758 / conv",
+    call: "4 lakh impressions, 16,326 clicks, one conversion. Smart campaigns hide the search terms; moved to a standard Search campaign with full control.",
+  },
+  {
     what: "D2C skincare — serum launch",
     signal: "0.11× ROAS",
     call: "Paused at ₹4.7K. Offer was wrong, not the targeting — funnel rebuilt before respending.",
@@ -259,8 +319,10 @@ export default function ResultsPage() {
             ))}
           </div>
           <p className="text-[12px] text-text-muted mt-3">
-            Meta Ads, account-level lifetime totals across 62 ad accounts.
-            Excludes accounts no longer connected. Last synced 2 Aug 2026.
+            Meta Ads + Google Ads, lifetime. 62 Meta accounts (₹43.0L, 12,550 form
+            leads) and 13 Google accounts (₹13.5L, 37,202 conversions — calls,
+            direction requests and form fills). Excludes accounts no longer
+            connected. Last synced 2 Aug 2026.
           </p>
         </div>
       </section>
@@ -304,6 +366,9 @@ export default function ResultsPage() {
                       <span className="font-bold text-text-primary text-[16px] leading-tight">{c.name}</span>
                       <span className="text-[10px] tracking-[.06em] uppercase text-primary bg-primary/10 px-2.5 py-1 rounded-lg flex-none">
                         {c.cat}
+                      </span>
+                      <span className="text-[10px] tracking-[.06em] uppercase text-text-primary bg-secondary px-2.5 py-1 rounded-lg flex-none font-semibold">
+                        {"platform" in c ? (c as { platform: string }).platform : "Meta"}
                       </span>
                     </div>
                     <p className="text-[13px] text-text-secondary leading-relaxed">
