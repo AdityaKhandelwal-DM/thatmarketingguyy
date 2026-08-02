@@ -164,90 +164,6 @@ const stack: { logo: React.ComponentType<{ className?: string }>; name: string }
   { logo: YouTubeLogo, name: "YouTube Ads" },
 ];
 
-// ─── Dashboard Illustration ────────────────────────────────────────────────────
-
-function DashboardIllustration() {
-  return (
-    <svg
-      viewBox="0 0 460 380"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="w-full h-auto"
-      aria-hidden="true"
-    >
-      {/* Background */}
-      <rect width="460" height="380" rx="24" fill="#F8FAFC" />
-
-      {/* Top header bar */}
-      <rect x="16" y="16" width="428" height="44" rx="12" fill="white" />
-      <circle cx="40" cy="38" r="8" fill="#036D9A" />
-      <rect x="58" y="31" width="84" height="11" rx="4" fill="#E5E7EB" />
-      <rect x="58" y="46" width="52" height="8" rx="3" fill="#036D9A" opacity="0.2" />
-      <rect x="354" y="27" width="90" height="22" rx="11" fill="#036D9A" />
-      <rect x="366" y="35" width="66" height="6" rx="3" fill="white" opacity="0.75" />
-
-      {/* Main chart panel */}
-      <rect x="16" y="72" width="268" height="180" rx="14" fill="white" />
-      <rect x="32" y="88" width="76" height="10" rx="3" fill="#E5E7EB" />
-      <rect x="32" y="102" width="46" height="16" rx="5" fill="#036D9A" opacity="0.15" />
-
-      {/* Bar chart — rising left to right */}
-      <rect x="38"  y="224" width="22" height="18"  rx="3" fill="#036D9A" opacity="0.20" />
-      <rect x="68"  y="208" width="22" height="34"  rx="3" fill="#036D9A" opacity="0.36" />
-      <rect x="98"  y="189" width="22" height="53"  rx="3" fill="#036D9A" opacity="0.55" />
-      <rect x="128" y="165" width="22" height="77"  rx="3" fill="#036D9A" opacity="0.75" />
-      <rect x="158" y="141" width="22" height="101" rx="3" fill="#036D9A" />
-      <rect x="188" y="119" width="22" height="123" rx="3" fill="#FDEA6F" />
-      <rect x="218" y="98"  width="22" height="144" rx="3" fill="#FDEA6F" />
-      <rect x="248" y="80"  width="22" height="162" rx="3" fill="#FDEA6F" />
-
-      {/* Trend line */}
-      <polyline
-        points="49,224 79,203 109,184 139,160 169,136 199,114 229,93 259,75"
-        stroke="#036D9A"
-        strokeWidth="2.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
-      />
-      <circle cx="49"  cy="224" r="3.5" fill="white" stroke="#036D9A"  strokeWidth="2" />
-      <circle cx="109" cy="184" r="3.5" fill="white" stroke="#036D9A"  strokeWidth="2" />
-      <circle cx="169" cy="136" r="3.5" fill="white" stroke="#036D9A"  strokeWidth="2" />
-      <circle cx="229" cy="93"  r="3.5" fill="white" stroke="#02587A"  strokeWidth="2" />
-      <circle cx="259" cy="75"  r="5"   fill="#02587A" stroke="white"  strokeWidth="2" />
-
-      {/* Right metric cards */}
-      <rect x="298" y="72"  width="146" height="68" rx="14" fill="white" />
-      <rect x="314" y="90"  width="52"  height="9"  rx="3" fill="#E5E7EB" />
-      <rect x="314" y="104" width="76"  height="18" rx="5" fill="#036D9A" opacity="0.12" />
-      <path d="M418 93 L426 85 M426 85 L434 93 M426 85 L426 102" stroke="#036D9A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-
-      <rect x="298" y="152" width="146" height="68" rx="14" fill="white" />
-      <rect x="314" y="170" width="56"  height="9"  rx="3" fill="#E5E7EB" />
-      <rect x="314" y="186" width="62"  height="18" rx="5" fill="#02587A" opacity="0.12" />
-      <path d="M420 196 L426 188 L432 196 M426 188 L426 204" stroke="#02587A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-
-      <rect x="298" y="232" width="146" height="68" rx="14" fill="white" />
-      <rect x="314" y="250" width="48"  height="9"  rx="3" fill="#E5E7EB" />
-      <rect x="314" y="266" width="80"  height="18" rx="5" fill="#02587A" opacity="0.12" />
-      <circle cx="424" cy="256" r="8" stroke="#02587A" strokeWidth="2" fill="none" />
-      <path d="M430 262 L436 268" stroke="#02587A" strokeWidth="2" strokeLinecap="round" fill="none" />
-
-      {/* Bottom local SEO panel */}
-      <rect x="16" y="264" width="268" height="100" rx="14" fill="white" />
-      <circle cx="56" cy="307" r="20" fill="#036D9A" opacity="0.07" />
-      <path d="M56 291 C47 291 40 298 40 306 C40 316 56 324 56 324 C56 324 72 316 72 306 C72 298 65 291 56 291 Z" fill="#036D9A" />
-      <circle cx="56" cy="306" r="5" fill="white" />
-      <rect x="88" y="284" width="132" height="9" rx="3" fill="#E5E7EB" />
-      <rect x="88" y="299" width="164" height="9" rx="3" fill="#E5E7EB" />
-      <rect x="88" y="314" width="104" height="9" rx="3" fill="#036D9A" opacity="0.35" />
-      <rect x="88" y="329" width="124" height="9" rx="3" fill="#E5E7EB" opacity="0.5" />
-      <rect x="196" y="311" width="72"  height="20" rx="10" fill="#036D9A" opacity="0.1" />
-      <rect x="204" y="318" width="56"  height="6"  rx="3" fill="#036D9A" opacity="0.55" />
-    </svg>
-  );
-}
-
 // ─── Metric Card ──────────────────────────────────────────────────────────────
 
 function MetricCard({ k, v, highlight }: { k: string; v: string; highlight?: boolean }) {
@@ -310,11 +226,9 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right — Aditya, with the dashboard card laid over the bottom-left
-                and the ROAS badge top-right. The crop deliberately keeps his
-                head centre-left so neither element covers his face. */}
+            {/* Right — Aditya, clean portrait, no overlays */}
             <div className="order-first md:order-last animate-fadeInUp">
-              <div className="relative max-w-[420px] mx-auto md:ml-auto pb-20 md:pb-24">
+              <div className="relative max-w-[420px] mx-auto md:ml-auto">
                 <Media
                   src="hero-aditya"
                   alt="Aditya Khandelwal, performance marketing consultant, Jaipur"
@@ -322,17 +236,6 @@ export default function Home() {
                   sizes="(max-width: 768px) 90vw, 420px"
                   priority
                 />
-
-                {/* Dashboard card, overlapping the photo */}
-                <div className="absolute -bottom-1 -left-4 sm:-left-8 w-[72%] bg-white rounded-[18px] shadow-card border border-border p-2.5">
-                  <DashboardIllustration />
-                </div>
-
-                {/* Floating ROAS badge */}
-                <div className="absolute right-3 top-5 bg-text-primary text-white rounded-2xl px-4 py-3 shadow-card">
-                  <div className="text-[10px] tracking-[.06em] uppercase text-white/55">Best ROAS</div>
-                  <div className="tabular-nums text-[22px] text-secondary mt-0.5 font-bold">8.2×</div>
-                </div>
               </div>
             </div>
 
