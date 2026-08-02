@@ -28,9 +28,9 @@ import {
 
 const niches: { icon: LucideIcon; title: string; desc: string; img: string; alt: string }[] = [
   { icon: HeartPulse, title: "Clinic owners", desc: "Fill your calendar with patient walk-ins, not vanity likes.", img: "clinic_consult", alt: "Doctor consulting a patient in a clinic" },
-  { icon: UtensilsCrossed, title: "Restaurants & bakeries", desc: "Turn nearby phones into tables booked and orders placed.", img: "rest_dining", alt: "Warm restaurant dining room set for service" },
-  { icon: Package, title: "D2C founders", desc: "Scale ad spend without lighting money on fire.", img: "d2c_textile", alt: "Neutral-toned fabrics on a retail rail" },
-  { icon: Store, title: "Local store owners", desc: "Own the Google Map Pack so your shop shows up first.", img: "store_front", alt: "Independent shopfront on a neighbourhood street" },
+  { icon: UtensilsCrossed, title: "Restaurants & bakeries", desc: "Turn nearby phones into tables booked and orders placed.", img: "ind_thali", alt: "Indian thali served across brass bowls" },
+  { icon: Package, title: "D2C founders", desc: "Scale ad spend without lighting money on fire.", img: "ind_saree", alt: "Model in a handwoven silk saree" },
+  { icon: Store, title: "Local store owners", desc: "Own the Google Map Pack so your shop shows up first.", img: "ind_jaipur", alt: "Hawa Mahal, Jaipur, with autorickshaws on the street below" },
   { icon: Gamepad2, title: "FunZone & venues", desc: "Pack weekends and slow days with local footfall.", img: "ent_arcade", alt: "Arcade games lit up inside an entertainment venue" },
   { icon: Frown, title: "Burned by agencies", desc: "Finally understand exactly what your money is doing.", img: "work_team", alt: "Team mapping out a plan on a whiteboard" },
 ];
@@ -50,7 +50,7 @@ const cases = [
   },
   {
     name: "Cloud Kitchen — Jaipur", tag: "Restaurant",
-    img: "rest_cafe", alt: "Bright café interior during a quiet weekday service",
+    img: "ind_samosa", alt: "Fresh samosas plated at a local kitchen",
     struggle: "Weekday orders flat, high CPO.",
     action: "Geo-fenced Meta ads + offer testing.",
     metrics: [
@@ -62,7 +62,7 @@ const cases = [
   },
   {
     name: "Local Store — Map Pack", tag: "Local / SEO",
-    img: "retail_store", alt: "Local retail showroom stocked and ready for customers",
+    img: "ind_amber", alt: "Amber Fort above Jaipur at golden hour",
     struggle: "Invisible on Google, no calls.",
     action: "GBP optimisation + local SEO + reviews.",
     metrics: [

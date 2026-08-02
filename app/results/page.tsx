@@ -62,7 +62,7 @@ const cases = [
     ],
   },
   {
-    cat: "D2C", name: "D2C Home Textiles", img: "d2c_textile", alt: "Hand-blocked textiles hanging on a rail",
+    cat: "D2C", name: "D2C Home Textiles", img: "ind_saree", alt: "Model in a handwoven silk saree",
     struggle: "Spend scaling but ROAS sliding under breakeven.",
     action: "CBO restructure, city-tier split, lookalike stack on top buyers.",
     metrics: [
@@ -150,7 +150,7 @@ const cases = [
     ],
   },
   {
-    cat: "Restaurant & Lounge", name: "Restaurant — Party Bookings", img: "rest_dining", alt: "Restaurant dining room set for a private party",
+    cat: "Restaurant & Lounge", name: "Restaurant — Party Bookings", img: "ind_thali", alt: "Indian thali laid out for a group booking",
     struggle: "Party and event bookings handled ad-hoc, no pipeline at all.",
     action: "Instant-form party enquiry ads built per outlet, not per brand.",
     metrics: [
@@ -172,7 +172,7 @@ const cases = [
     ],
   },
   {
-    cat: "Restaurant & Lounge", name: "Café — Local Awareness", img: "rest_cafe", alt: "Neighbourhood café filling up in the morning",
+    cat: "Restaurant & Lounge", name: "Café — Local Awareness", img: "ind_southfood", alt: "South Indian breakfast plated on a banana leaf",
     struggle: "New café, nobody in the neighbourhood knew it existed.",
     action: "Local reach ads held at frequency 1.0 for maximum unique coverage.",
     metrics: [

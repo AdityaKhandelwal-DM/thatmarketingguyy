@@ -39,9 +39,9 @@ const reels = [
 const feed: { img: string; alt: string }[] = [
   { img: "work_charts", alt: "Campaign dashboard breakdown post" },
   { img: "clinic_consult", alt: "Clinic lead-generation breakdown post" },
-  { img: "rest_dining", alt: "Restaurant local-ads breakdown post" },
-  { img: "d2c_textile", alt: "D2C scaling breakdown post" },
-  { img: "store_front", alt: "Google Map Pack ranking post" },
+  { img: "ind_thali", alt: "Restaurant local-ads breakdown post" },
+  { img: "ind_saree", alt: "D2C scaling breakdown post" },
+  { img: "ind_jaipur", alt: "Google Map Pack ranking post" },
   { img: "ent_arcade", alt: "Venue weekend-fill campaign post" },
 ];
 
@@ -138,7 +138,7 @@ export default function AboutPage() {
                 {/* Stat chip */}
                 <div className="absolute right-3 top-4 bg-white rounded-xl px-4 py-3 shadow-card border border-border">
                   <div className="text-[10px] tracking-[.06em] uppercase text-text-muted">Ad accounts</div>
-                  <div className="tabular-nums text-[22px] font-bold text-text-primary mt-0.5">58</div>
+                  <div className="tabular-nums text-[22px] font-bold text-text-primary mt-0.5">62</div>
                 </div>
               </div>
             </div>

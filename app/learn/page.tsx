@@ -15,11 +15,11 @@ import {
 
 const blueprints: { icon: LucideIcon; title: string; desc: string; img: string; alt: string }[] = [
   { icon: HeartPulse, title: "Clinic blueprint", desc: "Lead ads + Map Pack to fill appointments.", img: "clinic_med", alt: "Clinician checking a phone between patients" },
-  { icon: Croissant, title: "Bakery blueprint", desc: "Local awareness + offers that drive footfall.", img: "rest_bakery", alt: "Fresh sourdough loaves on a bakery counter" },
+  { icon: Croissant, title: "Bakery blueprint", desc: "Local awareness + offers that drive footfall.", img: "ind_samosa", alt: "Samosas fresh out of the kadhai" },
   { icon: Gamepad2, title: "FunZone blueprint", desc: "Weekend-fill campaigns for venues.", img: "ent_arcade", alt: "Arcade floor lit up on a busy evening" },
-  { icon: Package, title: "D2C blueprint", desc: "Creative testing + scaling without ROAS drop.", img: "d2c_cosmetics", alt: "D2C beauty products styled for a product shoot" },
-  { icon: UtensilsCrossed, title: "Restaurant blueprint", desc: "Geo-fenced ads + offer testing.", img: "rest_dining", alt: "Restaurant dining room ready for evening covers" },
-  { icon: MapPin, title: "Local SEO blueprint", desc: "Rank in the Map Pack without ad spend.", img: "store_front", alt: "Independent storefront on a local high street" },
+  { icon: Package, title: "D2C blueprint", desc: "Creative testing + scaling without ROAS drop.", img: "ind_jewellery", alt: "Handcrafted jewellery styled for a D2C shoot" },
+  { icon: UtensilsCrossed, title: "Restaurant blueprint", desc: "Geo-fenced ads + offer testing.", img: "ind_spices", alt: "Indian spices laid out for the day's service" },
+  { icon: MapPin, title: "Local SEO blueprint", desc: "Rank in the Map Pack without ad spend.", img: "ind_jaipur", alt: "Jaipur street life outside Hawa Mahal" },
 ];
 
 const modules = [
