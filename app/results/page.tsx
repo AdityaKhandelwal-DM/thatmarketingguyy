@@ -8,9 +8,16 @@ import Media from "@/components/ui/Media";
 import CountUp from "@/components/ui/CountUp";
 
 /* ─────────────────────────────────────────────────────────────────────────────
-   All figures below are pulled from live Meta Ads reporting (all-time, per
-   campaign) across the ad accounts we manage. Client names are withheld —
-   the numbers are not. Last synced: 2 Aug 2026.
+   Figures come from live Meta Ads reporting, date_preset=maximum.
+
+   - The portfolio strip is ACCOUNT-level lifetime totals across all 58
+     queryable ad accounts. It excludes 7 accounts that cannot currently be
+     read (5 pending Ads-MCP rollout, 2 disabled by Meta) and any account no
+     longer shared with the Business Manager, so it is a floor, not a ceiling.
+   - Each case row below is a single CAMPAIGN, not an account total. Mixing
+     the two would misstate cost-per-result, so don't.
+
+   Client names withheld; numbers unmodified. Last synced: 2 Aug 2026.
    ───────────────────────────────────────────────────────────────────────── */
 
 const filters = [
@@ -25,9 +32,9 @@ const filters = [
 ];
 
 const portfolio = [
-  { k: "Ad spend managed", v: "₹29L+" },
-  { k: "Form leads delivered", v: "10,239" },
-  { k: "Campaigns run", v: "364" },
+  { k: "Ad spend managed", v: "₹42.7L" },
+  { k: "Form leads delivered", v: "12,259" },
+  { k: "Impressions delivered", v: "14.7 Cr" },
   { k: "Ad accounts", v: "58" },
 ];
 
@@ -235,8 +242,9 @@ export default function ResultsPage() {
             Real campaigns. Real numbers. No screenshots from gurus.
           </h1>
           <p className="text-[17px] md:text-[18px] text-text-secondary mt-5 max-w-[640px] leading-[1.7]">
-            Every figure below is pulled straight from live Meta Ads reporting — all-time,
-            per campaign. Client names stay private. The numbers don&apos;t.
+            Every figure is pulled straight from live Meta Ads reporting. Totals below
+            are lifetime across every account; each case is one real campaign.
+            Client names stay private. The numbers don&apos;t.
           </p>
 
           {/* Portfolio strip */}
@@ -251,7 +259,8 @@ export default function ResultsPage() {
             ))}
           </div>
           <p className="text-[12px] text-text-muted mt-3">
-            Meta Ads, all-time. Last synced 2 Aug 2026.
+            Meta Ads, account-level lifetime totals across 58 ad accounts.
+            Excludes accounts no longer connected. Last synced 2 Aug 2026.
           </p>
         </div>
       </section>

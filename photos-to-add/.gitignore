@@ -1,0 +1,4 @@
+# keep the folder in git even while empty; ignore the photos themselves until processed
+*
+!README.md
+!.gitignore
