@@ -13,22 +13,22 @@ const helpPillars: { icon: LucideIcon; title: string; desc: string }[] = [
   {
     icon: BarChart3,
     title: "Clarity on your ads",
-    desc: "I'll show you how to read your own dashboards — so you stop depending on agencies for a summary of your own money.",
+    desc: "I'll show you how to read your own dashboards, so you stop depending on agencies for a summary of your own money.",
   },
   {
     icon: MapPin,
     title: "Local visibility",
-    desc: "Google Map Pack, local SEO, GBP optimisation — get found by people near you who are actively searching for what you offer.",
+    desc: "Google Map Pack, local SEO, GBP optimisation. Get found by people near you who are actively searching for what you offer.",
   },
   {
     icon: Target,
     title: "Paid ads that convert",
-    desc: "Meta and Google campaigns built around your actual business goals — walk-ins, orders, and leads. Not impressions.",
+    desc: "Meta and Google campaigns built around your actual business goals: walk-ins, orders, and leads. Not impressions.",
   },
   {
     icon: GraduationCap,
     title: "Teach you, not replace you",
-    desc: "The goal is never dependency. I give you the playbook so you can run it yourself — or watch over whoever runs it for you.",
+    desc: "The goal is never dependency. I give you the playbook so you can run it yourself, or watch over whoever runs it for you.",
   },
 ];
 
@@ -51,7 +51,7 @@ const feed: { img: string; alt: string }[] = [
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: "About Aditya Khandelwal — Performance Marketing Consultant",
+  title: "About Aditya Khandelwal, Performance Marketing Consultant",
   description:
     "Performance marketing consultant in Jaipur, India, working with SME owners in the US, UK, UAE, Australia and Singapore. Meta Ads, Google Ads, local SEO.",
   alternates: { canonical: "/about" },
@@ -94,7 +94,7 @@ export default function AboutPage() {
                 </span>
                 <p className="text-[16px] md:text-[18px] font-semibold text-text-primary leading-snug">
                   I watched agencies charge heavily for paid campaigns and hand business owners a PDF
-                  full of &ldquo;reach&rdquo; — so I built the clarity they should have given you from day one.
+                  full of &ldquo;reach&rdquo;, so I built the clarity they should have given you from day one.
                 </p>
               </div>
 
@@ -167,7 +167,7 @@ export default function AboutPage() {
               Marketing, broken down in minutes.
             </h2>
             <p className="text-[15px] md:text-[17px] text-text-secondary mt-3">
-              Real campaigns. Real numbers. Explained on screen — no theory slides.
+              Real campaigns. Real numbers. Explained on screen. No theory slides.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal-stagger">

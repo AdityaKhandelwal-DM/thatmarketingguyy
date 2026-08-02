@@ -50,7 +50,7 @@ const niches: { icon: LucideIcon; title: string; desc: string; img: string; alt:
 
 const cases = [
   {
-    name: "Skin Clinic — Jaipur", tag: "Clinic",
+    name: "Skin Clinic, Jaipur", tag: "Clinic",
     img: "clinic_med", alt: "Clinician checking a phone between appointments",
     struggle: "Empty appointment book, low walk-ins.",
     action: "Meta lead ads + Google Map Pack push.",
@@ -62,7 +62,7 @@ const cases = [
     ],
   },
   {
-    name: "Cloud Kitchen — Jaipur", tag: "Restaurant",
+    name: "Cloud Kitchen, Jaipur", tag: "Restaurant",
     img: "ind_samosa", alt: "Fresh samosas plated at a local kitchen",
     struggle: "Weekday orders flat, high CPO.",
     action: "Geo-fenced Meta ads + offer testing.",
@@ -74,7 +74,7 @@ const cases = [
     ],
   },
   {
-    name: "Local Store — Map Pack", tag: "Local / SEO",
+    name: "Local Store Map Pack", tag: "Local / SEO",
     img: "ind_amber", alt: "Amber Fort above Jaipur at golden hour",
     struggle: "Invisible on Google, no calls.",
     action: "GBP optimisation + local SEO + reviews.",
@@ -121,7 +121,7 @@ const storyStats: { n: string; l: string; icon: LucideIcon }[] = [
 
 const workshops = [
   {
-    title: "Meta Ads Masterclass — Live",
+    title: "Live Meta Ads Masterclass",
     date: "Coming Soon",
     type: "Webinar",
     seats: "Limited seats",
@@ -143,7 +143,7 @@ const workshops = [
 ];
 
 const freeResources: { icon: LucideIcon; title: string }[] = [
-  { icon: BarChart3, title: "Stop Wasting Ad Budget — Checklist" },
+  { icon: BarChart3, title: "Stop Wasting Ad Budget Checklist" },
   { icon: MapPin, title: "Google Map Pack Ranking Guide" },
   { icon: Smartphone, title: "Meta Ads Setup for Beginners" },
   { icon: HeartPulse, title: "Clinic Lead-Gen Starter Pack" },
@@ -182,17 +182,17 @@ function MetricCard({ k, v, highlight }: { k: string; v: string; highlight?: boo
 
 const faqsHome = [
   { q: "How much does a Facebook ads freelancer cost?",
-    a: "Rates vary enormously by market — a US or UK freelancer typically charges several times what an India-based one does for the same work — and most price either a flat monthly retainer or a percentage of ad spend. What matters more than the rate is what's included. Ask three things of anyone you consider: who owns the ad account, do you get raw dashboard access, and does the reporting show cost per lead or just impressions." },
+    a: "Rates vary enormously by market. A US or UK freelancer typically charges several times what an India-based one does for the same work, and most price either a flat monthly retainer or a percentage of ad spend. What matters more than the rate is what's included. Ask three things of anyone you consider: who owns the ad account, do you get raw dashboard access, and does the reporting show cost per lead or just impressions." },
   { q: "Do you work with clients outside India?",
-    a: "Yes. I work remotely from Jaipur with business owners in the US, UK, UAE, Australia and Singapore. Everything runs over calls and WhatsApp, and clients keep full ownership of their ad accounts — which matters far more than where the person managing them sits. Timezone overlap is a solved problem, and most day-to-day work is async anyway." },
-  { q: "Meta ads or Google ads — which one does my business need?",
-    a: "It depends on whether demand already exists. Google catches people actively searching for what you sell, so it suits clinics, local services and anything with clear buying intent. Meta creates demand — it works when people don't yet know they want you, which is why restaurants, venues and D2C brands lean on it. Plenty of businesses need both, but if budget is tight, start where the intent already is." },
+    a: "Yes, and I'm actively taking on more of it. So far I've run two Google Ads projects for overseas clients, one in Ontario and one for a film production company in the UK, both of which came to me through a third party. The work translates cleanly, so I'm now looking for clients directly in the US, UK, UAE, Australia and Singapore. You keep ownership of the ad account, and day-to-day runs over WhatsApp and email, so the timezone gap matters less than people expect." },
+  { q: "Meta ads or Google ads: which one does my business need?",
+    a: "It depends on whether demand already exists. Google catches people actively searching for what you sell, so it suits clinics, local services and anything with clear buying intent. Meta creates demand. It works when people don't yet know they want you, which is why restaurants, venues and D2C brands lean on it. Plenty of businesses need both, but if budget is tight, start where the intent already is." },
   { q: "What's the difference between hiring a freelancer and an agency?",
-    a: "An agency gives you a team, a documented process and usually an account manager sitting between you and whoever actually touches your campaigns. A freelancer gives you direct access to the person in the account, and lower overhead. The trade-off is capacity — one person can't cover everything an agency can. Neither is automatically better; it depends on how much scale you need and how much distance you're willing to accept." },
+    a: "An agency gives you a team, a documented process and usually an account manager sitting between you and whoever actually touches your campaigns. A freelancer gives you direct access to the person in the account, and lower overhead. The trade-off is capacity. One person can't cover everything an agency can. Neither is automatically better; it depends on how much scale you need and how much distance you're willing to accept." },
   { q: "What size of business does this suit?",
-    a: "Small and medium businesses — clinics, restaurants, D2C founders, local stores, venues. If you're spending a few hundred dollars a month, you probably don't need anyone managing it yet; you need the basics and to keep the budget. Paid management starts making sense once spend is large enough that a few percent of waste costs more than the fee does." },
+    a: "Small and medium businesses: clinics, restaurants, D2C founders, local stores, venues. If you're spending a few hundred dollars a month, you probably don't need anyone managing it yet; you need the basics and to keep the budget. Paid management starts making sense once spend is large enough that a few percent of waste costs more than the fee does." },
   { q: "How long before ads start working?",
-    a: "Meta needs roughly 50 conversion events a week per ad set before its optimisation settles — the learning phase — and judging results before that finishes is the most common mistake I see. On small budgets that usually means two to four weeks before the numbers mean anything. Google Search can show signal sooner, because the intent is already there when someone types the query." },
+    a: "Meta needs roughly 50 conversion events a week per ad set before its optimisation settles. That's the learning phase, and judging results before it finishes is the most common mistake I see. On small budgets that usually means two to four weeks before the numbers mean anything. Google Search can show signal sooner, because the intent is already there when someone types the query." },
 ];
 
 export default function Home() {
@@ -215,7 +215,7 @@ export default function Home() {
               </h1>
 
               <p className="text-[17px] md:text-[18px] text-text-primary/70 mt-6 mb-3 max-w-[540px] leading-[1.7]">
-                Most business owners don&apos;t know the answer — and that&apos;s not their fault. Agencies are built to keep it complicated.
+                Most business owners don&apos;t know the answer, and that&apos;s not their fault. Agencies are built to keep it complicated.
               </p>
               <p className="text-[17px] md:text-[18px] text-text-secondary max-w-[540px] leading-[1.7] mb-8">
                 I&apos;ve managed 77 ad accounts across clinics, restaurants, D2C, and local stores.{" "}
@@ -272,7 +272,7 @@ export default function Home() {
               <span className="text-primary">It&apos;s about being found by the right person at the right moment.</span>
             </p>
             <span className="text-[13px] text-text-secondary mt-8 block">
-              — Aditya Khandelwal · thatmarketingguy
+              Aditya Khandelwal · thatmarketingguy
             </span>
           </div>
         </div>
@@ -344,7 +344,7 @@ export default function Home() {
                   This is what 5+ years of showing up every day looks like.
                 </h2>
                 <p className="text-[15px] md:text-[17px] text-text-secondary mt-3">
-                  Not a big agency. Just one person, one laptop, and a lot of chai. Here&apos;s the tally —
+                  Not a big agency. Just one person, one laptop, and a lot of chai. Here&apos;s the tally,
               and I write up what I learn on <Link href="/blog" className="text-primary font-medium hover:underline">the blog</Link>.
                 </p>
               </div>
@@ -372,10 +372,10 @@ export default function Home() {
           <div className="max-w-[680px] mb-10 md:mb-14 reveal">
             <span className="eyebrow block mb-4">Is this for you?</span>
             <h2 className="text-[clamp(24px,3.4vw,42px)] font-bold text-text-primary">
-              I speak walk-ins, orders, and ROAS — not &ldquo;impressions.&rdquo;
+              I speak walk-ins, orders, and ROAS. Not &ldquo;impressions.&rdquo;
             </h2>
             <p className="text-[15px] md:text-[17px] text-text-secondary mt-3">
-              If you&apos;ve been burned by an agency or just want to understand what your money is doing — this is for you.
+              If you&apos;ve been burned by an agency or just want to understand what your money is doing, this is for you.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 reveal-stagger">
@@ -416,7 +416,7 @@ export default function Home() {
               Real campaigns. Real numbers. No retouching.
             </h2>
             <p className="text-[15px] md:text-[17px] text-text-secondary mt-3">
-              A few below — the full portfolio lives on the Results page.
+              A few below. The full portfolio lives on the Results page.
             </p>
           </div>
           <div className="flex flex-col gap-4 reveal-stagger">
@@ -555,7 +555,7 @@ export default function Home() {
                 7 guides. Zero cost. Just DM me.
               </h2>
               <p className="text-[15px] md:text-[17px] text-text-secondary mt-3">
-                You shouldn&apos;t need to pay to understand marketing basics. These are yours — no email gymnastics.
+                You shouldn&apos;t need to pay to understand marketing basics. These are yours. No email gymnastics.
               </p>
             </div>
             <div className="flex-none">
@@ -611,7 +611,7 @@ export default function Home() {
             Stop guessing. Start knowing.
           </h2>
           <p className="text-[15px] md:text-[18px] text-white/60 mb-8 max-w-lg mx-auto leading-relaxed">
-            Whether you want the free guides, a live workshop, or a full masterclass — pick where you want to start.
+            Whether you want the free guides, a live workshop, or a full masterclass, pick where you want to start.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/resources">Get the free guides</Button>

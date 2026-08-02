@@ -23,10 +23,10 @@ const roles = [
   },
   {
     title: "Marketing Intern",
-    type: "Internship · Hybrid — Jaipur",
+    type: "Internship · Hybrid · Jaipur",
     desc: "Learn performance marketing from inside real ad accounts. You'll shadow live campaigns, help with ad copies, and learn what agencies will never teach you in 3 months.",
     requirements: [
-      "Curiosity about digital marketing — that's the baseline",
+      "Curiosity about digital marketing, that's the baseline",
       "Basic understanding of Meta or Google Ads is a plus",
       "Ability to commit for at least 3 months",
     ],
@@ -55,7 +55,7 @@ const perks: { icon: LucideIcon; title: string; desc: string }[] = [
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: "Careers — Work With thatmarketingguy",
+  title: "Careers at thatmarketingguy",
   description: "Video editing, content and performance marketing roles at thatmarketingguy. Real work, real learning, portfolio-worthy results.",
   alternates: { canonical: "/careers" },
 };
@@ -104,7 +104,7 @@ export default function CareersPage() {
               No politics. No jargon. Just work.
             </h2>
             <p className="text-[15px] md:text-[17px] text-text-secondary mt-3">
-              We move fast, communicate clearly, and care about the output — not the hours.
+              We move fast, communicate clearly, and care about the output, not the hours.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 reveal-stagger">
@@ -133,7 +133,7 @@ export default function CareersPage() {
               What we&apos;re looking for
             </h2>
             <p className="text-[15px] md:text-[17px] text-text-secondary mt-3">
-              Small team, big impact. These roles are real — if you&apos;re a good fit, just reach out directly.
+              Small team, big impact. These roles are real. If you&apos;re a good fit, just reach out directly.
             </p>
           </div>
 
@@ -188,7 +188,7 @@ export default function CareersPage() {
             Just say hello.
           </h2>
           <p className="text-[15px] md:text-[17px] text-white/60 mb-8 max-w-md mx-auto leading-relaxed">
-            If you&apos;re smart, hungry, and actually care about doing good work — there&apos;s room for you here.
+            If you&apos;re smart, hungry, and actually care about doing good work, there&apos;s room for you here.
           </p>
           <Button href="/contact" variant="light">Reach out →</Button>
         </div>

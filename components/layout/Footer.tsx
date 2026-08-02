@@ -10,7 +10,7 @@ export default function Footer() {
             thatmarketing<b className="text-primary">guy</b>
           </div>
           <p className="text-sm max-w-[300px] mb-2">
-            Marketing, finally made clear. Performance marketing for SME owners — no agency required.
+            Marketing, finally made clear. Performance marketing for SME owners. No agency required.
           </p>
           <p className="text-[13px] text-primary">Aditya Khandelwal</p>
         </div>

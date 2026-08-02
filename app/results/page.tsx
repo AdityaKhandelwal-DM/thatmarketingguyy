@@ -54,10 +54,10 @@ const portfolio: { k: string; v: string; sub?: string }[] = [
 
 const cases = [
   {
-    cat: "D2C", name: "Textile Exporter — Jaipur", platform: "Meta",
+    cat: "D2C", name: "Textile Exporter, Jaipur", platform: "Meta",
     img: "ind_saree", alt: "Handwoven textiles styled for a D2C campaign",
     struggle: "Export-led business with no direct-to-consumer channel at all.",
-    action: "Full-funnel Meta build — cold prospecting, catalogue retargeting, continuous creative testing.",
+    action: "Full-funnel Meta build: cold prospecting, catalogue retargeting, continuous creative testing.",
     metrics: [
       { k: "ROAS", v: "8.2×", highlight: true },
       { k: "Revenue", v: "₹98L", highlight: true },
@@ -78,7 +78,7 @@ const cases = [
     ],
   },
   {
-    cat: "Restaurant & Lounge", name: "Restaurant — Google Business Profile", platform: "Google",
+    cat: "Restaurant & Lounge", name: "Restaurant: Google Business Profile", platform: "Google",
     img: "ind_thali", alt: "Indian thali plated for service",
     struggle: "Showing up on Maps but the phone still wasn't ringing.",
     action: "Google Business Profile search ads on general local keywords, run per outlet.",
@@ -90,7 +90,7 @@ const cases = [
     ],
   },
   {
-    cat: "Clinic", name: "Physio Clinic — YouTube", platform: "Google",
+    cat: "Clinic", name: "Physio Clinic: YouTube", platform: "Google",
     img: "clinic_consult", alt: "Clinician consulting a patient",
     struggle: "Video budget going out with nothing measurable coming back.",
     action: "YouTube campaign optimised to conversions instead of views.",
@@ -102,7 +102,7 @@ const cases = [
     ],
   },
   {
-    cat: "Resort & Farmstay", name: "Hotel — Direction Requests", platform: "Google",
+    cat: "Resort & Farmstay", name: "Hotel: Direction Requests", platform: "Google",
     img: "resort_hotel", alt: "Hotel exterior at golden hour",
     struggle: "Guests found the hotel online but never made it to the door.",
     action: "Performance Max plus Search, tuned for calls and 'get directions'.",
@@ -114,7 +114,7 @@ const cases = [
     ],
   },
   {
-    cat: "Retail", name: "Dry Fruit Retail — Store Visits", platform: "Google",
+    cat: "Retail", name: "Dry Fruit Retail: Store Visits", platform: "Google",
     img: "retail_shop", alt: "Dry fruit retail counter",
     struggle: "Three stores, no idea which ads were driving footfall to which one.",
     action: "Per-store Search and Performance Max with store-visit tracking.",
@@ -126,7 +126,7 @@ const cases = [
     ],
   },
   {
-    cat: "Education", name: "Career Institute — Jaipur", img: "edu_students", alt: "Students working through a course together",
+    cat: "Education", name: "Career Institute, Jaipur", img: "edu_students", alt: "Students working through a course together",
     struggle: "Admission enquiries flat, cost per lead climbing every intake.",
     action: "Video-first lead ads with creative rotation across MBA + hospitality courses.",
     metrics: [
@@ -137,7 +137,7 @@ const cases = [
     ],
   },
   {
-    cat: "Resort & Farmstay", name: "Farm Stay — Jaipur", img: "resort_farm", alt: "Farm stay pool and gardens on a clear day",
+    cat: "Resort & Farmstay", name: "Farm Stay, Jaipur", img: "resort_farm", alt: "Farm stay pool and gardens on a clear day",
     struggle: "Weekend slots unsold, enquiries drying up midweek.",
     action: "Creator-led video lead ads plus a broad all-rounder audience build.",
     metrics: [
@@ -170,7 +170,7 @@ const cases = [
     ],
   },
   {
-    cat: "Restaurant & Lounge", name: "Rooftop Lounge — Airport Rd", img: "rest_lounge", alt: "Rooftop lounge bar set up for evening service",
+    cat: "Restaurant & Lounge", name: "Rooftop Lounge, Airport Rd", img: "rest_lounge", alt: "Rooftop lounge bar set up for evening service",
     struggle: "Table reservations relying entirely on walk-ins.",
     action: "Instant-form reservation ads replacing generic traffic pushes.",
     metrics: [
@@ -192,7 +192,7 @@ const cases = [
     ],
   },
   {
-    cat: "Resort & Farmstay", name: "Farmhouse — Event Venue", img: "venue_event", alt: "Banquet hall laid out ahead of an event",
+    cat: "Resort & Farmstay", name: "Farmhouse: Event Venue", img: "venue_event", alt: "Banquet hall laid out ahead of an event",
     struggle: "Enquiry cost too high to justify running always-on.",
     action: "One scaled WhatsApp campaign, creative refreshed the moment it fatigued.",
     metrics: [
@@ -236,7 +236,7 @@ const cases = [
     ],
   },
   {
-    cat: "Restaurant & Lounge", name: "Restaurant — Party Bookings", img: "ind_thali", alt: "Indian thali laid out for a group booking",
+    cat: "Restaurant & Lounge", name: "Restaurant: Party Bookings", img: "ind_thali", alt: "Indian thali laid out for a group booking",
     struggle: "Party and event bookings handled ad-hoc, no pipeline at all.",
     action: "Instant-form party enquiry ads built per outlet, not per brand.",
     metrics: [
@@ -258,7 +258,7 @@ const cases = [
     ],
   },
   {
-    cat: "Restaurant & Lounge", name: "Café — Local Awareness", img: "ind_southfood", alt: "South Indian breakfast plated on a banana leaf",
+    cat: "Restaurant & Lounge", name: "Café: Local Awareness", img: "ind_southfood", alt: "South Indian breakfast plated on a banana leaf",
     struggle: "New café, nobody in the neighbourhood knew it existed.",
     action: "Local reach ads held at frequency 1.0 for maximum unique coverage.",
     metrics: [
@@ -273,34 +273,34 @@ const cases = [
 // What got killed. Published on purpose — the cuts are the job.
 const cuts = [
   {
-    what: "Education — Google call campaign",
+    what: "Education: Google call campaign",
     signal: "₹3,043 / conv",
-    call: "₹4.79L spent for 157 conversions. The single most expensive mistake in the portfolio — Max Clicks bidding on broad course keywords with no negative list.",
+    call: "₹4.79L spent for 157 conversions. The single most expensive mistake in the portfolio. Max Clicks bidding on broad course keywords with no negative list.",
   },
   {
-    what: "Nightlife venue — Google Smart campaign",
+    what: "Nightlife venue: Google Smart campaign",
     signal: "₹12,758 / conv",
     call: "4 lakh impressions, 16,326 clicks, one conversion. Smart campaigns hide the search terms; moved to a standard Search campaign with full control.",
   },
   {
-    what: "D2C skincare — serum launch",
+    what: "D2C skincare: serum launch",
     signal: "0.11× ROAS",
-    call: "Paused at ₹4.7K. Offer was wrong, not the targeting — funnel rebuilt before respending.",
+    call: "Paused at ₹4.7K. Offer was wrong, not the targeting. Funnel rebuilt before respending.",
   },
   {
-    what: "Webinar funnel — low-ticket course",
+    what: "Webinar funnel: low-ticket course",
     signal: "0.07× ROAS",
     call: "Killed at ₹4.2K. Price point could not carry paid acquisition at all.",
   },
   {
-    what: "Nightlife venue — lead campaign",
+    what: "Nightlife venue: lead campaign",
     signal: "₹2,264 / lead",
     call: "Restructured to a conversation objective; form leads were never being called back.",
   },
   {
     what: "Venue campaign on the wrong objective",
     signal: "₹21,691 / lead",
-    call: "Optimising for sales, not leads. Rebuilt as instant-form — cost per lead landed at ₹45.",
+    call: "Optimising for sales, not leads. Rebuilt as instant-form, and cost per lead landed at ₹45.",
   },
 ];
 
@@ -320,18 +320,18 @@ function MetricCard({ k, v, highlight }: { k: string; v: string; highlight?: boo
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 const faqsResults = [
-  { q: "I've been burned by an agency before — how do I judge whether numbers like these are real?",
-    a: "Ask to see the losers. Anyone can screenshot a winning campaign; the useful question is what got cut, when, and why. That's why the campaigns-we-killed section exists further down this page — including one that burned a large budget at an indefensible cost per conversion before it was stopped. If someone can only show you winners, you're seeing half the account." },
+  { q: "I've been burned by an agency before. How do I judge whether numbers like these are real?",
+    a: "Ask to see the losers. Anyone can screenshot a winning campaign; the useful question is what got cut, when, and why. That's why the campaigns-we-killed section exists further down this page, including one that burned a large budget at an indefensible cost per conversion before it was stopped. If someone can only show you winners, you're seeing half the account." },
   { q: "Are these numbers real, and where do they come from?",
-    a: "Most are pulled straight from Meta and Google Ads reporting at account level, with the sync date printed under the stats. Two older engagements come from my own records because those ad accounts have since closed, and the page says so rather than blending the two together. Where a number can't be pulled live it should be labelled — that's a fair standard to hold anyone's case studies to, including mine." },
+    a: "Most are pulled straight from Meta and Google Ads reporting at account level, with the sync date printed under the stats. Two older engagements come from my own records because those ad accounts have since closed, and the page says so rather than blending the two together. Where a number can't be pulled live it should be labelled. That's a fair standard to hold anyone's case studies to, including mine." },
   { q: "Why aren't the clients named?",
     a: "Because I haven't asked each of them for permission to be a public case study, and a client's ad performance isn't mine to publish. So you get the industry, the city, the problem, the fix and the unedited numbers. Names stay private until someone signs off on a full write-up." },
   { q: "What counts as a good ROAS?",
-    a: "There's no universal number, and anyone quoting one is guessing. A 3× return can be healthy profit for a business with fat margins and a loss for one running thin. Work out your break-even ROAS first — roughly one divided by your gross margin — then judge campaigns against that, rather than against someone else's screenshot." },
+    a: "There's no universal number, and anyone quoting one is guessing. A 3× return can be healthy profit for a business with fat margins and a loss for one running thin. Work out your break-even ROAS first, roughly one divided by your gross margin, then judge campaigns against that, rather than against someone else's screenshot." },
   { q: "What does \"cost per lead\" actually mean?",
-    a: "Ad spend divided by the number of people who gave you their details or messaged you — a real enquiry, not a click and not an impression. It's the right number to judge a lead campaign on, because it connects spend to something you can call back. Watch it alongside lead quality though: cheap leads that never answer the phone aren't cheap." },
+    a: "Ad spend divided by the number of people who gave you their details or messaged you. A real enquiry, not a click and not an impression. It's the right number to judge a lead campaign on, because it connects spend to something you can call back. Watch it alongside lead quality though: cheap leads that never answer the phone aren't cheap." },
   { q: "Do these results only apply to clinics and restaurants?",
-    a: "No — the filters cover education, resorts and farmstays, restaurants, D2C, entertainment venues, clinics and retail. Clinics and restaurants have the deepest track record here simply because more of them came through. The underlying method — right objective, an offer worth responding to, and cutting what doesn't work — transfers even when the creative doesn't." },
+    a: "No. The filters cover education, resorts and farmstays, restaurants, D2C, entertainment venues, clinics and retail. Clinics and restaurants have the deepest track record here simply because more of them came through. The underlying method transfers: right objective, an offer worth responding to, and cutting what doesn't work. It transfers even when the creative doesn't." },
 ];
 
 export default function ResultsPage() {
@@ -353,7 +353,7 @@ export default function ResultsPage() {
             Real campaigns. Real numbers. No screenshots from gurus.
           </h1>
           <p className="text-[17px] md:text-[18px] text-text-secondary mt-5 max-w-[640px] leading-[1.7]">
-            Lifetime numbers across Meta and Google since 2021 — every account,
+            Lifetime numbers across Meta and Google since 2021: every account,
             every campaign, winners and write-offs. Client names stay private.
             The numbers don&apos;t.
           </p>
@@ -374,7 +374,7 @@ export default function ResultsPage() {
           </div>
           <p className="text-[12px] text-text-muted mt-3">
             62 Meta accounts (₹43.0L, 12,550 form leads) and 13 Google accounts
-            (₹13.5L, 37,202 conversions — calls, direction requests and form
+            (₹13.5L, 37,202 conversions: calls, direction requests and form
             fills) are pulled from live Ads reporting, last synced 2 Aug 2026.
             Two pre-2023 engagements (₹17.0L) are reported from our own records;
             those accounts have since closed.
@@ -459,7 +459,7 @@ export default function ResultsPage() {
           </h2>
           <p className="text-[15px] md:text-[16px] text-text-secondary mt-4 max-w-[620px] leading-[1.7]">
             Anyone can show you winners. Knowing when to stop spending is the part
-            that actually protects your budget — so here are six we shut down.
+            that actually protects your budget, so here are six we shut down.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-4 mt-9 reveal">

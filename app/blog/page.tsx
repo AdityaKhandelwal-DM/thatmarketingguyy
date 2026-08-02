@@ -7,9 +7,9 @@ import Media from "@/components/ui/Media";
 import { getAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Ads & Local SEO Blog — Real Tactics, Real Accounts",
+  title: "Ads & Local SEO Blog: Real Tactics, Real Accounts",
   description:
-    "What actually works in Meta Ads, Google Ads and the Map Pack — taken from live ad accounts, explained in plain English.",
+    "What actually works in Meta Ads, Google Ads and the Map Pack, taken from live ad accounts and explained in plain English.",
   alternates: { canonical: "/blog" },
 };
 
@@ -39,7 +39,7 @@ export default function BlogPage() {
           </h1>
           <p className="text-[17px] md:text-[18px] text-text-secondary mt-5 max-w-[620px] leading-[1.7]">
             Plain-English breakdowns of what actually works in Meta Ads, Google Ads
-            and the Map Pack — no theory, no recycled gyan. A new post every third day.
+            and the Map Pack. No theory, no recycled gyan. A new post every third day.
           </p>
         </div>
       </section>

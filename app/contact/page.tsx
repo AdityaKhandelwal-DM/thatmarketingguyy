@@ -24,14 +24,14 @@ const faqsContact = [
   { q: "How do I get in touch about my ads?",
     a: "Pick whichever describes you on this page, add your business, city and what isn't working, then send. The message opens in my Instagram DMs, which is where I actually reply. Including your current monthly spend and what you're optimising for saves a round trip." },
   { q: "How fast do you reply?",
-    a: "Personally, and at human speed — there's no team inbox and no autoresponder. That's the honest trade-off of dealing with one person rather than an agency. If something's urgent, say so and include a WhatsApp number." },
+    a: "Personally, and at human speed. There's no team inbox and no autoresponder. That's the honest trade-off of dealing with one person rather than an agency. If something's urgent, say so and include a WhatsApp number." },
   { q: "What happens after I send a message?",
-    a: "I read it and reply based on what you've told me. If paid management isn't right for your stage, I'll say so and point you at the material that is — I've told people not to hire me before. There's no discovery-call funnel waiting at the end of it." },
+    a: "I read it and reply based on what you've told me. If paid management isn't right for your stage, I'll say so and point you at the material that is. I've told people not to hire me before. There's no discovery-call funnel waiting at the end of it." },
   { q: "Do you do one-off ad account audits?",
     a: "A standalone audit isn't a listed offer, but if you want a second pair of eyes, describe what's running and I can usually tell you quickly whether something is structurally wrong." },
-  { q: "I'm in the US or UK — do timezones make this difficult?",
+  { q: "I'm in the US or UK. Do timezones make this difficult?",
     a: "No. I already work from Jaipur with clients across the US, UK, UAE, Australia and Singapore. Overlapping call windows exist, and most day-to-day work is async regardless. What matters more is reporting clear enough that you never have to wait for a call to know what's happening." },
-  { q: "I'm not sure what I need yet — is it still worth messaging?",
+  { q: "I'm not sure what I need yet. Is it still worth messaging?",
     a: "Yes. \"I don't know where to start\" is a perfectly normal message to send, and the answer is usually a specific free guide rather than anything paid." },
 ];
 
@@ -47,7 +47,7 @@ export default function ContactPage() {
   // the channel Aditya actually answers. Honest and zero-dependency.
   const send = async () => {
     const lines = [
-      `Hi Aditya — ${name || "a visitor"} here (${intent === "owner" ? "business owner" : "learner"}).`,
+      `Hi Aditya, ${name || "a visitor"} here (${intent === "owner" ? "business owner" : "learner"}).`,
       reach && `Reach me: ${reach}`,
       biz && `Business: ${biz}`,
       need && `Need help with: ${need}`,
@@ -167,10 +167,10 @@ export default function ContactPage() {
                 />
               </div>
               <Button type="button" fullWidth onClick={send}>
-                {sent ? "Opened Instagram — paste & send" : "Send via Instagram DM"}
+                {sent ? "Opened Instagram, paste & send" : "Send via Instagram DM"}
               </Button>
               <p className="text-[12px] text-text-muted mt-3 text-center">
-                Opens my Instagram DM with your message copied — just paste and send. I read every one myself.
+                Opens my Instagram DM with your message copied. Just paste and send. I read every one myself.
               </p>
             </Card>
           </div>

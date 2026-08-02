@@ -46,13 +46,13 @@ export const metadata: Metadata = {
 
 const faqsResources = [
   { q: "Is there a free Facebook ads checklist for small business?",
-    a: "Yes — the \"Stop Wasting Ad Budget\" checklist is the first of the seven free guides here, and it's the one worth reading first. It covers the mistakes that turn up most often in real accounts: the wrong campaign objective, creative that's gone stale, and results judged before the learning phase has finished." },
+    a: "Yes. The \"Stop Wasting Ad Budget\" checklist is the first of the seven free guides here, and it's the one worth reading first. It covers the mistakes that turn up most often in real accounts: the wrong campaign objective, creative that's gone stale, and results judged before the learning phase has finished." },
   { q: "Are the guides really free?",
     a: "Yes. No email wall, no card details, no trial that quietly becomes a charge. You DM the keyword on Instagram and the PDFs come back to you." },
   { q: "Why Instagram DM instead of a download button?",
     a: "Two reasons. It skips the email-capture routine nobody enjoys, and a DM means I can send one follow-up tip that fits your business rather than a generic sequence. If DMs aren't your thing, the contact page reaches me the same way." },
   { q: "Which guide should I start with?",
-    a: "Start with the \"Stop Wasting Ad Budget\" checklist — it applies regardless of industry. After that take the one matching your business: clinic lead-gen, restaurant local-ads, D2C scaling, or the FunZone template. If you have no ad budget at all, the Google Map Pack guide is the one you can act on for nothing." },
+    a: "Start with the \"Stop Wasting Ad Budget\" checklist. It applies regardless of industry. After that take the one matching your business: clinic lead-gen, restaurant local-ads, D2C scaling, or the FunZone template. If you have no ad budget at all, the Google Map Pack guide is the one you can act on for nothing." },
   { q: "Will I get spammed afterwards?",
     a: "No. The PDF plus one short follow-up tip is the entire scope." },
 ];

@@ -36,9 +36,9 @@ const modules = [
 ];
 
 export const metadata: Metadata = {
-  title: "Learn Meta & Google Ads — ₹99 Blueprints & Masterclass",
+  title: "Learn Meta & Google Ads: ₹99 Blueprints & Masterclass",
   description:
-    "Run your own ads without an agency. Industry blueprints from ₹99 (~$1.20) and the Zero to Revenue masterclass — real dashboards, step-by-step.",
+    "Run your own ads without an agency. Industry blueprints from ₹99 (~$1.20) and the Zero to Revenue masterclass. Real dashboards, step-by-step.",
   alternates: { canonical: "/learn" },
 };
 
@@ -46,11 +46,11 @@ const faqsLearn = [
   { q: "Can a complete beginner learn to run their own Meta ads?",
     a: "Yes, and most business owners overestimate how hard it is. Far more of it is process than talent. The order that matters: get the ad account and pixel set up properly, learn to read the dashboard, then build campaigns. People usually struggle because they skip straight to spending, not because the platform is beyond them." },
   { q: "What's the difference between a blueprint and a masterclass?",
-    a: "A blueprint is narrow — a step-by-step campaign build for one business type, so you can follow it and get live quickly. A masterclass is the whole system in order, from account setup through to scaling. If you want ads running this week, take the narrow route. If you want to understand why each setting exists, take the longer one." },
+    a: "A blueprint is narrow: a step-by-step campaign build for one business type, so you can follow it and get live quickly. A masterclass is the whole system in order, from account setup through to scaling. If you want ads running this week, take the narrow route. If you want to understand why each setting exists, take the longer one." },
   { q: "Should I learn this myself or hire someone?",
-    a: "A rough test: compare what your time is worth against what your ad budget currently wastes. When the budget is small, learning it yourself is almost always the better return — and it makes you much harder to mislead later. Once spend grows enough that a few percent of waste exceeds a management fee, hiring starts to pay for itself." },
+    a: "A rough test: compare what your time is worth against what your ad budget currently wastes. When the budget is small, learning it yourself is almost always the better return, and it makes you much harder to mislead later. Once spend grows enough that a few percent of waste exceeds a management fee, hiring starts to pay for itself." },
   { q: "Do I need a big budget to start?",
-    a: "No, but you need enough for the platform to learn from. Very small daily budgets struggle to produce the roughly 50 weekly conversions Meta wants before optimisation settles. If your budget can't reach that on purchases, optimise for something cheaper higher in the funnel — messages or landing page views — and move up as volume grows." },
+    a: "No, but you need enough for the platform to learn from. Very small daily budgets struggle to produce the roughly 50 weekly conversions Meta wants before optimisation settles. If your budget can't reach that on purchases, optimise for something cheaper higher in the funnel, such as messages or landing page views, and move up as volume grows." },
   { q: "Is this a subscription?",
     a: "No. One-time price, lifetime access, no recurring charge and no tier sitting above it. Worth stating plainly, since \"course\" tends to imply a subscription these days." },
   { q: "Can I try the free material first?",
