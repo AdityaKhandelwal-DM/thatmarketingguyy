@@ -35,7 +35,11 @@ const personLd = {
   jobTitle: "Performance Marketing Consultant",
   url: "https://www.thatmarketingguyy.com",
   image: "https://www.thatmarketingguyy.com/images/aditya-square.webp",
-  sameAs: ["https://www.instagram.com/that.marketingguyy/"],
+  sameAs: [
+    "https://www.instagram.com/that.marketingguyy/",
+    "https://www.youtube.com/@thatmarketinguy",
+    "https://www.linkedin.com/in/aditya-khandelwal-performance-marketer/",
+  ],
   address: { "@type": "PostalAddress", addressLocality: "Jaipur", addressCountry: "IN" },
 };
 

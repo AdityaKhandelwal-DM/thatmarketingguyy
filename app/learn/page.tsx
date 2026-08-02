@@ -43,18 +43,18 @@ export const metadata: Metadata = {
 };
 
 const faqsLearn = [
-  { q: "Can a complete beginner run their own Meta ads with this?",
-    a: "Yes — that's who it's built for. The masterclass starts at account setup and pixel, then dashboards, campaign builds, creative testing and scaling, in order. It's the same process I've used across 77 real ad accounts, shown on real dashboards, not theory slides. If you want to test the water first, the [free guides](/resources) cover the basics at zero cost." },
-  { q: "How much do your courses cost?",
-    a: "Two products, both one-time. Industry blueprints are ₹99 (~$1.20) each — a step-by-step campaign build for one business type: clinic, bakery, restaurant, D2C, FunZone or local SEO. The masterclass, \"Zero to Revenue: Scale Without Agency,\" is ₹999 (~$12) for six prerecorded modules. No subscription, no upsell — yours forever." },
-  { q: "What's the difference between a ₹99 blueprint and the ₹999 masterclass?",
-    a: "A blueprint is narrow and fast: copy-paste campaigns for one specific business type, ₹99 (~$1.20), done. The masterclass is the whole system — six modules from pixel setup to scaling without an agency, ₹999 (~$12). If you own one business and want ads live this week, blueprint. If you want to actually understand the machine, masterclass." },
-  { q: "Do you offer refunds?",
-    a: "I haven't published a refund policy, so I won't pretend one exists. What I can tell you: prices are one-time — ₹99 (~$1.20) or ₹999 (~$12) — with lifetime access and no recurring charge. If you're unsure whether my teaching style fits you, start with the [free guides](/resources) first; they cost nothing and read exactly like the paid material." },
-  { q: "Is this a subscription or are there upsells later?",
-    a: "Neither. One-time prices, yours forever, no upsell traps. You pay ₹99 (~$1.20) for a blueprint or ₹999 (~$12) for the masterclass once, and you keep it. There is no \"pro tier,\" no community fee, no webinar that turns into a pitch. The only next step, if you ever want it, is [working with me directly](/contact)." },
-  { q: "Which blueprint should I buy for my business?",
-    a: "Match it to what you sell. Clinic for appointments, restaurant or bakery for footfall and orders, D2C for scaling spend without ROAS falling off, FunZone for weekend fill, local SEO if you want Map Pack rankings with zero ad budget. Each is ₹99 (~$1.20). Not on the list? [Message me](/contact) and I'll tell you honestly which one is closest — or whether none fits." },
+  { q: "Can a complete beginner learn to run their own Meta ads?",
+    a: "Yes, and most business owners overestimate how hard it is. Far more of it is process than talent. The order that matters: get the ad account and pixel set up properly, learn to read the dashboard, then build campaigns. People usually struggle because they skip straight to spending, not because the platform is beyond them." },
+  { q: "What's the difference between a blueprint and a masterclass?",
+    a: "A blueprint is narrow — a step-by-step campaign build for one business type, so you can follow it and get live quickly. A masterclass is the whole system in order, from account setup through to scaling. If you want ads running this week, take the narrow route. If you want to understand why each setting exists, take the longer one." },
+  { q: "Should I learn this myself or hire someone?",
+    a: "A rough test: compare what your time is worth against what your ad budget currently wastes. When the budget is small, learning it yourself is almost always the better return — and it makes you much harder to mislead later. Once spend grows enough that a few percent of waste exceeds a management fee, hiring starts to pay for itself." },
+  { q: "Do I need a big budget to start?",
+    a: "No, but you need enough for the platform to learn from. Very small daily budgets struggle to produce the roughly 50 weekly conversions Meta wants before optimisation settles. If your budget can't reach that on purchases, optimise for something cheaper higher in the funnel — messages or landing page views — and move up as volume grows." },
+  { q: "Is this a subscription?",
+    a: "No. One-time price, lifetime access, no recurring charge and no tier sitting above it. Worth stating plainly, since \"course\" tends to imply a subscription these days." },
+  { q: "Can I try the free material first?",
+    a: "Sensible, and I'd recommend it. The [free guides](/resources) cover similar ground at a shallower depth and cost nothing, so you can find out whether the way I explain things suits you before paying for anything." },
 ];
 
 export default function LearnPage() {

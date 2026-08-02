@@ -57,6 +57,8 @@ export default function Footer() {
             </h5>
             {[
               { label: "Instagram", href: "https://www.instagram.com/that.marketingguyy/" },
+              { label: "YouTube",   href: "https://www.youtube.com/@thatmarketinguy" },
+              { label: "LinkedIn",  href: "https://www.linkedin.com/in/aditya-khandelwal-performance-marketer/" },
               { label: "Contact",   href: "/contact" },
             ].map((l) => (
               <Link key={l.label} href={l.href} className="text-[13px] sm:text-sm opacity-70 hover:opacity-100 hover:text-white transition-opacity duration-[250ms]">

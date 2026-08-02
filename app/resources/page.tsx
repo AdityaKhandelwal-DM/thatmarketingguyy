@@ -46,15 +46,15 @@ export const metadata: Metadata = {
 
 const faqsResources = [
   { q: "Is there a free Facebook ads checklist for small business?",
-    a: "Yes — the \"Stop Wasting Ad Budget\" checklist is the first of the 7 free guides, and it's the one I tell everyone to start with. It covers the mistakes I see most across 77 ad accounts: wrong objectives, tired creative, budgets judged in the wrong window. DM the keyword on Instagram and it's yours; no email required." },
-  { q: "Are the 7 guides really free, or is there a catch?",
-    a: "Really free. No email wall, no card details, no \"free trial.\" You DM the keyword GUIDE to my Instagram and the PDFs land in your inbox. The catch, if you want to call it one: I built them so you'd trust me enough to eventually look at the ₹99 (~$1.20) blueprints on the [learn page](/learn). That's the whole funnel, stated out loud." },
-  { q: "Why do I have to DM you on Instagram instead of just downloading them?",
-    a: "Two honest reasons. One: no email-gymnastics — no forms, no newsletter you didn't ask for. Two: a DM starts an actual conversation, so I can send a short follow-up tip that fits your business instead of a generic drip sequence. If DMs aren't your thing, the [contact form](/contact) works too." },
+    a: "Yes — the \"Stop Wasting Ad Budget\" checklist is the first of the seven free guides here, and it's the one worth reading first. It covers the mistakes that turn up most often in real accounts: the wrong campaign objective, creative that's gone stale, and results judged before the learning phase has finished." },
+  { q: "Are the guides really free?",
+    a: "Yes. No email wall, no card details, no trial that quietly becomes a charge. You DM the keyword on Instagram and the PDFs come back to you." },
+  { q: "Why Instagram DM instead of a download button?",
+    a: "Two reasons. It skips the email-capture routine nobody enjoys, and a DM means I can send one follow-up tip that fits your business rather than a generic sequence. If DMs aren't your thing, the contact page reaches me the same way." },
   { q: "Which guide should I start with?",
-    a: "Start with the \"Stop Wasting Ad Budget\" checklist — it applies to every business and pays for itself (it's free, so instantly). Then take your industry guide: clinic lead-gen, restaurant local-ads, D2C scaling, or the FunZone template. If you're a local business with no ad budget at all, go straight to the Google Map Pack ranking guide instead." },
-  { q: "Will you spam me after I DM you?",
-    a: "No. You get the PDF plus one short follow-up tip, and that's the promised scope. I'd rather you come back because a guide actually helped than because I drip-fed your inbox. If a guide does help and you want the deeper version, the ₹99 (~$1.20) blueprints on the [learn page](/learn) are the next step — but that move is yours to make." },
+    a: "Start with the \"Stop Wasting Ad Budget\" checklist — it applies regardless of industry. After that take the one matching your business: clinic lead-gen, restaurant local-ads, D2C scaling, or the FunZone template. If you have no ad budget at all, the Google Map Pack guide is the one you can act on for nothing." },
+  { q: "Will I get spammed afterwards?",
+    a: "No. The PDF plus one short follow-up tip is the entire scope." },
 ];
 
 export default function ResourcesPage() {

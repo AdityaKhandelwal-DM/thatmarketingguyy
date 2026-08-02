@@ -21,18 +21,18 @@ const intents: { key: Intent; icon: LucideIcon; title: string; desc: string }[] 
 ];
 
 const faqsContact = [
-  { q: "How do I hire you to manage my ads?",
-    a: "Pick \"I own a business\" on this page, tell me your business, city and what you need help with, and send it. I'll come back with questions and an honest recommendation. Done-for-you management is the top of my ladder — under it sit the free guides, ₹99 (~$1.20) blueprints and the ₹999 (~$12) masterclass, so you're never forced into the expensive option." },
+  { q: "How do I get in touch about my ads?",
+    a: "Pick whichever describes you on this page, add your business, city and what isn't working, then send. The message opens in my Instagram DMs, which is where I actually reply. Including your current monthly spend and what you're optimising for saves a round trip." },
   { q: "How fast do you reply?",
-    a: "I reply personally — there's no team inbox, no autoresponder, no \"a specialist will contact you.\" That's the honest trade-off of working with one person instead of an agency: you get me, at human speed, not a ticket number. If it's urgent, say so in the message and include WhatsApp; that's the channel I live in between client calls." },
-  { q: "What happens after I send the message?",
-    a: "I read it myself and reply based on which door you picked. Business owner: I'll ask about your business, city and current ads, then tell you plainly whether done-for-you management, a ₹99 (~$1.20) blueprint, or just the [free guides](/resources) fit — I've told people not to hire me. Learner: I'll point you at the right starting material. No discovery-call funnel." },
+    a: "Personally, and at human speed — there's no team inbox and no autoresponder. That's the honest trade-off of dealing with one person rather than an agency. If something's urgent, say so and include a WhatsApp number." },
+  { q: "What happens after I send a message?",
+    a: "I read it and reply based on what you've told me. If paid management isn't right for your stage, I'll say so and point you at the material that is — I've told people not to hire me before. There's no discovery-call funnel waiting at the end of it." },
   { q: "Do you do one-off ad account audits?",
-    a: "My published offers are the ladder: free guides, blueprints, the masterclass, and ongoing management — a standalone audit isn't a listed product. But if you just want a second pair of eyes on your account, message me anyway and describe what's running. After 77 ad accounts I can usually tell you quickly whether something's structurally wrong — and I'll say so either way." },
-  { q: "I'm in the US or UK — do timezones make working with you painful?",
-    a: "No. I already work remotely from Jaipur with clients in the US, UK, UAE, Australia and Singapore, so overlapping call windows are a solved problem, and most day-to-day runs async over WhatsApp and email anyway. What matters is that reporting is clear enough that you never wait on a call to know what's happening." },
-  { q: "I don't know if I need done-for-you or a course — which do I pick?",
-    a: "Quick test: if your time is worth more than your ad budget's waste, hire it out; if the budget is small and you want the skill, learn it. Undecided is fine too — start with the [free guides](/resources), see how my head works, then decide. Both doors lead to the same person reading your message." },
+    a: "A standalone audit isn't a listed offer, but if you want a second pair of eyes, describe what's running and I can usually tell you quickly whether something is structurally wrong." },
+  { q: "I'm in the US or UK — do timezones make this difficult?",
+    a: "No. I already work from Jaipur with clients across the US, UK, UAE, Australia and Singapore. Overlapping call windows exist, and most day-to-day work is async regardless. What matters more is reporting clear enough that you never have to wait for a call to know what's happening." },
+  { q: "I'm not sure what I need yet — is it still worth messaging?",
+    a: "Yes. \"I don't know where to start\" is a perfectly normal message to send, and the answer is usually a specific free guide rather than anything paid." },
 ];
 
 export default function ContactPage() {

@@ -181,18 +181,18 @@ function MetricCard({ k, v, highlight }: { k: string; v: string; highlight?: boo
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 const faqsHome = [
-  { q: "How much does it cost to hire a Facebook ads freelancer?",
-    a: "With me you pick your entry point. Free: 7 guides over Instagram DM. ₹99 (~$1.20): an industry blueprint you run yourself. ₹999 (~$12): the full masterclass. Done-for-you management is quoted after you [tell me about your business](/contact) — pricing depends on spend and scope, and I'd rather give you a real number than a generic rate card." },
+  { q: "How much does a Facebook ads freelancer cost?",
+    a: "Rates vary enormously by market — a US or UK freelancer typically charges several times what an India-based one does for the same work — and most price either a flat monthly retainer or a percentage of ad spend. What matters more than the rate is what's included. Ask three things of anyone you consider: who owns the ad account, do you get raw dashboard access, and does the reporting show cost per lead or just impressions." },
   { q: "Do you work with clients outside India?",
-    a: "Yes — that's most of my week. I work remotely from Jaipur with business owners in the US, UK, UAE, Australia and Singapore. Everything runs over calls and WhatsApp, and you keep full ownership of your ad accounts. The numbers on the [results page](/results) — 77 ad accounts, 49,752 leads — come from exactly this kind of remote work." },
+    a: "Yes. I work remotely from Jaipur with business owners in the US, UK, UAE, Australia and Singapore. Everything runs over calls and WhatsApp, and clients keep full ownership of their ad accounts — which matters far more than where the person managing them sits. Timezone overlap is a solved problem, and most day-to-day work is async anyway." },
   { q: "Meta ads or Google ads — which one does my business need?",
-    a: "Depends on where your buyer is. Google catches people already searching — clinics and local stores usually start there. Meta creates demand — restaurants, venues and D2C brands lean on it. Across my 77 ad accounts I run both, often together, and the [results page](/results) shows which platform each campaign ran on so you can compare like-for-like." },
-  { q: "How are you different from a marketing agency?",
-    a: "An agency's incentive is to keep you dependent; mine is to make you understand your own account. No long contracts, no account manager between us, and I teach you to read the dashboard yourself. I've managed ₹73.5L (~$88K) in spend as one person — and I publish my failed campaigns on the [results page](/results), which no agency deck will ever do." },
-  { q: "What size of business do you work with?",
-    a: "Small and medium businesses — clinics, restaurants, D2C founders, local stores, venues. Most of my 49,752 leads and conversions came from exactly these, not from big-brand budgets. If you're too early for done-for-you management, start with the [free guides](/resources) or a ₹99 (~$1.20) blueprint and come back when the spend justifies it." },
-  { q: "Will you run my ads for me, or teach me to do it?",
-    a: "Whichever you actually need. Some owners want done-for-you management; others want to run ads themselves and just need the playbook. That's why the ladder exists: free guides, ₹99 (~$1.20) blueprints, the ₹999 (~$12) masterclass, and full management. Tell me which camp you're in on the [contact page](/contact) — there's a selector for exactly this." },
+    a: "It depends on whether demand already exists. Google catches people actively searching for what you sell, so it suits clinics, local services and anything with clear buying intent. Meta creates demand — it works when people don't yet know they want you, which is why restaurants, venues and D2C brands lean on it. Plenty of businesses need both, but if budget is tight, start where the intent already is." },
+  { q: "What's the difference between hiring a freelancer and an agency?",
+    a: "An agency gives you a team, a documented process and usually an account manager sitting between you and whoever actually touches your campaigns. A freelancer gives you direct access to the person in the account, and lower overhead. The trade-off is capacity — one person can't cover everything an agency can. Neither is automatically better; it depends on how much scale you need and how much distance you're willing to accept." },
+  { q: "What size of business does this suit?",
+    a: "Small and medium businesses — clinics, restaurants, D2C founders, local stores, venues. If you're spending a few hundred dollars a month, you probably don't need anyone managing it yet; you need the basics and to keep the budget. Paid management starts making sense once spend is large enough that a few percent of waste costs more than the fee does." },
+  { q: "How long before ads start working?",
+    a: "Meta needs roughly 50 conversion events a week per ad set before its optimisation settles — the learning phase — and judging results before that finishes is the most common mistake I see. On small budgets that usually means two to four weeks before the numbers mean anything. Google Search can show signal sooner, because the intent is already there when someone types the query." },
 ];
 
 export default function Home() {
