@@ -235,6 +235,7 @@ export default function Home() {
                   className="aspect-[4/5] rounded-[22px] shadow-card"
                   sizes="(max-width: 768px) 90vw, 420px"
                   priority
+                  unoptimized
                 />
               </div>
             </div>

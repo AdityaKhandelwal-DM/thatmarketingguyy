@@ -10,14 +10,23 @@ title: Why Are My Facebook Ads Not Working? 9 Fixes From 77 Real Ad Accounts
 description: Meta description, ≤155 chars, plainspoken, includes the target keyword.
 date: 2026-08-02
 keyword: why are my facebook ads not working
+image: work_dashboard
 ---
 ```
+
+`image` is the post's hero/thumbnail. It must be the name (no extension) of an
+existing file in `public/images/` — run `ls public/images/*.webp` and pick the
+most topical. All of these are licence-free (Unsplash) — do NOT hotlink or
+download anything external.
 
 ## Markdown subset (the renderer supports ONLY this)
 
 `## H2`, `### H3`, paragraphs, `**bold**`, `*italic*`,
-`[link](/learn)`, `- bullet`, `1. numbered`, `> quote`, `---` rule.
-No images, tables, code fences, or raw HTML — they will render as plain text.
+`[link](/learn)`, `- bullet`, `1. numbered`, `> quote`, `---` rule, and
+inline images on their OWN line: `![caption](image_name)` where `image_name`
+is a file from `public/images/` (no extension). Use 1–2 inline images per post
+at natural section breaks; the caption renders under the image, so make it a
+real sentence. No tables, code fences, or raw HTML — they render as plain text.
 
 ## Voice rules (from marketing/BRAND.md — non-negotiable)
 

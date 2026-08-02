@@ -3,6 +3,7 @@ title: Why Are My Facebook Ads Not Working? 9 Fixes From 77 Real Ad Accounts
 description: The 9 reasons Facebook ads fail, taken from 77 real ad accounts and ₹73.5L (~$88K) of spend — with the exact fix for each one.
 date: 2026-08-02
 keyword: why are my facebook ads not working
+image: work_dashboard
 ---
 
 I've managed 77 ad accounts and ₹73.5L (~$88K) of spend across clinics, restaurants, D2C brands, resorts and entertainment venues. When a business owner tells me "Facebook ads don't work for us," the account almost always shows one of the same nine problems.
@@ -14,6 +15,8 @@ Here they are, with what each one looks like in your Ads Manager and what I actu
 The most expensive mistake I've ever audited: a venue running a **Sales** objective when they wanted leads. Cost per lead: ₹21,691 (~$260). We rebuilt the same audience and creative as an instant-form lead campaign — cost per lead fell to ₹45 (~$0.54).
 
 Meta optimises for exactly what you ask. Ask for the wrong thing and it delivers the wrong thing, efficiently.
+
+![Reading the numbers in Ads Manager is where every fix starts.](work_charts)
 
 ## 2. Optimising for clicks when you sell offline
 
@@ -48,6 +51,8 @@ This one hurts the most. A nightlife venue was generating leads at ₹2,264 (~$2
 In my own portfolio I've killed campaigns at 0.11× ROAS and walked a client out of a call campaign that had burned ₹4.79L (~$5,700) at ₹3,043 per conversion. Every account has losers. The difference between profitable and unprofitable accounts is how fast someone notices and stops them. I publish mine — wins and write-offs — on the [results page](/results).
 
 ---
+
+![The fix is usually in the account, not the platform.](work_analytics)
 
 ## The pattern behind all nine
 

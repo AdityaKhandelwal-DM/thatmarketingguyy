@@ -15,6 +15,9 @@ interface MediaProps {
   overlay?: boolean;
   /** subtle zoom on hover of the nearest `.group` ancestor */
   zoomOnHover?: boolean;
+  /** serve the source file as-is — skips next/image re-compression.
+      Use for portraits where AVIF/WebP q75 re-encoding visibly softens faces. */
+  unoptimized?: boolean;
 }
 
 /**
@@ -32,6 +35,7 @@ export default function Media({
   priority = false,
   overlay = false,
   zoomOnHover = false,
+  unoptimized = false,
 }: MediaProps) {
   return (
     <div className={cn("relative overflow-hidden bg-bg-light", className)}>
@@ -41,6 +45,7 @@ export default function Media({
         fill
         sizes={sizes}
         priority={priority}
+        unoptimized={unoptimized}
         className={cn(
           "object-cover",
           zoomOnHover &&

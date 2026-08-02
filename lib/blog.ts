@@ -15,6 +15,7 @@ export interface PostMeta {
   description: string;
   date: string; // YYYY-MM-DD
   keyword: string;
+  image: string; // name of a file in /public/images (no extension)
   readMinutes: number;
 }
 
@@ -72,6 +73,17 @@ export function renderMarkdown(md: string): string {
     const t = line.trim();
     if (!t) { flushPara(); flushList(); continue; }
 
+    const img = t.match(/^!\[([^\]]*)\]\(([^)\s]+)\)$/);
+    if (img) {
+      flushPara(); flushList();
+      const src = img[2].startsWith("/") ? img[2] : `/images/${img[2]}.webp`;
+      out.push(
+        `<figure><img src="${src}" alt="${img[1]}" loading="lazy" />` +
+          (img[1] ? `<figcaption>${img[1]}</figcaption>` : "") +
+          `</figure>`
+      );
+      continue;
+    }
     const h3 = t.match(/^### (.+)/);
     const h2 = t.match(/^## (.+)/);
     const li = t.match(/^[-*] (.+)/);
@@ -115,6 +127,7 @@ export function getAllPosts(): PostMeta[] {
         description: meta.description ?? "",
         date: meta.date ?? "1970-01-01",
         keyword: meta.keyword ?? "",
+        image: meta.image ?? "work_dashboard",
         readMinutes: Math.max(2, Math.round(body.split(/\s+/).length / 220)),
       };
     })
@@ -132,6 +145,7 @@ export function getPost(slug: string): Post | null {
     description: meta.description ?? "",
     date: meta.date ?? "1970-01-01",
     keyword: meta.keyword ?? "",
+    image: meta.image ?? "work_dashboard",
     readMinutes: Math.max(2, Math.round(body.split(/\s+/).length / 220)),
     html: renderMarkdown(body),
   };

@@ -91,8 +91,8 @@ export default function AboutPage() {
                   The 1-line story
                 </span>
                 <p className="text-[16px] md:text-[18px] font-semibold text-text-primary leading-snug">
-                  I watched agencies charge ₹50K/month and hand business owners a PDF full of &ldquo;reach&rdquo; —
-                  so I built the clarity they should have given you from day one.
+                  I watched agencies charge heavily for paid campaigns and hand business owners a PDF
+                  full of &ldquo;reach&rdquo; — so I built the clarity they should have given you from day one.
                 </p>
               </div>
 
@@ -133,6 +133,7 @@ export default function AboutPage() {
                   className="aspect-[4/5] rounded-[22px] shadow-card"
                   sizes="(max-width: 768px) 90vw, 420px"
                   priority
+                  unoptimized
                 />
                 {/* Overlapping dashboard card */}
                 <div className="absolute bottom-0 -left-4 sm:-left-8 w-[62%] rounded-[18px] border-4 border-white shadow-card overflow-hidden">

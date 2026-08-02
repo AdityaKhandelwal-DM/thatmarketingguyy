@@ -3,6 +3,7 @@ import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Card from "@/components/ui/Card";
+import Media from "@/components/ui/Media";
 import { getAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
@@ -49,7 +50,16 @@ export default function BlogPage() {
           <div className="flex flex-col gap-4 reveal">
             {posts.map((p) => (
               <Link key={p.slug} href={`/blog/${p.slug}`} className="group">
-                <Card className="p-6 md:p-7 hover:-translate-y-1 hover:border-primary/25 transition-all duration-[250ms]">
+                <Card className="p-0 overflow-hidden hover:-translate-y-1 hover:border-primary/25 transition-all duration-[250ms]">
+                  <div className="flex flex-col md:flex-row">
+                  <Media
+                    src={p.image}
+                    alt={p.title}
+                    className="w-full md:w-[280px] h-[180px] md:h-auto md:self-stretch flex-none"
+                    sizes="(max-width: 768px) 100vw, 280px"
+                    zoomOnHover
+                  />
+                  <div className="p-6 md:p-7 flex-1">
                   <div className="flex items-center gap-3 text-[12px] text-text-muted mb-2">
                     <span>{fmt(p.date)}</span>
                     <span aria-hidden="true">·</span>
@@ -64,6 +74,8 @@ export default function BlogPage() {
                   <span className="inline-block text-[13px] font-semibold text-primary mt-4">
                     Read the breakdown →
                   </span>
+                  </div>
+                  </div>
                 </Card>
               </Link>
             ))}

@@ -82,3 +82,6 @@
 .prose-post blockquote { @apply border-l-4 border-primary bg-primary/[.06] rounded-r-xl px-5 py-3 mb-5; }
 .prose-post blockquote p { @apply mb-0 text-text-primary font-medium; }
 .prose-post hr { @apply border-border my-10; }
+.prose-post figure { @apply my-8; }
+.prose-post figure img { @apply w-full rounded-card shadow-card; }
+.prose-post figcaption { @apply text-[12.5px] text-text-muted mt-2.5 text-center; }

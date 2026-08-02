@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
+import Media from "@/components/ui/Media";
 import { getAllPosts, getPost } from "@/lib/blog";
 
 export function generateStaticParams() {
@@ -22,7 +23,12 @@ export async function generateMetadata({
     title: post.title,
     description: post.description,
     alternates: { canonical: `/blog/${post.slug}` },
-    openGraph: { title: post.title, description: post.description, type: "article" },
+    openGraph: {
+      title: post.title,
+      description: post.description,
+      type: "article",
+      images: [{ url: `/images/${post.image}.webp`, width: 1200, height: 800 }],
+    },
   };
 }
 
@@ -81,6 +87,15 @@ export default async function PostPage({
         </section>
 
         <section className="py-12 md:py-16">
+          <div className="w-full max-w-[820px] mx-auto px-4 sm:px-6 lg:px-10 mb-10">
+            <Media
+              src={post.image}
+              alt={post.title}
+              className="aspect-[21/9] rounded-card shadow-card"
+              sizes="(max-width: 820px) 100vw, 820px"
+              priority
+            />
+          </div>
           <div
             className="prose-post w-full max-w-[760px] mx-auto px-4 sm:px-6 lg:px-10"
             dangerouslySetInnerHTML={{ __html: post.html }}
