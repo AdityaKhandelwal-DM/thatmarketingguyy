@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
@@ -46,6 +47,13 @@ const feed: { img: string; alt: string }[] = [
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
+
+export const metadata: Metadata = {
+  title: "About Aditya Khandelwal — Performance Marketing Consultant",
+  description:
+    "Performance marketing consultant in Jaipur, India, working with SME owners in the US, UK, UAE, Australia and Singapore. Meta Ads, Google Ads, local SEO.",
+  alternates: { canonical: "/about" },
+};
 
 export default function AboutPage() {
   return (

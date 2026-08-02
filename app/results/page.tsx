@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import Card from "@/components/ui/Card";
 import Media from "@/components/ui/Media";
 import CountUp from "@/components/ui/CountUp";
+import { GoogleLogo, FacebookLogo } from "@/components/ui/BrandLogos";
 
 /* ─────────────────────────────────────────────────────────────────────────────
    Figures come from three sources. The first two are auditable; the third
@@ -40,9 +41,9 @@ const filters = [
   "Retail",
 ];
 
-const portfolio = [
-  { k: "Ad spend managed", v: "₹73.5L" },
-  { k: "Best ROAS", v: "8.2×" },
+const portfolio: { k: string; v: string; sub?: string }[] = [
+  { k: "Ad spend managed", v: "₹73.5L", sub: "≈ $88K" },
+  { k: "Best ROAS", v: "8.2×", sub: "textile D2C" },
   { k: "Leads & conversions", v: "49,752" },
   { k: "Ad accounts", v: "77" },
 ];
@@ -345,6 +346,9 @@ export default function ResultsPage() {
                 <div className="text-[10px] tracking-[.06em] uppercase text-text-muted">{p.k}</div>
                 <div className="tabular-nums text-[22px] md:text-[26px] font-bold text-text-primary mt-1">
                   <CountUp value={p.v} />
+                  {p.sub && (
+                    <span className="ml-2 text-[12px] font-medium text-text-muted align-middle">{p.sub}</span>
+                  )}
                 </div>
               </div>
             ))}
@@ -399,7 +403,12 @@ export default function ResultsPage() {
                       <span className="text-[10px] tracking-[.06em] uppercase text-primary bg-primary/10 px-2.5 py-1 rounded-lg flex-none">
                         {c.cat}
                       </span>
-                      <span className="text-[10px] tracking-[.06em] uppercase text-text-primary bg-secondary px-2.5 py-1 rounded-lg flex-none font-semibold">
+                      <span className="inline-flex items-center gap-1.5 text-[10px] tracking-[.06em] uppercase text-text-primary bg-white border border-border px-2.5 py-1 rounded-lg flex-none font-semibold">
+                        {("platform" in c ? (c as { platform: string }).platform : "Meta") === "Google" ? (
+                          <GoogleLogo className="w-3 h-3" />
+                        ) : (
+                          <FacebookLogo className="w-3 h-3" />
+                        )}
                         {"platform" in c ? (c as { platform: string }).platform : "Meta"}
                       </span>
                     </div>

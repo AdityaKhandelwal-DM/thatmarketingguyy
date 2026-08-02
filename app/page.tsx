@@ -5,6 +5,18 @@ import Card from "@/components/ui/Card";
 import CountUp from "@/components/ui/CountUp";
 import Media from "@/components/ui/Media";
 import Image from "next/image";
+import {
+  GoogleAdsLogo,
+  AnalyticsLogo,
+  GTMLogo,
+  SearchConsoleLogo,
+  MetaLogo,
+  FacebookLogo,
+  WhatsAppLogo,
+  InstagramLogo,
+  YouTubeLogo,
+  GBPLogo,
+} from "@/components/ui/BrandLogos";
 import Link from "next/link";
 import {
   HeartPulse,
@@ -139,6 +151,19 @@ const freeResources: { icon: LucideIcon; title: string }[] = [
   { icon: Target, title: "FunZone Weekend-Fill Template" },
 ];
 
+const stack: { logo: React.ComponentType<{ className?: string }>; name: string }[] = [
+  { logo: MetaLogo, name: "Meta Ads" },
+  { logo: GoogleAdsLogo, name: "Google Ads" },
+  { logo: AnalyticsLogo, name: "Google Analytics" },
+  { logo: GTMLogo, name: "Tag Manager" },
+  { logo: SearchConsoleLogo, name: "Search Console" },
+  { logo: GBPLogo, name: "Business Profile" },
+  { logo: FacebookLogo, name: "Facebook Ads" },
+  { logo: InstagramLogo, name: "Instagram Ads" },
+  { logo: WhatsAppLogo, name: "WhatsApp Business" },
+  { logo: YouTubeLogo, name: "YouTube Ads" },
+];
+
 // ─── Dashboard Illustration ────────────────────────────────────────────────────
 
 function DashboardIllustration() {
@@ -250,7 +275,7 @@ export default function Home() {
 
             {/* Left — copy */}
             <div className="animate-fadeInUp">
-              <span className="eyebrow mb-5 block">Performance marketing · without the mystery</span>
+              <span className="eyebrow mb-5 block">Meta &amp; Google Ads consultant · remote, worldwide</span>
 
               <h1 className="text-[clamp(32px,4.8vw,56px)] font-bold text-text-primary leading-[1.08]">
                 Your ads are running.<br />
@@ -261,7 +286,7 @@ export default function Home() {
                 Most business owners don&apos;t know the answer — and that&apos;s not their fault. Agencies are built to keep it complicated.
               </p>
               <p className="text-[17px] md:text-[18px] text-text-secondary max-w-[540px] leading-[1.7] mb-8">
-                I&apos;ve managed 50+ ad accounts across clinics, restaurants, D2C, and local stores.{" "}
+                I&apos;ve managed 77 ad accounts across clinics, restaurants, D2C, and local stores.{" "}
                 <strong className="text-text-primary">I teach you to read the numbers yourself.</strong>
               </p>
 
@@ -273,8 +298,8 @@ export default function Home() {
               {/* Trust stats */}
               <div className="grid grid-cols-3 gap-4 mt-10 pt-8 border-t border-border">
                 {[
-                  { n: "50+", l: "ad accounts managed" },
-                  { n: "6",   l: "industries served" },
+                  { n: "77", l: "ad accounts managed" },
+                  { n: "8",   l: "industries served" },
                   { n: "₹0",  l: "to start learning" },
                 ].map((t) => (
                   <div key={t.l} className="flex flex-col">
@@ -305,8 +330,8 @@ export default function Home() {
 
                 {/* Floating ROAS badge */}
                 <div className="absolute right-3 top-5 bg-text-primary text-white rounded-2xl px-4 py-3 shadow-card">
-                  <div className="text-[10px] tracking-[.06em] uppercase text-white/55">Avg ROAS</div>
-                  <div className="tabular-nums text-[22px] text-secondary mt-0.5 font-bold">5.8×</div>
+                  <div className="text-[10px] tracking-[.06em] uppercase text-white/55">Best ROAS</div>
+                  <div className="tabular-nums text-[22px] text-secondary mt-0.5 font-bold">8.2×</div>
                 </div>
               </div>
             </div>
@@ -338,9 +363,9 @@ export default function Home() {
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
           <div className="grid grid-cols-3 gap-4 text-center">
             {[
-              { n: "50+",   l: "Ad accounts across India" },
-              { n: "—",     l: "Ad spend managed (updating)" },
-              { n: "5.8×",  l: "Average ROAS delivered" },
+              { n: "77",     l: "Ad accounts managed" },
+              { n: "₹73.5L", l: "Ad spend managed (~$88K)" },
+              { n: "49,752", l: "Leads & conversions delivered" },
             ].map((c, i) => (
               <div key={i} className={`px-2 relative ${i > 0 ? "border-l border-border" : ""}`}>
                 <CountUp
@@ -348,6 +373,29 @@ export default function Home() {
                   className="block tabular-nums text-xl sm:text-2xl md:text-[clamp(26px,3.2vw,40px)] font-bold text-text-primary"
                 />
                 <div className="text-[11px] sm:text-[13px] text-text-secondary mt-1">{c.l}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ══ THE STACK ═════════════════════════════════════════════════════════ */}
+      <section className="py-12 md:py-16">
+        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
+          <div className="text-center mb-8 reveal">
+            <span className="eyebrow justify-center mb-3">The stack</span>
+            <h2 className="text-[clamp(20px,2.6vw,30px)] font-bold text-text-primary">
+              The tools I work in every single day.
+            </h2>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3 reveal">
+            {stack.map((t) => (
+              <div
+                key={t.name}
+                className="flex items-center gap-2.5 bg-white border border-border rounded-xl px-4 py-2.5 shadow-card hover:-translate-y-0.5 hover:border-primary/30 transition-all duration-[250ms]"
+              >
+                <t.logo className="w-5 h-5 flex-none" />
+                <span className="text-[13px] font-semibold text-text-primary whitespace-nowrap">{t.name}</span>
               </div>
             ))}
           </div>

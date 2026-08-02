@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
@@ -30,6 +31,13 @@ const modules = [
   "Scaling spend while holding ROAS",
   "Google Business Profile + local SEO",
 ];
+
+export const metadata: Metadata = {
+  title: "Learn Meta & Google Ads — ₹99 Blueprints & Masterclass",
+  description:
+    "Run your own ads without an agency. Industry blueprints from ₹99 (~$1.20) and the Zero to Revenue masterclass — real dashboards, step-by-step.",
+  alternates: { canonical: "/learn" },
+};
 
 export default function LearnPage() {
   return (

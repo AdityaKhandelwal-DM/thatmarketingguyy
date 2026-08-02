@@ -11,9 +11,44 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "thatmarketingguy — Marketing, Finally Made Clear",
+  metadataBase: new URL("https://www.thatmarketingguyy.com"),
+  title: {
+    default: "Meta & Google Ads Consultant for Small Business | Aditya K",
+    template: "%s | thatmarketingguy",
+  },
   description:
-    "Aditya Khandelwal teaches business owners to run their own ads and rank on Google. Real dashboards, real numbers, no agency jargon.",
+    "I run Meta and Google Ads for small businesses worldwide — $88K+ managed, 49,752 leads, 8.2× best ROAS. No agency jargon, no long contracts.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    siteName: "thatmarketingguy",
+    type: "website",
+    locale: "en_US",
+    images: [{ url: "/images/aditya-square.webp", width: 700, height: 700 }],
+  },
+  twitter: { card: "summary_large_image" },
+};
+
+const personLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Aditya Khandelwal",
+  jobTitle: "Performance Marketing Consultant",
+  url: "https://www.thatmarketingguyy.com",
+  image: "https://www.thatmarketingguyy.com/images/aditya-square.webp",
+  sameAs: ["https://www.instagram.com/that.marketingguyy/"],
+  address: { "@type": "PostalAddress", addressLocality: "Jaipur", addressCountry: "IN" },
+};
+
+const serviceLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "thatmarketingguy",
+  url: "https://www.thatmarketingguyy.com",
+  founder: { "@type": "Person", name: "Aditya Khandelwal" },
+  areaServed: ["US", "GB", "AE", "AU", "SG", "IN"],
+  address: { "@type": "PostalAddress", addressLocality: "Jaipur", addressCountry: "IN" },
+  serviceType: ["Meta Ads Management", "Google Ads Management", "Local SEO"],
+  priceRange: "₹₹",
 };
 
 export default function RootLayout({
@@ -26,6 +61,14 @@ export default function RootLayout({
       <body>
         <ScrollReveal />
         {children}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLd) }}
+        />
       </body>
     </html>
   );

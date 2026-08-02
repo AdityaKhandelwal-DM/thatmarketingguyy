@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
@@ -51,6 +52,12 @@ const perks: { icon: LucideIcon; title: string; desc: string }[] = [
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
+
+export const metadata: Metadata = {
+  title: "Careers — Work With thatmarketingguy",
+  description: "Video editing, content and performance marketing roles at thatmarketingguy. Real work, real learning, portfolio-worthy results.",
+  alternates: { canonical: "/careers" },
+};
 
 export default function CareersPage() {
   return (

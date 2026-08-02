@@ -67,3 +67,18 @@
   .reveal { transition: none; opacity: 1; transform: none; }
   .animate-fadeInUp { animation: none; }
 }
+
+/* ── Blog article typography (see lib/blog.ts renderer) ── */
+.prose-post { @apply text-text-primary; }
+.prose-post p { @apply text-[16px] md:text-[17px] leading-[1.8] text-text-secondary mb-5; }
+.prose-post h2 { @apply text-[22px] md:text-[26px] font-bold mt-10 mb-3 leading-snug; }
+.prose-post h3 { @apply text-[18px] md:text-[20px] font-bold mt-8 mb-2.5; }
+.prose-post strong { @apply text-text-primary font-semibold; }
+.prose-post a { @apply text-primary font-medium underline underline-offset-2 hover:text-primary-dark; }
+.prose-post ul, .prose-post ol { @apply mb-5 pl-5 flex flex-col gap-2; }
+.prose-post ul { @apply list-disc; }
+.prose-post ol { @apply list-decimal; }
+.prose-post li { @apply text-[16px] md:text-[17px] leading-[1.7] text-text-secondary; }
+.prose-post blockquote { @apply border-l-4 border-primary bg-primary/[.06] rounded-r-xl px-5 py-3 mb-5; }
+.prose-post blockquote p { @apply mb-0 text-text-primary font-medium; }
+.prose-post hr { @apply border-border my-10; }

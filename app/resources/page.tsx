@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
@@ -32,6 +33,13 @@ const steps = [
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
+
+export const metadata: Metadata = {
+  title: "7 Free Ads & Local SEO Guides",
+  description:
+    "Free guides: stop wasting ad budget, Meta Ads setup for beginners, Google Map Pack ranking, clinic and restaurant playbooks. No email wall games.",
+  alternates: { canonical: "/resources" },
+};
 
 export default function ResourcesPage() {
   return (
