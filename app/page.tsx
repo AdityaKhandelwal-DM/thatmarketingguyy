@@ -285,14 +285,14 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right — working photo with the dashboard laid over it.
-                To swap in a real portrait: replace /public/images/hero-desk.webp
-                with a 900×1125 (4:5) shot. Nothing else needs to change. */}
+            {/* Right — Aditya, with the dashboard card laid over the bottom-left
+                and the ROAS badge top-right. The crop deliberately keeps his
+                head centre-left so neither element covers his face. */}
             <div className="order-first md:order-last animate-fadeInUp">
               <div className="relative max-w-[420px] mx-auto md:ml-auto pb-20 md:pb-24">
                 <Media
-                  src="hero-desk"
-                  alt="Laptop, notebook and coffee on a desk mid-campaign review"
+                  src="hero-aditya"
+                  alt="Aditya Khandelwal, performance marketing consultant, Jaipur"
                   className="aspect-[4/5] rounded-[22px] shadow-card"
                   sizes="(max-width: 768px) 90vw, 420px"
                   priority

@@ -112,20 +112,19 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Right — work imagery.
-                The tall card is where a real portrait of Aditya belongs: drop a
-                900×1125 (4:5) shot in as /public/images/about-portrait.webp and
-                change `src` below. Everything else stays as-is. */}
+            {/* Right — Aditya, with a live dashboard card overlapping the
+                bottom-left and an account-count chip top-right. */}
             {/* NB: the auto-margin lives on the inner block, never on the grid
                 item itself — auto margins cancel `justify-self: stretch`, which
                 collapses an aspect-ratio box (no intrinsic width) to zero. */}
             <div className="reveal">
               <div className="relative mx-auto max-w-[360px] sm:max-w-[420px] md:max-w-none pb-16 sm:pb-20">
                 <Media
-                  src="speak_class"
-                  alt="Running a live marketing session with business owners"
+                  src="about-portrait"
+                  alt="Aditya Khandelwal, performance marketing consultant, Jaipur"
                   className="aspect-[4/5] rounded-[22px] shadow-card"
                   sizes="(max-width: 768px) 90vw, 420px"
+                  priority
                 />
                 {/* Overlapping dashboard card */}
                 <div className="absolute bottom-0 -left-4 sm:-left-8 w-[62%] rounded-[18px] border-4 border-white shadow-card overflow-hidden">

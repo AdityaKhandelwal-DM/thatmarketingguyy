@@ -32,10 +32,10 @@ const filters = [
 ];
 
 const portfolio = [
-  { k: "Ad spend managed", v: "₹42.7L" },
-  { k: "Form leads delivered", v: "12,259" },
-  { k: "Impressions delivered", v: "14.7 Cr" },
-  { k: "Ad accounts", v: "58" },
+  { k: "Ad spend managed", v: "₹43L" },
+  { k: "Form leads delivered", v: "12,550" },
+  { k: "Impressions delivered", v: "14.8 Cr" },
+  { k: "Ad accounts", v: "62" },
 ];
 
 const cases = [
@@ -259,7 +259,7 @@ export default function ResultsPage() {
             ))}
           </div>
           <p className="text-[12px] text-text-muted mt-3">
-            Meta Ads, account-level lifetime totals across 58 ad accounts.
+            Meta Ads, account-level lifetime totals across 62 ad accounts.
             Excludes accounts no longer connected. Last synced 2 Aug 2026.
           </p>
         </div>
