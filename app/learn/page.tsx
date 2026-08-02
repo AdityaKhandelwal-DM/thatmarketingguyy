@@ -2,6 +2,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
+import Media from "@/components/ui/Media";
 import {
   HeartPulse,
   Croissant,
@@ -12,13 +13,13 @@ import {
   type LucideIcon,
 } from "lucide-react";
 
-const blueprints: { icon: LucideIcon; title: string; desc: string }[] = [
-  { icon: HeartPulse, title: "Clinic blueprint", desc: "Lead ads + Map Pack to fill appointments." },
-  { icon: Croissant, title: "Bakery blueprint", desc: "Local awareness + offers that drive footfall." },
-  { icon: Gamepad2, title: "FunZone blueprint", desc: "Weekend-fill campaigns for venues." },
-  { icon: Package, title: "D2C blueprint", desc: "Creative testing + scaling without ROAS drop." },
-  { icon: UtensilsCrossed, title: "Restaurant blueprint", desc: "Geo-fenced ads + offer testing." },
-  { icon: MapPin, title: "Local SEO blueprint", desc: "Rank in the Map Pack without ad spend." },
+const blueprints: { icon: LucideIcon; title: string; desc: string; img: string; alt: string }[] = [
+  { icon: HeartPulse, title: "Clinic blueprint", desc: "Lead ads + Map Pack to fill appointments.", img: "clinic_med", alt: "Clinician checking a phone between patients" },
+  { icon: Croissant, title: "Bakery blueprint", desc: "Local awareness + offers that drive footfall.", img: "rest_bakery", alt: "Fresh sourdough loaves on a bakery counter" },
+  { icon: Gamepad2, title: "FunZone blueprint", desc: "Weekend-fill campaigns for venues.", img: "ent_arcade", alt: "Arcade floor lit up on a busy evening" },
+  { icon: Package, title: "D2C blueprint", desc: "Creative testing + scaling without ROAS drop.", img: "d2c_cosmetics", alt: "D2C beauty products styled for a product shoot" },
+  { icon: UtensilsCrossed, title: "Restaurant blueprint", desc: "Geo-fenced ads + offer testing.", img: "rest_dining", alt: "Restaurant dining room ready for evening covers" },
+  { icon: MapPin, title: "Local SEO blueprint", desc: "Rank in the Map Pack without ad spend.", img: "store_front", alt: "Independent storefront on a local high street" },
 ];
 
 const modules = [
@@ -65,15 +66,27 @@ export default function LearnPage() {
             {blueprints.map((b) => (
               <Card
                 key={b.title}
-                className="p-6 hover:-translate-y-1 hover:border-primary/25 transition-all duration-[250ms] group reveal"
+                className="p-0 overflow-hidden hover:-translate-y-1 hover:border-primary/25 transition-all duration-[250ms] group reveal"
               >
-                <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/15 transition-colors duration-[250ms]">
-                  <b.icon className="w-6 h-6 text-primary" strokeWidth={2} />
+                <div className="relative">
+                  <Media
+                    src={b.img}
+                    alt={b.alt}
+                    className="aspect-[16/10]"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px"
+                    zoomOnHover
+                  />
+                  <span className="absolute top-3 right-3 text-[12px] font-bold text-text-primary bg-secondary px-2.5 py-1 rounded-md shadow-card">
+                    ₹99
+                  </span>
+                  <div className="absolute -bottom-6 left-6 w-12 h-12 rounded-2xl bg-white border border-border shadow-card flex items-center justify-center">
+                    <b.icon className="w-6 h-6 text-primary" strokeWidth={2} />
+                  </div>
                 </div>
-                <h3 className="text-[17px] text-text-primary font-bold mb-1.5">{b.title}</h3>
-                <p className="text-[14px] text-text-secondary leading-relaxed">
-                  {b.desc} <strong className="text-text-primary">₹99</strong>
-                </p>
+                <div className="p-6 pt-9">
+                  <h3 className="text-[17px] text-text-primary font-bold mb-1.5">{b.title}</h3>
+                  <p className="text-[14px] text-text-secondary leading-relaxed">{b.desc}</p>
+                </div>
               </Card>
             ))}
           </div>
@@ -98,7 +111,14 @@ export default function LearnPage() {
               <Button href="/contact" fullWidth className="sm:w-auto">Join the masterclass</Button>
             </div>
 
-            <Card className="p-6 md:p-8 reveal">
+            <Card className="p-0 overflow-hidden reveal">
+              <Media
+                src="speak_workshop"
+                alt="Working through campaign builds screen by screen"
+                className="aspect-[21/9]"
+                sizes="(max-width: 768px) 100vw, 560px"
+              />
+              <div className="p-6 md:p-8">
               <h3 className="text-xl font-bold text-text-primary mb-5">What&apos;s inside</h3>
               <div className="flex flex-col gap-3">
                 {modules.map((m, i) => (
@@ -109,6 +129,7 @@ export default function LearnPage() {
                     {m}
                   </div>
                 ))}
+              </div>
               </div>
             </Card>
           </div>

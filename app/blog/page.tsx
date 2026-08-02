@@ -1,5 +1,6 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import Media from "@/components/ui/Media";
 import { Newspaper } from "lucide-react";
 
 export default function BlogPage() {
@@ -20,6 +21,13 @@ export default function BlogPage() {
           <p className="text-[17px] md:text-[18px] text-text-secondary mt-5 max-w-[620px] leading-[1.7]">
             Real tactics from real ad accounts — no theory, no recycled gyan.
           </p>
+          <Media
+            src="work_dashboard"
+            alt="Analytics dashboard open mid-review"
+            className="aspect-[21/9] rounded-card shadow-card mt-10"
+            sizes="100vw"
+            priority
+          />
         </div>
       </section>
 

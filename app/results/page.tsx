@@ -4,6 +4,7 @@ import { useState } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Card from "@/components/ui/Card";
+import Media from "@/components/ui/Media";
 import CountUp from "@/components/ui/CountUp";
 
 /* ─────────────────────────────────────────────────────────────────────────────
@@ -32,7 +33,7 @@ const portfolio = [
 
 const cases = [
   {
-    cat: "Education", name: "Career Institute — Jaipur",
+    cat: "Education", name: "Career Institute — Jaipur", img: "edu_students", alt: "Students working through a course together",
     struggle: "Admission enquiries flat, cost per lead climbing every intake.",
     action: "Video-first lead ads with creative rotation across MBA + hospitality courses.",
     metrics: [
@@ -43,7 +44,7 @@ const cases = [
     ],
   },
   {
-    cat: "Resort & Farmstay", name: "Farm Stay — Jaipur",
+    cat: "Resort & Farmstay", name: "Farm Stay — Jaipur", img: "resort_farm", alt: "Farm stay pool and gardens on a clear day",
     struggle: "Weekend slots unsold, enquiries drying up midweek.",
     action: "Creator-led video lead ads plus a broad all-rounder audience build.",
     metrics: [
@@ -54,7 +55,7 @@ const cases = [
     ],
   },
   {
-    cat: "D2C", name: "D2C Home Textiles",
+    cat: "D2C", name: "D2C Home Textiles", img: "d2c_textile", alt: "Hand-blocked textiles hanging on a rail",
     struggle: "Spend scaling but ROAS sliding under breakeven.",
     action: "CBO restructure, city-tier split, lookalike stack on top buyers.",
     metrics: [
@@ -65,7 +66,7 @@ const cases = [
     ],
   },
   {
-    cat: "Entertainment", name: "Family Entertainment Centre",
+    cat: "Entertainment", name: "Family Entertainment Centre", img: "ent_arcade", alt: "Arcade machines lit up inside a family venue",
     struggle: "Footfall stuck to weekends only, weekdays dead.",
     action: "Always-on WhatsApp conversation ads running at city scale.",
     metrics: [
@@ -76,7 +77,7 @@ const cases = [
     ],
   },
   {
-    cat: "Restaurant & Lounge", name: "Rooftop Lounge — Airport Rd",
+    cat: "Restaurant & Lounge", name: "Rooftop Lounge — Airport Rd", img: "rest_lounge", alt: "Rooftop lounge bar set up for evening service",
     struggle: "Table reservations relying entirely on walk-ins.",
     action: "Instant-form reservation ads replacing generic traffic pushes.",
     metrics: [
@@ -87,7 +88,7 @@ const cases = [
     ],
   },
   {
-    cat: "Resort & Farmstay", name: "Boutique Retreat",
+    cat: "Resort & Farmstay", name: "Boutique Retreat", img: "resort_hotel", alt: "Boutique retreat deck at golden hour",
     struggle: "New property opened with zero booking pipeline.",
     action: "Instant-form booking ads with tight geo and interest layering.",
     metrics: [
@@ -98,7 +99,7 @@ const cases = [
     ],
   },
   {
-    cat: "Resort & Farmstay", name: "Farmhouse — Event Venue",
+    cat: "Resort & Farmstay", name: "Farmhouse — Event Venue", img: "venue_event", alt: "Banquet hall laid out ahead of an event",
     struggle: "Enquiry cost too high to justify running always-on.",
     action: "One scaled WhatsApp campaign, creative refreshed the moment it fatigued.",
     metrics: [
@@ -109,7 +110,7 @@ const cases = [
     ],
   },
   {
-    cat: "Clinic", name: "Hair Transplant Clinic",
+    cat: "Clinic", name: "Hair Transplant Clinic", img: "clinic_consult", alt: "Clinician talking a patient through a consult",
     struggle: "High-ticket consults buried under unqualified enquiries.",
     action: "Conversation ads with creative tuned for intent instead of volume.",
     metrics: [
@@ -120,7 +121,7 @@ const cases = [
     ],
   },
   {
-    cat: "Restaurant & Lounge", name: "Banquet & Restaurant",
+    cat: "Restaurant & Lounge", name: "Banquet & Restaurant", img: "rest_interior", alt: "Restaurant and banquet floor ready for guests",
     struggle: "Banquet enquiries expensive, creator spend completely unmeasured.",
     action: "Creator content routed into conversation ads with a tracked cost per enquiry.",
     metrics: [
@@ -131,7 +132,7 @@ const cases = [
     ],
   },
   {
-    cat: "Resort & Farmstay", name: "Wedding Resort",
+    cat: "Resort & Farmstay", name: "Wedding Resort", img: "venue_wedding", alt: "Wedding tables dressed at a resort venue",
     struggle: "Wedding enquiries seasonal, unpredictable and unbudgeted.",
     action: "Always-on wedding lead ads with a daycation package layer for the off-season.",
     metrics: [
@@ -142,7 +143,7 @@ const cases = [
     ],
   },
   {
-    cat: "Restaurant & Lounge", name: "Restaurant — Party Bookings",
+    cat: "Restaurant & Lounge", name: "Restaurant — Party Bookings", img: "rest_dining", alt: "Restaurant dining room set for a private party",
     struggle: "Party and event bookings handled ad-hoc, no pipeline at all.",
     action: "Instant-form party enquiry ads built per outlet, not per brand.",
     metrics: [
@@ -153,7 +154,7 @@ const cases = [
     ],
   },
   {
-    cat: "Retail", name: "Tiles & Sanitaryware Showroom",
+    cat: "Retail", name: "Tiles & Sanitaryware Showroom", img: "retail_shop", alt: "Retail showroom aisles stocked for walk-ins",
     struggle: "Showroom footfall depended entirely on dealer referrals.",
     action: "Brand-partner led conversation ads running across two cities.",
     metrics: [
@@ -164,7 +165,7 @@ const cases = [
     ],
   },
   {
-    cat: "Restaurant & Lounge", name: "Café — Local Awareness",
+    cat: "Restaurant & Lounge", name: "Café — Local Awareness", img: "rest_cafe", alt: "Neighbourhood café filling up in the morning",
     struggle: "New café, nobody in the neighbourhood knew it existed.",
     action: "Local reach ads held at frequency 1.0 for maximum unique coverage.",
     metrics: [
@@ -280,9 +281,16 @@ export default function ResultsPage() {
               `.in` and stay invisible — do not add `reveal` to individual cards. */}
           <div className="flex flex-col gap-4 reveal">
             {visible.map((c) => (
-              <Card key={c.name} className="p-0 overflow-hidden hover:-translate-y-1 hover:border-primary/25 transition-all duration-[250ms]">
+              <Card key={c.name} className="p-0 overflow-hidden hover:-translate-y-1 hover:border-primary/25 transition-all duration-[250ms] group">
                 <div className="flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-8 p-6 md:p-7">
-                  <div className="lg:w-[280px] flex-none">
+                  <Media
+                    src={c.img}
+                    alt={c.alt}
+                    className="w-full lg:w-[132px] h-[150px] lg:h-[104px] flex-none rounded-xl"
+                    sizes="(max-width: 1024px) 100vw, 132px"
+                    zoomOnHover
+                  />
+                  <div className="lg:w-[250px] flex-none">
                     <div className="flex items-center gap-2 mb-2 flex-wrap">
                       <span className="font-bold text-text-primary text-[16px] leading-tight">{c.name}</span>
                       <span className="text-[10px] tracking-[.06em] uppercase text-primary bg-primary/10 px-2.5 py-1 rounded-lg flex-none">

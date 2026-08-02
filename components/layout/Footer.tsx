@@ -70,7 +70,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 pt-5 flex flex-col sm:flex-row sm:justify-between gap-1.5 text-[12px] sm:text-[13px] text-white/50">
           <span>© {new Date().getFullYear()} thatmarketingguy · Aditya Khandelwal · Jaipur</span>
-          <span>thatmarketingguy.in</span>
+          <span>www.thatmarketingguyy.com</span>
         </div>
       </div>
     </footer>

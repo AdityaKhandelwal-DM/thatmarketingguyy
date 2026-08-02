@@ -1,7 +1,8 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
-import { BarChart3, MapPin, Target, GraduationCap, ImageIcon, PlayCircle, type LucideIcon } from "lucide-react";
+import Media from "@/components/ui/Media";
+import { BarChart3, MapPin, Target, GraduationCap, PlayCircle, type LucideIcon } from "lucide-react";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
@@ -29,9 +30,19 @@ const helpPillars: { icon: LucideIcon; title: string; desc: string }[] = [
 ];
 
 const reels = [
-  { title: "How I got a clinic to rank #1 on Google Maps in 60 days" },
-  { title: "The Meta Ads mistake that's quietly killing your ROAS" },
-  { title: "Why your ad reports never make sense (and how to fix it)" },
+  { title: "How I got a clinic to rank #1 on Google Maps in 60 days", img: "store_front", alt: "Local shopfront on a neighbourhood street" },
+  { title: "The Meta Ads mistake that's quietly killing your ROAS", img: "work_charts", alt: "Campaign dashboard showing a performance trend" },
+  { title: "Why your ad reports never make sense (and how to fix it)", img: "work_dashboard", alt: "Laptop open on an analytics report" },
+];
+
+// Instagram grid — replace with real post exports when the feed is wired up.
+const feed: { img: string; alt: string }[] = [
+  { img: "work_charts", alt: "Campaign dashboard breakdown post" },
+  { img: "clinic_consult", alt: "Clinic lead-generation breakdown post" },
+  { img: "rest_dining", alt: "Restaurant local-ads breakdown post" },
+  { img: "d2c_textile", alt: "D2C scaling breakdown post" },
+  { img: "store_front", alt: "Google Map Pack ranking post" },
+  { img: "ent_arcade", alt: "Venue weekend-fill campaign post" },
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
@@ -101,12 +112,35 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Right — photo placeholder */}
-            <div className="max-w-[360px] sm:max-w-[420px] mx-auto md:max-w-none reveal">
-              <div className="aspect-[4/5] rounded-[22px] bg-bg-light flex items-center justify-center text-text-muted text-[12px] flex-col gap-2 shadow-card border border-border">
-                <ImageIcon className="w-9 h-9 text-text-muted" strokeWidth={1.5} />
-                <span>Working photo coming soon</span>
-                <span className="text-[11px] opacity-60">~800 × 1000px (4:5)</span>
+            {/* Right — work imagery.
+                The tall card is where a real portrait of Aditya belongs: drop a
+                900×1125 (4:5) shot in as /public/images/about-portrait.webp and
+                change `src` below. Everything else stays as-is. */}
+            {/* NB: the auto-margin lives on the inner block, never on the grid
+                item itself — auto margins cancel `justify-self: stretch`, which
+                collapses an aspect-ratio box (no intrinsic width) to zero. */}
+            <div className="reveal">
+              <div className="relative mx-auto max-w-[360px] sm:max-w-[420px] md:max-w-none pb-16 sm:pb-20">
+                <Media
+                  src="speak_class"
+                  alt="Running a live marketing session with business owners"
+                  className="aspect-[4/5] rounded-[22px] shadow-card"
+                  sizes="(max-width: 768px) 90vw, 420px"
+                />
+                {/* Overlapping dashboard card */}
+                <div className="absolute bottom-0 -left-4 sm:-left-8 w-[62%] rounded-[18px] border-4 border-white shadow-card overflow-hidden">
+                  <Media
+                    src="work_charts"
+                    alt="Live campaign dashboard on screen"
+                    className="aspect-[4/3]"
+                    sizes="260px"
+                  />
+                </div>
+                {/* Stat chip */}
+                <div className="absolute right-3 top-4 bg-white rounded-xl px-4 py-3 shadow-card border border-border">
+                  <div className="text-[10px] tracking-[.06em] uppercase text-text-muted">Ad accounts</div>
+                  <div className="tabular-nums text-[22px] font-bold text-text-primary mt-0.5">58</div>
+                </div>
               </div>
             </div>
 
@@ -128,12 +162,25 @@ export default function AboutPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal-stagger">
             {reels.map((v) => (
-              <div key={v.title} className="flex flex-col gap-3.5 reveal">
-                <div className="relative w-full pt-[56.25%] rounded-2xl overflow-hidden bg-white border border-border shadow-card flex items-center justify-center">
-                  <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 text-text-muted">
-                    <PlayCircle className="w-9 h-9" strokeWidth={1.5} />
-                    <span className="text-[12px]">Video coming soon</span>
+              <div key={v.title} className="flex flex-col gap-3.5 reveal group cursor-pointer">
+                <div className="relative rounded-2xl overflow-hidden border border-border shadow-card">
+                  <Media
+                    src={v.img}
+                    alt={v.alt}
+                    className="aspect-[16/9]"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 370px"
+                    overlay
+                    zoomOnHover
+                  />
+                  {/* play affordance */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <span className="w-14 h-14 rounded-full bg-white/95 flex items-center justify-center shadow-card transition-transform duration-[250ms] group-hover:scale-110">
+                      <PlayCircle className="w-8 h-8 text-primary" strokeWidth={1.75} />
+                    </span>
                   </div>
+                  <span className="absolute bottom-3 left-3 text-[10px] tracking-[.08em] uppercase font-semibold text-text-primary bg-secondary px-2.5 py-1 rounded-md">
+                    Reel
+                  </span>
                 </div>
                 <div className="font-semibold text-[14px] text-text-primary leading-snug">{v.title}</div>
               </div>
@@ -152,22 +199,35 @@ export default function AboutPage() {
                 Free marketing breakdowns, every week.
               </h2>
               <p className="text-[15px] md:text-[17px] text-text-secondary mt-3">
-                Follow @thatmarketingguy for daily tactics, real campaign screenshots, and no-nonsense advice.
+                Follow @that.marketingguyy for daily tactics, real campaign screenshots, and no-nonsense advice.
               </p>
             </div>
             <div className="flex-none">
-              <Button href="#" variant="secondary">Follow on Instagram →</Button>
+              <Button
+                href="https://www.instagram.com/that.marketingguyy/"
+                variant="secondary"
+              >
+                Follow on Instagram →
+              </Button>
             </div>
           </div>
           <div className="grid grid-cols-3 sm:grid-cols-6 gap-3 reveal-stagger">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
-              <div
+            {feed.map((f, i) => (
+              <a
                 key={i}
-                className="aspect-square rounded-2xl bg-bg-light border border-border flex items-center justify-center text-text-muted flex-col gap-1 hover:border-primary/30 hover:shadow-card transition-all duration-[250ms] cursor-pointer reveal"
+                href="https://www.instagram.com/that.marketingguyy/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group rounded-2xl overflow-hidden border border-border hover:border-primary/30 hover:shadow-card transition-all duration-[250ms] reveal"
               >
-                <ImageIcon className="w-6 h-6" strokeWidth={1.5} />
-                <span className="text-[9px]">600×600</span>
-              </div>
+                <Media
+                  src={`sq/${f.img}`}
+                  alt={f.alt}
+                  className="aspect-square"
+                  sizes="(max-width: 640px) 33vw, 180px"
+                  zoomOnHover
+                />
+              </a>
             ))}
           </div>
         </div>

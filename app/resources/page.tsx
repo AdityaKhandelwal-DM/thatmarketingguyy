@@ -1,6 +1,7 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
+import Media from "@/components/ui/Media";
 import {
   BarChart3,
   MapPin,
@@ -40,16 +41,27 @@ export default function ResourcesPage() {
       {/* ══ HERO ══════════════════════════════════════════════════════════════ */}
       <section className="bg-bg-light py-14 md:py-20 lg:py-24">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 animate-fadeInUp">
-          <div className="text-[11px] tracking-[.06em] text-text-muted mb-4">
-            <a href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</a> / Free PDFs
+          <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-14 items-center">
+            <div>
+              <div className="text-[11px] tracking-[.06em] text-text-muted mb-4">
+                <a href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</a> / Free PDFs
+              </div>
+              <span className="eyebrow block mb-5">Start free</span>
+              <h1 className="text-[clamp(28px,4.5vw,56px)] font-bold text-text-primary max-w-[760px] leading-[1.08]">
+                7 free guides to stop wasting your ad budget.
+              </h1>
+              <p className="text-[17px] md:text-[18px] text-text-secondary mt-5 max-w-[620px] leading-[1.7]">
+                No fluff, no email gymnastics. DM a keyword on Instagram and they land in your inbox.
+              </p>
+            </div>
+            <Media
+              src="work_analytics"
+              alt="Marking up campaign numbers next to an open laptop"
+              className="aspect-[4/3] rounded-card shadow-card"
+              sizes="(max-width: 1024px) 100vw, 480px"
+              priority
+            />
           </div>
-          <span className="eyebrow block mb-5">Start free</span>
-          <h1 className="text-[clamp(28px,4.5vw,56px)] font-bold text-text-primary max-w-[760px] leading-[1.08]">
-            7 free guides to stop wasting your ad budget.
-          </h1>
-          <p className="text-[17px] md:text-[18px] text-text-secondary mt-5 max-w-[620px] leading-[1.7]">
-            No fluff, no email gymnastics. DM a keyword on Instagram and they land in your inbox.
-          </p>
         </div>
       </section>
 

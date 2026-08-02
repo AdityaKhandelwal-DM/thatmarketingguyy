@@ -3,6 +3,8 @@ import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import CountUp from "@/components/ui/CountUp";
+import Media from "@/components/ui/Media";
+import Image from "next/image";
 import Link from "next/link";
 import {
   HeartPulse,
@@ -24,18 +26,19 @@ import {
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
-const niches: { icon: LucideIcon; title: string; desc: string }[] = [
-  { icon: HeartPulse, title: "Clinic owners", desc: "Fill your calendar with patient walk-ins, not vanity likes." },
-  { icon: UtensilsCrossed, title: "Restaurants & bakeries", desc: "Turn nearby phones into tables booked and orders placed." },
-  { icon: Package, title: "D2C founders", desc: "Scale ad spend without lighting money on fire." },
-  { icon: Store, title: "Local store owners", desc: "Own the Google Map Pack so your shop shows up first." },
-  { icon: Gamepad2, title: "FunZone & venues", desc: "Pack weekends and slow days with local footfall." },
-  { icon: Frown, title: "Burned by agencies", desc: "Finally understand exactly what your money is doing." },
+const niches: { icon: LucideIcon; title: string; desc: string; img: string; alt: string }[] = [
+  { icon: HeartPulse, title: "Clinic owners", desc: "Fill your calendar with patient walk-ins, not vanity likes.", img: "clinic_consult", alt: "Doctor consulting a patient in a clinic" },
+  { icon: UtensilsCrossed, title: "Restaurants & bakeries", desc: "Turn nearby phones into tables booked and orders placed.", img: "rest_dining", alt: "Warm restaurant dining room set for service" },
+  { icon: Package, title: "D2C founders", desc: "Scale ad spend without lighting money on fire.", img: "d2c_textile", alt: "Neutral-toned fabrics on a retail rail" },
+  { icon: Store, title: "Local store owners", desc: "Own the Google Map Pack so your shop shows up first.", img: "store_front", alt: "Independent shopfront on a neighbourhood street" },
+  { icon: Gamepad2, title: "FunZone & venues", desc: "Pack weekends and slow days with local footfall.", img: "ent_arcade", alt: "Arcade games lit up inside an entertainment venue" },
+  { icon: Frown, title: "Burned by agencies", desc: "Finally understand exactly what your money is doing.", img: "work_team", alt: "Team mapping out a plan on a whiteboard" },
 ];
 
 const cases = [
   {
     name: "Skin Clinic — Jaipur", tag: "Clinic",
+    img: "clinic_med", alt: "Clinician checking a phone between appointments",
     struggle: "Empty appointment book, low walk-ins.",
     action: "Meta lead ads + Google Map Pack push.",
     metrics: [
@@ -47,6 +50,7 @@ const cases = [
   },
   {
     name: "Cloud Kitchen — Jaipur", tag: "Restaurant",
+    img: "rest_cafe", alt: "Bright café interior during a quiet weekday service",
     struggle: "Weekday orders flat, high CPO.",
     action: "Geo-fenced Meta ads + offer testing.",
     metrics: [
@@ -58,6 +62,7 @@ const cases = [
   },
   {
     name: "Local Store — Map Pack", tag: "Local / SEO",
+    img: "retail_store", alt: "Local retail showroom stocked and ready for customers",
     struggle: "Invisible on Google, no calls.",
     action: "GBP optimisation + local SEO + reviews.",
     metrics: [
@@ -110,6 +115,7 @@ const workshops = [
     desc: "A 2-hour live breakdown of what actually works in Meta Ads right now. Real account walkthroughs, no theory slides.",
     free: false,
     cta: "Get notified",
+    img: "work_charts", alt: "Live campaign dashboard showing performance trends",
   },
   {
     title: "Google Map Pack Sprint",
@@ -119,6 +125,7 @@ const workshops = [
     desc: "Get your local business ranking in the top 3 spots within 60 days. Step-by-step, live Q&A included.",
     free: true,
     cta: "Reserve a spot",
+    img: "seo_phone", alt: "Phone showing maps and social apps on a home screen",
   },
 ];
 
@@ -278,19 +285,28 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right — dashboard illustration */}
+            {/* Right — working photo with the dashboard laid over it.
+                To swap in a real portrait: replace /public/images/hero-desk.webp
+                with a 900×1125 (4:5) shot. Nothing else needs to change. */}
             <div className="order-first md:order-last animate-fadeInUp">
-              <div className="relative max-w-[440px] mx-auto md:ml-auto">
-                <DashboardIllustration />
+              <div className="relative max-w-[420px] mx-auto md:ml-auto pb-20 md:pb-24">
+                <Media
+                  src="hero-desk"
+                  alt="Laptop, notebook and coffee on a desk mid-campaign review"
+                  className="aspect-[4/5] rounded-[22px] shadow-card"
+                  sizes="(max-width: 768px) 90vw, 420px"
+                  priority
+                />
+
+                {/* Dashboard card, overlapping the photo */}
+                <div className="absolute -bottom-1 -left-4 sm:-left-8 w-[72%] bg-white rounded-[18px] shadow-card border border-border p-2.5">
+                  <DashboardIllustration />
+                </div>
+
                 {/* Floating ROAS badge */}
-                <div className="absolute -left-4 bottom-10 bg-text-primary text-white rounded-2xl px-4 py-3 shadow-card">
+                <div className="absolute right-3 top-5 bg-text-primary text-white rounded-2xl px-4 py-3 shadow-card">
                   <div className="text-[10px] tracking-[.06em] uppercase text-white/55">Avg ROAS</div>
                   <div className="tabular-nums text-[22px] text-secondary mt-0.5 font-bold">5.8×</div>
-                </div>
-                {/* Floating walk-ins badge */}
-                <div className="absolute -right-2 top-10 bg-primary text-white rounded-xl px-3 py-2 shadow-card">
-                  <div className="text-[10px] text-white/80">Walk-ins</div>
-                  <div className="tabular-nums text-[16px] font-bold">+78%</div>
                 </div>
               </div>
             </div>
@@ -341,26 +357,42 @@ export default function Home() {
       {/* ══ STORY STATS ═══════════════════════════════════════════════════════ */}
       <section className="py-16 md:py-20 lg:py-24">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="max-w-[640px] mb-10 md:mb-14 reveal">
-            <span className="eyebrow block mb-4">A small backstory</span>
-            <h2 className="text-[clamp(24px,3.4vw,42px)] font-bold text-text-primary">
-              This is what 5+ years of showing up every day looks like.
-            </h2>
-            <p className="text-[15px] md:text-[17px] text-text-secondary mt-3">
-              Not a big agency. Just one person, one laptop, and a lot of chai. Here&apos;s the tally.
-            </p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 reveal-stagger">
-            {storyStats.map((s) => (
-              <Card
-                key={s.l}
-                className="p-6 flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-[250ms] reveal"
-              >
-                <s.icon className="w-8 h-8 text-primary mb-3" strokeWidth={2} />
-                <CountUp value={s.n} className="tabular-nums text-[clamp(24px,3vw,36px)] font-bold text-text-primary" />
-                <span className="text-[13px] text-text-secondary mt-1 leading-snug">{s.l}</span>
-              </Card>
-            ))}
+          <div className="grid grid-cols-1 lg:grid-cols-[0.85fr_1.15fr] gap-10 lg:gap-14 items-center">
+
+            {/* Working photo */}
+            <div className="reveal order-last lg:order-first">
+              <Media
+                src="work_desk"
+                alt="Reviewing campaign numbers together over a laptop"
+                className="aspect-[4/3] rounded-card shadow-card"
+                sizes="(max-width: 1024px) 100vw, 460px"
+              />
+            </div>
+
+            <div>
+              <div className="max-w-[640px] mb-8 md:mb-10 reveal">
+                <span className="eyebrow block mb-4">A small backstory</span>
+                <h2 className="text-[clamp(24px,3.4vw,42px)] font-bold text-text-primary">
+                  This is what 5+ years of showing up every day looks like.
+                </h2>
+                <p className="text-[15px] md:text-[17px] text-text-secondary mt-3">
+                  Not a big agency. Just one person, one laptop, and a lot of chai. Here&apos;s the tally.
+                </p>
+              </div>
+              <div className="grid grid-cols-2 gap-4 reveal-stagger">
+                {storyStats.map((s) => (
+                  <Card
+                    key={s.l}
+                    className="p-5 md:p-6 flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-[250ms] reveal"
+                  >
+                    <s.icon className="w-7 h-7 text-primary mb-2.5" strokeWidth={2} />
+                    <CountUp value={s.n} className="tabular-nums text-[clamp(22px,2.6vw,32px)] font-bold text-text-primary" />
+                    <span className="text-[12.5px] text-text-secondary mt-1 leading-snug">{s.l}</span>
+                  </Card>
+                ))}
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -381,13 +413,25 @@ export default function Home() {
             {niches.map((n) => (
               <Card
                 key={n.title}
-                className="p-6 md:p-7 hover:-translate-y-1 hover:border-primary/25 transition-all duration-[250ms] group reveal"
+                className="p-0 overflow-hidden hover:-translate-y-1 hover:border-primary/25 transition-all duration-[250ms] group reveal"
               >
-                <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/15 transition-colors duration-[250ms]">
-                  <n.icon className="w-6 h-6 text-primary" strokeWidth={2} />
+                <div className="relative">
+                  <Media
+                    src={n.img}
+                    alt={n.alt}
+                    className="aspect-[16/10]"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px"
+                    zoomOnHover
+                  />
+                  {/* icon chip straddling the image edge */}
+                  <div className="absolute -bottom-6 left-6 w-12 h-12 rounded-2xl bg-white border border-border shadow-card flex items-center justify-center">
+                    <n.icon className="w-6 h-6 text-primary" strokeWidth={2} />
+                  </div>
                 </div>
-                <h3 className="text-[18px] text-text-primary font-bold mb-2">{n.title}</h3>
-                <p className="text-[14px] text-text-secondary leading-relaxed">{n.desc}</p>
+                <div className="p-6 md:p-7 pt-9">
+                  <h3 className="text-[18px] text-text-primary font-bold mb-2">{n.title}</h3>
+                  <p className="text-[14px] text-text-secondary leading-relaxed">{n.desc}</p>
+                </div>
               </Card>
             ))}
           </div>
@@ -408,9 +452,16 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-4 reveal-stagger">
             {cases.map((c) => (
-              <Card key={c.name} className="p-0 overflow-hidden reveal">
+              <Card key={c.name} className="p-0 overflow-hidden reveal group">
                 <div className="flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-8 p-6 md:p-7">
-                  <div className="lg:w-[280px] flex-none">
+                  <Media
+                    src={c.img}
+                    alt={c.alt}
+                    className="w-full lg:w-[132px] h-[150px] lg:h-[104px] flex-none rounded-xl"
+                    sizes="(max-width: 1024px) 100vw, 132px"
+                    zoomOnHover
+                  />
+                  <div className="lg:w-[260px] flex-none">
                     <div className="flex items-center gap-2 mb-2">
                       <span className="font-bold text-text-primary text-[16px] leading-tight">{c.name}</span>
                       <span className="text-[10px] tracking-[.06em] uppercase text-primary bg-primary/10 px-2.5 py-1 rounded-lg flex-none">
@@ -489,7 +540,15 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 reveal-stagger">
             {workshops.map((w) => (
-              <Card key={w.title} className="p-7 md:p-8 hover:-translate-y-1 transition-transform duration-[250ms] flex flex-col gap-4 reveal">
+              <Card key={w.title} className="p-0 overflow-hidden hover:-translate-y-1 transition-transform duration-[250ms] flex flex-col reveal group">
+                <Media
+                  src={w.img}
+                  alt={w.alt}
+                  className="aspect-[21/9]"
+                  sizes="(max-width: 768px) 100vw, 560px"
+                  zoomOnHover
+                />
+                <div className="p-7 md:p-8 flex flex-col gap-4 flex-1">
                 <div className="flex items-start justify-between gap-3">
                   <span
                     className={`text-[10px] tracking-[.08em] uppercase px-2.5 py-1.5 rounded-md font-semibold ${
@@ -509,6 +568,7 @@ export default function Home() {
                   <Button href="/contact" variant={w.free ? "secondary" : "primary"} className="text-[13px] px-5 py-2.5">
                     {w.cta}
                   </Button>
+                </div>
                 </div>
               </Card>
             ))}
@@ -560,8 +620,21 @@ export default function Home() {
       </section>
 
       {/* ══ CTA — the one dark band on this page ════════════════════════════ */}
-      <section className="py-16 md:py-24 lg:py-28 bg-text-primary">
-        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 text-center reveal">
+      <section className="relative py-16 md:py-24 lg:py-28 bg-text-primary overflow-hidden">
+        {/* Photo sits behind a heavy wash so the type keeps AA contrast */}
+        <Image
+          src="/images/band-workshop.webp"
+          alt=""
+          fill
+          sizes="100vw"
+          aria-hidden="true"
+          className="object-cover opacity-[.18]"
+        />
+        <div
+          className="absolute inset-0 bg-gradient-to-r from-text-primary via-text-primary/90 to-text-primary/70"
+          aria-hidden="true"
+        />
+        <div className="relative w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 text-center reveal">
           <span className="eyebrow justify-center mb-5 block" style={{ color: "#FDEA6F" }}>
             Ready when you are
           </span>
