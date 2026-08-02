@@ -302,9 +302,9 @@ export default function ResultsPage() {
             Real campaigns. Real numbers. No screenshots from gurus.
           </h1>
           <p className="text-[17px] md:text-[18px] text-text-secondary mt-5 max-w-[640px] leading-[1.7]">
-            Every figure is pulled straight from live Meta Ads reporting. Totals below
-            are lifetime across every account; each case is one real campaign.
-            Client names stay private. The numbers don&apos;t.
+            Every figure is pulled straight from Meta Ads and Google Ads reporting.
+            Totals are lifetime across every account; each case below is one real
+            campaign. Client names stay private. The numbers don&apos;t.
           </p>
 
           {/* Portfolio strip */}
