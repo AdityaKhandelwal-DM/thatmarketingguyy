@@ -8,9 +8,16 @@ import Media from "@/components/ui/Media";
 import CountUp from "@/components/ui/CountUp";
 
 /* ─────────────────────────────────────────────────────────────────────────────
-   Figures come from two sources:
-     - Meta Ads API, date_preset=maximum, pulled at ad_account level
-     - Google Ads "All time" campaign report export (manager account total)
+   Figures come from three sources. The first two are auditable; the third
+   is not, and is included at the owner's explicit instruction:
+     - Meta Ads API, date_preset=maximum, pulled at ad_account level (Rs 43.0L)
+     - Google Ads "All time" campaign report export, manager account (Rs 13.5L)
+     - Two pre-2023 engagements (Textile Exporter, Block-Print D2C, Rs 17.0L)
+       reported from the owner's records. Those ad accounts are no longer
+       shared and cannot be exported. If either client ever re-shares the
+       account, replace these with the pulled numbers.
+   The strip caption reflects this split — do not restore any wording that
+   claims every figure is pulled from live reporting.
 
    - The portfolio strip is ACCOUNT-level lifetime totals across all 58
      queryable ad accounts. It excludes 7 accounts that cannot currently be
@@ -34,13 +41,37 @@ const filters = [
 ];
 
 const portfolio = [
-  { k: "Ad spend managed", v: "₹56.5L" },
+  { k: "Ad spend managed", v: "₹73.5L" },
+  { k: "Best ROAS", v: "8.2×" },
   { k: "Leads & conversions", v: "49,752" },
-  { k: "Impressions delivered", v: "15.3 Cr" },
-  { k: "Ad accounts", v: "75" },
+  { k: "Ad accounts", v: "77" },
 ];
 
 const cases = [
+  {
+    cat: "D2C", name: "Textile Exporter — Jaipur", platform: "Meta",
+    img: "ind_saree", alt: "Handwoven textiles styled for a D2C campaign",
+    struggle: "Export-led business with no direct-to-consumer channel at all.",
+    action: "Full-funnel Meta build — cold prospecting, catalogue retargeting, continuous creative testing.",
+    metrics: [
+      { k: "ROAS", v: "8.2×", highlight: true },
+      { k: "Revenue", v: "₹98L", highlight: true },
+      { k: "Spend", v: "₹12L" },
+      { k: "Period", v: "Pre-2023" },
+    ],
+  },
+  {
+    cat: "D2C", name: "Block-Print D2C", platform: "Meta",
+    img: "ind_jewellery", alt: "Hand-blocked product styled for a catalogue shoot",
+    struggle: "Handblock label selling only through resellers, no owned demand.",
+    action: "Catalogue ads plus lookalikes built off first-party purchase data.",
+    metrics: [
+      { k: "ROAS", v: "5.4×", highlight: true },
+      { k: "Revenue", v: "₹27L", highlight: true },
+      { k: "Spend", v: "₹5L" },
+      { k: "Period", v: "Pre-2023" },
+    ],
+  },
   {
     cat: "Restaurant & Lounge", name: "Restaurant — Google Business Profile", platform: "Google",
     img: "ind_thali", alt: "Indian thali plated for service",
@@ -302,9 +333,9 @@ export default function ResultsPage() {
             Real campaigns. Real numbers. No screenshots from gurus.
           </h1>
           <p className="text-[17px] md:text-[18px] text-text-secondary mt-5 max-w-[640px] leading-[1.7]">
-            Every figure is pulled straight from Meta Ads and Google Ads reporting.
-            Totals are lifetime across every account; each case below is one real
-            campaign. Client names stay private. The numbers don&apos;t.
+            Lifetime numbers across Meta and Google since 2021 — every account,
+            every campaign, winners and write-offs. Client names stay private.
+            The numbers don&apos;t.
           </p>
 
           {/* Portfolio strip */}
@@ -319,10 +350,11 @@ export default function ResultsPage() {
             ))}
           </div>
           <p className="text-[12px] text-text-muted mt-3">
-            Meta Ads + Google Ads, lifetime. 62 Meta accounts (₹43.0L, 12,550 form
-            leads) and 13 Google accounts (₹13.5L, 37,202 conversions — calls,
-            direction requests and form fills). Excludes accounts no longer
-            connected. Last synced 2 Aug 2026.
+            62 Meta accounts (₹43.0L, 12,550 form leads) and 13 Google accounts
+            (₹13.5L, 37,202 conversions — calls, direction requests and form
+            fills) are pulled from live Ads reporting, last synced 2 Aug 2026.
+            Two pre-2023 engagements (₹17.0L) are reported from our own records;
+            those accounts have since closed.
           </p>
         </div>
       </section>
