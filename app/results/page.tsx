@@ -1,8 +1,12 @@
 "use client";
 
+import Link from "next/link";
+
 import { useState } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import FAQ from "@/components/ui/FAQ";
+import BreadcrumbLd from "@/components/ui/BreadcrumbLd";
 import Card from "@/components/ui/Card";
 import Media from "@/components/ui/Media";
 import CountUp from "@/components/ui/CountUp";
@@ -315,6 +319,21 @@ function MetricCard({ k, v, highlight }: { k: string; v: string; highlight?: boo
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
+const faqsResults = [
+  { q: "I've been burned by an agency before — why should I trust these numbers?",
+    a: "Fair. Here's my answer: I publish the losers too. The \"campaigns we killed\" section on this page lists write-offs most agencies would bury — including the decisions behind stopping them. Anyone can screenshot a winner; showing what got cut, and why, is the part that protects your budget. Read those first, then judge the 8.2× best ROAS." },
+  { q: "Are these numbers real, and can you prove them?",
+    a: "Most of them are pulled straight from Meta and Google Ads reporting at account level, with the sync date printed under the strip. Two older engagements are from my own records, and the page says so — I'd rather label the split honestly than pretend everything is live-audited. What you see is 77 ad accounts, ₹73.5L (~$88K) managed, 49,752 leads and conversions." },
+  { q: "Why don't you name your clients?",
+    a: "Because I haven't asked each of them for permission to be a public case study, and I won't publish a name without it. So you get the industry, the city, the struggle, the fix, and the unedited numbers — client names stay private until a case study goes out with sign-off. If a specific vertical matters to you, [ask me](/contact) and I'll walk you through a comparable account." },
+  { q: "What's a good ROAS for Facebook or Google ads?",
+    a: "There's no universal number — it depends on your margin. A 3× ROAS can be profit for one business and a loss for another. My best is 8.2× on a D2C account, but I've also killed campaigns rather than defend a bad one. Work out your break-even ROAS first; the [free guides](/resources) show you how to read it in your own account." },
+  { q: "What does \"cost per lead\" actually mean?",
+    a: "Ad spend divided by the number of people who gave you their details or messaged you — a real enquiry, not a click or an impression. My best is ₹34 (~$0.40) per lead on an education account. It's the number I'd judge any lead campaign on, because it ties spend directly to something you can call back and close." },
+  { q: "Do you only work with clinics and restaurants?",
+    a: "No — the filters on this page cover education, resorts and farmstays, restaurants, D2C, entertainment venues, clinics and retail, because that's where the 77 accounts came from. Clinics and restaurants are the deepest benches, so if that's you, you get playbooks that have already run. Different industry? [Ask](/contact) — the method transfers even when the creative doesn't." },
+];
+
 export default function ResultsPage() {
   const [active, setActive] = useState("All");
   const visible = cases.filter((c) => active === "All" || c.cat === active);
@@ -327,7 +346,7 @@ export default function ResultsPage() {
       <section className="bg-bg-light py-14 md:py-20 lg:py-24">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 animate-fadeInUp">
           <div className="text-[11px] tracking-[.06em] text-text-muted mb-4">
-            <a href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</a> / Results
+            <Link href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</Link> / Results
           </div>
           <span className="eyebrow block mb-5">The receipts</span>
           <h1 className="text-[clamp(28px,4.5vw,56px)] font-bold text-text-primary max-w-[820px] leading-[1.08]">
@@ -440,7 +459,7 @@ export default function ResultsPage() {
           </h2>
           <p className="text-[15px] md:text-[16px] text-text-secondary mt-4 max-w-[620px] leading-[1.7]">
             Anyone can show you winners. Knowing when to stop spending is the part
-            that actually protects your budget — so here are four we shut down.
+            that actually protects your budget — so here are six we shut down.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-4 mt-9 reveal">
@@ -459,6 +478,8 @@ export default function ResultsPage() {
         </div>
       </section>
 
+      <FAQ items={faqsResults} />
+      <BreadcrumbLd trail={[{ name: "Results", path: "/results" }]} />
       <Footer />
     </>
   );

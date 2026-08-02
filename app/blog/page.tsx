@@ -31,7 +31,7 @@ export default function BlogPage() {
       <section className="bg-bg-light py-14 md:py-20 lg:py-24">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 animate-fadeInUp">
           <div className="text-[11px] tracking-[.06em] text-text-muted mb-4">
-            <a href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</a> / Blog
+            <Link href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</Link> / Blog
           </div>
           <span className="eyebrow block mb-5">Marketing, made clear</span>
           <h1 className="text-[clamp(28px,4.5vw,56px)] font-bold text-text-primary max-w-[760px] leading-[1.08]">

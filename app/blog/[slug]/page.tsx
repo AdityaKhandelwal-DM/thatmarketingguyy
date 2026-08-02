@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
 import Media from "@/components/ui/Media";
+import BreadcrumbLd from "@/components/ui/BreadcrumbLd";
 import { getAllPosts, getPost } from "@/lib/blog";
 
 export function generateStaticParams() {
@@ -54,6 +55,8 @@ export default async function PostPage({
     headline: post.title,
     description: post.description,
     datePublished: post.date,
+    dateModified: post.date,
+    image: `https://www.thatmarketingguyy.com/images/${post.image}.webp`,
     author: {
       "@type": "Person",
       name: "Aditya Khandelwal",
@@ -112,6 +115,12 @@ export default async function PostPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }}
       />
 
+      <BreadcrumbLd
+        trail={[
+          { name: "Blog", path: "/blog" },
+          { name: post.title, path: `/blog/${post.slug}` },
+        ]}
+      />
       <Footer />
     </>
   );

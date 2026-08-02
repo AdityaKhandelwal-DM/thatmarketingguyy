@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -70,7 +71,7 @@ export default function CareersPage() {
           <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-14 items-center">
             <div>
               <div className="text-[11px] tracking-[.06em] text-text-muted mb-4">
-                <a href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</a> / Careers
+                <Link href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</Link> / Careers
               </div>
               <span className="eyebrow block mb-5">
                 Join the team

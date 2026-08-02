@@ -1,6 +1,9 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import FAQ from "@/components/ui/FAQ";
+import BreadcrumbLd from "@/components/ui/BreadcrumbLd";
 import Button from "@/components/ui/Button";
 import Media from "@/components/ui/Media";
 import {
@@ -27,7 +30,7 @@ const guides: { icon: LucideIcon; title: string }[] = [
 ];
 
 const steps = [
-  { n: "1", text: "Follow @thatmarketingguy" },
+  { n: "1", text: "Follow @that.marketingguyy" },
   { n: "2", text: "DM the keyword for the guide you want" },
   { n: "3", text: "Get the PDF + a short follow-up tip" },
 ];
@@ -41,6 +44,19 @@ export const metadata: Metadata = {
   alternates: { canonical: "/resources" },
 };
 
+const faqsResources = [
+  { q: "Is there a free Facebook ads checklist for small business?",
+    a: "Yes — the \"Stop Wasting Ad Budget\" checklist is the first of the 7 free guides, and it's the one I tell everyone to start with. It covers the mistakes I see most across 77 ad accounts: wrong objectives, tired creative, budgets judged in the wrong window. DM the keyword on Instagram and it's yours; no email required." },
+  { q: "Are the 7 guides really free, or is there a catch?",
+    a: "Really free. No email wall, no card details, no \"free trial.\" You DM the keyword GUIDE to my Instagram and the PDFs land in your inbox. The catch, if you want to call it one: I built them so you'd trust me enough to eventually look at the ₹99 (~$1.20) blueprints on the [learn page](/learn). That's the whole funnel, stated out loud." },
+  { q: "Why do I have to DM you on Instagram instead of just downloading them?",
+    a: "Two honest reasons. One: no email-gymnastics — no forms, no newsletter you didn't ask for. Two: a DM starts an actual conversation, so I can send a short follow-up tip that fits your business instead of a generic drip sequence. If DMs aren't your thing, the [contact form](/contact) works too." },
+  { q: "Which guide should I start with?",
+    a: "Start with the \"Stop Wasting Ad Budget\" checklist — it applies to every business and pays for itself (it's free, so instantly). Then take your industry guide: clinic lead-gen, restaurant local-ads, D2C scaling, or the FunZone template. If you're a local business with no ad budget at all, go straight to the Google Map Pack ranking guide instead." },
+  { q: "Will you spam me after I DM you?",
+    a: "No. You get the PDF plus one short follow-up tip, and that's the promised scope. I'd rather you come back because a guide actually helped than because I drip-fed your inbox. If a guide does help and you want the deeper version, the ₹99 (~$1.20) blueprints on the [learn page](/learn) are the next step — but that move is yours to make." },
+];
+
 export default function ResourcesPage() {
   return (
     <>
@@ -52,7 +68,7 @@ export default function ResourcesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-14 items-center">
             <div>
               <div className="text-[11px] tracking-[.06em] text-text-muted mb-4">
-                <a href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</a> / Free PDFs
+                <Link href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</Link> / Free PDFs
               </div>
               <span className="eyebrow block mb-5">Start free</span>
               <h1 className="text-[clamp(28px,4.5vw,56px)] font-bold text-text-primary max-w-[760px] leading-[1.08]">
@@ -126,6 +142,8 @@ export default function ResourcesPage() {
         </div>
       </section>
 
+      <FAQ items={faqsResources} light />
+      <BreadcrumbLd trail={[{ name: "Free PDFs", path: "/resources" }]} />
       <Footer />
     </>
   );

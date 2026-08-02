@@ -1,8 +1,12 @@
 "use client";
 
+import Link from "next/link";
+
 import { useState } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import FAQ from "@/components/ui/FAQ";
+import BreadcrumbLd from "@/components/ui/BreadcrumbLd";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import Media from "@/components/ui/Media";
@@ -16,8 +20,44 @@ const intents: { key: Intent; icon: LucideIcon; title: string; desc: string }[] 
   { key: "learner", icon: GraduationCap, title: "I want to learn marketing", desc: "I want to run ads myself or build a career." },
 ];
 
+const faqsContact = [
+  { q: "How do I hire you to manage my ads?",
+    a: "Pick \"I own a business\" on this page, tell me your business, city and what you need help with, and send it. I'll come back with questions and an honest recommendation. Done-for-you management is the top of my ladder — under it sit the free guides, ₹99 (~$1.20) blueprints and the ₹999 (~$12) masterclass, so you're never forced into the expensive option." },
+  { q: "How fast do you reply?",
+    a: "I reply personally — there's no team inbox, no autoresponder, no \"a specialist will contact you.\" That's the honest trade-off of working with one person instead of an agency: you get me, at human speed, not a ticket number. If it's urgent, say so in the message and include WhatsApp; that's the channel I live in between client calls." },
+  { q: "What happens after I send the message?",
+    a: "I read it myself and reply based on which door you picked. Business owner: I'll ask about your business, city and current ads, then tell you plainly whether done-for-you management, a ₹99 (~$1.20) blueprint, or just the [free guides](/resources) fit — I've told people not to hire me. Learner: I'll point you at the right starting material. No discovery-call funnel." },
+  { q: "Do you do one-off ad account audits?",
+    a: "My published offers are the ladder: free guides, blueprints, the masterclass, and ongoing management — a standalone audit isn't a listed product. But if you just want a second pair of eyes on your account, message me anyway and describe what's running. After 77 ad accounts I can usually tell you quickly whether something's structurally wrong — and I'll say so either way." },
+  { q: "I'm in the US or UK — do timezones make working with you painful?",
+    a: "No. I already work remotely from Jaipur with clients in the US, UK, UAE, Australia and Singapore, so overlapping call windows are a solved problem, and most day-to-day runs async over WhatsApp and email anyway. What matters is that reporting is clear enough that you never wait on a call to know what's happening." },
+  { q: "I don't know if I need done-for-you or a course — which do I pick?",
+    a: "Quick test: if your time is worth more than your ad budget's waste, hire it out; if the budget is small and you want the skill, learn it. Undecided is fine too — start with the [free guides](/resources), see how my head works, then decide. Both doors lead to the same person reading your message." },
+];
+
 export default function ContactPage() {
   const [intent, setIntent] = useState<Intent>("owner");
+  const [name, setName] = useState("");
+  const [reach, setReach] = useState("");
+  const [biz, setBiz] = useState("");
+  const [need, setNeed] = useState("");
+  const [sent, setSent] = useState(false);
+
+  // No backend: build the message, copy it, open the Instagram DM thread —
+  // the channel Aditya actually answers. Honest and zero-dependency.
+  const send = async () => {
+    const lines = [
+      `Hi Aditya — ${name || "a visitor"} here (${intent === "owner" ? "business owner" : "learner"}).`,
+      reach && `Reach me: ${reach}`,
+      biz && `Business: ${biz}`,
+      need && `Need help with: ${need}`,
+    ].filter(Boolean);
+    try {
+      await navigator.clipboard.writeText(lines.join("\n"));
+    } catch {}
+    setSent(true);
+    window.open("https://ig.me/m/that.marketingguyy", "_blank", "noopener");
+  };
 
   return (
     <>
@@ -29,7 +69,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-14 items-center">
             <div>
               <div className="text-[11px] tracking-[.06em] text-text-muted mb-4">
-                <a href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</a> / Contact
+                <Link href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</Link> / Contact
               </div>
               <span className="eyebrow block mb-5">Let&apos;s talk</span>
               <h1 className="text-[clamp(28px,4.5vw,56px)] font-bold text-text-primary max-w-[760px] leading-[1.08]">
@@ -71,7 +111,7 @@ export default function ContactPage() {
                 >
                   <b.icon className="w-6 h-6 text-primary flex-none" strokeWidth={2} />
                   <div>
-                    <h4 className="text-[15px] font-bold text-text-primary">{b.title}</h4>
+                    <span className="block text-[15px] font-bold text-text-primary">{b.title}</span>
                     <p className="text-[13px] text-text-secondary mt-0.5">{b.desc}</p>
                   </div>
                 </button>
@@ -81,54 +121,64 @@ export default function ContactPage() {
             {/* Form */}
             <Card className="p-5 md:p-8 reveal">
               <div className="mb-4">
-                <label className="block text-[13px] font-semibold text-text-primary mb-1.5">Your name</label>
+                <label htmlFor="name" className="block text-[13px] font-semibold text-text-primary mb-1.5">Your name</label>
                 <input
+                  id="name"
                   type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   placeholder="e.g. Rohan Sharma"
                   className="w-full h-14 px-4 border border-border rounded-btn text-[15px] text-text-primary placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors duration-[250ms]"
                 />
               </div>
               <div className="mb-4">
-                <label className="block text-[13px] font-semibold text-text-primary mb-1.5">WhatsApp / Email</label>
+                <label htmlFor="reach" className="block text-[13px] font-semibold text-text-primary mb-1.5">WhatsApp / Email</label>
                 <input
+                  id="reach"
                   type="text"
+                  value={reach}
+                  onChange={(e) => setReach(e.target.value)}
                   placeholder="So I can reach you"
                   className="w-full h-14 px-4 border border-border rounded-btn text-[15px] text-text-primary placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors duration-[250ms]"
                 />
               </div>
               {intent === "owner" && (
                 <div className="mb-4">
-                  <label className="block text-[13px] font-semibold text-text-primary mb-1.5">Your business &amp; city</label>
+                  <label htmlFor="biz" className="block text-[13px] font-semibold text-text-primary mb-1.5">Your business &amp; city</label>
                   <input
+                    id="biz"
                     type="text"
+                    value={biz}
+                    onChange={(e) => setBiz(e.target.value)}
                     placeholder="e.g. Dental clinic, Jaipur"
                     className="w-full h-14 px-4 border border-border rounded-btn text-[15px] text-text-primary placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors duration-[250ms]"
                   />
                 </div>
               )}
               <div className="mb-5">
-                <label className="block text-[13px] font-semibold text-text-primary mb-1.5">What do you need help with?</label>
+                <label htmlFor="need" className="block text-[13px] font-semibold text-text-primary mb-1.5">What do you need help with?</label>
                 <textarea
+                  id="need"
+                  value={need}
+                  onChange={(e) => setNeed(e.target.value)}
                   placeholder="Tell me in one line"
                   rows={4}
                   className="w-full min-h-[120px] py-4 px-4 border border-border rounded-btn text-[15px] text-text-primary placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors duration-[250ms] resize-y"
                 />
               </div>
-              <Button
-                type="button"
-                fullWidth
-                onClick={() => alert("Connect this form to ConvertKit, Formspree, or a WhatsApp link before going live.")}
-              >
-                Send message
+              <Button type="button" fullWidth onClick={send}>
+                {sent ? "Opened Instagram — paste & send" : "Send via Instagram DM"}
               </Button>
-              <p className="text-[12px] text-text-muted mt-2.5 text-center">
-                Not wired up yet — connect to ConvertKit, Formspree, or WhatsApp before launch.
+              <p className="text-[12px] text-text-muted mt-3 text-center">
+                Opens my Instagram DM with your message copied — just paste and send. I read every one myself.
               </p>
             </Card>
           </div>
         </div>
       </section>
 
+      <FAQ items={faqsContact} light />
+      <BreadcrumbLd trail={[{ name: "Contact", path: "/contact" }]} />
       <Footer />
     </>
   );

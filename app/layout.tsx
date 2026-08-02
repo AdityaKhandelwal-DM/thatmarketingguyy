@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "thatmarketingguy",
     type: "website",
     locale: "en_US",
-    images: [{ url: "/images/aditya-square.webp", width: 700, height: 700 }],
+    images: [{ url: "/images/og-card.png", width: 1200, height: 630 }],
   },
   twitter: { card: "summary_large_image" },
 };

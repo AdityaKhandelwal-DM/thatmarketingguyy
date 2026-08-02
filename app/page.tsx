@@ -1,5 +1,6 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import FAQ from "@/components/ui/FAQ";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import CountUp from "@/components/ui/CountUp";
@@ -179,6 +180,21 @@ function MetricCard({ k, v, highlight }: { k: string; v: string; highlight?: boo
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
+const faqsHome = [
+  { q: "How much does it cost to hire a Facebook ads freelancer?",
+    a: "With me you pick your entry point. Free: 7 guides over Instagram DM. ₹99 (~$1.20): an industry blueprint you run yourself. ₹999 (~$12): the full masterclass. Done-for-you management is quoted after you [tell me about your business](/contact) — pricing depends on spend and scope, and I'd rather give you a real number than a generic rate card." },
+  { q: "Do you work with clients outside India?",
+    a: "Yes — that's most of my week. I work remotely from Jaipur with business owners in the US, UK, UAE, Australia and Singapore. Everything runs over calls and WhatsApp, and you keep full ownership of your ad accounts. The numbers on the [results page](/results) — 77 ad accounts, 49,752 leads — come from exactly this kind of remote work." },
+  { q: "Meta ads or Google ads — which one does my business need?",
+    a: "Depends on where your buyer is. Google catches people already searching — clinics and local stores usually start there. Meta creates demand — restaurants, venues and D2C brands lean on it. Across my 77 ad accounts I run both, often together, and the [results page](/results) shows which platform each campaign ran on so you can compare like-for-like." },
+  { q: "How are you different from a marketing agency?",
+    a: "An agency's incentive is to keep you dependent; mine is to make you understand your own account. No long contracts, no account manager between us, and I teach you to read the dashboard yourself. I've managed ₹73.5L (~$88K) in spend as one person — and I publish my failed campaigns on the [results page](/results), which no agency deck will ever do." },
+  { q: "What size of business do you work with?",
+    a: "Small and medium businesses — clinics, restaurants, D2C founders, local stores, venues. Most of my 49,752 leads and conversions came from exactly these, not from big-brand budgets. If you're too early for done-for-you management, start with the [free guides](/resources) or a ₹99 (~$1.20) blueprint and come back when the spend justifies it." },
+  { q: "Will you run my ads for me, or teach me to do it?",
+    a: "Whichever you actually need. Some owners want done-for-you management; others want to run ads themselves and just need the playbook. That's why the ladder exists: free guides, ₹99 (~$1.20) blueprints, the ₹999 (~$12) masterclass, and full management. Tell me which camp you're in on the [contact page](/contact) — there's a selector for exactly this." },
+];
+
 export default function Home() {
   return (
     <>
@@ -215,7 +231,7 @@ export default function Home() {
               <div className="grid grid-cols-3 gap-4 mt-10 pt-8 border-t border-border">
                 {[
                   { n: "77", l: "ad accounts managed" },
-                  { n: "8",   l: "industries served" },
+                  { n: "7",   l: "industries served" },
                   { n: "₹0",  l: "to start learning" },
                 ].map((t) => (
                   <div key={t.l} className="flex flex-col">
@@ -328,7 +344,8 @@ export default function Home() {
                   This is what 5+ years of showing up every day looks like.
                 </h2>
                 <p className="text-[15px] md:text-[17px] text-text-secondary mt-3">
-                  Not a big agency. Just one person, one laptop, and a lot of chai. Here&apos;s the tally.
+                  Not a big agency. Just one person, one laptop, and a lot of chai. Here&apos;s the tally —
+              and I write up what I learn on <Link href="/blog" className="text-primary font-medium hover:underline">the blog</Link>.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-4 reveal-stagger">
@@ -603,6 +620,7 @@ export default function Home() {
         </div>
       </section>
 
+      <FAQ items={faqsHome} />
       <Footer />
     </>
   );

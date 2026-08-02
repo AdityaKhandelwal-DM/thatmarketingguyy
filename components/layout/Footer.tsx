@@ -56,9 +56,7 @@ export default function Footer() {
               Connect
             </h5>
             {[
-              { label: "Instagram", href: "#" },
-              { label: "YouTube",   href: "#" },
-              { label: "LinkedIn",  href: "#" },
+              { label: "Instagram", href: "https://www.instagram.com/that.marketingguyy/" },
               { label: "Contact",   href: "/contact" },
             ].map((l) => (
               <Link key={l.label} href={l.href} className="text-[13px] sm:text-sm opacity-70 hover:opacity-100 hover:text-white transition-opacity duration-[250ms]">

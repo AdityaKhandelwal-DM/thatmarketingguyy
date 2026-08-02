@@ -1,6 +1,9 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import FAQ from "@/components/ui/FAQ";
+import BreadcrumbLd from "@/components/ui/BreadcrumbLd";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import Media from "@/components/ui/Media";
@@ -39,6 +42,21 @@ export const metadata: Metadata = {
   alternates: { canonical: "/learn" },
 };
 
+const faqsLearn = [
+  { q: "Can a complete beginner run their own Meta ads with this?",
+    a: "Yes — that's who it's built for. The masterclass starts at account setup and pixel, then dashboards, campaign builds, creative testing and scaling, in order. It's the same process I've used across 77 real ad accounts, shown on real dashboards, not theory slides. If you want to test the water first, the [free guides](/resources) cover the basics at zero cost." },
+  { q: "How much do your courses cost?",
+    a: "Two products, both one-time. Industry blueprints are ₹99 (~$1.20) each — a step-by-step campaign build for one business type: clinic, bakery, restaurant, D2C, FunZone or local SEO. The masterclass, \"Zero to Revenue: Scale Without Agency,\" is ₹999 (~$12) for six prerecorded modules. No subscription, no upsell — yours forever." },
+  { q: "What's the difference between a ₹99 blueprint and the ₹999 masterclass?",
+    a: "A blueprint is narrow and fast: copy-paste campaigns for one specific business type, ₹99 (~$1.20), done. The masterclass is the whole system — six modules from pixel setup to scaling without an agency, ₹999 (~$12). If you own one business and want ads live this week, blueprint. If you want to actually understand the machine, masterclass." },
+  { q: "Do you offer refunds?",
+    a: "I haven't published a refund policy, so I won't pretend one exists. What I can tell you: prices are one-time — ₹99 (~$1.20) or ₹999 (~$12) — with lifetime access and no recurring charge. If you're unsure whether my teaching style fits you, start with the [free guides](/resources) first; they cost nothing and read exactly like the paid material." },
+  { q: "Is this a subscription or are there upsells later?",
+    a: "Neither. One-time prices, yours forever, no upsell traps. You pay ₹99 (~$1.20) for a blueprint or ₹999 (~$12) for the masterclass once, and you keep it. There is no \"pro tier,\" no community fee, no webinar that turns into a pitch. The only next step, if you ever want it, is [working with me directly](/contact)." },
+  { q: "Which blueprint should I buy for my business?",
+    a: "Match it to what you sell. Clinic for appointments, restaurant or bakery for footfall and orders, D2C for scaling spend without ROAS falling off, FunZone for weekend fill, local SEO if you want Map Pack rankings with zero ad budget. Each is ₹99 (~$1.20). Not on the list? [Message me](/contact) and I'll tell you honestly which one is closest — or whether none fits." },
+];
+
 export default function LearnPage() {
   return (
     <>
@@ -48,7 +66,7 @@ export default function LearnPage() {
       <section className="bg-bg-light py-14 md:py-20 lg:py-24">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 animate-fadeInUp">
           <div className="text-[11px] tracking-[.06em] text-text-muted mb-4">
-            <a href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</a> / Learn
+            <Link href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</Link> / Learn
           </div>
           <span className="eyebrow block mb-5">Go paid when you&apos;re ready</span>
           <h1 className="text-[clamp(28px,4.5vw,56px)] font-bold text-text-primary max-w-[760px] leading-[1.08]">
@@ -144,6 +162,8 @@ export default function LearnPage() {
         </div>
       </section>
 
+      <FAQ items={faqsLearn} />
+      <BreadcrumbLd trail={[{ name: "Learn", path: "/learn" }]} />
       <Footer />
     </>
   );

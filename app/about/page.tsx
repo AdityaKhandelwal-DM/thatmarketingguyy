@@ -1,8 +1,10 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
 import Media from "@/components/ui/Media";
+import BreadcrumbLd from "@/components/ui/BreadcrumbLd";
 import { BarChart3, MapPin, Target, GraduationCap, PlayCircle, type LucideIcon } from "lucide-react";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
@@ -64,7 +66,7 @@ export default function AboutPage() {
       <section className="bg-bg-light py-14 md:py-20 lg:py-24">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 animate-fadeInUp">
           <div className="text-[11px] tracking-[.06em] text-text-muted mb-4">
-            <a href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</a> / About
+            <Link href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</Link> / About
           </div>
           <span className="eyebrow block mb-5">
             Who&apos;s behind this
@@ -147,7 +149,7 @@ export default function AboutPage() {
                 {/* Stat chip */}
                 <div className="absolute right-3 top-4 bg-white rounded-xl px-4 py-3 shadow-card border border-border">
                   <div className="text-[10px] tracking-[.06em] uppercase text-text-muted">Ad accounts</div>
-                  <div className="tabular-nums text-[22px] font-bold text-text-primary mt-0.5">62</div>
+                  <div className="tabular-nums text-[22px] font-bold text-text-primary mt-0.5">77</div>
                 </div>
               </div>
             </div>
@@ -241,6 +243,7 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <BreadcrumbLd trail={[{ name: "About", path: "/about" }]} />
       <Footer />
     </>
   );

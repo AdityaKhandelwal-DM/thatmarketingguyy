@@ -78,7 +78,7 @@ export function renderMarkdown(md: string): string {
       flushPara(); flushList();
       const src = img[2].startsWith("/") ? img[2] : `/images/${img[2]}.webp`;
       out.push(
-        `<figure><img src="${src}" alt="${img[1]}" loading="lazy" />` +
+        `<figure><img src="${src}" alt="${img[1]}" width="1200" height="800" loading="lazy" />` +
           (img[1] ? `<figcaption>${img[1]}</figcaption>` : "") +
           `</figure>`
       );
