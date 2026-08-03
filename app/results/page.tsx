@@ -137,7 +137,7 @@ const cases = [
     ],
   },
   {
-    cat: "Resort & Farmstay", name: "Farm Stay, Jaipur", img: "resort_farm", alt: "Farm stay pool and gardens on a clear day",
+    cat: "Resort & Farmstay", name: "Farm Stay, Jaipur", img: "fb_farm", alt: "Aerial view of the farm stay's villas and lawns",
     struggle: "Weekend slots unsold, enquiries drying up midweek.",
     action: "Creator-led video lead ads plus a broad all-rounder audience build.",
     metrics: [
@@ -148,7 +148,7 @@ const cases = [
     ],
   },
   {
-    cat: "D2C", name: "D2C Home Textiles", img: "ind_saree", alt: "Model in a handwoven silk saree",
+    cat: "D2C", name: "D2C Home Textiles", img: "fb_saree", alt: "Hand-block printed saree from the brand's own campaign shoot",
     struggle: "Spend scaling but ROAS sliding under breakeven.",
     action: "CBO restructure, city-tier split, lookalike stack on top buyers.",
     metrics: [
@@ -170,7 +170,7 @@ const cases = [
     ],
   },
   {
-    cat: "Restaurant & Lounge", name: "Rooftop Lounge, Airport Rd", img: "rest_lounge", alt: "Rooftop lounge bar set up for evening service",
+    cat: "Restaurant & Lounge", name: "Rooftop Lounge, Airport Rd", img: "fb_valentine", alt: "Candle-lit table setting from a rooftop campaign",
     struggle: "Table reservations relying entirely on walk-ins.",
     action: "Instant-form reservation ads replacing generic traffic pushes.",
     metrics: [
@@ -214,7 +214,7 @@ const cases = [
     ],
   },
   {
-    cat: "Restaurant & Lounge", name: "Banquet & Restaurant", img: "rest_interior", alt: "Restaurant and banquet floor ready for guests",
+    cat: "Restaurant & Lounge", name: "Banquet & Restaurant", img: "fb_cocktail", alt: "Signature cocktail served at the venue",
     struggle: "Banquet enquiries expensive, creator spend completely unmeasured.",
     action: "Creator content routed into conversation ads with a tracked cost per enquiry.",
     metrics: [
@@ -236,7 +236,7 @@ const cases = [
     ],
   },
   {
-    cat: "Restaurant & Lounge", name: "Restaurant: Party Bookings", img: "ind_thali", alt: "Indian thali laid out for a group booking",
+    cat: "Restaurant & Lounge", name: "Restaurant: Party Bookings", img: "fb_partyfood", alt: "Dishes from the restaurant's own campaign shoot",
     struggle: "Party and event bookings handled ad-hoc, no pipeline at all.",
     action: "Instant-form party enquiry ads built per outlet, not per brand.",
     metrics: [
@@ -247,7 +247,7 @@ const cases = [
     ],
   },
   {
-    cat: "Retail", name: "Tiles & Sanitaryware Showroom", img: "retail_shop", alt: "Retail showroom aisles stocked for walk-ins",
+    cat: "Retail", name: "Tiles & Sanitaryware Showroom", img: "fb_showroom", alt: "Premium sanitaryware display inside the client showroom",
     struggle: "Showroom footfall depended entirely on dealer referrals.",
     action: "Brand-partner led conversation ads running across two cities.",
     metrics: [
@@ -258,7 +258,7 @@ const cases = [
     ],
   },
   {
-    cat: "Restaurant & Lounge", name: "Café: Local Awareness", img: "ind_southfood", alt: "South Indian breakfast plated on a banana leaf",
+    cat: "Restaurant & Lounge", name: "Café: Local Awareness", img: "fb_cafe", alt: "The café's garden courtyard and waterfall",
     struggle: "New café, nobody in the neighbourhood knew it existed.",
     action: "Local reach ads held at frequency 1.0 for maximum unique coverage.",
     metrics: [

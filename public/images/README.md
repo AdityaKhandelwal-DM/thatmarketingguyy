@@ -58,3 +58,12 @@ To regenerate at the right size and format:
 sips -Z 1200 source.jpg --out tmp.jpg          # or any editor
 python3 -c "from PIL import Image; im=Image.open('tmp.jpg'); im.save('out.webp','WEBP',quality=80,method=6)"
 ```
+
+## fb_*.webp — real client campaign imagery
+
+Cropped from ad creatives pulled out of the connected Meta ad accounts
+(the actual businesses behind the /results case studies). Text overlays,
+prices, phone numbers and faces were cropped out; the Funzo entrance shot
+was rejected because the brand name was legible, which would break the
+"client names stay private" promise on /results. Source files retrievable
+again via ads_get_ad_images with the account's hashes.

@@ -41,8 +41,8 @@ import {
 
 const niches: { icon: LucideIcon; title: string; desc: string; img: string; alt: string }[] = [
   { icon: HeartPulse, title: "Clinic owners", desc: "Fill your calendar with patient walk-ins, not vanity likes.", img: "clinic_consult", alt: "Doctor consulting a patient in a clinic" },
-  { icon: UtensilsCrossed, title: "Restaurants & bakeries", desc: "Turn nearby phones into tables booked and orders placed.", img: "ind_thali", alt: "Indian thali served across brass bowls" },
-  { icon: Package, title: "D2C founders", desc: "Scale ad spend without lighting money on fire.", img: "ind_saree", alt: "Model in a handwoven silk saree" },
+  { icon: UtensilsCrossed, title: "Restaurants & bakeries", desc: "Turn nearby phones into tables booked and orders placed.", img: "fb_partyfood", alt: "Dishes from a restaurant client's campaign shoot" },
+  { icon: Package, title: "D2C founders", desc: "Scale ad spend without lighting money on fire.", img: "fb_saree", alt: "Hand-block printed saree from a client campaign shoot" },
   { icon: Store, title: "Local store owners", desc: "Own the Google Map Pack so your shop shows up first.", img: "ind_jaipur", alt: "Hawa Mahal, Jaipur, with autorickshaws on the street below" },
   { icon: Gamepad2, title: "FunZone & venues", desc: "Pack weekends and slow days with local footfall.", img: "ent_arcade", alt: "Arcade games lit up inside an entertainment venue" },
   { icon: Frown, title: "Burned by agencies", desc: "Finally understand exactly what your money is doing.", img: "work_team", alt: "Team mapping out a plan on a whiteboard" },
