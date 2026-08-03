@@ -223,8 +223,8 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3">
-                <Button href="/resources">Get 7 free guides</Button>
-                <Button href="/results" variant="secondary">See real results →</Button>
+                <Button href="/results">See real results</Button>
+                <Button href="/contact" variant="secondary">Work with me →</Button>
               </div>
 
               {/* Trust stats */}
@@ -550,16 +550,17 @@ export default function Home() {
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-7 md:mb-12 reveal">
             <div className="max-w-[600px]">
-              <span className="eyebrow block mb-4">Free value, no strings</span>
+              <span className="eyebrow block mb-4">Free value, no strings, coming soon</span>
               <h2 className="text-[clamp(24px,3.4vw,42px)] font-bold text-text-primary">
-                7 guides. Zero cost. Just DM me.
+7 guides. Zero cost. Being written now.
               </h2>
               <p className="text-[15px] md:text-[17px] text-text-secondary mt-3">
-                You shouldn&apos;t need to pay to understand marketing basics. These are yours. No email gymnastics.
+You shouldn&apos;t need to pay to understand marketing basics. These aren&apos;t
+                published yet, so tell me which one you need and it gets written first.
               </p>
             </div>
             <div className="flex-none">
-              <Button href="/resources">Get all 7 guides →</Button>
+              <Button href="/resources">See what&apos;s coming →</Button>
             </div>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-4">
@@ -571,7 +572,7 @@ export default function Home() {
               >
                 <r.icon className="w-6 h-6 text-primary flex-none" strokeWidth={2} />
                 <div>
-                  <span className="text-[9px] tracking-[.08em] uppercase text-primary mb-1 block font-semibold">PDF</span>
+                  <span className="text-[9px] tracking-[.08em] uppercase text-text-muted mb-1 block font-semibold">PDF · soon</span>
                   <span className="text-[13px] font-semibold text-text-primary group-hover:text-primary transition-colors duration-[250ms] leading-snug">
                     {r.title}
                   </span>
@@ -582,7 +583,7 @@ export default function Home() {
               href="/resources"
               className="bg-primary rounded-card p-5 flex items-center justify-center gap-2 text-white font-semibold text-[15px] hover:bg-primary-dark hover:-translate-y-1 transition-all duration-[250ms]"
             >
-              View all 7 →
+See what&apos;s coming →
             </Link>
           </div>
         </div>
@@ -611,11 +612,12 @@ export default function Home() {
             Stop guessing. Start knowing.
           </h2>
           <p className="text-[15px] md:text-[18px] text-white/60 mb-8 max-w-lg mx-auto leading-relaxed">
-            Whether you want the free guides, a live workshop, or a full masterclass, pick where you want to start.
+The guides, workshops and masterclass are all in production. Right now the fastest
+            way in is simply to tell me what you&apos;re running.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button href="/resources">Get the free guides</Button>
-            <Button href="/learn" variant="light">Explore the courses →</Button>
+            <Button href="/contact">Tell me what you&apos;re running</Button>
+            <Button href="/learn" variant="light">See what&apos;s coming →</Button>
           </div>
         </div>
       </section>

@@ -38,7 +38,7 @@ const modules = [
 export const metadata: Metadata = {
   title: "Learn Meta & Google Ads: ₹99 Blueprints & Masterclass",
   description:
-    "Run your own ads without an agency. Industry blueprints from ₹99 (~$1.20) and the Zero to Revenue masterclass. Real dashboards, step-by-step.",
+    "Learn to run your own ads without an agency. Industry blueprints and the Zero to Revenue masterclass, both in production. Real dashboards, step-by-step.",
   alternates: { canonical: "/learn" },
 };
 
@@ -52,9 +52,9 @@ const faqsLearn = [
   { q: "Do I need a big budget to start?",
     a: "No, but you need enough for the platform to learn from. Very small daily budgets struggle to produce the roughly 50 weekly conversions Meta wants before optimisation settles. If your budget can't reach that on purchases, optimise for something cheaper higher in the funnel, such as messages or landing page views, and move up as volume grows." },
   { q: "Is this a subscription?",
-    a: "No. One-time price, lifetime access, no recurring charge and no tier sitting above it. Worth stating plainly, since \"course\" tends to imply a subscription these days." },
+    a: "No. One-time price, lifetime access, no recurring charge and no tier sitting above it. Worth stating plainly, since \"course\" tends to imply a subscription these days. Nothing is purchasable yet, so there is nothing to cancel either." },
   { q: "Can I try the free material first?",
-    a: "Sensible, and I'd recommend it. The [free guides](/resources) cover similar ground at a shallower depth and cost nothing, so you can find out whether the way I explain things suits you before paying for anything." },
+    a: "That's the plan. The [free guides](/resources) will cover similar ground at a shallower depth and cost nothing, so you can find out whether the way I explain things suits you before paying for anything. They land before the paid material does." },
 ];
 
 export default function LearnPage() {
@@ -68,12 +68,13 @@ export default function LearnPage() {
           <div className="text-[11px] tracking-[.06em] text-text-muted mb-4">
             <Link href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</Link> / Learn
           </div>
-          <span className="eyebrow block mb-5">Go paid when you&apos;re ready</span>
+          <span className="eyebrow block mb-5">In production, launching soon</span>
           <h1 className="text-[clamp(28px,4.5vw,56px)] font-bold text-text-primary max-w-[760px] leading-[1.08]">
             From your first campaign to scaling without an agency.
           </h1>
           <p className="text-[17px] md:text-[18px] text-text-secondary mt-5 max-w-[620px] leading-[1.7]">
-            No upsell traps. One-time prices. Yours forever.
+            These are being built now. No upsell traps, one-time prices, yours forever
+            once they launch. Nothing is on sale yet.
           </p>
         </div>
       </section>
@@ -85,7 +86,8 @@ export default function LearnPage() {
             <span className="eyebrow block mb-4">One-time, no subscriptions</span>
             <h2 className="text-[clamp(24px,3.4vw,42px)] font-bold text-text-primary">₹99 industry blueprints</h2>
             <p className="text-[15px] md:text-[17px] text-text-secondary mt-3">
-              Step-by-step, copy-paste campaigns built for one specific business type. Pick yours.
+Step-by-step, copy-paste campaigns for one specific business type. Tell me which
+              one you want and I&apos;ll build it first.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 reveal-stagger">
@@ -102,8 +104,8 @@ export default function LearnPage() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px"
                     zoomOnHover
                   />
-                  <span className="absolute top-3 right-3 text-[12px] font-bold text-text-primary bg-secondary px-2.5 py-1 rounded-md shadow-card">
-                    ₹99
+                  <span className="absolute top-3 right-3 text-[10px] tracking-[.06em] uppercase font-bold text-text-primary bg-secondary px-2.5 py-1 rounded-md shadow-card">
+                    Soon · ₹99
                   </span>
                   <div className="absolute -bottom-6 left-6 w-12 h-12 rounded-2xl bg-white border border-border shadow-card flex items-center justify-center">
                     <b.icon className="w-6 h-6 text-primary" strokeWidth={2} />
@@ -117,7 +119,7 @@ export default function LearnPage() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Button href="/contact" variant="secondary">Buy a blueprint →</Button>
+            <Button href="/contact" variant="secondary">Ask for one first →</Button>
           </div>
         </div>
       </section>
@@ -129,12 +131,17 @@ export default function LearnPage() {
             <div className="bg-text-primary rounded-[22px] p-6 md:p-8 reveal">
               <span className="eyebrow block mb-3" style={{ color: "#FDEA6F" }}>The masterclass</span>
               <h3 className="text-2xl md:text-[28px] font-bold text-white leading-snug">Zero to Revenue: Scale Without Agency</h3>
-              <p className="text-[14px] text-white/70 mt-2 mb-5">6 prerecorded modules. Watch at your pace. No upsell, ever.</p>
+              <p className="text-[14px] text-white/70 mt-2 mb-5">
+                6 prerecorded modules. Watch at your pace. No upsell, ever.
+              </p>
+              <p className="inline-block text-[10px] tracking-[.08em] uppercase font-bold text-text-primary bg-secondary px-2.5 py-1 rounded-md mb-4">
+                Not released yet
+              </p>
               <div className="flex items-baseline gap-2.5 mb-6 flex-wrap">
                 <span className="text-3xl text-white font-bold tabular-nums">₹999</span>
                 <s className="text-lg text-white/50 font-normal">₹4,999</s>
               </div>
-              <Button href="/contact" fullWidth className="sm:w-auto">Join the masterclass</Button>
+              <Button href="/contact" fullWidth className="sm:w-auto">Join the waitlist</Button>
             </div>
 
             <Card className="p-0 overflow-hidden reveal">

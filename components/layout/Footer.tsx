@@ -39,10 +39,10 @@ export default function Footer() {
               Products
             </h5>
             {[
-              { label: "₹99 Blueprints",    href: "/learn" },
-              { label: "₹999 Masterclass",  href: "/learn" },
-              { label: "Free guides",        href: "/resources" },
-              { label: "Workshops",          href: "/#workshops" },
+              { label: "Blueprints (soon)",    href: "/learn" },
+              { label: "Masterclass (soon)",  href: "/learn" },
+              { label: "Free guides (soon)",        href: "/resources" },
+              { label: "Workshops (soon)",          href: "/#workshops" },
               { label: "About",             href: "/about" },
             ].map((l) => (
               <Link key={l.label} href={l.href} className="text-[13px] sm:text-sm opacity-70 hover:opacity-100 hover:text-white transition-opacity duration-[250ms]">

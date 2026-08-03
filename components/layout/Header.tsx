@@ -70,7 +70,7 @@ export default function Header() {
               href="/resources"
               className="inline-flex items-center font-sans font-semibold text-[14px] px-5 py-3 rounded-btn bg-primary text-white hover:bg-primary-dark hover:-translate-y-0.5 transition-all duration-[250ms]"
             >
-              Get the free guides
+              Work with me
             </Link>
           </div>
 
@@ -110,7 +110,7 @@ export default function Header() {
             onClick={() => setOpen(false)}
             className="mt-3 flex justify-center items-center font-sans font-semibold text-[15px] px-6 py-3.5 rounded-btn bg-primary text-white"
           >
-            Get the free guides
+            Work with me
           </Link>
         </div>
       )}

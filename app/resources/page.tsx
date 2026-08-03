@@ -31,8 +31,8 @@ const guides: { icon: LucideIcon; title: string }[] = [
 
 const steps = [
   { n: "1", text: "Follow @that.marketingguyy" },
-  { n: "2", text: "DM the keyword for the guide you want" },
-  { n: "3", text: "Get the PDF + a short follow-up tip" },
+  { n: "2", text: "Tell me which guide you want first" },
+  { n: "3", text: "It lands in your inbox the day it's ready" },
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
@@ -40,19 +40,19 @@ const steps = [
 export const metadata: Metadata = {
   title: "7 Free Ads & Local SEO Guides",
   description:
-    "Free guides: stop wasting ad budget, Meta Ads setup for beginners, Google Map Pack ranking, clinic and restaurant playbooks. No email wall games.",
+    "Seven free ad and local SEO guides in progress: stop wasting ad budget, Meta Ads setup, Google Map Pack ranking, clinic and restaurant playbooks.",
   alternates: { canonical: "/resources" },
 };
 
 const faqsResources = [
   { q: "Is there a free Facebook ads checklist for small business?",
-    a: "Yes. The \"Stop Wasting Ad Budget\" checklist is the first of the seven free guides here, and it's the one worth reading first. It covers the mistakes that turn up most often in real accounts: the wrong campaign objective, creative that's gone stale, and results judged before the learning phase has finished." },
+    a: "It's being written. The \"Stop Wasting Ad Budget\" checklist is first in the queue of seven, and it covers the mistakes that turn up most often in real accounts: the wrong campaign objective, creative that's gone stale, and results judged before the learning phase has finished. Ask for it and you'll get it the day it's done." },
   { q: "Are the guides really free?",
-    a: "Yes. No email wall, no card details, no trial that quietly becomes a charge. You DM the keyword on Instagram and the PDFs come back to you." },
+    a: "They will be. No email wall, no card details, no trial that quietly becomes a charge. They aren't published yet, which is why nothing here asks you to sign up for a download that doesn't exist." },
   { q: "Why Instagram DM instead of a download button?",
     a: "Two reasons. It skips the email-capture routine nobody enjoys, and a DM means I can send one follow-up tip that fits your business rather than a generic sequence. If DMs aren't your thing, the contact page reaches me the same way." },
   { q: "Which guide should I start with?",
-    a: "Start with the \"Stop Wasting Ad Budget\" checklist. It applies regardless of industry. After that take the one matching your business: clinic lead-gen, restaurant local-ads, D2C scaling, or the FunZone template. If you have no ad budget at all, the Google Map Pack guide is the one you can act on for nothing." },
+    a: "The \"Stop Wasting Ad Budget\" checklist is being written first, because it applies regardless of industry. After that take the one matching your business: clinic lead-gen, restaurant local-ads, D2C scaling, or the FunZone template. If you have no ad budget at all, the Google Map Pack guide is the one you can act on for nothing." },
   { q: "Will I get spammed afterwards?",
     a: "No. The PDF plus one short follow-up tip is the entire scope." },
 ];
@@ -70,12 +70,13 @@ export default function ResourcesPage() {
               <div className="text-[11px] tracking-[.06em] text-text-muted mb-4">
                 <Link href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</Link> / Free PDFs
               </div>
-              <span className="eyebrow block mb-5">Start free</span>
+              <span className="eyebrow block mb-5">Coming soon, and free when it lands</span>
               <h1 className="text-[clamp(28px,4.5vw,56px)] font-bold text-text-primary max-w-[760px] leading-[1.08]">
-                7 free guides to stop wasting your ad budget.
+7 free guides to stop wasting your ad budget.
               </h1>
               <p className="text-[17px] md:text-[18px] text-text-secondary mt-5 max-w-[620px] leading-[1.7]">
-                No fluff, no email gymnastics. DM a keyword on Instagram and they land in your inbox.
+I&apos;m writing these now. No fluff and no email gymnastics when they land, and
+                nothing to pay. Tell me which one you need most and I&apos;ll send it first.
               </p>
             </div>
             <Media
@@ -96,8 +97,13 @@ export default function ResourcesPage() {
 
             {/* Free panel */}
             <div className="bg-secondary/15 border border-border rounded-card p-6 md:p-8 reveal">
-              <h3 className="text-[22px] md:text-[26px] font-bold text-text-primary mb-1.5">7 free guides</h3>
-              <p className="text-[14px] text-text-secondary mb-5">Delivered instantly to your Instagram DM.</p>
+              <div className="flex items-center gap-2.5 mb-1.5 flex-wrap">
+                <h3 className="text-[22px] md:text-[26px] font-bold text-text-primary">7 free guides</h3>
+                <span className="text-[10px] tracking-[.08em] uppercase font-semibold text-text-primary bg-secondary px-2.5 py-1 rounded-md">
+                  In progress
+                </span>
+              </div>
+              <p className="text-[14px] text-text-secondary mb-5">Being written now. Free when they land.</p>
               <div className="flex flex-col gap-3 mb-5">
                 {guides.map((g) => (
                   <div key={g.title} className="flex items-center gap-3 text-[14px] text-text-primary">
@@ -109,17 +115,16 @@ export default function ResourcesPage() {
                 ))}
               </div>
               <p className="text-[14px] text-text-secondary mb-4">
-                DM the keyword{" "}
-                <span className="bg-text-primary text-white px-2 py-0.5 rounded-md text-[12px] font-semibold">GUIDE</span>{" "}
-                on Instagram to get all 7.
+                None of these are finished yet, so I&apos;m not going to pretend you can download
+                one today. Tell me which is most useful to you and it goes to the front of the queue.
               </p>
-              <Button href="/contact" variant="primary" fullWidth className="sm:w-auto">Request them now</Button>
+              <Button href="/contact" variant="primary" fullWidth className="sm:w-auto">Tell me which you need</Button>
             </div>
 
             {/* How it works */}
             <div className="bg-white border border-border rounded-card p-6 md:p-8 reveal">
               <h3 className="text-[22px] md:text-[26px] font-bold text-text-primary mb-1.5">How it works</h3>
-              <p className="text-[14px] text-text-secondary mb-5">Three steps, zero cost.</p>
+              <p className="text-[14px] text-text-secondary mb-5">When they go live, this is the whole process.</p>
               <div className="flex flex-col gap-3 mb-5">
                 {steps.map((s) => (
                   <div key={s.n} className="flex items-center gap-3 text-[14px] text-text-primary">
@@ -132,9 +137,9 @@ export default function ResourcesPage() {
               </div>
               <div className="border-t border-border pt-5">
                 <p className="text-[14px] text-text-secondary mb-4">
-                  Want everything in one place? The paid blueprints go deeper, step-by-step, for ₹99 each.
+                  The paid blueprints will go deeper, step-by-step, once they are built. They are not on sale yet either.
                 </p>
-                <Button href="/learn" variant="secondary">See the blueprints →</Button>
+                <Button href="/learn" variant="secondary">See what&apos;s planned →</Button>
               </div>
             </div>
 

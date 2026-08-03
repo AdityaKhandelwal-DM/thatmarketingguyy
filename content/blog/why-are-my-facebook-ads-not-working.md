@@ -58,4 +58,4 @@ In my own portfolio I've killed campaigns at 0.11× ROAS and walked a client out
 
 None of these are "Facebook doesn't work." All nine are settings, creative, or follow-up. Things you can see in your own Ads Manager once you know where to look.
 
-If you'd rather learn to spot them yourself, start with the [free guides](/resources). The "Stop Wasting Ad Budget" checklist covers the first five in detail. And if you'd rather someone just found them in your account, [tell me what you're running](/contact) and I'll take a look.
+I'm writing a free checklist that covers the first five of these in detail, and you can [put your name down for it](/resources) before it lands. If you'd rather someone just found these in your account now, [tell me what you're running](/contact) and I'll take a look.
