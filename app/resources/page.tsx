@@ -63,7 +63,7 @@ export default function ResourcesPage() {
       <Header />
 
       {/* ══ HERO ══════════════════════════════════════════════════════════════ */}
-      <section className="bg-bg-light py-14 md:py-20 lg:py-24">
+      <section className="bg-bg-light py-10 md:py-16 lg:py-20">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 animate-fadeInUp">
           <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-14 items-center">
             <div>
@@ -90,9 +90,9 @@ export default function ResourcesPage() {
       </section>
 
       {/* ══ GUIDES + HOW IT WORKS ═════════════════════════════════════════════ */}
-      <section className="py-14 md:py-20 lg:py-24">
+      <section className="py-10 md:py-16 lg:py-20">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 reveal-stagger">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5 reveal-stagger">
 
             {/* Free panel */}
             <div className="bg-secondary/15 border border-border rounded-card p-6 md:p-8 reveal">

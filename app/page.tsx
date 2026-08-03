@@ -113,10 +113,10 @@ const testimonials = [
 ];
 
 const storyStats: { n: string; l: string; icon: LucideIcon }[] = [
-  { n: "1,200+", l: "days in the game", icon: Calendar },
-  { n: "4,200+", l: "chai/coffee refills", icon: Coffee },
-  { n: "50+",    l: "projects shipped",   icon: Rocket },
-  { n: "25+",    l: "clients helped",     icon: Handshake },
+  { n: "1,800+", l: "days in the game", icon: Calendar },
+  { n: "1,400+", l: "chai/coffee refills", icon: Coffee },
+  { n: "100+",   l: "projects shipped",   icon: Rocket },
+  { n: "100+",   l: "clients served",     icon: Handshake },
 ];
 
 const workshops = [
@@ -169,7 +169,7 @@ const stack: { logo: React.ComponentType<{ className?: string }>; name: string }
 
 function MetricCard({ k, v, highlight }: { k: string; v: string; highlight?: boolean }) {
   return (
-    <div className="bg-text-primary rounded-xl px-3 py-2.5 min-w-0">
+    <div className="bg-text-primary rounded-xl px-2.5 py-2 md:px-3 md:py-2.5 min-w-0">
       <div className="text-[10px] tracking-[.06em] uppercase text-white/50">{k}</div>
       <div className={`tabular-nums text-base md:text-lg mt-0.5 font-semibold ${highlight ? "text-secondary" : "text-white/85"}`}>
         {v}
@@ -201,7 +201,7 @@ export default function Home() {
       <Header />
 
       {/* ══ HERO ══════════════════════════════════════════════════════════════ */}
-      <section className="py-16 md:py-24 lg:py-32 overflow-hidden">
+      <section className="py-10 md:py-20 lg:py-28 overflow-hidden">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
           <div className="grid grid-cols-1 md:grid-cols-[1.1fr_0.9fr] gap-12 md:gap-16 items-center">
 
@@ -261,7 +261,7 @@ export default function Home() {
       </section>
 
       {/* ══ QUOTE BAND ════════════════════════════════════════════════════════ */}
-      <section className="bg-bg-light py-16 md:py-20">
+      <section className="bg-bg-light py-10 md:py-16">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
           <div className="relative max-w-3xl mx-auto text-center reveal">
             <span className="absolute -top-6 -left-2 md:-left-10 text-[90px] md:text-[120px] text-primary/15 font-bold leading-none select-none pointer-events-none">
@@ -300,7 +300,7 @@ export default function Home() {
       </section>
 
       {/* ══ THE STACK ═════════════════════════════════════════════════════════ */}
-      <section className="py-12 md:py-16">
+      <section className="py-9 md:py-14">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
           <div className="text-center mb-8 reveal">
             <span className="eyebrow justify-center mb-3">The stack</span>
@@ -323,7 +323,7 @@ export default function Home() {
       </section>
 
       {/* ══ STORY STATS ═══════════════════════════════════════════════════════ */}
-      <section className="py-16 md:py-20 lg:py-24">
+      <section className="py-10 md:py-16 lg:py-20">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-[0.85fr_1.15fr] gap-10 lg:gap-14 items-center">
 
@@ -338,7 +338,7 @@ export default function Home() {
             </div>
 
             <div>
-              <div className="max-w-[640px] mb-8 md:mb-10 reveal">
+              <div className="max-w-[640px] mb-6 md:mb-9 reveal">
                 <span className="eyebrow block mb-4">A small backstory</span>
                 <h2 className="text-[clamp(24px,3.4vw,42px)] font-bold text-text-primary">
                   This is what 5+ years of showing up every day looks like.
@@ -367,9 +367,9 @@ export default function Home() {
       </section>
 
       {/* ══ WHO THIS IS FOR ═══════════════════════════════════════════════════ */}
-      <section className="py-16 md:py-20 lg:py-24 bg-bg-light">
+      <section className="py-10 md:py-16 lg:py-20 bg-bg-light">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="max-w-[680px] mb-10 md:mb-14 reveal">
+          <div className="max-w-[680px] mb-7 md:mb-12 reveal">
             <span className="eyebrow block mb-4">Is this for you?</span>
             <h2 className="text-[clamp(24px,3.4vw,42px)] font-bold text-text-primary">
               I speak walk-ins, orders, and ROAS. Not &ldquo;impressions.&rdquo;
@@ -378,7 +378,7 @@ export default function Home() {
               If you&apos;ve been burned by an agency or just want to understand what your money is doing, this is for you.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 reveal-stagger">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5 reveal-stagger">
             {niches.map((n) => (
               <Card
                 key={n.title}
@@ -388,18 +388,18 @@ export default function Home() {
                   <Media
                     src={n.img}
                     alt={n.alt}
-                    className="aspect-[16/10]"
+                    className="h-[96px] sm:h-auto sm:aspect-[16/10]"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px"
                     zoomOnHover
                   />
                   {/* icon chip straddling the image edge */}
-                  <div className="absolute -bottom-6 left-6 w-12 h-12 rounded-2xl bg-white border border-border shadow-card flex items-center justify-center">
-                    <n.icon className="w-6 h-6 text-primary" strokeWidth={2} />
+                  <div className="absolute -bottom-5 left-4 md:left-6 w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-white border border-border shadow-card flex items-center justify-center">
+                    <n.icon className="w-5 h-5 md:w-6 md:h-6 text-primary" strokeWidth={2} />
                   </div>
                 </div>
-                <div className="p-6 md:p-7 pt-9">
-                  <h3 className="text-[18px] text-text-primary font-bold mb-2">{n.title}</h3>
-                  <p className="text-[14px] text-text-secondary leading-relaxed">{n.desc}</p>
+                <div className="p-4 md:p-7 pt-7 md:pt-9">
+                  <h3 className="text-[15px] md:text-[18px] text-text-primary font-bold mb-1.5 md:mb-2 leading-snug">{n.title}</h3>
+                  <p className="text-[12.5px] md:text-[14px] text-text-secondary leading-relaxed">{n.desc}</p>
                 </div>
               </Card>
             ))}
@@ -408,9 +408,9 @@ export default function Home() {
       </section>
 
       {/* ══ CASE STUDIES — leaderboard rows, deliberately not a card grid ═══════ */}
-      <section className="py-16 md:py-20 lg:py-24">
+      <section className="py-10 md:py-16 lg:py-20">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="max-w-[680px] mb-10 md:mb-14 reveal">
+          <div className="max-w-[680px] mb-7 md:mb-12 reveal">
             <span className="eyebrow block mb-4">The receipts</span>
             <h2 className="text-[clamp(24px,3.4vw,42px)] font-bold text-text-primary">
               Real campaigns. Real numbers. No retouching.
@@ -426,7 +426,7 @@ export default function Home() {
                   <Media
                     src={c.img}
                     alt={c.alt}
-                    className="w-full lg:w-[132px] h-[150px] lg:h-[104px] flex-none rounded-xl"
+                    className="w-full lg:w-[132px] h-[120px] lg:h-[104px] flex-none rounded-xl"
                     sizes="(max-width: 1024px) 100vw, 132px"
                     zoomOnHover
                   />
@@ -460,8 +460,8 @@ export default function Home() {
       </section>
 
       {/* ══ TESTIMONIALS — manual horizontal scroll, no auto-marquee ═══════════ */}
-      <section className="py-16 md:py-20 bg-bg-light">
-        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 mb-8 md:mb-10 reveal">
+      <section className="py-10 md:py-16 bg-bg-light">
+        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 mb-6 md:mb-9 reveal">
           <span className="eyebrow block mb-4">What clients say</span>
           <h2 className="text-[clamp(24px,3.4vw,42px)] font-bold text-text-primary">
             The proof isn&apos;t my words. It&apos;s theirs.
@@ -496,9 +496,9 @@ export default function Home() {
       </section>
 
       {/* ══ WORKSHOPS & WEBINARS ══════════════════════════════════════════════ */}
-      <section className="py-16 md:py-20 lg:py-24">
+      <section className="py-10 md:py-16 lg:py-20">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="max-w-[680px] mb-10 md:mb-14 reveal">
+          <div className="max-w-[680px] mb-7 md:mb-12 reveal">
             <span className="eyebrow block mb-4">What&apos;s coming up</span>
             <h2 className="text-[clamp(24px,3.4vw,42px)] font-bold text-text-primary">
               Live workshops &amp; webinars.
@@ -507,13 +507,13 @@ export default function Home() {
               Where theory stops and real strategy begins. Show up, ask questions, leave with a plan.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 reveal-stagger">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5 reveal-stagger">
             {workshops.map((w) => (
               <Card key={w.title} className="p-0 overflow-hidden hover:-translate-y-1 transition-transform duration-[250ms] flex flex-col reveal group">
                 <Media
                   src={w.img}
                   alt={w.alt}
-                  className="aspect-[21/9]"
+                  className="h-[120px] sm:h-auto sm:aspect-[21/9]"
                   sizes="(max-width: 768px) 100vw, 560px"
                   zoomOnHover
                 />
@@ -546,9 +546,9 @@ export default function Home() {
       </section>
 
       {/* ══ FREE RESOURCES ════════════════════════════════════════════════════ */}
-      <section className="py-16 md:py-20 lg:py-24 bg-bg-light">
+      <section className="py-10 md:py-16 lg:py-20 bg-bg-light">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 md:mb-14 reveal">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-7 md:mb-12 reveal">
             <div className="max-w-[600px]">
               <span className="eyebrow block mb-4">Free value, no strings</span>
               <h2 className="text-[clamp(24px,3.4vw,42px)] font-bold text-text-primary">
@@ -562,7 +562,7 @@ export default function Home() {
               <Button href="/resources">Get all 7 guides →</Button>
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-4">
             {freeResources.map((r) => (
               <Link
                 key={r.title}
@@ -589,7 +589,7 @@ export default function Home() {
       </section>
 
       {/* ══ CTA — the one dark band on this page ════════════════════════════ */}
-      <section className="relative py-16 md:py-24 lg:py-28 bg-text-primary overflow-hidden">
+      <section className="relative py-10 md:py-20 lg:py-24 bg-text-primary overflow-hidden">
         {/* Photo sits behind a heavy wash so the type keeps AA contrast */}
         <Image
           src="/images/band-workshop.webp"

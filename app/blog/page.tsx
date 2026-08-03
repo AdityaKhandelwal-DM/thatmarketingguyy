@@ -28,7 +28,7 @@ export default function BlogPage() {
       <Header />
 
       {/* ══ HERO ══════════════════════════════════════════════════════════════ */}
-      <section className="bg-bg-light py-14 md:py-20 lg:py-24">
+      <section className="bg-bg-light py-10 md:py-16 lg:py-20">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 animate-fadeInUp">
           <div className="text-[11px] tracking-[.06em] text-text-muted mb-4">
             <Link href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</Link> / Blog
@@ -45,7 +45,7 @@ export default function BlogPage() {
       </section>
 
       {/* ══ POSTS ═════════════════════════════════════════════════════════════ */}
-      <section className="py-14 md:py-20 lg:py-24">
+      <section className="py-10 md:py-16 lg:py-20">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
           <div className="flex flex-col gap-4 reveal">
             {posts.map((p) => (
@@ -55,7 +55,7 @@ export default function BlogPage() {
                   <Media
                     src={p.image}
                     alt={p.title}
-                    className="w-full md:w-[280px] h-[180px] md:h-auto md:self-stretch flex-none"
+                    className="w-full md:w-[280px] h-[150px] md:h-auto md:self-stretch flex-none"
                     sizes="(max-width: 768px) 100vw, 280px"
                     zoomOnHover
                   />

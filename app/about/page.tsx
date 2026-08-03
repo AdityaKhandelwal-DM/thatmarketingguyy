@@ -63,7 +63,7 @@ export default function AboutPage() {
       <Header />
 
       {/* ══ HERO ══════════════════════════════════════════════════════════════ */}
-      <section className="bg-bg-light py-14 md:py-20 lg:py-24">
+      <section className="bg-bg-light py-10 md:py-16 lg:py-20">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 animate-fadeInUp">
           <div className="text-[11px] tracking-[.06em] text-text-muted mb-4">
             <Link href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</Link> / About
@@ -81,7 +81,7 @@ export default function AboutPage() {
       </section>
 
       {/* ══ 1-LINE STORY + HELP PILLARS ═══════════════════════════════════════ */}
-      <section className="py-14 md:py-20 lg:py-24">
+      <section className="py-10 md:py-16 lg:py-20">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
 
@@ -159,9 +159,9 @@ export default function AboutPage() {
       </section>
 
       {/* ══ BEST PERFORMING REELS ═════════════════════════════════════════════ */}
-      <section className="py-14 md:py-20 lg:py-24 bg-bg-light">
+      <section className="py-10 md:py-16 lg:py-20 bg-bg-light">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="max-w-[680px] mb-10 md:mb-14 reveal">
+          <div className="max-w-[680px] mb-7 md:mb-12 reveal">
             <span className="eyebrow block mb-4">Best performing reels</span>
             <h2 className="text-[clamp(22px,3.3vw,42px)] font-bold text-text-primary">
               Marketing, broken down in minutes.
@@ -177,7 +177,7 @@ export default function AboutPage() {
                   <Media
                     src={v.img}
                     alt={v.alt}
-                    className="aspect-[16/9]"
+                    className="h-[150px] sm:h-auto sm:aspect-[16/9]"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 370px"
                     overlay
                     zoomOnHover
@@ -200,9 +200,9 @@ export default function AboutPage() {
       </section>
 
       {/* ══ INSTAGRAM FEED ════════════════════════════════════════════════════ */}
-      <section className="py-14 md:py-20 lg:py-24">
+      <section className="py-10 md:py-16 lg:py-20">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 md:mb-14 reveal">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-7 md:mb-12 reveal">
             <div className="max-w-[600px]">
               <span className="eyebrow block mb-4">From the feed</span>
               <h2 className="text-[clamp(22px,3.3vw,42px)] font-bold text-text-primary">

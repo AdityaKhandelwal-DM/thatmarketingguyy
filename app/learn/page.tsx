@@ -63,7 +63,7 @@ export default function LearnPage() {
       <Header />
 
       {/* ══ HERO ══════════════════════════════════════════════════════════════ */}
-      <section className="bg-bg-light py-14 md:py-20 lg:py-24">
+      <section className="bg-bg-light py-10 md:py-16 lg:py-20">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 animate-fadeInUp">
           <div className="text-[11px] tracking-[.06em] text-text-muted mb-4">
             <Link href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</Link> / Learn
@@ -79,16 +79,16 @@ export default function LearnPage() {
       </section>
 
       {/* ══ ₹99 INDUSTRY BLUEPRINTS ═══════════════════════════════════════════ */}
-      <section className="py-14 md:py-20 lg:py-24">
+      <section className="py-10 md:py-16 lg:py-20">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="max-w-[680px] mb-10 md:mb-14 reveal">
+          <div className="max-w-[680px] mb-7 md:mb-12 reveal">
             <span className="eyebrow block mb-4">One-time, no subscriptions</span>
             <h2 className="text-[clamp(24px,3.4vw,42px)] font-bold text-text-primary">₹99 industry blueprints</h2>
             <p className="text-[15px] md:text-[17px] text-text-secondary mt-3">
               Step-by-step, copy-paste campaigns built for one specific business type. Pick yours.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 reveal-stagger">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 reveal-stagger">
             {blueprints.map((b) => (
               <Card
                 key={b.title}
@@ -98,7 +98,7 @@ export default function LearnPage() {
                   <Media
                     src={b.img}
                     alt={b.alt}
-                    className="aspect-[16/10]"
+                    className="h-[140px] sm:h-auto sm:aspect-[16/10]"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px"
                     zoomOnHover
                   />
@@ -123,9 +123,9 @@ export default function LearnPage() {
       </section>
 
       {/* ══ THE MASTERCLASS ═══════════════════════════════════════════════════ */}
-      <section className="py-14 md:py-20 lg:py-24 bg-bg-light">
+      <section className="py-10 md:py-16 lg:py-20 bg-bg-light">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 reveal-stagger">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5 reveal-stagger">
             <div className="bg-text-primary rounded-[22px] p-6 md:p-8 reveal">
               <span className="eyebrow block mb-3" style={{ color: "#FDEA6F" }}>The masterclass</span>
               <h3 className="text-2xl md:text-[28px] font-bold text-white leading-snug">Zero to Revenue: Scale Without Agency</h3>
@@ -141,7 +141,7 @@ export default function LearnPage() {
               <Media
                 src="speak_workshop"
                 alt="Working through campaign builds screen by screen"
-                className="aspect-[21/9]"
+                className="h-[120px] sm:h-auto sm:aspect-[21/9]"
                 sizes="(max-width: 768px) 100vw, 560px"
               />
               <div className="p-6 md:p-8">

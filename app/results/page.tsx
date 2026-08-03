@@ -308,7 +308,7 @@ const cuts = [
 
 function MetricCard({ k, v, highlight }: { k: string; v: string; highlight?: boolean }) {
   return (
-    <div className="bg-text-primary rounded-xl px-3 py-2.5 min-w-0">
+    <div className="bg-text-primary rounded-xl px-2.5 py-2 md:px-3 md:py-2.5 min-w-0">
       <div className="text-[10px] tracking-[.06em] uppercase text-white/50">{k}</div>
       <div className={`tabular-nums text-base md:text-lg mt-0.5 font-semibold ${highlight ? "text-secondary" : "text-white/85"}`}>
         <CountUp value={v} />
@@ -343,7 +343,7 @@ export default function ResultsPage() {
       <Header />
 
       {/* ══ HERO ══════════════════════════════════════════════════════════════ */}
-      <section className="bg-bg-light py-14 md:py-20 lg:py-24">
+      <section className="bg-bg-light py-10 md:py-16 lg:py-20">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10 animate-fadeInUp">
           <div className="text-[11px] tracking-[.06em] text-text-muted mb-4">
             <Link href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</Link> / Results
@@ -383,10 +383,10 @@ export default function ResultsPage() {
       </section>
 
       {/* ══ CASE STUDIES — leaderboard rows, deliberately not a card grid ═══════ */}
-      <section className="py-14 md:py-20 lg:py-24">
+      <section className="py-10 md:py-16 lg:py-20">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
           {/* Filter chips — scrollable on mobile */}
-          <div className="flex gap-2 flex-wrap mb-8 md:mb-10 reveal">
+          <div className="flex gap-2 flex-wrap mb-6 md:mb-9 reveal">
             {filters.map((f) => (
               <button
                 key={f}
@@ -412,7 +412,7 @@ export default function ResultsPage() {
                   <Media
                     src={c.img}
                     alt={c.alt}
-                    className="w-full lg:w-[132px] h-[150px] lg:h-[104px] flex-none rounded-xl"
+                    className="w-full lg:w-[132px] h-[120px] lg:h-[104px] flex-none rounded-xl"
                     sizes="(max-width: 1024px) 100vw, 132px"
                     zoomOnHover
                   />
@@ -451,7 +451,7 @@ export default function ResultsPage() {
       </section>
 
       {/* ══ WHAT WE CUT ═══════════════════════════════════════════════════════ */}
-      <section className="bg-bg-light py-14 md:py-20">
+      <section className="bg-bg-light py-10 md:py-16">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
           <span className="eyebrow block mb-4">Also the receipts</span>
           <h2 className="text-[clamp(22px,3vw,36px)] font-bold text-text-primary max-w-[720px] leading-[1.15]">

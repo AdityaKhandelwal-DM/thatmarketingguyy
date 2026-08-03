@@ -69,7 +69,7 @@ export default async function PostPage({
       <Header />
 
       <article>
-        <section className="bg-bg-light py-14 md:py-20">
+        <section className="bg-bg-light py-10 md:py-16">
           <div className="w-full max-w-[820px] mx-auto px-4 sm:px-6 lg:px-10 animate-fadeInUp">
             <div className="text-[11px] tracking-[.06em] text-text-muted mb-4">
               <Link href="/" className="hover:text-primary transition-colors duration-[250ms]">Home</Link>
@@ -89,7 +89,7 @@ export default async function PostPage({
           </div>
         </section>
 
-        <section className="py-12 md:py-16">
+        <section className="py-9 md:py-14">
           <div className="w-full max-w-[820px] mx-auto px-4 sm:px-6 lg:px-10 mb-10">
             <Media
               src={post.image}

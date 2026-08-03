@@ -31,10 +31,26 @@ export default function ScrollReveal() {
           }
         });
       },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      // threshold must stay 0: sections are routinely taller than a phone
+      // viewport, and any positive threshold can never be met by an element
+      // taller than screen/threshold, leaving it invisible forever.
+      { threshold: 0, rootMargin: "0px 0px -10% 0px" }
     );
     els.forEach((el) => io.observe(el));
-    return () => io.disconnect();
+
+    // Safety net: anything still hidden after 1.2s gets shown regardless.
+    // Nothing should ever be permanently invisible because of an animation.
+    const failsafe = window.setTimeout(() => {
+      document.querySelectorAll<HTMLElement>(".reveal:not(.in)").forEach((el) => {
+        const r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight * 1.5) el.classList.add("in");
+      });
+    }, 1200);
+
+    return () => {
+      io.disconnect();
+      window.clearTimeout(failsafe);
+    };
   }, [pathname]);
 
   return null;

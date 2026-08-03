@@ -59,9 +59,9 @@ export default function FAQ({
   };
 
   return (
-    <section className={cn("py-14 md:py-20", light && "bg-bg-light")}>
+    <section className={cn("py-10 md:py-16", light && "bg-bg-light")}>
       <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-        <div className="max-w-[640px] mb-8 md:mb-10 reveal">
+        <div className="max-w-[640px] mb-6 md:mb-9 reveal">
           <span className="eyebrow block mb-4">{eyebrow}</span>
           <h2 className="text-[clamp(22px,3.2vw,38px)] font-bold text-text-primary">{title}</h2>
         </div>
