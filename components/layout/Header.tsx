@@ -36,14 +36,20 @@ export default function Header() {
       )}
     >
       <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-        <nav className="flex items-center justify-between h-16 gap-4">
+        <nav className="flex items-center justify-between h-[68px] gap-4">
           {/* Brand */}
-          <Link
-            href="/"
-            className="flex items-center gap-2 font-sans font-bold text-[17px] sm:text-[19px] text-text-primary flex-none"
-          >
+          <Link href="/" className="flex items-center gap-2.5 flex-none group" aria-label="thatmarketingguy — Aditya Khandelwal, home">
             <span className="w-[10px] h-[10px] rounded-full bg-primary flex-none" />
-            thatmarketing<b className="text-primary">guy</b>
+            <span className="flex flex-col leading-none">
+              <span className="font-sans font-bold text-[17px] sm:text-[19px] text-text-primary">
+                thatmarketing<b className="text-primary">guy</b>
+              </span>
+              {/* Real name carries the professional weight; hidden on the
+                  narrowest phones so the nav never wraps. */}
+              <span className="hidden min-[380px]:block text-[10.5px] sm:text-[11px] tracking-[.04em] text-text-secondary mt-1">
+                Aditya Khandelwal
+              </span>
+            </span>
           </Link>
 
           {/* Desktop links */}
