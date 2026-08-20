@@ -6,7 +6,7 @@ One `.md` file per post. Filename = slug: `kebab-case-title.md` (no date prefix)
 
 ```
 ---
-title: Why Are My Facebook Ads Not Working? 9 Fixes From 77 Real Ad Accounts
+title: Why Are My Facebook Ads Not Working? 9 Fixes From 80 Real Ad Accounts
 description: Meta description, ≤155 chars, plainspoken, includes the target keyword.
 date: 2026-08-02
 keyword: why are my facebook ads not working

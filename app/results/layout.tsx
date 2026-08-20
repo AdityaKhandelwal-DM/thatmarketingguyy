@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ad Results: 77 Accounts, 49,752 Leads",
+  title: "Ad Results: 80 Accounts, 59,417 Leads",
   description:
-    "Verified numbers from 77 ad accounts: clinics, restaurants, D2C, venues. Best ROAS 8.2×, cost per lead from ₹34 (~$0.40). Receipts, not promises.",
+    "Verified numbers from 80 ad accounts: clinics, restaurants, D2C, venues. Best ROAS 8.2×, cost per lead from ₹34 (~$0.40). Receipts, not promises.",
   alternates: { canonical: "/results" },
 };
 
