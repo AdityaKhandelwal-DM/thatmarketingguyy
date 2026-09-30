@@ -10,42 +10,25 @@ import { OPEN_LEAD_FORM_EVENT, whatsappUrl } from "@/lib/contact";
 /*
  * Site-wide lead capture, mounted once in the root layout:
  *
- * 1. Popup lead form. Opens by itself on every page EXCEPT blog posts
- *    (/blog/<slug> — those point readers to /contact instead) and /contact
- *    (which already shows the form). It waits for a real signal of interest,
- *    AUTO_OPEN_MS on the page or AUTO_OPEN_SCROLL of it scrolled, rather
- *    than covering the page on load: Google demotes pages whose content is
- *    hidden behind an instant popup, especially on mobile. Shown once per
- *    browser session; closing it means it stays closed.
- *    Any button can also open it with openLeadForm() from lib/contact.
+ * 1. Popup lead form. NEVER opens by itself (owner's rule: no forcing a form
+ *    on someone who is just reading). It opens only when a visitor clicks to
+ *    get in touch: any link to /contact ("Work with me", "Tell me about your
+ *    ads", "Contact"…) is intercepted and shows the form in place. Links keep
+ *    href="/contact", so crawlers and no-JS visitors still reach the page.
+ *    Not intercepted on blog posts (they send readers to /contact as an
+ *    internal link), on /contact itself, on /uae campaign pages, or on
+ *    ctrl/cmd/middle-click (open in new tab still works).
+ *    Buttons that aren't links can call openLeadForm() from lib/contact.
  *
  * 2. Floating WhatsApp button, bottom-right on every page (except /uae
  *    landing pages, which already have their own sticky WhatsApp bar).
  */
 
-const AUTO_OPEN_MS = 8000;
-const AUTO_OPEN_SCROLL = 0.35;
-const SEEN_KEY = "tmg_lead_popup_seen";
-
-function autoOpenAllowed(path: string) {
+function interceptAllowed(path: string) {
   if (path === "/contact") return false;
   if (path.startsWith("/blog/")) return false;
-  if (path.startsWith("/uae")) return false; // campaign landing pages have their own CTAs
+  if (path.startsWith("/uae")) return false;
   return true;
-}
-
-function seen() {
-  try {
-    return sessionStorage.getItem(SEEN_KEY) === "1";
-  } catch {
-    return false;
-  }
-}
-
-function markSeen() {
-  try {
-    sessionStorage.setItem(SEEN_KEY, "1");
-  } catch {}
 }
 
 export default function LeadPopup() {
@@ -53,31 +36,30 @@ export default function LeadPopup() {
   const [open, setOpen] = useState(false);
   const panelRef = useRef<HTMLDivElement>(null);
 
-  const show = useCallback(() => {
-    markSeen();
-    setOpen(true);
-  }, []);
+  const show = useCallback(() => setOpen(true), []);
   const close = useCallback(() => setOpen(false), []);
 
-  // Manual open from any button
+  // Open from any button via openLeadForm()
   useEffect(() => {
     window.addEventListener(OPEN_LEAD_FORM_EVENT, show);
     return () => window.removeEventListener(OPEN_LEAD_FORM_EVENT, show);
   }, [show]);
 
-  // Automatic open (time on page or scroll depth), once per session
+  // Open when a visitor clicks a /contact link. Capture phase, so it runs
+  // before next/link, which then sees defaultPrevented and doesn't navigate.
   useEffect(() => {
-    if (!autoOpenAllowed(pathname) || seen()) return;
-    const timer = window.setTimeout(show, AUTO_OPEN_MS);
-    const onScroll = () => {
-      const max = document.documentElement.scrollHeight - window.innerHeight;
-      if (max > 0 && window.scrollY / max >= AUTO_OPEN_SCROLL) show();
+    if (!interceptAllowed(pathname)) return;
+    const onClick = (e: MouseEvent) => {
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      const a = (e.target as Element | null)?.closest?.("a[href]") as HTMLAnchorElement | null;
+      if (!a || a.target === "_blank") return;
+      const url = new URL(a.href, window.location.href);
+      if (url.origin !== window.location.origin || url.pathname !== "/contact") return;
+      e.preventDefault();
+      show();
     };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => {
-      window.clearTimeout(timer);
-      window.removeEventListener("scroll", onScroll);
-    };
+    document.addEventListener("click", onClick, true);
+    return () => document.removeEventListener("click", onClick, true);
   }, [pathname, show]);
 
   // Esc to close, lock page scroll behind the modal, move focus into the
