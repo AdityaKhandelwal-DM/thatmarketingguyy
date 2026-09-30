@@ -85,9 +85,9 @@ export default function LeadPopup() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat with Aditya on WhatsApp"
-        className="fixed bottom-5 right-5 z-[60] w-14 h-14 rounded-full shadow-[0_8px_24px_rgba(15,23,42,.22)] hover:scale-105 transition-transform duration-[250ms]"
+        className="fixed bottom-5 right-5 z-[60] w-14 h-14 rounded-full flex items-center justify-center shadow-[0_2px_12px_rgba(15,23,42,.18)] hover:scale-105 transition-transform duration-[250ms]"
       >
-        <WhatsAppLogo className="w-14 h-14" />
+        <WhatsAppLogo className="w-14 h-14 block" />
       </a>
       )}
 
