@@ -4,12 +4,12 @@ import { getAllPosts } from "@/lib/blog";
 const BASE = "https://www.thatmarketingguyy.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ["", "/results", "/about", "/learn", "/resources", "/blog", "/contact", "/careers"].map(
+  const staticRoutes = ["", "/facebook-ads-expert", "/google-ads-expert", "/results", "/about", "/learn", "/resources", "/blog", "/contact", "/careers"].map(
     (p) => ({
       url: `${BASE}${p}`,
       lastModified: new Date(),
       changeFrequency: (p === "/blog" ? "weekly" : "monthly") as "weekly" | "monthly",
-      priority: p === "" ? 1 : p === "/results" ? 0.9 : 0.7,
+      priority: p === "" ? 1 : ["/results", "/facebook-ads-expert", "/google-ads-expert"].includes(p) ? 0.9 : 0.7,
     })
   );
   const posts = getAllPosts().map((p) => ({

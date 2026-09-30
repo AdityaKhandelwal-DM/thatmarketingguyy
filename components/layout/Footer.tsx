@@ -22,6 +22,8 @@ export default function Footer() {
               Explore
             </h5>
             {[
+              { label: "Facebook Ads Expert", href: "/facebook-ads-expert" },
+              { label: "Google Ads Expert",   href: "/google-ads-expert" },
               { label: "Results",   href: "/results" },
               { label: "Free PDFs", href: "/resources" },
               { label: "Learn",     href: "/learn" },

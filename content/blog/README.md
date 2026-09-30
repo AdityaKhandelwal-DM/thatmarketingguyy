@@ -53,8 +53,10 @@ real sentence. No tables, code fences, or raw HTML — they render as plain text
   revolutionize, delve, "in today's fast-paced world", "take it to the next level".
 - No fabricated data. Use only verified numbers from /results or clearly
   hypothetical examples labelled as such.
-- 600–1,000 words. Every post links to /results (proof) and to /contact near
-  the end. Link one related earlier post when any exist. Do NOT link /learn or
+- 600–1,000 words. Every post links to the matching service page
+  (/facebook-ads-expert for Meta topics, /google-ads-expert for Google topics,
+  both for comparison posts) using natural anchor text such as "hire a
+  Facebook ads expert", plus /results (proof) and /contact near the end. Link one related earlier post when any exist. Do NOT link /learn or
   /resources for now (the learning offer starts ~Apr 2027).
 - Topics + target keywords: follow `content/blog-queue.md`. Take the first
   `todo` row, use its target keyword in the title, description and first
