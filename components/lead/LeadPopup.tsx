@@ -80,14 +80,15 @@ export default function LeadPopup() {
     };
   }, [pathname, show]);
 
-  // Esc to close, lock page scroll behind the modal, focus the first field
+  // Esc to close, lock page scroll behind the modal, move focus into the
+  // dialog (not an input, which would pop the keyboard up on phones)
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && close();
     window.addEventListener("keydown", onKey);
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
-    panelRef.current?.querySelector<HTMLInputElement>("input")?.focus();
+    panelRef.current?.focus();
     return () => {
       window.removeEventListener("keydown", onKey);
       document.body.style.overflow = prev;
@@ -118,8 +119,9 @@ export default function LeadPopup() {
             role="dialog"
             aria-modal="true"
             aria-labelledby="lead-popup-title"
+            tabIndex={-1}
             onClick={(e) => e.stopPropagation()}
-            className="relative bg-white w-full sm:max-w-[560px] max-h-[92vh] overflow-y-auto rounded-t-[22px] sm:rounded-[22px] shadow-card animate-fadeInUp"
+            className="relative bg-white w-full sm:max-w-[560px] max-h-[92vh] overflow-y-auto outline-none rounded-t-[22px] sm:rounded-[22px] shadow-card animate-fadeInUp"
           >
             <div className="sticky top-0 bg-white px-5 sm:px-7 pt-6 pb-4 border-b border-border flex items-start justify-between gap-4 z-10">
               <div>
