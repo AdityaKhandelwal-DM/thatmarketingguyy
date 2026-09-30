@@ -15,8 +15,8 @@ import { GoogleLogo, FacebookLogo } from "@/components/ui/BrandLogos";
 /* ─────────────────────────────────────────────────────────────────────────────
    Figures come from three sources. The first two are auditable; the third
    is not, and is included at the owner's explicit instruction:
-     - Meta Ads API, date_preset=maximum, pulled at ad_account level (Rs 45.3L)
-     - Google Ads "All time" campaign report export, manager account (Rs 14.6L)
+     - Meta Ads API, date_preset=maximum, pulled at ad_account level (Rs 51.4L, 69 accounts)
+     - Google Ads "All time" campaign report export, manager account (Rs 17.6L; "All time" to 20 Aug + 20 Aug-30 Sep campaign report)
      - Two pre-2023 engagements (Textile Exporter, Block-Print D2C, Rs 17.0L)
        reported from the owner's records. Those ad accounts are no longer
        shared and cannot be exported. If either client ever re-shares the
@@ -24,14 +24,14 @@ import { GoogleLogo, FacebookLogo } from "@/components/ui/BrandLogos";
    The strip caption reflects this split — do not restore any wording that
    claims every figure is pulled from live reporting.
 
-   - The portfolio strip is ACCOUNT-level lifetime totals across all 58
-     queryable ad accounts. It excludes 7 accounts that cannot currently be
-     read (5 pending Ads-MCP rollout, 2 disabled by Meta) and any account no
+   - The portfolio strip is ACCOUNT-level lifetime totals across all 63
+     queryable ad accounts. It excludes 6 accounts that cannot currently be
+     read (5 pending Ads-MCP rollout, 1 disabled by Meta) and any account no
      longer shared with the Business Manager, so it is a floor, not a ceiling.
    - Each case row below is a single CAMPAIGN, not an account total. Mixing
      the two would misstate cost-per-result, so don't.
 
-   Client names withheld; numbers unmodified. Last synced: 20 Aug 2026.
+   Client names withheld; numbers unmodified. Meta last synced 30 Sep 2026; Google last synced 30 Sep 2026.
    ───────────────────────────────────────────────────────────────────────── */
 
 const filters = [
@@ -46,10 +46,10 @@ const filters = [
 ];
 
 const portfolio: { k: string; v: string; sub?: string }[] = [
-  { k: "Ad spend managed", v: "₹76.9L", sub: "≈ $92K" },
+  { k: "Ad spend managed", v: "₹86.0L", sub: "≈ $103K" },
   { k: "Best ROAS", v: "8.2×", sub: "textile D2C" },
-  { k: "Leads & conversions", v: "59,417" },
-  { k: "Ad accounts", v: "80" },
+  { k: "Leads & conversions", v: "72,837" },
+  { k: "Ad accounts", v: "85" },
 ];
 
 const cases = [
@@ -373,9 +373,9 @@ export default function ResultsPage() {
             ))}
           </div>
           <p className="text-[12px] text-text-muted mt-3">
-            64 Meta accounts (₹45.3L, 12,550 form leads) and 14 Google accounts
-            (₹14.6L, 46,867 conversions: calls, direction requests and form
-            fills) are pulled from live Ads reporting, last synced 20 Aug 2026.
+            69 Meta accounts (₹51.4L, 12,550 form leads) and 14 Google accounts
+            (₹17.6L, 60,287 conversions: calls, direction requests and form
+            fills) are pulled from live Ads reporting, last synced 30 Sep 2026.
             Two pre-2023 engagements (₹17.0L) are reported from our own records;
             those accounts have since closed.
           </p>

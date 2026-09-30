@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: "%s | thatmarketingguy",
   },
   description:
-    "I run Meta and Google Ads for small businesses worldwide. $92K+ managed, 59,417 leads, 8.2× best ROAS. No agency jargon, no long contracts.",
+    "I run Meta and Google Ads for small businesses worldwide. $103K+ managed, 72,837 leads, 8.2× best ROAS. No agency jargon, no long contracts.",
   alternates: { canonical: "/" },
   openGraph: {
     siteName: "thatmarketingguy",

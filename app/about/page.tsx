@@ -149,7 +149,7 @@ export default function AboutPage() {
                 {/* Stat chip */}
                 <div className="absolute right-3 top-4 bg-white rounded-xl px-4 py-3 shadow-card border border-border">
                   <div className="text-[10px] tracking-[.06em] uppercase text-text-muted">Ad accounts</div>
-                  <div className="tabular-nums text-[22px] font-bold text-text-primary mt-0.5">80</div>
+                  <div className="tabular-nums text-[22px] font-bold text-text-primary mt-0.5">85</div>
                 </div>
               </div>
             </div>

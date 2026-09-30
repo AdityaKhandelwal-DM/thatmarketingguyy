@@ -218,7 +218,7 @@ export default function Home() {
                 Most business owners don&apos;t know the answer, and that&apos;s not their fault. Agencies are built to keep it complicated.
               </p>
               <p className="text-[17px] md:text-[18px] text-text-secondary max-w-[540px] leading-[1.7] mb-8">
-                I&apos;ve managed 80 ad accounts across clinics, restaurants, D2C, and local stores.{" "}
+                I&apos;ve managed 85 ad accounts across clinics, restaurants, D2C, and local stores.{" "}
                 <strong className="text-text-primary">I teach you to read the numbers yourself.</strong>
               </p>
 
@@ -230,7 +230,7 @@ export default function Home() {
               {/* Trust stats */}
               <div className="grid grid-cols-3 gap-4 mt-10 pt-8 border-t border-border">
                 {[
-                  { n: "80", l: "ad accounts managed" },
+                  { n: "85", l: "ad accounts managed" },
                   { n: "7",   l: "industries served" },
                   { n: "₹0",  l: "to start learning" },
                 ].map((t) => (
@@ -283,9 +283,9 @@ export default function Home() {
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
           <div className="grid grid-cols-3 gap-4 text-center">
             {[
-              { n: "80",     l: "Ad accounts managed" },
-              { n: "₹76.9L", l: "Ad spend managed (~$92K)" },
-              { n: "59,417", l: "Leads & conversions delivered" },
+              { n: "85",     l: "Ad accounts managed" },
+              { n: "₹86.0L", l: "Ad spend managed (~$103K)" },
+              { n: "72,837", l: "Leads & conversions delivered" },
             ].map((c, i) => (
               <div key={i} className={`px-2 relative ${i > 0 ? "border-l border-border" : ""}`}>
                 <CountUp
