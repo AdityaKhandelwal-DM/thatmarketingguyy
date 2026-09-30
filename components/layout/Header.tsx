@@ -3,13 +3,21 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
+
+// "Services" replaces "Learn" while the site is focused on winning clients
+// (the learning offer returns ~Apr 2027; /learn stays linked from the footer).
+const services = [
+  { label: "Facebook Ads Expert", href: "/facebook-ads-expert", desc: "Facebook, Instagram & WhatsApp ads" },
+  { label: "Google Ads Expert",   href: "/google-ads-expert",   desc: "Search, Maps, Performance Max & YouTube" },
+];
 
 const navLinks = [
   { label: "Home",     href: "/" },
+  { label: "Services", href: "/facebook-ads-expert", children: services },
   { label: "Results",  href: "/results" },
   { label: "Free PDFs", href: "/resources" },
-  { label: "Learn",    href: "/learn" },
   { label: "Blog",     href: "/blog" },
   { label: "About",    href: "/about" },
   { label: "Careers",  href: "/careers" },
@@ -54,20 +62,56 @@ export default function Header() {
 
           {/* Desktop links */}
           <div className="hidden lg:flex items-center gap-6">
-            {navLinks.map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                className={cn(
-                  "text-[13.5px] font-medium text-text-primary transition-opacity duration-[250ms]",
-                  pathname === l.href
-                    ? "opacity-100 text-primary font-semibold"
-                    : "opacity-75 hover:opacity-100"
-                )}
-              >
-                {l.label}
-              </Link>
-            ))}
+            {navLinks.map((l) =>
+              l.children ? (
+                // Hover or keyboard focus opens the menu; no JS state needed.
+                <div key={l.label} className="relative group">
+                  <button
+                    type="button"
+                    aria-haspopup="true"
+                    className={cn(
+                      "inline-flex items-center gap-1 text-[13.5px] font-medium text-text-primary transition-opacity duration-[250ms] cursor-pointer",
+                      l.children.some((c) => c.href === pathname)
+                        ? "opacity-100 text-primary font-semibold"
+                        : "opacity-75 hover:opacity-100 group-focus-within:opacity-100"
+                    )}
+                  >
+                    {l.label}
+                    <ChevronDown className="w-3.5 h-3.5 transition-transform duration-[250ms] group-hover:rotate-180 group-focus-within:rotate-180" strokeWidth={2.25} />
+                  </button>
+                  <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-opacity duration-[200ms]">
+                    <div className="w-[280px] bg-white border border-border rounded-card shadow-card p-2">
+                      {l.children.map((c) => (
+                        <Link
+                          key={c.href}
+                          href={c.href}
+                          className={cn(
+                            "block rounded-btn px-3.5 py-3 hover:bg-bg-light transition-colors duration-[200ms]",
+                            pathname === c.href && "bg-bg-light"
+                          )}
+                        >
+                          <span className="block text-[14px] font-semibold text-text-primary">{c.label}</span>
+                          <span className="block text-[12px] text-text-secondary mt-0.5">{c.desc}</span>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <Link
+                  key={l.href}
+                  href={l.href}
+                  className={cn(
+                    "text-[13.5px] font-medium text-text-primary transition-opacity duration-[250ms]",
+                    pathname === l.href
+                      ? "opacity-100 text-primary font-semibold"
+                      : "opacity-75 hover:opacity-100"
+                  )}
+                >
+                  {l.label}
+                </Link>
+              )
+            )}
           </div>
 
           {/* Desktop CTA */}
@@ -96,21 +140,40 @@ export default function Header() {
       {/* Mobile drawer */}
       {open && (
         <div className="lg:hidden bg-white border-t border-border px-4 py-3 flex flex-col gap-0.5">
-          {navLinks.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              onClick={() => setOpen(false)}
-              className={cn(
-                "py-3 text-[15px] border-b border-border last:border-none",
-                pathname === l.href
-                  ? "text-primary font-semibold"
-                  : "text-text-primary"
-              )}
-            >
-              {l.label}
-            </Link>
-          ))}
+          {navLinks.map((l) =>
+            l.children ? (
+              <div key={l.label} className="py-3 border-b border-border">
+                <span className="block text-[11px] tracking-[.08em] uppercase text-text-muted mb-1">{l.label}</span>
+                {l.children.map((c) => (
+                  <Link
+                    key={c.href}
+                    href={c.href}
+                    onClick={() => setOpen(false)}
+                    className={cn(
+                      "block py-2 pl-3 text-[15px]",
+                      pathname === c.href ? "text-primary font-semibold" : "text-text-primary"
+                    )}
+                  >
+                    {c.label}
+                  </Link>
+                ))}
+              </div>
+            ) : (
+              <Link
+                key={l.href}
+                href={l.href}
+                onClick={() => setOpen(false)}
+                className={cn(
+                  "py-3 text-[15px] border-b border-border last:border-none",
+                  pathname === l.href
+                    ? "text-primary font-semibold"
+                    : "text-text-primary"
+                )}
+              >
+                {l.label}
+              </Link>
+            )
+          )}
           <Link
             href="/contact"
             onClick={() => setOpen(false)}
