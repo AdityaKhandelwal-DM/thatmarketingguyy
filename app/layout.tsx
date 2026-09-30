@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import ScrollReveal from "@/components/ui/ScrollReveal";
+import LeadPopup from "@/components/lead/LeadPopup";
+import { CONTACT_EMAIL } from "@/lib/contact";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -33,6 +35,7 @@ const personLd = {
   "@type": "Person",
   name: "Aditya Khandelwal",
   jobTitle: "Performance Marketing Consultant",
+  email: `mailto:${CONTACT_EMAIL}`,
   url: "https://www.thatmarketingguyy.com",
   image: "https://www.thatmarketingguyy.com/images/aditya-square.webp",
   sameAs: [
@@ -65,6 +68,7 @@ export default function RootLayout({
       <body>
         <ScrollReveal />
         {children}
+        <LeadPopup />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personLd) }}

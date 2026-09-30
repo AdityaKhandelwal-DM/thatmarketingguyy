@@ -2,29 +2,22 @@
 
 import Link from "next/link";
 
-import { useState } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import FAQ from "@/components/ui/FAQ";
 import BreadcrumbLd from "@/components/ui/BreadcrumbLd";
-import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import Media from "@/components/ui/Media";
-import { cn } from "@/lib/utils";
-import { Building2, GraduationCap, type LucideIcon } from "lucide-react";
-
-type Intent = "owner" | "learner";
-
-const intents: { key: Intent; icon: LucideIcon; title: string; desc: string }[] = [
-  { key: "owner", icon: Building2, title: "I own a business", desc: "I want more leads / customers without an agency." },
-  { key: "learner", icon: GraduationCap, title: "I want to learn marketing", desc: "I want to run ads myself or build a career." },
-];
+import LeadForm from "@/components/lead/LeadForm";
+import { WhatsAppLogo } from "@/components/ui/BrandLogos";
+import { CONTACT_EMAIL, mailtoUrl, whatsappUrl } from "@/lib/contact";
+import { Mail, Clock, ShieldCheck } from "lucide-react";
 
 const faqsContact = [
   { q: "How do I get in touch about my ads?",
-    a: "Pick whichever describes you on this page, add your business, city and what isn't working, then send. The message opens in my Instagram DMs, which is where I actually reply. Including your current monthly spend and what you're optimising for saves a round trip." },
+    a: "Fill in the form on this page and press send. It opens WhatsApp with your details already written, so you only have to hit send. Prefer email? Write to info.adityakhandelwal@gmail.com. Including your current monthly spend and what you're optimising for saves a round trip." },
   { q: "How fast do you reply?",
-    a: "Personally, and at human speed. There's no team inbox and no autoresponder. That's the honest trade-off of dealing with one person rather than an agency. If something's urgent, say so and include a WhatsApp number." },
+    a: "Personally, and at human speed. There's no team inbox and no autoresponder. That's the honest trade-off of dealing with one person rather than an agency. If something's urgent, say so in your message." },
   { q: "What happens after I send a message?",
     a: "I read it and reply based on what you've told me. If paid management isn't right for your stage, I'll say so and point you at the material that is. I've told people not to hire me before. There's no discovery-call funnel waiting at the end of it." },
   { q: "Do you do one-off ad account audits?",
@@ -36,29 +29,6 @@ const faqsContact = [
 ];
 
 export default function ContactPage() {
-  const [intent, setIntent] = useState<Intent>("owner");
-  const [name, setName] = useState("");
-  const [reach, setReach] = useState("");
-  const [biz, setBiz] = useState("");
-  const [need, setNeed] = useState("");
-  const [sent, setSent] = useState(false);
-
-  // No backend: build the message, copy it, open the Instagram DM thread —
-  // the channel Aditya actually answers. Honest and zero-dependency.
-  const send = async () => {
-    const lines = [
-      `Hi Aditya, ${name || "a visitor"} here (${intent === "owner" ? "business owner" : "learner"}).`,
-      reach && `Reach me: ${reach}`,
-      biz && `Business: ${biz}`,
-      need && `Need help with: ${need}`,
-    ].filter(Boolean);
-    try {
-      await navigator.clipboard.writeText(lines.join("\n"));
-    } catch {}
-    setSent(true);
-    window.open("https://ig.me/m/that.marketingguyy", "_blank", "noopener");
-  };
-
   return (
     <>
       <Header />
@@ -73,10 +43,11 @@ export default function ContactPage() {
               </div>
               <span className="eyebrow block mb-5">Let&apos;s talk</span>
               <h1 className="text-[clamp(28px,4.5vw,56px)] font-bold text-text-primary max-w-[760px] leading-[1.08]">
-                What brings you here?
+                Tell me about your business and your ads.
               </h1>
               <p className="text-[17px] md:text-[18px] text-text-secondary mt-5 max-w-[640px] leading-[1.7]">
-                Pick one so I send you to the right place.
+                Fill in the form and it opens WhatsApp with everything written for you. Wherever you are,
+                I read it myself and reply personally.
               </p>
             </div>
             <Media
@@ -90,89 +61,54 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* ══ INTENT + FORM ═════════════════════════════════════════════════════ */}
+      {/* ══ FORM + OTHER WAYS TO REACH ME ═════════════════════════════════════ */}
       <section className="py-10 md:py-16 lg:py-20">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="grid grid-cols-1 md:grid-cols-[.85fr_1.15fr] gap-6 md:gap-10">
-            {/* Intent selector — `reveal` stays on this container only: the buttons'
-                className changes on selection, which would wipe the `.in` class and
-                leave them stuck invisible. */}
-            <div className="flex flex-col gap-3 reveal">
-              {intents.map((b) => (
-                <button
-                  key={b.key}
-                  onClick={() => setIntent(b.key)}
-                  className={cn(
-                    "text-left bg-white border rounded-card p-4 cursor-pointer transition-all duration-[250ms] flex gap-3 items-start",
-                    intent === b.key
-                      ? "border-primary shadow-[0_4px_18px_rgba(3,109,154,.14)]"
-                      : "border-border hover:border-primary"
-                  )}
-                >
-                  <b.icon className="w-6 h-6 text-primary flex-none" strokeWidth={2} />
-                  <div>
-                    <span className="block text-[15px] font-bold text-text-primary">{b.title}</span>
-                    <p className="text-[13px] text-text-secondary mt-0.5">{b.desc}</p>
-                  </div>
-                </button>
-              ))}
-            </div>
-
-            {/* Form */}
+          <div className="grid grid-cols-1 lg:grid-cols-[1.3fr_.7fr] gap-6 lg:gap-10 items-start">
             <Card className="p-5 md:p-8 reveal">
-              <div className="mb-4">
-                <label htmlFor="name" className="block text-[13px] font-semibold text-text-primary mb-1.5">Your name</label>
-                <input
-                  id="name"
-                  type="text"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  placeholder="e.g. Rohan Sharma"
-                  className="w-full h-14 px-4 border border-border rounded-btn text-[15px] text-text-primary placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors duration-[250ms]"
-                />
-              </div>
-              <div className="mb-4">
-                <label htmlFor="reach" className="block text-[13px] font-semibold text-text-primary mb-1.5">WhatsApp / Email</label>
-                <input
-                  id="reach"
-                  type="text"
-                  value={reach}
-                  onChange={(e) => setReach(e.target.value)}
-                  placeholder="So I can reach you"
-                  className="w-full h-14 px-4 border border-border rounded-btn text-[15px] text-text-primary placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors duration-[250ms]"
-                />
-              </div>
-              {intent === "owner" && (
-                <div className="mb-4">
-                  <label htmlFor="biz" className="block text-[13px] font-semibold text-text-primary mb-1.5">Your business &amp; city</label>
-                  <input
-                    id="biz"
-                    type="text"
-                    value={biz}
-                    onChange={(e) => setBiz(e.target.value)}
-                    placeholder="e.g. Dental clinic, Jaipur"
-                    className="w-full h-14 px-4 border border-border rounded-btn text-[15px] text-text-primary placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors duration-[250ms]"
-                  />
-                </div>
-              )}
-              <div className="mb-5">
-                <label htmlFor="need" className="block text-[13px] font-semibold text-text-primary mb-1.5">What do you need help with?</label>
-                <textarea
-                  id="need"
-                  value={need}
-                  onChange={(e) => setNeed(e.target.value)}
-                  placeholder="Tell me in one line"
-                  rows={4}
-                  className="w-full min-h-[120px] py-4 px-4 border border-border rounded-btn text-[15px] text-text-primary placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors duration-[250ms] resize-y"
-                />
-              </div>
-              <Button type="button" fullWidth onClick={send}>
-                {sent ? "Opened Instagram, paste & send" : "Send via Instagram DM"}
-              </Button>
-              <p className="text-[12px] text-text-muted mt-3 text-center">
-                Opens my Instagram DM with your message copied. Just paste and send. I read every one myself.
-              </p>
+              <LeadForm />
             </Card>
+
+            <div className="flex flex-col gap-4 reveal">
+              <a
+                href={whatsappUrl("Hi Aditya, I found you on thatmarketingguyy.com and want to talk about my ads.")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white border border-border hover:border-primary rounded-card p-5 flex items-start gap-4 transition-colors duration-[250ms]"
+              >
+                <WhatsAppLogo className="w-10 h-10 flex-none" />
+                <div>
+                  <span className="block text-[15px] font-bold text-text-primary">Chat on WhatsApp</span>
+                  <span className="block text-[13px] text-text-secondary mt-0.5">Skip the form and message me directly.</span>
+                </div>
+              </a>
+              <a
+                href={mailtoUrl("Enquiry from thatmarketingguyy.com")}
+                className="bg-white border border-border hover:border-primary rounded-card p-5 flex items-start gap-4 transition-colors duration-[250ms]"
+              >
+                <span className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-none">
+                  <Mail className="w-5 h-5 text-primary" strokeWidth={2} />
+                </span>
+                <div className="min-w-0">
+                  <span className="block text-[15px] font-bold text-text-primary">Email me</span>
+                  <span className="block text-[13px] text-primary mt-0.5 break-all">{CONTACT_EMAIL}</span>
+                </div>
+              </a>
+              <div className="bg-bg-light rounded-card p-5 flex flex-col gap-4">
+                <div className="flex items-start gap-3">
+                  <Clock className="w-5 h-5 text-primary flex-none mt-0.5" strokeWidth={2} />
+                  <p className="text-[13px] text-text-secondary leading-relaxed">
+                    Based in Jaipur, India (GMT+5:30). Most work is async over WhatsApp and email, so time zones rarely get in the way.
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <ShieldCheck className="w-5 h-5 text-primary flex-none mt-0.5" strokeWidth={2} />
+                  <p className="text-[13px] text-text-secondary leading-relaxed">
+                    Your details are only used to reply to you. No mailing lists.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

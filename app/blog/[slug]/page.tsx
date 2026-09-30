@@ -49,6 +49,12 @@ export default async function PostPage({
   const post = getPost(slug);
   if (!post) notFound();
 
+  // Posts about Google topics point to the Google Ads page; everything else to Meta.
+  const isGoogle = /google/i.test(`${post.keyword ?? ""} ${post.title}`);
+  const service = isGoogle
+    ? { href: "/google-ads-expert", label: "Hire a Google Ads expert" }
+    : { href: "/facebook-ads-expert", label: "Hire a Facebook ads expert" };
+
   const articleLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -103,9 +109,27 @@ export default async function PostPage({
             className="prose-post w-full max-w-[760px] mx-auto px-4 sm:px-6 lg:px-10"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
-          <div className="w-full max-w-[760px] mx-auto px-4 sm:px-6 lg:px-10 mt-12 pt-8 border-t border-border flex flex-col sm:flex-row gap-3">
-            <Button href="/contact">Get help with your ads</Button>
-            <Button href="/blog" variant="secondary">More breakdowns →</Button>
+          {/* Contact box: internal link to /contact on every post, plus the
+              service page that matches the post's platform. */}
+          <div className="w-full max-w-[760px] mx-auto px-4 sm:px-6 lg:px-10 mt-12">
+            <div className="bg-bg-light border border-border rounded-card p-6 md:p-8">
+              <h2 className="text-[20px] md:text-[24px] font-bold text-text-primary leading-snug">
+                Want me to look at your ads?
+              </h2>
+              <p className="text-[15px] text-text-secondary mt-2 leading-relaxed">
+                Tell me your business, your market and what isn&apos;t working. I reply personally, usually on
+                WhatsApp or email. I work with small businesses in the US, UK, UAE, Australia and Singapore.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3 mt-5">
+                <Button href="/contact">Contact me about your ads</Button>
+                <Button href={service.href} variant="secondary">{service.label}</Button>
+              </div>
+            </div>
+            <div className="mt-6">
+              <Link href="/blog" className="text-[14px] font-semibold text-primary hover:text-primary-dark">
+                ← More breakdowns
+              </Link>
+            </div>
           </div>
         </section>
       </article>

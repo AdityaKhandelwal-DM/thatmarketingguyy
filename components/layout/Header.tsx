@@ -73,7 +73,7 @@ export default function Header() {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center flex-none">
             <Link
-              href="/resources"
+              href="/contact"
               className="inline-flex items-center font-sans font-semibold text-[14px] px-5 py-3 rounded-btn bg-primary text-white hover:bg-primary-dark hover:-translate-y-0.5 transition-all duration-[250ms]"
             >
               Work with me
@@ -112,7 +112,7 @@ export default function Header() {
             </Link>
           ))}
           <Link
-            href="/resources"
+            href="/contact"
             onClick={() => setOpen(false)}
             className="mt-3 flex justify-center items-center font-sans font-semibold text-[15px] px-6 py-3.5 rounded-btn bg-primary text-white"
           >

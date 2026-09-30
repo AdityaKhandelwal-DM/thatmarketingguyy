@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CONTACT_EMAIL, mailtoUrl, whatsappUrl } from "@/lib/contact";
 
 export default function Footer() {
   return (
@@ -13,6 +14,9 @@ export default function Footer() {
             Marketing, finally made clear. Performance marketing for SME owners. No agency required.
           </p>
           <p className="text-[13px] text-primary">Aditya Khandelwal</p>
+          <a href={mailtoUrl("Enquiry from thatmarketingguyy.com")} className="text-[13px] text-white/80 hover:text-white transition-colors duration-[250ms] break-all">
+            {CONTACT_EMAIL}
+          </a>
         </div>
 
         {/* Links grid — 3 cols on mobile, 3 cols on desktop */}
@@ -58,6 +62,8 @@ export default function Footer() {
               Connect
             </h5>
             {[
+              { label: "WhatsApp",  href: whatsappUrl("Hi Aditya, I found you on thatmarketingguyy.com and want to talk about my ads.") },
+              { label: "Email",     href: mailtoUrl("Enquiry from thatmarketingguyy.com") },
               { label: "Instagram", href: "https://www.instagram.com/that.marketingguyy/" },
               { label: "YouTube",   href: "https://www.youtube.com/@thatmarketinguy" },
               { label: "LinkedIn",  href: "https://www.linkedin.com/in/aditya-khandelwal-performance-marketer/" },
