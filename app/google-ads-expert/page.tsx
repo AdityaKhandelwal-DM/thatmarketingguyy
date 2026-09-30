@@ -9,11 +9,76 @@ import { Search, Store, MapPin, PlayCircle, Gauge, Scissors } from "lucide-react
  * exports, last synced 30 Sep 2026). $ conversions use ~₹83.6 = $1.
  */
 
+const services = [
+  {
+    icon: Search,
+    title: "Search campaigns on buying intent",
+    desc: "Keywords chosen for people ready to call or book, not people researching. Match types and bids set so you aren't paying for curiosity.",
+  },
+  {
+    icon: Scissors,
+    title: "Search-term clean-up",
+    desc: "Regular review of what people actually typed, with negatives added so the same wasted searches don't keep charging you.",
+  },
+  {
+    icon: Store,
+    title: "Performance Max, set up properly",
+    desc: "Asset groups per location or offer, conversion goals that mean something, and store-visit or call tracking so the black box has the right target.",
+  },
+  {
+    icon: MapPin,
+    title: "Local ads, calls and directions",
+    desc: "Ads tied to your Google Business Profile so you show up on Maps when people nearby search, measured in calls and direction requests.",
+  },
+  {
+    icon: PlayCircle,
+    title: "YouTube that converts",
+    desc: "Video campaigns optimised for enquiries instead of views, so video budget has something measurable coming back.",
+  },
+  {
+    icon: Gauge,
+    title: "Conversion tracking first",
+    desc: "Forms, calls and key actions tracked before a rupee or dollar is scaled. Without it, Google's bidding is guessing and so are you.",
+  },
+];
+
+const SERVICE_TITLES = services.map((s) => s.title);
+
 export const metadata: Metadata = {
-  title: "Google Ads Expert for Small Businesses, Worldwide",
+  // absolute: skip the site-wide " | thatmarketingguy" suffix so the title
+  // stays under ~60 characters and isn't cut off in Google's results.
+  title: { absolute: "Google Ads Expert for Hire | Google Ads Specialist" },
   description:
-    "Google Ads expert for small businesses in the US, UK, UAE and Australia. ₹17.6L (~$21K) of Google spend managed, 60,287 calls, direction requests and form fills.",
+    "Hire a Google Ads expert for your small business in the US, UK, UAE or Australia. $21K+ in ad spend managed, 60,287 conversions. You keep the ad account.",
+  keywords: [
+    "google ads expert",
+    "google ads specialist",
+    "hire a google ads expert",
+    "google ads consultant",
+    "google ads freelancer",
+    "ppc expert for small business",
+    "google ads manager for small business",
+    "performance max expert",
+  ],
   alternates: { canonical: "/google-ads-expert" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
+  },
+  openGraph: {
+    title: "Google Ads Expert for Hire | Google Ads Specialist",
+    description: "Hire a Google Ads expert for your small business in the US, UK, UAE or Australia. $21K+ in ad spend managed, 60,287 conversions. You keep the ad account.",
+    url: "/google-ads-expert",
+    type: "website",
+    siteName: "thatmarketingguy",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Google Ads Expert for Hire | Google Ads Specialist",
+    description: "Hire a Google Ads expert for your small business in the US, UK, UAE or Australia. $21K+ in ad spend managed, 60,287 conversions. You keep the ad account.",
+  },
 };
 
 export default function GoogleAdsExpertPage() {
@@ -29,7 +94,7 @@ export default function GoogleAdsExpertPage() {
       }
       intro="I'm Aditya, a Google Ads specialist working with small businesses in the US, UK, UAE, Australia and Singapore. I build campaigns around the searches that turn into phone calls, bookings and store visits, and cut the ones that only spend."
       heroImg="work_analytics"
-      heroAlt="Analytics report showing campaign performance"
+      heroAlt="Google Ads specialist reviewing a campaign performance report"
       PlatformLogo={GoogleAdsLogo}
       platformName="Google Ads"
       stats={[
@@ -39,38 +104,23 @@ export default function GoogleAdsExpertPage() {
         { k: "Best ROAS", v: "18.6×", sub: "clinic, YouTube" },
       ]}
       statsNote="Lifetime figures from Google Ads manager-account reports, last synced 30 Sep 2026. Conversions are calls, direction requests and form fills."
-      services={[
-        {
-          icon: Search,
-          title: "Search campaigns on buying intent",
-          desc: "Keywords chosen for people ready to call or book, not people researching. Match types and bids set so you aren't paying for curiosity.",
-        },
-        {
-          icon: Scissors,
-          title: "Search-term clean-up",
-          desc: "Regular review of what people actually typed, with negatives added so the same wasted searches don't keep charging you.",
-        },
-        {
-          icon: Store,
-          title: "Performance Max, set up properly",
-          desc: "Asset groups per location or offer, conversion goals that mean something, and store-visit or call tracking so the black box has the right target.",
-        },
-        {
-          icon: MapPin,
-          title: "Local ads, calls and directions",
-          desc: "Ads tied to your Google Business Profile so you show up on Maps when people nearby search, measured in calls and direction requests.",
-        },
-        {
-          icon: PlayCircle,
-          title: "YouTube that converts",
-          desc: "Video campaigns optimised for enquiries instead of views, so video budget has something measurable coming back.",
-        },
-        {
-          icon: Gauge,
-          title: "Conversion tracking first",
-          desc: "Forms, calls and key actions tracked before a rupee or dollar is scaled. Without it, Google's bidding is guessing and so are you.",
-        },
+      headings={{
+        services: "What I do as your Google Ads specialist",
+        industries: "Industries I run Google Ads for",
+        proof: "Google Ads results from real campaigns",
+        remote: "Hiring a remote Google Ads expert from the US, UK or UAE",
+        steps: "How to hire me as your Google Ads consultant",
+        faq: "Google Ads expert FAQs",
+      }}
+      industries={[
+        { title: "Clinics and physiotherapy", desc: "Search and YouTube for patient enquiries. One physio clinic's YouTube campaign returned 18.6× at ₹4.47 (about $0.05) per conversion." },
+        { title: "Hotels and hospitality", desc: "Calls and 'get directions' from Performance Max and Search: 1,170 actions at ₹9.87 (about $0.12) each for one hotel." },
+        { title: "Multi-location retail", desc: "Per-store campaigns with store-visit tracking, so you know which ads fill which shop." },
+        { title: "Restaurants and food businesses", desc: "Business Profile ads that turn Maps searches into phone calls, run per outlet." },
+        { title: "Education and courses", desc: "Search campaigns for course enquiries, with tight keywords and negatives so broad searches don't eat the budget." },
+        { title: "Businesses outside India", desc: "Google Ads for a business in Ontario, Canada and a film production company in the UK." },
       ]}
+      services={services}
       cases={[
         {
           name: "Physio clinic: YouTube",
@@ -159,11 +209,21 @@ export default function GoogleAdsExpertPage() {
           q: "How soon will I see results from Google Ads?",
           a: "Search can show signal within days, because the intent is already there when someone types the query. Automated bidding still needs a few weeks of conversion data to settle, so judge cost per conversion over a month, not a morning.",
         },
+        {
+          q: "What industries do you run Google Ads for?",
+          a: "Clinics and physiotherapy, hotels and hospitality, multi-location retail, restaurants, education and local service businesses, plus overseas clients in Canada and the UK. Google works best wherever people already search for what you sell.",
+        },
+        {
+          q: "What do you need from me to get started?",
+          a: "Access to your Google Ads account or a manager-account link, your Google Business Profile if you have physical locations, your offer, your budget, and how you want enquiries to reach you. Conversion tracking gets checked first.",
+        },
       ]}
       sibling={{ href: "/facebook-ads-expert", label: "Facebook ads" }}
       serviceLd={{
         name: "Google Ads Management",
         serviceType: "Pay-per-click advertising management",
+        alternateName: ["Google Ads Specialist", "Google Ads Consultant", "PPC Specialist", "Google Ads Freelancer"],
+        offers: SERVICE_TITLES,
         description:
           "Remote Google Ads management for small businesses: Search, Performance Max, local/Maps, YouTube and conversion tracking, reported as cost per call, lead or sale.",
       }}

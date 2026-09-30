@@ -37,14 +37,24 @@ export interface ServicePageProps {
   platformName: string;
   stats: { k: string; v: string; sub?: string }[];
   statsNote: string;
+  /** Section H2s — written per page so each carries a keyword variant */
+  headings: { services: string; industries: string; proof: string; remote: string; steps: string; faq: string };
   services: { icon: LucideIcon; title: string; desc: string }[];
+  industries: { title: string; desc: string }[];
   cases: ServiceCase[];
   casesNote: string;
   remote: { title: string; desc: string }[];
   steps: { title: string; desc: string }[];
   faqs: FAQItem[];
   sibling: { href: string; label: string };
-  serviceLd: { name: string; serviceType: string; description: string };
+  serviceLd: {
+    name: string;
+    serviceType: string;
+    description: string;
+    alternateName: string[];
+    /** Sub-services listed in the OfferCatalog */
+    offers: string[];
+  };
 }
 
 export default function ServicePage(p: ServicePageProps) {
@@ -52,14 +62,37 @@ export default function ServicePage(p: ServicePageProps) {
     "@context": "https://schema.org",
     "@type": "Service",
     name: p.serviceLd.name,
+    alternateName: p.serviceLd.alternateName,
     serviceType: p.serviceLd.serviceType,
     description: p.serviceLd.description,
     url: `${BASE}${p.path}`,
+    image: `${BASE}${p.path}/opengraph-image`,
     provider: {
       "@type": "Person",
       name: "Aditya Khandelwal",
       jobTitle: "Performance Marketing Consultant",
-      url: BASE,
+      url: `${BASE}/about`,
+      image: `${BASE}/images/aditya-square.webp`,
+      knowsAbout: ["Facebook Ads", "Instagram Ads", "Meta Ads", "Google Ads", "Performance Max", "Local SEO", "Google Business Profile"],
+      sameAs: [
+        "https://www.instagram.com/that.marketingguyy/",
+        "https://www.linkedin.com/in/aditya-khandelwal-performance-marketer/",
+        "https://www.youtube.com/@thatmarketinguy",
+      ],
+    },
+    audience: { "@type": "BusinessAudience", audienceType: "Small and medium-sized businesses" },
+    availableChannel: {
+      "@type": "ServiceChannel",
+      serviceUrl: `${BASE}/contact`,
+      availableLanguage: "English",
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: p.serviceLd.name,
+      itemListElement: p.serviceLd.offers.map((name) => ({
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name },
+      })),
     },
     areaServed: ["United States", "United Kingdom", "United Arab Emirates", "Australia", "Singapore", "India"].map(
       (name) => ({ "@type": "Country", name })
@@ -131,7 +164,7 @@ export default function ServicePage(p: ServicePageProps) {
           <div className="max-w-[680px] mb-8 md:mb-12 reveal">
             <span className="eyebrow block mb-4">What you get</span>
             <h2 className="text-[clamp(22px,3.3vw,42px)] font-bold text-text-primary">
-              The work, not the pitch deck.
+              {p.headings.services}
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal-stagger">
@@ -148,6 +181,24 @@ export default function ServicePage(p: ServicePageProps) {
         </div>
       </section>
 
+      {/* ══ INDUSTRIES ════════════════════════════════════════════════════════ */}
+      <section className="pb-10 md:pb-16 lg:pb-20">
+        <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
+          <div className="max-w-[680px] mb-6 md:mb-9 reveal">
+            <span className="eyebrow block mb-4">Who I work with</span>
+            <h2 className="text-[clamp(22px,3.3vw,38px)] font-bold text-text-primary">{p.headings.industries}</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-5 reveal">
+            {p.industries.map((i) => (
+              <div key={i.title} className="border-l-2 border-primary/30 pl-4">
+                <h3 className="font-bold text-text-primary text-[15px] mb-1">{i.title}</h3>
+                <p className="text-[14px] text-text-secondary leading-relaxed">{i.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ══ PROOF ═════════════════════════════════════════════════════════════ */}
       <section className="py-10 md:py-16 lg:py-20 bg-bg-light">
         <div className="w-full max-w-site mx-auto px-4 sm:px-6 lg:px-10">
@@ -155,7 +206,7 @@ export default function ServicePage(p: ServicePageProps) {
             <div className="max-w-[640px]">
               <span className="eyebrow block mb-4">Proof</span>
               <h2 className="text-[clamp(22px,3.3vw,42px)] font-bold text-text-primary">
-                Campaigns I&apos;ve run, with the numbers left in.
+                {p.headings.proof}
               </h2>
             </div>
             <div className="flex-none">
@@ -192,7 +243,7 @@ export default function ServicePage(p: ServicePageProps) {
             <div className="reveal">
               <span className="eyebrow block mb-4">Working with me from abroad</span>
               <h2 className="text-[clamp(22px,3.3vw,42px)] font-bold text-text-primary mb-6">
-                Remote, but never out of reach.
+                {p.headings.remote}
               </h2>
               <ul className="flex flex-col gap-5">
                 {p.remote.map((r) => (
@@ -212,7 +263,7 @@ export default function ServicePage(p: ServicePageProps) {
             <div className="reveal">
               <span className="eyebrow block mb-4">How it starts</span>
               <h2 className="text-[clamp(22px,3.3vw,42px)] font-bold text-text-primary mb-6">
-                Four steps, no long contract.
+                {p.headings.steps}
               </h2>
               <ol className="flex flex-col gap-4">
                 {p.steps.map((s, i) => (
@@ -232,7 +283,7 @@ export default function ServicePage(p: ServicePageProps) {
         </div>
       </section>
 
-      <FAQ items={p.faqs} light />
+      <FAQ items={p.faqs} title={p.headings.faq} light />
 
       {/* ══ CTA ═══════════════════════════════════════════════════════════════ */}
       <section className="py-12 md:py-16">

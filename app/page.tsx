@@ -377,6 +377,12 @@ export default function Home() {
             <p className="text-[15px] md:text-[17px] text-text-secondary mt-3">
               If you&apos;ve been burned by an agency or just want to understand what your money is doing, this is for you.
             </p>
+            <p className="text-[15px] md:text-[17px] text-text-secondary mt-3">
+              Looking to hire? See how I work as a{" "}
+              <Link href="/facebook-ads-expert" className="text-primary font-semibold hover:underline">Facebook ads expert</Link>{" "}
+              and as a{" "}
+              <Link href="/google-ads-expert" className="text-primary font-semibold hover:underline">Google Ads expert</Link>.
+            </p>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5 reveal-stagger">
             {niches.map((n) => (

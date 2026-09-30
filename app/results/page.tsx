@@ -355,7 +355,10 @@ export default function ResultsPage() {
           <p className="text-[17px] md:text-[18px] text-text-secondary mt-5 max-w-[640px] leading-[1.7]">
             Lifetime numbers across Meta and Google since 2021: every account,
             every campaign, winners and write-offs. Client names stay private.
-            The numbers don&apos;t.
+            The numbers don&apos;t. Want the same for your business? Hire a{" "}
+            <Link href="/facebook-ads-expert" className="text-primary font-semibold hover:underline">Facebook ads expert</Link>{" "}
+            or a{" "}
+            <Link href="/google-ads-expert" className="text-primary font-semibold hover:underline">Google Ads expert</Link>.
           </p>
 
           {/* Portfolio strip */}
