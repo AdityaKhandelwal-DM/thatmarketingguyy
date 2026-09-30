@@ -37,8 +37,11 @@ real sentence. No tables, code fences, or raw HTML — they render as plain text
   hypothetical examples labelled as such.
 - 600–1,000 words. Every post links to exactly one of /learn or /resources,
   plus /contact near the end. Link one related earlier post when any exist.
-- Topics + target keywords: follow the queue in SEO-KEYWORD-PLAN.md §4 (repo
-  root, one level up). Take the next unwritten slot, top to bottom.
+- Topics + target keywords: follow `content/blog-queue.md`. Take the first
+  `todo` row, use its target keyword in the title, description and first
+  paragraph, and answer each "Also answer" question under its own H2 or H3
+  using the searcher's wording. Mark the row `done YYYY-MM-DD` in the same
+  commit.
 
 ## Publishing
 
