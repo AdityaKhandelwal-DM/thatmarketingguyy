@@ -1,61 +1,68 @@
 ---
 title: How to Hire a Facebook Ads Expert: 10 Questions to Ask Before You Pay Anyone
-description: How to hire a Facebook ads expert without wasting a quarter's budget — 10 questions to ask before you pay anyone, and what good answers sound like.
+description: How to hire a Facebook ads expert without wasting money: what they do, what to ask, who owns the account, and what to expect in 90 days.
 date: 2026-10-01
 keyword: hire facebook ads expert
-image: work_desk
+image: blog-how-to-hire-a-facebook-ads-expert
 ---
 
-You've decided to hire someone to run your Facebook ads instead of fumbling through Ads Manager yourself. Good call. But the hiring part is where most small-business owners get burned: you pick based on a nice portfolio deck or a cheap quote, hand over the account, and three months later you still don't know if the money worked.
+If you want to hire a Facebook ads expert, you're probably comparing a marketplace profile, an agency pitch and a friend's recommendation, and none of them tell you much. I'm Aditya, a solo Meta Ads and Google Ads consultant. I've managed 85 ad accounts and ₹86.0L (~$103K) of spend, so I've been on the other side of this decision many times.
 
-I've managed 85 ad accounts and ₹86.0L (~$103K) of spend, and I've been on both sides of this conversation — the person being vetted, and the person later called in to clean up after someone else wasn't. Here are the questions that actually separate a real specialist from someone reading a course transcript at you.
+Here is what I'd want to know if I were the owner writing the cheque.
 
-## What does a Facebook ads specialist do, exactly?
+## What does a Facebook ads specialist do?
 
-Not "post ads." A specialist sets the campaign objective to match how you actually sell (leads, calls, WhatsApp messages, or online sales), builds and tests creative, manages budget across campaigns, and reads the account weekly to cut what's losing money and scale what isn't. If someone's answer is vaguer than that, keep asking.
+A Facebook ads specialist plans, builds and runs your paid campaigns on Facebook and Instagram, then reports on what they produced. That covers the offer and audience, the ad creative and copy, the lead form or landing page, daily optimisation, and a plain monthly report.
 
-## 1. Can I see a real account, not a slide?
+A good one also tells you when ads are the wrong tool. If your phone is never answered or your website takes eight seconds to load, no campaign fixes that. I wrote about those problems in [why your Facebook ads are not working](/blog/why-are-my-facebook-ads-not-working).
 
-A portfolio deck is marketing. A screen-share of an actual Ads Manager account — campaign structure, cost per result, spend over time — is proof. Ask to see one, even with client names blurred.
+If you search "Facebook ads expert near me", you'll see local agencies. For most ad accounts, location doesn't matter. I work with owners in the US, UK, UAE, Australia and Singapore remotely, and day-to-day runs over WhatsApp and email. What matters is whether the person has run accounts like yours.
 
-## 2. What should they show me before I hire them?
+## What should a Facebook ads expert show me before I hire them?
 
-At minimum: the objective they'd set for your business, roughly what cost per result is realistic in your category, and how they'd structure the first month of testing. If they quote you a price before asking what you sell and how, that's a red flag, not efficiency.
+They should show you real results with real numbers, including the ones that didn't work. Ask for case studies with spend, cost per result and the time period. Be wary of screenshots with no dates and "300% growth" claims with no spend attached.
 
-## 3. Who owns my ad account?
+On my [results page](/results) I publish portfolio totals: 85 ad accounts, ₹86.0L (~$103K) spend managed, and 72,837 leads and conversions. One education client, for example, got 2,766 leads at ₹34 (~$0.40) each. I also publish campaigns I've had to stop.
 
-This is non-negotiable: you do. The Business Manager, the ad account, the pixel, the page — all of it should live under your business, with the specialist given admin access, not the other way around. If an agency insists on hosting your account inside theirs, walk away. I've taken over accounts where the previous owner had no way to even see historical spend because the account never belonged to them.
+Also ask them to describe an account they'd turn down, and why. Someone who says yes to everything is selling, not diagnosing.
 
-## 4. What results should I expect in the first 90 days?
+![Ask to see the dashboard, not a polished slide.](work_dashboard)
 
-Be suspicious of anyone promising a number before they've seen your business. A realistic answer sounds like: "the first 2-3 weeks are testing and data collection, and we should know by week 6 whether we're near a workable cost per result." For one education client I run, it took real testing to get leads down to ₹34 (~$0.40) each on 2,766 leads — that number didn't exist on day one, it was earned by killing what wasn't working.
+## Who should own my ad account?
 
-![A real Ads Manager account, not a slide deck, is what a hire should be judged on.](work_laptop2)
+You should. The ad account and the Business Manager must sit under your business, with the expert added as a partner or admin. If an agency creates the account under their own Business Manager, they can lock you out of your own campaign history, pixel data and audiences if you part ways.
 
-## 5. How do they report, and how often?
+This is the single most important question for an overseas owner, because it's harder to chase someone across time zones. I always work inside the client's own account, so you can see every rupee or dollar of spend and revoke my access any time.
 
-Weekly, at minimum, in plain numbers you understand: spend, cost per result, and what changed since last week. If reporting is a PDF of vanity metrics (reach, impressions) with no cost per result on it, you're not getting managed, you're getting billed.
+## What results should I expect in the first 90 days?
 
-## 6. What do they do when an ad stops working?
+Expect a testing period first, results second. A sensible rhythm looks like this:
 
-Every specialist has campaigns that underperform — that's normal, not a scandal. What matters is how fast they notice and what they do next. On a hair transplant clinic account I manage, cost per conversation started at ₹93 and dropped to ₹33 once we moved off a tired audience. The skill isn't avoiding every loss; it's cutting losses fast and knowing why the fix worked.
+1. **Weeks 1-2:** audit, tracking set up, offer and creative agreed, campaigns live.
+2. **Weeks 3-6:** Meta finishes learning, I cut weak ads and test new ones.
+3. **Weeks 7-12:** the cost per lead or sale settles and I scale what works.
 
-## 7. Will they tell me if Facebook ads are wrong for my business?
+Anyone who promises a fixed number of leads or a guaranteed return in week one is guessing. The numbers depend on your offer, your market and your budget, and a good expert says so.
 
-Some businesses are better served by Google Ads, local SEO, or just better follow-up on leads they already have. A specialist who only ever recommends more ad spend, regardless of what you tell them about your business, is optimising for their invoice, not your result. I wrote about the nine most common reasons Facebook ads underperform in [a separate post](/blog/why-are-my-facebook-ads-not-working) — if your candidate can't speak to most of that list from memory, they haven't managed enough accounts yet.
+What I can point to are results on the site: a skin clinic owner in Jaipur saw 78% more walk-ins. That was one clinic's result, not a promise for your business.
 
-## 8. Freelancer or agency — does it matter?
+## 10 questions to ask before you pay anyone
 
-Less than people think. What matters is who's actually touching your account day to day. A big agency can mean a junior managing you while a senior closes the sale. A freelancer means you get the person who did the work. Ask directly who will be in your account every week.
+1. Which businesses like mine have you run ads for, and what were the numbers?
+2. Will my ad account stay in my name and Business Manager?
+3. What will I get in each report, and how often?
+4. How do we communicate, and what are your working hours in my time zone?
+5. What is your fee, and is ad spend billed separately?
+6. What do you need from me: photos, offers, someone to answer leads?
+7. What will you do in the first 30 days?
+8. How will we judge whether it's working, and by when?
+9. What's the notice period if I want to stop?
+10. Can I speak to a past client?
 
-## 9. How do they charge?
+Write their answers down and compare. The honest answers are usually specific and a bit unglamorous.
 
-Flat monthly fee, percentage of ad spend, or a hybrid — all can be fair. What's not fair is a fee structure that rewards spending more regardless of results. Ask what happens to their fee if you need to pause or shrink the budget for a slow month.
+## Hiring across time zones
 
-## 10. Can they show their own numbers?
+I'm based in India and work with owners overseas. In practice that means a written report on a set schedule, day-to-day messages over WhatsApp and email, and any urgent change flagged straight away. So far I've run two Google Ads projects for overseas clients, in Ontario and for a UK film production company, and I'm now looking for more direct clients in the US, UK, UAE, Australia and Singapore.
 
-The best test of all: does this person publish what actually happened in their accounts, wins and losses both? I keep mine on my [results page](/results) — 72,837 leads and conversions across every category I work in, including the campaigns that got cut. If someone can't show you real numbers from real accounts, you're hiring on trust alone.
-
-## Where to go from here
-
-None of these questions are tricks. They're just what you'd ask before handing someone your ad budget and your phone number as the business contact. If you want to [hire a Facebook ads expert](/facebook-ads-expert) who'll answer all ten without flinching, look at the [results](/results) first, then [get in touch](/contact) and tell me what you're running now.
+If you want a specialist who shows their numbers and lets you keep your account, you can [hire a Facebook ads expert](/facebook-ads-expert) in me. Start by looking at the [results](/results), then [get in touch](/contact) with your business, your budget and what you've tried so far. I'll tell you honestly whether ads make sense yet.

@@ -30,8 +30,11 @@ no banner could be made, pick the most topical existing file
 - Headline = a short version of the post title (max ~8 words), plus a small
   `thatmarketingguyy.com` mark. Nothing else written on it.
 - When the post is about a platform, show that platform recognisably (its real
-  logo or a look-alike of its interface/colours: Meta blue for Facebook, the
-  Google Ads mark for Google). The site's own brand colours stay as they are.
+  logo or a look-alike of its interface/colours). For anything Facebook or
+  Instagram, use the current **Meta** logo (blue infinity mark, #0081FB), never
+  the old Facebook "f". For Google, use the Google Ads mark. The words can
+  still say "Facebook ads" (that's what people search); only the logo is Meta.
+  The site's own brand colours stay as they are.
 - Keep text away from the outer 60 px; the card is cropped on some screens.
 
 ## Markdown subset (the renderer supports ONLY this)
