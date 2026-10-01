@@ -3,7 +3,7 @@ title: How to Hire a Facebook Ads Expert: 10 Questions to Ask Before You Pay Any
 description: How to hire a Facebook ads expert without wasting money: what they do, what to ask, who owns the account, and what to expect in 90 days.
 date: 2026-10-01
 keyword: hire facebook ads expert
-image: work_desk
+image: blog-how-to-hire-a-facebook-ads-expert
 ---
 
 If you want to hire a Facebook ads expert, you're probably comparing a marketplace profile, an agency pitch and a friend's recommendation, and none of them tell you much. I'm Aditya, a solo Meta Ads and Google Ads consultant. I've managed 85 ad accounts and ₹86.0L (~$103K) of spend, so I've been on the other side of this decision many times.
