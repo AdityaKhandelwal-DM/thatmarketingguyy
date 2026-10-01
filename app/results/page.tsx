@@ -10,7 +10,7 @@ import BreadcrumbLd from "@/components/ui/BreadcrumbLd";
 import Card from "@/components/ui/Card";
 import Media from "@/components/ui/Media";
 import CountUp from "@/components/ui/CountUp";
-import { GoogleLogo, FacebookLogo } from "@/components/ui/BrandLogos";
+import { GoogleLogo, MetaLogo } from "@/components/ui/BrandLogos";
 
 /* ─────────────────────────────────────────────────────────────────────────────
    Figures come from three sources. The first two are auditable; the third
@@ -429,7 +429,7 @@ export default function ResultsPage() {
                         {("platform" in c ? (c as { platform: string }).platform : "Meta") === "Google" ? (
                           <GoogleLogo className="w-3 h-3" />
                         ) : (
-                          <FacebookLogo className="w-3 h-3" />
+                          <MetaLogo className="w-[18px] h-3" />
                         )}
                         {"platform" in c ? (c as { platform: string }).platform : "Meta"}
                       </span>
