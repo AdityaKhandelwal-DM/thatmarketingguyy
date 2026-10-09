@@ -3,7 +3,7 @@ title: Facebook Ads Agency or Freelancer: What Does It Cost to Hire Help?
 description: Facebook ads agency or freelancer? How fees work, flat retainer vs percentage of spend, and whether $500 a month is enough for Facebook or Google Ads.
 date: 2026-10-07
 keyword: facebook ads agency
-image: work_analytics
+image: blog-facebook-ads-agency-or-freelancer-cost
 ---
 
 If you're comparing a Facebook ads agency with a freelancer, the first question is always the same: what will it cost me? I'm Aditya, a solo Meta Ads and Google Ads consultant working remotely from India. I'll tell you how the fees are usually built, what to watch for, and how I'd split a small budget.
