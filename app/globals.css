@@ -63,9 +63,32 @@
 .reveal-stagger > .reveal:nth-child(7) { transition-delay: 360ms; }
 .reveal-stagger > .reveal:nth-child(8) { transition-delay: 420ms; }
 
+/* ── Highlighter stroke (landing pages) ──
+   Mirrors the marked words in the text-only ad creative, so the ad and the
+   page share one visual signature. Sits low and covers ~42% height like a
+   real marker pass over printed type. */
+@keyframes markSweep {
+  to { background-size: 100% 42%; }
+}
+.mark {
+  background-image: linear-gradient(#FDEA6F, #FDEA6F);
+  background-repeat: no-repeat;
+  background-position: 0 88%;
+  background-size: 0% 42%;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  padding: 0 2px;
+  animation: markSweep 520ms cubic-bezier(.25,.8,.35,1) forwards;
+  animation-delay: var(--mark-delay, 0ms);
+}
+/* Inside a scroll-revealed block the stroke waits for the reveal. */
+.reveal .mark { animation: none; }
+.reveal.in .mark { animation: markSweep 520ms cubic-bezier(.25,.8,.35,1) var(--mark-delay, 0ms) forwards; }
+
 @media (prefers-reduced-motion: reduce) {
   .reveal { transition: none; opacity: 1; transform: none; }
   .animate-fadeInUp { animation: none; }
+  .mark, .reveal.in .mark { animation: none; background-size: 100% 42%; }
 }
 
 /* ── Blog article typography (see lib/blog.ts renderer) ── */
