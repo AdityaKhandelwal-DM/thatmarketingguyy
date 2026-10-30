@@ -3,7 +3,7 @@ title: Facebook Ads vs Google Ads for a Local Business: Which One First?
 description: Facebook ads vs Google ads for a local business: which to start with, how to choose by demand and budget, and what I've seen across 85 ad accounts.
 date: 2026-10-28
 keyword: facebook ads vs google ads
-image: work_analytics
+image: blog-facebook-ads-vs-google-ads-for-local-business
 ---
 
 Facebook ads vs Google ads is the question almost every local business owner asks before spending a dollar. I'm Aditya, a solo Meta Ads and Google Ads consultant. I've managed 85 ad accounts and ₹86.0L (~$103K) of spend, and I've seen each platform win and lose for local businesses.
