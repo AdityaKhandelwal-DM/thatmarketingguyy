@@ -43,6 +43,8 @@ What I can give you is how lead cost behaves across my accounts. These are from 
 
 The pattern matters more than the figures: the same business can pay ₹45 or ₹21,691 per lead depending on the objective the campaign is set to. Here is a hypothetical example. If a campaign costs $1,000 and produces 40 leads, that's $25 a lead. If 10 of them take your call and 3 book a viewing, the real cost is about $333 per viewing. That last number is the one to track.
 
+![The first call usually wins, so someone should phone every lead quickly.](ind_team_laptops)
+
 ## How I'd run it for an overseas owner
 
 I work through partner access on your Meta Business Manager, so the ad account, audiences and data stay yours. We'd agree one or two call windows a week that fit your time zone, and everything else runs on WhatsApp or email. You'd get a written report on a set schedule that shows spend, leads, how many were called, and what changes next.
