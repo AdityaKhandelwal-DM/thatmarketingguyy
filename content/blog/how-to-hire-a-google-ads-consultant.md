@@ -48,6 +48,8 @@ What I can give you is real data from my own accounts, in India, where clicks co
 
 The better approach is to work out your own number. As a hypothetical example: if a new customer is worth $400 to you and one in five enquiries becomes a customer, then you can afford to pay up to $80 for an enquiry before you lose money. Your figures will differ, but the sum is the same.
 
+![Ask any consultant what they stopped, not just what worked.](ind_businessman_office)
+
 ## What the red flags look like when they go wrong
 
 I'd rather you hear this from me. On my [results page](/results) I list the campaigns I killed.
