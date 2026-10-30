@@ -44,7 +44,7 @@ That last point is worth saying plainly, because it's where overseas buyers get 
 
 ## What proof can you check?
 
-The numbers on my [results page](/results) are the ones I use. I've managed 85 ad accounts and ₹86.0L (about $103K) in ad spend, with 72,837 leads and conversions across them. For Meta alone it's ₹51.4L (about $61K). One hair-transplant clinic's cost per chat fell from ₹93 to ₹33 (about $1.11 to $0.39), and a career institute got 2,766 leads at ₹34 (about $0.41) each. Two of my longer engagements are from before 2023 and come from my own records, which the page says.
+The numbers on my [results page](/results) are the ones I use. I've managed 89 ad accounts and ₹89.8L (about $107K) in ad spend, with 72,837 leads and conversions across them. For Meta alone it's ₹55.3L (about $66K). One hair-transplant clinic's cost per chat fell from ₹93 to ₹33 (about $1.11 to $0.39), and a career institute got 2,766 leads at ₹34 (about $0.41) each. Two of my longer engagements are from before 2023 and come from my own records, which the page says.
 
 Two of my Google Ads projects have been for overseas clients, one in Ontario and one in the UK, and both came through a third party. I'm now looking for clients directly. I'd rather say that than pretend I have a long list of US logos.
 

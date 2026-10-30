@@ -60,7 +60,7 @@ An India-based freelancer like me usually costs a fraction of a US or UK freelan
 2. **What will the report show?** Cost per lead or sale, not just impressions.
 3. **What's in the fee?** Ads built, edits, calls, reports, in writing.
 4. **Is there a lock-in?** A month-to-month arrangement keeps both sides honest.
-5. **Can they show real numbers?** I've managed 85 ad accounts and ₹86.0L (about $103K) of spend, and I list the campaigns that didn't work too.
+5. **Can they show real numbers?** I've managed 89 ad accounts and ₹89.8L (about $107K) of spend, and I list the campaigns that didn't work too.
 
 If you're still deciding who to hire, my guide on [how to hire a Facebook ads expert](/blog/how-to-hire-a-facebook-ads-expert) has the questions I'd ask.
 

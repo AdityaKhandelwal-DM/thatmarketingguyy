@@ -8,7 +8,7 @@ image: blog-google-ads-expert-vs-agency
 
 If you're searching for a Google Ads expert, you've probably noticed that most results are agencies, and the "expert" listings are marketplaces. So which one should a small business hire? I'm Aditya, a solo Google Ads and Meta Ads consultant. I'm biased, so I'll try to be fair about when an agency is the better choice.
 
-I've managed 85 ad accounts and ₹86.0L (~$103K) of spend, with ₹17.6L (about $21K) of that on Google. Here is how I'd decide if I were the owner.
+I've managed 89 ad accounts and ₹89.8L (~$107K) of spend, with ₹17.6L (about $21K) of that on Google. Here is how I'd decide if I were the owner.
 
 ## Should I hire an agency or a freelancer for Google Ads?
 

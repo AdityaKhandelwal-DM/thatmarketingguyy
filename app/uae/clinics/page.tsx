@@ -29,8 +29,8 @@ const WHATSAPP_URL = whatsappUrl(
 // ─── Data ────────────────────────────────────────────────────────────────────
 
 const trustStats = [
-  { n: "85", l: "clinic & SME ad accounts managed" },
-  { n: "AED 370K+", l: "ad spend managed to date" },
+  { n: "89", l: "clinic & SME ad accounts managed" },
+  { n: "AED 390K+", l: "ad spend managed to date" },
   { n: "72,837", l: "leads & conversions delivered" },
 ];
 
@@ -547,7 +547,7 @@ export default function UaeClinicsLanding() {
               </h2>
               <p className="text-[15.5px] md:text-[17px] text-text-secondary leading-[1.75] mt-5">
                 I am Aditya Khandelwal. For five years I have run Meta and Google Ads for
-                small businesses — 85 ad accounts across clinics, restaurants, retail and
+                small businesses — 89 ad accounts across clinics, restaurants, retail and
                 D2C, and 72,837 leads and conversions delivered. I work out of Jaipur,
                 which is why my fee is a fraction of a Dubai agency retainer and why you
                 get the person in the account instead of a layer of people around it.

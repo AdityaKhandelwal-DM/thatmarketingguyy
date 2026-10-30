@@ -1,12 +1,12 @@
 ---
 title: Why Are My Facebook Ads Not Working? 9 Fixes From 80 Real Ad Accounts
-description: The 9 reasons Facebook ads fail, taken from 85 real ad accounts and ₹86.0L (~$103K) of spend, with the exact fix for each one.
+description: The 9 reasons Facebook ads fail, taken from 89 real ad accounts and ₹89.8L (~$107K) of spend, with the exact fix for each one.
 date: 2026-08-02
 keyword: why are my facebook ads not working
 image: work_dashboard
 ---
 
-I've managed 85 ad accounts and ₹86.0L (~$103K) of spend across clinics, restaurants, D2C brands, resorts and entertainment venues. When a business owner tells me "Facebook ads don't work for us," the account almost always shows one of the same nine problems.
+I've managed 89 ad accounts and ₹89.8L (~$107K) of spend across clinics, restaurants, D2C brands, resorts and entertainment venues. When a business owner tells me "Facebook ads don't work for us," the account almost always shows one of the same nine problems.
 
 Here they are, with what each one looks like in your Ads Manager and what I actually do about it.
 

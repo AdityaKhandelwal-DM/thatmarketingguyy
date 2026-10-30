@@ -60,7 +60,7 @@ One caution: healthcare ads and listings have their own rules, and they differ b
 
 I work remotely with owners overseas. Day to day runs over WhatsApp and email, you get a written report on a set schedule, and the time gap matters less than you'd expect because ad accounts don't need a daily call. The Google Ads account stays under your business, with me given access, so you keep your campaigns and data if we ever part ways.
 
-I've managed 85 ad accounts and ₹86.0L (about $103K) of spend, with ₹17.6L of it on Google. If you're deciding between a specialist and a larger firm, I wrote about that in [Google Ads expert vs agency](/blog/google-ads-expert-vs-agency).
+I've managed 89 ad accounts and ₹89.8L (about $107K) of spend, with ₹17.6L of it on Google. If you're deciding between a specialist and a larger firm, I wrote about that in [Google Ads expert vs agency](/blog/google-ads-expert-vs-agency).
 
 ## Next step
 

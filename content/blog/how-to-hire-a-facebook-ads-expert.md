@@ -6,7 +6,7 @@ keyword: hire facebook ads expert
 image: blog-how-to-hire-a-facebook-ads-expert
 ---
 
-If you want to hire a Facebook ads expert, you're probably comparing a marketplace profile, an agency pitch and a friend's recommendation, and none of them tell you much. I'm Aditya, a solo Meta Ads and Google Ads consultant. I've managed 85 ad accounts and ₹86.0L (~$103K) of spend, so I've been on the other side of this decision many times.
+If you want to hire a Facebook ads expert, you're probably comparing a marketplace profile, an agency pitch and a friend's recommendation, and none of them tell you much. I'm Aditya, a solo Meta Ads and Google Ads consultant. I've managed 89 ad accounts and ₹89.8L (~$107K) of spend, so I've been on the other side of this decision many times.
 
 Here is what I'd want to know if I were the owner writing the cheque.
 
@@ -22,7 +22,7 @@ If you search "Facebook ads expert near me", you'll see local agencies. For most
 
 They should show you real results with real numbers, including the ones that didn't work. Ask for case studies with spend, cost per result and the time period. Be wary of screenshots with no dates and "300% growth" claims with no spend attached.
 
-On my [results page](/results) I publish portfolio totals: 85 ad accounts, ₹86.0L (~$103K) spend managed, and 72,837 leads and conversions. One education client, for example, got 2,766 leads at ₹34 (~$0.40) each. I also publish campaigns I've had to stop.
+On my [results page](/results) I publish portfolio totals: 89 ad accounts, ₹89.8L (~$107K) spend managed, and 72,837 leads and conversions. One education client, for example, got 2,766 leads at ₹34 (~$0.40) each. I also publish campaigns I've had to stop.
 
 Also ask them to describe an account they'd turn down, and why. Someone who says yes to everything is selling, not diagnosing.
 

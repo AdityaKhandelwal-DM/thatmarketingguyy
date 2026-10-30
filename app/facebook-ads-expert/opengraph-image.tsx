@@ -9,6 +9,6 @@ export default function Image() {
     platform: "meta",
     headline: "Facebook Ads Expert for Hire",
     sub: "Meta ads for small businesses, run remotely by a hands-on specialist.",
-    stats: ["$61K+ ad spend managed", "12,550 leads"],
+    stats: ["$66K+ ad spend managed", "12,550 leads"],
   });
 }

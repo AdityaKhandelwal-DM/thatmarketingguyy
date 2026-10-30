@@ -49,7 +49,7 @@ The pattern matters more than the figures: the same business can pay ₹45 or �
 
 I work through partner access on your Meta Business Manager, so the ad account, audiences and data stay yours. We'd agree one or two call windows a week that fit your time zone, and everything else runs on WhatsApp or email. You'd get a written report on a set schedule that shows spend, leads, how many were called, and what changes next.
 
-Across 85 ad accounts I've managed ₹86.0L (about $103K) of ad spend, and my results page also lists the campaigns that failed and what I did about them. Real estate is on the list of businesses I take on, so I'd start with a small test and judge it by viewings, not clicks.
+Across 89 ad accounts I've managed ₹89.8L (about $107K) of ad spend, and my results page also lists the campaigns that failed and what I did about them. Real estate is on the list of businesses I take on, so I'd start with a small test and judge it by viewings, not clicks.
 
 ## What to do next
 

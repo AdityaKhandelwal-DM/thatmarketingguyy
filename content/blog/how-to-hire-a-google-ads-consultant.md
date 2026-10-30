@@ -6,7 +6,7 @@ keyword: google ads consultant for small business
 image: blog-how-to-hire-a-google-ads-consultant
 ---
 
-If you're looking for a Google Ads consultant for a small business, you'll find plenty of confident profiles and very few ways to tell the good ones from the expensive ones. I'm Aditya, a solo Google Ads and Meta Ads consultant based in India, working remotely with owners overseas. I've managed 85 ad accounts and ₹86.0L (~$103K) of spend, ₹17.6L (about $21K) of it on Google.
+If you're looking for a Google Ads consultant for a small business, you'll find plenty of confident profiles and very few ways to tell the good ones from the expensive ones. I'm Aditya, a solo Google Ads and Meta Ads consultant based in India, working remotely with owners overseas. I've managed 89 ad accounts and ₹89.8L (~$107K) of spend, ₹17.6L (about $21K) of it on Google.
 
 I've also made the mistakes a bad consultant makes, and I publish them. These are the seven red flags I'd check for if I were hiring.
 
