@@ -29,7 +29,7 @@ Here is what I'd put in it:
 
 I'd also send each lead to you by WhatsApp or email the moment it arrives, because the first call wins most of the time.
 
-![A weekly report should show cost per lead and how many leads were actually called back.](work_dashboard)
+![A good report should show cost per lead and how many leads were actually called back.](work_dashboard)
 
 ## How much do real estate leads cost on Facebook?
 
