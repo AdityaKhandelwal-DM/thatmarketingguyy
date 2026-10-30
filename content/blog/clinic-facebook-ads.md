@@ -3,7 +3,7 @@ title: Clinic Facebook Ads: The Setup Behind 78% More Walk-ins
 description: Clinic Facebook ads that fill appointment books: what I set up for a skin clinic that saw 78% more walk-ins, what the lead form should ask, and the rules.
 date: 2026-10-25
 keyword: clinic facebook ads
-image: clinic_consult
+image: blog-clinic-facebook-ads
 ---
 
 Clinic Facebook ads can work well, but only if the ad is the first half of a system and not the whole thing. I'm Aditya, a solo Meta Ads and Google Ads consultant. I work remotely with owners overseas, and clinics are one of the businesses I know best.
@@ -28,7 +28,7 @@ The principles I'd apply to any clinic:
 4. **A fast callback.** The leads are only worth something if someone answers.
 5. **A listing that backs up the ad.** Hours, reviews and a booking button, all up to date.
 
-![A clinic's phone is its most important piece of ad equipment.](clinic_med)
+![Track every enquiry from the ad to the booked appointment.](work_dashboard)
 
 ## What should a clinic's lead form ask?
 
