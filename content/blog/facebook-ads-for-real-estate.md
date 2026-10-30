@@ -3,7 +3,7 @@ title: Facebook Ads for Real Estate: Lead Forms That Turn Into Site Visits
 description: Facebook ads for real estate can work, if leads get a fast callback. How I'd set up lead forms for agents, what leads cost, and what to ask a specialist.
 date: 2026-10-16
 keyword: facebook ads for real estate
-image: fb_showroom
+image: blog-facebook-ads-for-real-estate
 ---
 
 Facebook ads for real estate work when the lead form is built to produce a conversation, and when someone calls the lead back quickly. They fail when the form fills up with names nobody ever phones. I'm Aditya, a solo Meta Ads and Google Ads consultant working remotely from India with owners overseas, and this is how I'd approach facebook ads real estate campaigns for an agent or small agency.
