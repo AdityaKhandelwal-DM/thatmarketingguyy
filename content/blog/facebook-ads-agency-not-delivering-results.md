@@ -38,6 +38,8 @@ I publish my own failures on my [results page](/results), including a skincare l
 
 ![A useful report shows cost per lead and what's changing, not just reach.](work_dashboard)
 
+![Ask for your numbers in writing before you decide to leave.](ind_entrepreneur_laptop)
+
 ## What should I ask my agency before I leave?
 
 Ask these in writing, so you have a record:
