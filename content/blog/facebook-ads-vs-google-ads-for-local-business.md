@@ -54,6 +54,8 @@ Yes, and I've done it. A Google call campaign for an education client spent ₹4
 
 Both are published on my results page under the campaigns I killed. Platform choice matters, but setup matters as much. A good platform with a loose setup still burns money.
 
+![Work out what a customer is worth before you pick a platform.](ind_business_desk)
+
 ## How much should a local business spend to test?
 
 I'd rather not quote a magic number, because it depends on your market and what a customer is worth. What I can say is that Meta needs roughly 50 conversion events a week per ad set before it settles, so on small budgets expect two to four weeks before results mean anything. Google Search can show signal sooner, because intent is already there.
