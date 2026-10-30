@@ -38,6 +38,8 @@ I'd add one question that filters, such as the treatment or preferred day, and n
 
 Then set a rule in the clinic: someone calls within an hour in opening hours. This is where most clinic campaigns quietly fail. In my own results, a nightlife venue was paying ₹2,264 (about $27) per lead because the form leads were never being called back. I restructured it to a conversation objective. The ad wasn't the problem, the follow-up was.
 
+![Fewer, better enquiries beat a pile of cheap ones.](ind_doctor_patient)
+
 ## Does it get cheaper with better targeting of intent?
 
 A hair transplant clinic I worked with is a good example. High-ticket consultations were buried under unqualified enquiries. I moved to conversation ads with creative tuned for intent instead of volume. Cost per chat went from ₹93 to ₹33 (about $1.11 to $0.40), on ₹92K of spend (about $1,100), with 12.5L reach.
