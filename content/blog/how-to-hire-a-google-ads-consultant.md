@@ -3,7 +3,7 @@ title: How to Hire a Google Ads Consultant: 7 Red Flags That Cost You Money
 description: Hiring a Google Ads consultant for a small business? 7 red flags to spot before you pay, plus who should own the account and what a report must show.
 date: 2026-10-13
 keyword: google ads consultant for small business
-image: work_analytics
+image: blog-how-to-hire-a-google-ads-consultant
 ---
 
 If you're looking for a Google Ads consultant for a small business, you'll find plenty of confident profiles and very few ways to tell the good ones from the expensive ones. I'm Aditya, a solo Google Ads and Meta Ads consultant based in India, working remotely with owners overseas. I've managed 85 ad accounts and ₹86.0L (~$103K) of spend, ₹17.6L (about $21K) of it on Google.
