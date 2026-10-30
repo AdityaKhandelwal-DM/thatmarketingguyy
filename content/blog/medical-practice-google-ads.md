@@ -30,6 +30,8 @@ What I can show you is real accounts. A physio clinic's YouTube campaign, optimi
 
 A better test than "is it cheap" is this simple sum. Here is a **hypothetical example**, not a client result. If a new patient is worth $400 to you in the first year and you convert one in four enquiries, you can afford up to $100 per enquiry before you lose money. Your numbers will differ, so work yours out first.
 
+![A booked appointment, not a click, is the number that matters.](clinic_dental_room)
+
 ## What does a new patient really cost, then?
 
 A new patient costs your cost per enquiry divided by the share of enquiries that become booked patients. The second figure is the one most owners never measure.
