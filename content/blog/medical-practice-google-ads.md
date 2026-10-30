@@ -6,7 +6,7 @@ keyword: medical practice google ads
 image: clinic_med
 ---
 
-If you run a clinic or dental practice, medical practice Google Ads can fill your diary with people who are already searching for a treatment. It can also burn a month of budget on clicks that never book. I'm Aditya, a solo Google Ads and Meta Ads consultant, and I've run ads for clinics for years.
+If you run a clinic or dental practice, medical practice Google Ads can fill your diary with people who are already searching for a treatment. It can also burn a month of budget on clicks that never book. I'm Aditya, a solo Google Ads and Meta Ads consultant, and clinics are among the accounts I've run.
 
 This post covers what a new patient really costs, how to judge a number someone quotes you, and what I'd check before spending a dollar.
 
