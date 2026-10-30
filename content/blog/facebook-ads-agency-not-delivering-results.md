@@ -3,7 +3,7 @@ title: Facebook Ads Agency Not Delivering Results? 7 Signs and What to Do Next
 description: Facebook ads agency not delivering results? Seven signs it's the agency, not the ads, how long ads need, and how to get your ad account back.
 date: 2026-10-19
 keyword: facebook ads agency not delivering results
-image: work_analytics
+image: blog-facebook-ads-agency-not-delivering-results
 ---
 
 If your Facebook ads agency is not delivering results, you're probably paying every month for reports you can't read and leads you can't use. I'm Aditya, a solo Meta Ads and Google Ads consultant. I've managed 85 ad accounts and ₹86.0L (~$103K) of ad spend, and some of those accounts came to me after another agency had been running them.
@@ -36,7 +36,7 @@ Before you decide, work out whether the issue is the ads or what happens after t
 
 I publish my own failures on my [results page](/results), including a skincare launch that returned 0.11× ROAS and was paused at ₹4.7K (about $56) because the offer was wrong. An honest agency can show you what they stopped and why.
 
-![A useful report shows cost per lead and what's changing, not just reach.](work_analytics)
+![A useful report shows cost per lead and what's changing, not just reach.](work_dashboard)
 
 ## What should I ask my agency before I leave?
 
