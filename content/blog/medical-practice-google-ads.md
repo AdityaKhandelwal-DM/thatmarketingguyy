@@ -3,7 +3,7 @@ title: "Medical Practice Google Ads: What a New Patient Really Costs"
 description: Medical practice Google Ads for clinics and dental practices: is it worth it, what a good cost per patient enquiry looks like, and how to check your own.
 date: 2026-10-22
 keyword: medical practice google ads
-image: clinic_med
+image: blog-medical-practice-google-ads
 ---
 
 If you run a clinic or dental practice, medical practice Google Ads can fill your diary with people who are already searching for a treatment. It can also burn a month of budget on clicks that never book. I'm Aditya, a solo Google Ads and Meta Ads consultant, and clinics are among the accounts I've run.
@@ -21,8 +21,6 @@ That intent is why I start clinics on Google rather than Meta when budget is tig
 3. **Someone answering:** an enquiry that sits unanswered for a day is paid-for and wasted.
 
 If you can't cover those, fix them before you raise the budget.
-
-![A clinician talking a patient through a consultation.](clinic_consult)
 
 ## What's a good cost per patient enquiry?
 
