@@ -28,7 +28,7 @@ Here is the rule of thumb I use:
 - **Choose Meta first:** restaurants, event venues, resorts, D2C products, gyms, anything people choose on impulse or on looks.
 - **Use both:** once the first one pays back and you have budget left over.
 
-Across the site's numbers, I've run 69 Meta accounts (₹51.4L, 12,550 form leads) and 14 Google accounts (₹17.6L, 60,287 conversions such as calls, direction requests and form fills). I'm comfortable on both, so I'm not pushing you toward the one I like.
+Across my accounts, I've run 69 Meta accounts (₹51.4L, 12,550 form leads) and 14 Google accounts (₹17.6L, 60,287 conversions such as calls, direction requests and form fills). I'm comfortable on both, so I'm not pushing you toward the one I like.
 
 ## What does each look like for a local business?
 
