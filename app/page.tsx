@@ -282,8 +282,8 @@ export default function Home() {
           <div className="grid grid-cols-3 gap-4 text-center">
             {[
               { n: "89",     l: "Ad accounts managed" },
-              { n: "₹89.8L", l: "Ad spend managed (~$107K)" },
-              { n: "72,837", l: "Leads & conversions delivered" },
+              { n: "₹93.4L", l: "Ad spend managed (~$112K)" },
+              { n: "79,212", l: "Leads & conversions delivered" },
             ].map((c, i) => (
               <div key={i} className={`px-2 relative ${i > 0 ? "border-l border-border" : ""}`}>
                 <CountUp

@@ -16,7 +16,7 @@ import { GoogleLogo, MetaLogo } from "@/components/ui/BrandLogos";
    Figures come from three sources. The first two are auditable; the third
    is not, and is included at the owner's explicit instruction:
      - Meta Ads API, date_preset=maximum, pulled at ad_account level (Rs 55.3L, 73 accounts: 62 pulled live with spend + 11 at last-known figures)
-     - Google Ads "All time" campaign report export, manager account (Rs 17.6L; "All time" to 20 Aug + 20 Aug-30 Sep campaign report)
+     - Google Ads "All time" campaign report export, manager account (Rs 21.1L; "All time" to 20 Aug + 20 Aug-30 Sep + 1 Oct-5 Nov campaign reports)
      - Two pre-2023 engagements (Textile Exporter, Block-Print D2C, Rs 17.0L)
        reported from the owner's records. Those ad accounts are no longer
        shared and cannot be exported. If either client ever re-shares the
@@ -32,7 +32,7 @@ import { GoogleLogo, MetaLogo } from "@/components/ui/BrandLogos";
    - Each case row below is a single CAMPAIGN, not an account total. Mixing
      the two would misstate cost-per-result, so don't.
 
-   Client names withheld; numbers unmodified. Meta last synced 30 Oct 2026; Google last synced 30 Sep 2026.
+   Client names withheld; numbers unmodified. Meta last synced 30 Oct 2026; Google last synced 5 Nov 2026.
    ───────────────────────────────────────────────────────────────────────── */
 
 const filters = [
@@ -47,9 +47,9 @@ const filters = [
 ];
 
 const portfolio: { k: string; v: string; sub?: string }[] = [
-  { k: "Ad spend managed", v: "₹89.8L", sub: "≈ $107K" },
+  { k: "Ad spend managed", v: "₹93.4L", sub: "≈ $112K" },
   { k: "Best ROAS", v: "8.2×", sub: "textile D2C" },
-  { k: "Leads & conversions", v: "72,837" },
+  { k: "Leads & conversions", v: "79,212" },
   { k: "Ad accounts", v: "89" },
 ];
 
@@ -378,8 +378,8 @@ export default function ResultsPage() {
           </div>
           <p className="text-[12px] text-text-muted mt-3">
             73 Meta accounts (₹55.3L, 12,550 form leads) and 14 Google accounts
-            (₹17.6L, 60,287 conversions: calls, direction requests and form
-            fills) are pulled from live Ads reporting (Meta last synced 30 Oct 2026, Google 30 Sep 2026).
+            (₹21.1L, 66,662 conversions: calls, direction requests and form
+            fills) are pulled from live Ads reporting (Meta last synced 30 Oct 2026, Google 5 Nov 2026).
             Two pre-2023 engagements (₹17.0L) are reported from our own records;
             those accounts have since closed.
           </p>

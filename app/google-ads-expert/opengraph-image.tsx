@@ -9,6 +9,6 @@ export default function Image() {
     platform: "google",
     headline: "Google Ads Expert for Hire",
     sub: "Google Search, Maps and YouTube ads that bring calls, not clicks.",
-    stats: ["$21K+ ad spend managed", "60,287 conversions"],
+    stats: ["$25K+ ad spend managed", "66,662 conversions"],
   });
 }

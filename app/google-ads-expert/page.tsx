@@ -6,7 +6,7 @@ import { Search, Store, MapPin, PlayCircle, Gauge, Scissors } from "lucide-react
 /*
  * Hire-intent page for "google ads expert / specialist / consultant".
  * Every number here is copied from /results (Google Ads manager-account
- * exports, last synced 30 Sep 2026). $ conversions use ~₹83.6 = $1.
+ * exports, last synced 5 Nov 2026). $ conversions use ~₹83.6 = $1.
  */
 
 const services = [
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   // stays under ~60 characters and isn't cut off in Google's results.
   title: { absolute: "Google Ads Expert for Hire | Google Ads Specialist" },
   description:
-    "Hire a Google Ads expert for your small business in the US, UK, UAE or Australia. $21K+ in ad spend managed, 60,287 conversions. You keep the ad account.",
+    "Hire a Google Ads expert for your small business in the US, UK, UAE or Australia. $25K+ in ad spend managed, 66,662 conversions. You keep the ad account.",
   keywords: [
     "google ads expert",
     "google ads specialist",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Google Ads Expert for Hire | Google Ads Specialist",
-    description: "Hire a Google Ads expert for your small business in the US, UK, UAE or Australia. $21K+ in ad spend managed, 60,287 conversions. You keep the ad account.",
+    description: "Hire a Google Ads expert for your small business in the US, UK, UAE or Australia. $25K+ in ad spend managed, 66,662 conversions. You keep the ad account.",
     url: "/google-ads-expert",
     type: "website",
     siteName: "thatmarketingguy",
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Google Ads Expert for Hire | Google Ads Specialist",
-    description: "Hire a Google Ads expert for your small business in the US, UK, UAE or Australia. $21K+ in ad spend managed, 60,287 conversions. You keep the ad account.",
+    description: "Hire a Google Ads expert for your small business in the US, UK, UAE or Australia. $25K+ in ad spend managed, 66,662 conversions. You keep the ad account.",
   },
 };
 
@@ -98,12 +98,12 @@ export default function GoogleAdsExpertPage() {
       PlatformLogo={GoogleAdsLogo}
       platformName="Google Ads"
       stats={[
-        { k: "Google spend managed", v: "₹17.6L", sub: "≈ $21K" },
+        { k: "Google spend managed", v: "₹21.1L", sub: "≈ $25K" },
         { k: "Google Ads accounts", v: "14" },
-        { k: "Conversions", v: "60,287" },
+        { k: "Conversions", v: "66,662" },
         { k: "Best ROAS", v: "18.6×", sub: "clinic, YouTube" },
       ]}
-      statsNote="Lifetime figures from Google Ads manager-account reports, last synced 30 Sep 2026. Conversions are calls, direction requests and form fills."
+      statsNote="Lifetime figures from Google Ads manager-account reports, last synced 5 Nov 2026. Conversions are calls, direction requests and form fills."
       headings={{
         services: "What I do as your Google Ads specialist",
         industries: "Industries I run Google Ads for",
