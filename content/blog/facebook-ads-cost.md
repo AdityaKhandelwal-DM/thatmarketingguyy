@@ -3,7 +3,7 @@ title: Facebook Ads Cost: What I've Seen Across 89 Ad Accounts
 description: Facebook ads cost and price explained, with real cost-per-lead numbers from 89 accounts I've managed, and whether $10 or $50 a day is a good budget.
 date: 2026-10-31
 keyword: facebook ads cost
-image: work_analytics
+image: blog-facebook-ads-cost
 ---
 
 Facebook ads cost whatever you tell Meta to spend, plus whatever you pay someone to run them. The real question is what you get back for each dollar. I'm Aditya, a solo Meta Ads and Google Ads consultant working remotely from India, and I've managed 89 ad accounts. Here is what I can say about Facebook ads cost and price, using only numbers I can show you.
