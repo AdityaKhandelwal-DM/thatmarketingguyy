@@ -58,7 +58,7 @@ If budget is tight, I'd start with Google for walk-in and reservation intent, th
 
 ## Working with me from overseas
 
-If you own a restaurant in the US, UK, UAE, Australia or Singapore, the time zone gap is easier than you'd think. I work remotely, you get a written report on a fixed schedule, and day-to-day messages go through email or WhatsApp. The ad account stays in your name, and you keep full access. I've managed 89 ad accounts and ₹89.8L (about $107K) of ad spend, and the results page also lists campaigns that failed.
+If you own a restaurant in the US, UK, UAE, Australia or Singapore, the time zone gap is easier than you'd think. I work remotely, you get a written report on a fixed schedule, and day-to-day messages go through email or WhatsApp. The ad account stays in your name, and you keep full access. I've managed 89 ad accounts and ₹93.4L (about $112K) of ad spend, and the results page also lists campaigns that failed.
 
 ## A hypothetical example
 

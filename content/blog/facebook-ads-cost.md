@@ -12,7 +12,7 @@ One thing up front. My numbers come from Indian campaigns, where clicks and lead
 
 ## What my own accounts show
 
-Across the 89 accounts I've managed, total ad spend is ₹89.8L (about $107K), and the campaigns have produced 72,837 leads and conversions. That portfolio includes Google Ads too. Every figure is on my [results page](/results), with the client names withheld.
+Across the 89 accounts I've managed, total ad spend is ₹93.4L (about $112K), and the campaigns have produced 79,212 leads and conversions. That portfolio includes Google Ads too. Every figure is on my [results page](/results), with the client names withheld.
 
 Here are some Facebook and Instagram campaigns from it. Each is one campaign, not a whole account:
 

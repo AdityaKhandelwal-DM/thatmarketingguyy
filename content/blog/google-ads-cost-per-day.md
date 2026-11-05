@@ -8,7 +8,7 @@ image: blog-google-ads-cost-per-day
 
 Google ads cost is the first thing most owners ask me about, and the honest answer is that there is no single price. What you pay depends on your country, your industry and how many competitors want the same search. I'm Aditya, a solo Google Ads and Meta Ads consultant based in India, working remotely with small businesses overseas. Here is how I think about a daily budget.
 
-I've managed 89 ad accounts and ₹89.8L (about $107K) of ad spend, ₹17.6L (about $21K) of it on Google. I can't tell you what a click costs in your city today. I can show you how I decide what to spend, and what happens when the budget is set wrong.
+I've managed 89 ad accounts and ₹93.4L (about $112K) of ad spend, ₹21.1L (about $25K) of it on Google. I can't tell you what a click costs in your city today. I can show you how I decide what to spend, and what happens when the budget is set wrong.
 
 ## What does Google Ads cost in the first place?
 
