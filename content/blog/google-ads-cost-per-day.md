@@ -3,7 +3,7 @@ title: Google Ads Cost: How Much Should You Spend Per Day?
 description: Google ads cost explained for small businesses: is $10 or $20 a day enough, what a good budget looks like, and how I test before spending more.
 date: 2026-11-01
 keyword: google ads cost
-image: work_charts
+image: blog-google-ads-cost-per-day
 ---
 
 Google ads cost is the first thing most owners ask me about, and the honest answer is that there is no single price. What you pay depends on your country, your industry and how many competitors want the same search. I'm Aditya, a solo Google Ads and Meta Ads consultant based in India, working remotely with small businesses overseas. Here is how I think about a daily budget.
