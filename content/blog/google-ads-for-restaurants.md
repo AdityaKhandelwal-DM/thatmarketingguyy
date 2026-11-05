@@ -3,7 +3,7 @@ title: "Google Ads for Restaurants: How to Fill Tables, Not Just Get Clicks"
 description: Google ads for restaurants work when you target hungry people nearby and measure calls and directions, not clicks. What I run and what to check.
 date: 2026-11-04
 keyword: google ads for restaurants
-image: rest_dining
+image: blog-google-ads-for-restaurants
 ---
 
 Google ads for restaurants can fill tables, but only if you measure the right thing. A click is not a booking. A phone call, a "get directions" tap or a reservation is. I'm Aditya, a solo Google Ads and Meta Ads consultant working remotely from India, and restaurants are one of the categories I've run the most.
@@ -18,7 +18,7 @@ They work less well if your whole plan is brand awareness, or if your listing is
 
 Restaurants also vary a lot. A neighbourhood café, a fine-dining room and a cloud kitchen need different setups. That's why I start with one outlet, one goal and a short list of searches.
 
-## What kind of Google ads should a restaurant run? (local ads food business)
+## What kind of Google ads should a restaurant run?
 
 For a local food business, I usually start with two things:
 
