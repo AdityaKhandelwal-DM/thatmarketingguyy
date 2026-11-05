@@ -35,7 +35,7 @@ H2/H3 in the searcher's wording.
 | 10 | done 2026-10-28 | Both | Facebook Ads vs Google Ads for a Local Business: Which One First? | facebook ads vs google ads (480) · google ads vs meta ads (110) | facebook ads or google ads (70) · Which platform is better for small business ads? |
 | 11 | done 2026-10-31 | Meta | How Much Do Facebook Ads Cost in 2026? Real Numbers From 89 Ad Accounts | facebook ads cost (1.6K) · facebook ads price (1.6K) | How much should I spend a day on Facebook ads? · Is $10 a day good for Facebook ads? · Is $50 a day good for Meta ads? |
 | 12 | done 2026-11-01 | Google | How Much Should I Spend on Google Ads Per Day? | google ads cost (3.6K) · google ads pricing (3.6K) | Is $10 a day enough for Google Ads? · Is $20 a day good for Google Ads? · What's a good budget for Google Ads? |
-| 13 | todo | Google | Google Ads for Restaurants: How to Fill Tables, Not Just Get Clicks | google ads for restaurants (76, difficulty 3) · restaurant google map ads (n/m) | local ads food business · Do Google Ads work for restaurants? |
+| 13 | done 2026-11-04 | Google | Google Ads for Restaurants: How to Fill Tables, Not Just Get Clicks | google ads for restaurants (76, difficulty 3) · restaurant google map ads (n/m) | local ads food business · Do Google Ads work for restaurants? |
 | 14 | todo | Meta | Are Facebook Ads Worth It for Small Business? An Honest Answer | are facebook ads worth it (210) · facebook ads for business (4.4K) | Is it worth paying for ads on Facebook? · are facebook ads effective (40) |
 | 15 | todo | Google | Google Ads vs SEO: Where a Small Business Should Spend First | google ads and seo (390) · google ads vs seo (170) | google ads vs local service ads (70) |
 
