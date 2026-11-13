@@ -3,7 +3,7 @@ title: "Google Ads vs SEO: Where a Small Business Should Spend First"
 description: Google Ads vs SEO for a small business: which to fund first, how fast each works, and how local service ads fit. Honest advice from a Google Ads consultant.
 date: 2026-11-10
 keyword: google ads vs seo
-image: work_charts
+image: blog-google-ads-vs-seo
 ---
 
 Google Ads vs SEO is a question I get from almost every new owner, and the honest answer is: it depends on how fast you need enquiries and how much search demand already exists. I'm Aditya, a solo Google Ads and Meta Ads consultant working remotely from India with small businesses overseas. I run both paid ads and local SEO, so I have no reason to push one over the other.
