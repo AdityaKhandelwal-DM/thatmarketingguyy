@@ -3,7 +3,7 @@ title: Are Facebook Ads Worth It for Small Business? An Honest Answer
 description: Are Facebook ads worth it for a small business? When they pay off, when they don't, and what 89 ad accounts I've managed actually show.
 date: 2026-11-13
 keyword: are facebook ads worth it
-image: work_analytics
+image: blog-are-facebook-ads-worth-it-for-small-business
 ---
 
 Are Facebook ads worth it? Sometimes yes, sometimes no, and anyone who says "always" is selling something. I'm Aditya, a solo Meta Ads and Google Ads consultant working remotely from India with small businesses overseas. I've managed 89 ad accounts, so I've seen both outcomes.
