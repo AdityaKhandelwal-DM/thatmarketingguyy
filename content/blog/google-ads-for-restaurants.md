@@ -1,12 +1,14 @@
 ---
 title: "Google Ads for Restaurants: How to Fill Tables, Not Just Get Clicks"
-description: Google ads for restaurants work when you target hungry people nearby and measure calls and directions, not clicks. What I run and what to check.
+metaTitle: "Google Ads for Restaurants: Fill Tables, Not Clicks"
+description: Google Ads (AdWords) for restaurants: the setup that brings calls, directions and bookings, what to track, and what restaurant ads management covers.
 date: 2026-11-04
+updated: 2026-11-18
 keyword: google ads for restaurants
 image: blog-google-ads-for-restaurants
 ---
 
-Google ads for restaurants can fill tables, but only if you measure the right thing. A click is not a booking. A phone call, a "get directions" tap or a reservation is. I'm Aditya, a solo Google Ads and Meta Ads consultant working remotely from India, and restaurants are one of the categories I've run the most.
+Google ads for restaurants can fill tables, but only if you measure the right thing. A click is not a booking. A phone call, a "get directions" tap or a reservation is. I'm Aditya, a solo Google Ads and Meta Ads consultant working remotely from India, and restaurants are one of the categories I've run the most. If you still call it AdWords, it's the same thing: Google renamed AdWords to Google Ads in 2018.
 
 This post covers how I set up Google ads for a restaurant, what to track, and how to tell whether your agency is filling tables or just buying clicks.
 
@@ -50,6 +52,19 @@ Three habits make the difference:
 
 Also add negative keywords early, such as jobs, recipes and delivery apps if you don't deliver. Otherwise you pay for people who never wanted a table.
 
+## Restaurant Google Ads management: what should be included?
+
+Whether you hire me, an agency or someone in-house, restaurant Google Ads management should cover the same basics every month:
+
+- A weekly look at the search terms, with wrong ones blocked
+- Ad hours set around when people decide where to eat, per outlet
+- Separate campaigns for each location, so you can see which one gets the calls
+- Calls, "get directions" taps and bookings tracked as results
+- Ads updated for seasons, events and set menus, not left running all year
+- A written report on a fixed schedule showing cost per call, direction tap or booking
+
+If your report only shows clicks and impressions, ask for the cost per action. If nobody can give it to you, that's your answer.
+
 ## Should I use Google or Meta for my restaurant?
 
 Often both, but in an order. Google catches people who are already hungry and searching. Meta (Facebook and Instagram) creates interest, which suits offers, events and party bookings. For example, my results page lists a restaurant party-bookings campaign on Meta that produced 301 leads at ₹77 (about $0.92) each.
@@ -64,8 +79,26 @@ If you own a restaurant in the US, UK, UAE, Australia or Singapore, the time zon
 
 This is an illustration, not a client result. Say a restaurant spends $20 a day and gets 40 calls and direction taps in a month. If the spend is about $600, that's roughly $15 per action. If half of those people book a table, each booking costs around $30. Whether that is good depends on how much a table spends. Work that number out before you hire anyone.
 
+## Frequently asked questions
+
+### Is AdWords the same as Google Ads for restaurants?
+
+Yes. Google renamed AdWords to Google Ads in 2018. Everything you read about "AdWords for restaurants" applies to Google Ads today.
+
+### How much should a restaurant spend on Google Ads?
+
+Work backwards from what a table spends and how many bookings you need, then test for a few weeks. I explain the method in [how much to spend on Google Ads per day](/blog/google-ads-cost-per-day).
+
+### Are Google Maps ads worth it for restaurants?
+
+Usually, when your Google Business Profile is complete with photos, hours and a menu. Diners often decide on Maps, close to the venue, so the call and directions buttons do the work.
+
+### Do I need a website to run Google Ads for my restaurant?
+
+It helps, but a strong Google Business Profile with your menu can carry map-led ads at first. If you send people to a website, it has to load fast on a phone.
+
 ## The short version
 
 Target hungry people nearby, track calls and directions, run each outlet separately and answer your phone. Ignore click counts on their own.
 
-If you want help, you can [hire a Google Ads expert](/google-ads-expert) who shows his numbers. Look at the [results](/results) first, including what went wrong, then [get in touch](/contact) with your restaurant, your area and your budget. I'll tell you honestly whether Google Ads makes sense for you right now.
+If you want help, you can [hire a Google Ads expert](/google-ads-expert) who shows you the numbers. Look at the [results](/results) first, including what went wrong, then [get in touch](/contact) with your restaurant, your area and your budget. I'll tell you honestly whether Google Ads makes sense for you right now.
