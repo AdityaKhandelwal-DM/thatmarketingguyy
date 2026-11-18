@@ -17,10 +17,18 @@ export interface PostMeta {
   keyword: string;
   image: string; // name of a file in /public/images (no extension)
   readMinutes: number;
+  metaTitle?: string; // <title> for Google when it should differ from the H1
+  updated?: string; // YYYY-MM-DD of the last meaningful refresh
+}
+
+export interface FaqItem {
+  q: string;
+  a: string;
 }
 
 export interface Post extends PostMeta {
   html: string;
+  faq: FaqItem[];
 }
 
 function parseFrontmatter(raw: string): { meta: Record<string, string>; body: string } {
@@ -113,6 +121,33 @@ export function renderMarkdown(md: string): string {
   return out.join("\n");
 }
 
+/**
+ * Questions under a "## Frequently asked questions" (or "## FAQ") section:
+ * each "### Question" plus the text up to the next heading. Feeds FAQPage
+ * structured data on the post page.
+ */
+export function extractFaq(md: string): FaqItem[] {
+  const lines = md.split("\n");
+  const start = lines.findIndex((l) => /^## (frequently asked questions|faqs?)\b/i.test(l.trim()));
+  if (start < 0) return [];
+  const items: FaqItem[] = [];
+  let q: string | null = null;
+  let a: string[] = [];
+  const plain = (t: string) =>
+    t.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/\*\*?([^*]+)\*\*?/g, "$1").replace(/^[-*] |^\d+\. /, "").trim();
+  const push = () => {
+    if (q && a.length) items.push({ q: plain(q), a: a.map(plain).join(" ") });
+  };
+  for (const raw of lines.slice(start + 1)) {
+    const t = raw.trim();
+    if (/^## /.test(t)) break;
+    if (/^### /.test(t)) { push(); q = t.slice(4); a = []; continue; }
+    if (q && t && !t.startsWith("![")) a.push(t);
+  }
+  push();
+  return items;
+}
+
 export function getAllPosts(): PostMeta[] {
   if (!fs.existsSync(BLOG_DIR)) return [];
   return fs
@@ -129,6 +164,8 @@ export function getAllPosts(): PostMeta[] {
         keyword: meta.keyword ?? "",
         image: meta.image ?? "work_dashboard",
         readMinutes: Math.max(2, Math.round(body.split(/\s+/).length / 220)),
+        metaTitle: meta.metaTitle || undefined,
+        updated: meta.updated || undefined,
       };
     })
     .sort((a, b) => (a.date < b.date ? 1 : -1));
@@ -147,6 +184,9 @@ export function getPost(slug: string): Post | null {
     keyword: meta.keyword ?? "",
     image: meta.image ?? "work_dashboard",
     readMinutes: Math.max(2, Math.round(body.split(/\s+/).length / 220)),
+    metaTitle: meta.metaTitle || undefined,
+    updated: meta.updated || undefined,
     html: renderMarkdown(body),
+    faq: extractFaq(body),
   };
 }

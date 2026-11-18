@@ -21,14 +21,16 @@ export async function generateMetadata({
   const post = getPost(slug);
   if (!post) return {};
   return {
-    title: post.title,
+    // metaTitle is written to fit Google's ~60 characters on its own, so it
+    // skips the "| thatmarketingguy" suffix.
+    title: post.metaTitle ? { absolute: post.metaTitle } : post.title,
     description: post.description,
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
-      title: post.title,
+      title: post.metaTitle ?? post.title,
       description: post.description,
       type: "article",
-      images: [{ url: `/images/${post.image}.webp`, width: 1200, height: 800 }],
+      images: [{ url: `/images/${post.image}.webp`, width: 1200, height: 630 }],
     },
   };
 }
@@ -61,7 +63,7 @@ export default async function PostPage({
     headline: post.title,
     description: post.description,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.updated ?? post.date,
     image: `https://www.thatmarketingguyy.com/images/${post.image}.webp`,
     author: {
       "@type": "Person",
@@ -69,6 +71,18 @@ export default async function PostPage({
       url: "https://www.thatmarketingguyy.com/about",
     },
   };
+
+  const faqLd = post.faq.length
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: post.faq.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      }
+    : null;
 
   return (
     <>
@@ -138,6 +152,12 @@ export default async function PostPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }}
       />
+      {faqLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+        />
+      )}
 
       <BreadcrumbLd
         trail={[

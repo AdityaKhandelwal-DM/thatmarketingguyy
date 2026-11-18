@@ -1,7 +1,14 @@
 # Blog queue — what to write next
 
-Take the first row whose Status is `todo`, write it (rules in content/blog/README.md), then
-change its Status to `done YYYY-MM-DD` in the same commit.
+Take the first row whose Status is `todo` **and that has no open pull request
+yet** (check `gh pr list --state open`; skip any row whose slug already has an
+open `blog/<slug>` PR), write it (rules in content/blog/README.md), then change
+its Status to `done YYYY-MM-DD` in the same commit.
+
+From row 16 on, every row has a **brief** in `content/blog-briefs/<slug>.md`:
+meta title, meta description, H1, keywords, outline, FAQ, proof points, links
+and images are decided there. Build the post from the brief; the shared rules
+are in `content/blog-briefs/README.md`.
 
 **Goal (Oct 2026 – Mar 2027): win international clients.** The reader is a
 small-business owner in the US, UK, UAE, Australia or Singapore who is
@@ -38,6 +45,23 @@ H2/H3 in the searcher's wording.
 | 13 | done 2026-11-04 | Google | Google Ads for Restaurants: How to Fill Tables, Not Just Get Clicks | google ads for restaurants (76, difficulty 3) · restaurant google map ads (n/m) | local ads food business · Do Google Ads work for restaurants? |
 | 14 | done 2026-11-13 | Meta | Are Facebook Ads Worth It for Small Business? An Honest Answer | are facebook ads worth it (210) · facebook ads for business (4.4K) | Is it worth paying for ads on Facebook? · are facebook ads effective (40) |
 | 15 | done 2026-11-10 | Google | Google Ads vs SEO: Where a Small Business Should Spend First | google ads and seo (390) · google ads vs seo (170) | google ads vs local service ads (70) |
+| 16 | todo | Google | Google Ads Consultation: What You Should Get From the First Call | google ads consultation (GSC: 25 impr, pos 10.7) | [brief](blog-briefs/google-ads-consultation.md) |
+| 17 | todo | Meta | Meta Ads Not Spending? 8 Reasons Your Facebook Ads Aren't Delivering | meta ads not spending (ATP) · "not working" cluster (GSC pos 35–68) | [brief](blog-briefs/meta-ads-not-spending.md) |
+| 18 | todo | Google | Is Google Ads Worth It for a Small Business in 2026? An Honest Answer | is google ads worth it for small business (ATP PAA ×4) | [brief](blog-briefs/is-google-ads-worth-it-for-small-business.md) |
+| 19 | todo | Meta | Facebook Ads for Ecommerce Brands: Agency, Freelancer or In-House? | facebook ads agency for ecommerce (ATP 40) | [brief](blog-briefs/facebook-ads-for-ecommerce.md) |
+| 20 | todo | Google | When Should an Ecommerce Brand Hire a Google Ads Agency Instead of a Freelancer? | google ads agency vs freelancer (GSC pos 73–82) | [brief](blog-briefs/google-ads-agency-vs-freelancer-for-ecommerce.md) |
+| 21 | todo | Meta | Facebook Ads for Local Service Businesses: What Actually Brings Booked Jobs | facebook ads for local service businesses (GSC pos 66) | [brief](blog-briefs/facebook-ads-for-local-service-businesses.md) |
+| 22 | todo | Google | Hiring a Remote Google Ads Consultant in Singapore, Australia or the UK | remote google ads consultant (GSC "google ads expert singapore"; ATP AU/UK/US) | [brief](blog-briefs/remote-google-ads-consultant.md) |
+| 23 | todo | Meta | Facebook Ads Agency Near Me, or a Remote Specialist? How to Choose | facebook ads agency near me (ATP 260) | [brief](blog-briefs/facebook-ads-agency-near-me.md) |
+| 24 | todo | Google | Google Ads for Home Services: Plumbers, HVAC, Cleaners and Electricians | google ads for home services (n/m) | [brief](blog-briefs/google-ads-for-home-services.md) |
+| 25 | todo | Meta | Are Instagram Ads Worth It for a Small Business? | are instagram ads worth it (ATP PAA) | [brief](blog-briefs/are-instagram-ads-worth-it.md) |
+| 26 | todo | Google | Why Are My Google Ads Not Working? 9 Things I Check First | why are my google ads not working ("not working" cluster, GSC) | [brief](blog-briefs/why-are-my-google-ads-not-working.md) |
+| 27 | todo | Meta | Meta Ads Audit: What a Good One Checks (and What You Should Get) | meta ads audit (ATP) | [brief](blog-briefs/meta-ads-audit.md) |
+
+Rows 16–27 were researched on 18 Nov 2026 from Google Search Console (last 3
+months: 323 impressions, 2 clicks, avg. position 56) and AnswerThePublic
+(seeds: meta ads, google ads consultant, facebook ads agency). Expected run
+dates: 19 Nov, 22, 25, 28 Nov, 1, 4, 7, 10, 13, 16, 19, 22 Dec.
 
 ## Later (learning phase, ~Apr 2027) — do not write yet
 

@@ -2,17 +2,23 @@
 
 One `.md` file per post. Filename = slug: `kebab-case-title.md` (no date prefix).
 
-## Frontmatter (all required)
+## Frontmatter
 
 ```
 ---
 title: Why Are My Facebook Ads Not Working? 9 Fixes From 80 Real Ad Accounts
-description: Meta description, ≤155 chars, plainspoken, includes the target keyword.
+metaTitle: Why Are My Facebook Ads Not Working? 9 Fixes
+description: Meta description, 140–155 chars, plainspoken, includes the target keyword.
 date: 2026-08-02
 keyword: why are my facebook ads not working
 image: work_dashboard
 ---
 ```
+
+`title` (the H1), `description`, `date`, `keyword` and `image` are required.
+`metaTitle` is the `<title>` Google shows: ≤60 characters, copied from the
+brief; when it is set the site does not add "| thatmarketingguy". `updated:
+YYYY-MM-DD` is optional and only for meaningful refreshes of an older post.
 
 `image` is the post's hero/thumbnail. It must be the name (no extension) of a
 `.webp` file in `public/images/`. Preferred: a custom banner made in Canva for
@@ -56,15 +62,25 @@ real sentence. No tables, code fences, or raw HTML — they render as plain text
   revolutionize, delve, "in today's fast-paced world", "take it to the next level".
 - No fabricated data. Use only verified numbers from /results or clearly
   hypothetical examples labelled as such.
-- 600–1,000 words. Every post links to the matching service page
+- 900–1,200 words. Every post links to the matching service page
   (/facebook-ads-expert for Meta topics, /google-ads-expert for Google topics,
   both for comparison posts) using natural anchor text such as "hire a
   Facebook ads expert", plus /results (proof) and /contact near the end. Link one related earlier post when any exist. Do NOT link /learn or
   /resources for now (the learning offer starts ~Apr 2027).
 - Topics + target keywords: follow `content/blog-queue.md`. Take the first
-  `todo` row, use its target keyword in the title, description and first
+  `todo` row that has no open PR yet. If the row links a brief
+  (`content/blog-briefs/<slug>.md`), build the post from it: use its slug,
+  metaTitle, description, H1, outline, FAQ, proof points, links and banner
+  text, and follow `content/blog-briefs/README.md`. Older rows without a
+  brief: use the target keyword in the title, description and first
   paragraph, and answer each "Also answer" question under its own H2 or H3
   using the searcher's wording. Mark the row `done YYYY-MM-DD` in the same
+  commit.
+- FAQ: when the brief has one, add `## Frequently asked questions` before the
+  closing section, each question as `### Question?` followed by a short
+  standalone answer. The site turns it into FAQPage structured data.
+- Link back: the brief names one older post that should link TO the new one.
+  Add one natural sentence with that link to the older post in the same
   commit.
 
 ## Publishing
