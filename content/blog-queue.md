@@ -45,7 +45,7 @@ H2/H3 in the searcher's wording.
 | 13 | done 2026-11-04 | Google | Google Ads for Restaurants: How to Fill Tables, Not Just Get Clicks | google ads for restaurants (76, difficulty 3) · restaurant google map ads (n/m) | local ads food business · Do Google Ads work for restaurants? |
 | 14 | done 2026-11-13 | Meta | Are Facebook Ads Worth It for Small Business? An Honest Answer | are facebook ads worth it (210) · facebook ads for business (4.4K) | Is it worth paying for ads on Facebook? · are facebook ads effective (40) |
 | 15 | done 2026-11-10 | Google | Google Ads vs SEO: Where a Small Business Should Spend First | google ads and seo (390) · google ads vs seo (170) | google ads vs local service ads (70) |
-| 16 | todo | Google | Google Ads Consultation: What You Should Get From the First Call | google ads consultation (GSC: 25 impr, pos 10.7) | [brief](blog-briefs/google-ads-consultation.md) |
+| 16 | done 2026-11-19 | Google | Google Ads Consultation: What You Should Get From the First Call | google ads consultation (GSC: 25 impr, pos 10.7) | [brief](blog-briefs/google-ads-consultation.md) |
 | 17 | todo | Meta | Meta Ads Not Spending? 8 Reasons Your Facebook Ads Aren't Delivering | meta ads not spending (ATP) · "not working" cluster (GSC pos 35–68) | [brief](blog-briefs/meta-ads-not-spending.md) |
 | 18 | todo | Google | Is Google Ads Worth It for a Small Business in 2026? An Honest Answer | is google ads worth it for small business (ATP PAA ×4) | [brief](blog-briefs/is-google-ads-worth-it-for-small-business.md) |
 | 19 | todo | Meta | Facebook Ads for Ecommerce Brands: Agency, Freelancer or In-House? | facebook ads agency for ecommerce (ATP 40) | [brief](blog-briefs/facebook-ads-for-ecommerce.md) |

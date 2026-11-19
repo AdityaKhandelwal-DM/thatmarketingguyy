@@ -71,3 +71,5 @@ Ask three things. Who will log into my account each week? Who owns the account? 
 If you want to [hire a Google Ads expert](/google-ads-expert) who works on your account personally, look through the [results](/results) first, including the cuts. Then [get in touch](/contact) with your business, your budget and what you've tried. I'll tell you honestly whether Google Ads makes sense yet.
 
 If you're still deciding between a specialist and a larger firm, read [Google Ads expert vs agency](/blog/google-ads-expert-vs-agency).
+
+If you're about to book a call, here's what a good [Google Ads consultation](/blog/google-ads-consultation) should cover.
