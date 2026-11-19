@@ -4,7 +4,7 @@ metaTitle: "Google Ads Consultation: What a Good First Call Covers"
 description: A Google Ads consultation should end with a clear plan, not a sales pitch. What to bring, what to ask, and what a good consultant checks first.
 date: 2026-11-19
 keyword: google ads consultation
-image: work_dashboard
+image: blog-google-ads-consultation
 ---
 
 A good Google Ads consultation ends with a plan you can act on, not a sales pitch. I'm Aditya, a solo Google Ads and Meta Ads consultant based in India, and I work remotely with small business owners overseas. I've managed 89 ad accounts, so I've been on both sides of these calls. By the end of this post you'll know what a useful consultation covers and how to spot one that's just a sales call.
