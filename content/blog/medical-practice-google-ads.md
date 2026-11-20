@@ -1,14 +1,16 @@
 ---
-title: "Medical Practice Google Ads: What a New Patient Really Costs"
-description: Medical practice Google Ads for clinics and dental practices: is it worth it, what a good cost per patient enquiry looks like, and how to check your own.
+title: "Google Ads for Dentists and Medical Practices: What a New Patient Really Costs"
+metaTitle: "Google Ads for Dentists and Clinics: What a Patient Costs"
+description: Google Ads for dentists and medical practices: is it worth it, what a good cost per patient enquiry looks like, and what I set up in the first 90 days.
 date: 2026-10-22
-keyword: medical practice google ads
+updated: 2026-11-20
+keyword: google ads for dentists
 image: blog-medical-practice-google-ads
 ---
 
-If you run a clinic or dental practice, medical practice Google Ads can fill your diary with people who are already searching for a treatment. It can also burn a month of budget on clicks that never book. I'm Aditya, a solo Google Ads and Meta Ads consultant, and clinics are among the accounts I've run.
+If you run a dental practice or clinic, Google Ads can fill your diary with people who are already searching for a treatment. It can also burn a month of budget on clicks that never book. I'm Aditya, a solo Google Ads and Meta Ads consultant, and clinics are among the accounts I've run.
 
-This post covers what a new patient really costs, how to judge a number someone quotes you, and what I'd check before spending a dollar.
+This post covers what a new patient really costs and what I'd check before spending a dollar.
 
 ## Are Google Ads worth it for a clinic?
 
@@ -21,6 +23,10 @@ That intent is why I start clinics on Google rather than Meta when budget is tig
 3. **Someone answering:** an enquiry that sits unanswered for a day is paid-for and wasted.
 
 If you can't cover those, fix them before you raise the budget.
+
+## Google Ads for dentists: what's different
+
+Dental searches split into two kinds. Emergency searches ("emergency dentist near me", "toothache dentist open now") want a call within minutes, so run them as a separate campaign with call ads, and only during hours someone can answer. Planned treatments (implants, aligners, veneers, whitening) are high value and slower to decide, so they need their own campaigns, landing pages and a consultation offer. Keep general check-ups in a third, smaller campaign. Mixing them in one campaign hides which treatment actually pays.
 
 ## What's a good cost per patient enquiry?
 
@@ -55,6 +61,16 @@ One skin clinic client in Jaipur combined Meta lead ads with a Google Map Pack p
 One caution: healthcare ads and listings have their own rules, and they differ by country and treatment. Check Google's current policy for your location before launching anything, and have your ads reviewed against it.
 
 ![A good report should show cost per enquiry, not just clicks.](work_charts)
+
+## Frequently asked questions
+
+### Do Google Ads work for dentists?
+
+Yes, especially for emergency and high-value treatment searches, as long as calls and forms are tracked and answered.
+
+### How much should a dental practice spend on Google Ads?
+
+Work back from what a new patient is worth in the first year and how many enquiries become bookings, then test for a few weeks before scaling.
 
 ## Working with me from India
 

@@ -1,7 +1,9 @@
 ---
 title: Facebook Ads Cost: What I've Seen Across 89 Ad Accounts
+metaTitle: "Facebook Ads Cost in 2026: Real Numbers From 89 Accounts"
 description: Facebook ads cost and price explained, with real cost-per-lead numbers from 89 accounts I've managed, and whether $10 or $50 a day is a good budget.
 date: 2026-10-31
+updated: 2026-11-20
 keyword: facebook ads cost
 image: blog-facebook-ads-cost
 ---
@@ -21,11 +23,21 @@ Here are some Facebook and Instagram campaigns from it. Each is one campaign, no
 - **Farm stay:** 1,442 leads at ₹45 each (about $0.54).
 - **Wedding resort:** 562 leads at ₹138 each (about $1.64), on ₹78K of spend.
 
-Same platform, very different costs. A wedding enquiry is worth far more than a restaurant booking, and the price per lead reflects that. Cost depends on the business, the offer and the market, not only on Facebook.
+Same platform, very different costs: a wedding enquiry is worth far more than a restaurant booking, and the price per lead reflects that.
+
+## How much do Facebook ads cost per 1,000 impressions?
+
+Meta charges in an auction, so the cost per 1,000 impressions (CPM) moves with your audience, your country, the season and how good your ad is. Holiday months and competitive audiences cost more.
+
+For a sense of how low it can go in a cheap market: a new café I ran local awareness ads for paid ₹1.61 per 1,000 impressions and reached 2.1L (210,000) people on ₹336 (about $4) of spend. That's an Indian price for a reach campaign. In the US, UK or Australia, expect it to be many times higher, and remember that reach is the cheapest thing Meta sells. Leads and sales cost more.
+
+## How much do Facebook ads cost per month for a small business?
+
+Whatever you set. Your monthly cost is your daily budget times about 30, plus any management fee. Most small businesses I'd advise start with a test between $300 and $1,500 a month in ad spend, sized by what a lead is worth to them, then scale what works. That range is a starting point, not a quote.
 
 ## How much should I spend a day on Facebook ads?
 
-Spend what lets you collect enough results to judge the campaign, and no more than you can afford to lose while testing. There's no universal number.
+Spend enough to collect results you can judge, and no more than you can afford to lose while testing.
 
 A simple way to think about it: decide what one lead or sale is worth to you, then ask how many you need to see before you trust the data. Meta's system needs a steady flow of results to settle, so very thin budgets take longer to teach you anything.
 
@@ -37,19 +49,19 @@ It's fine for a small, focused test, and not enough for much else. $10 a day is 
 
 At that level, run one offer, one audience and a few ads. Judge it on cost per lead or sale, not on likes or reach. Spreading $10 a day across five campaigns teaches you nothing.
 
-If you sell something with a high price tag, $10 a day may only produce a few leads a month. That's not a failure. It tells you the budget is too low for the cost of a lead in your market.
+For a high-ticket product, $10 a day may bring only a few leads a month. That tells you the budget is too low for your market, not that ads failed.
 
 ## Is $50 a day good for Meta ads?
 
 It can be, if your offer is already proven. $50 a day is about $1,500 a month, which gives Meta's system plenty of data to work with, and gives you room to test several ads properly.
 
-I wouldn't start there with an untested offer. Start smaller, find an ad and audience that produce leads at a cost you can live with, then raise the budget in steps. Jumping from $10 to $50 overnight is a common way to waste money.
+I wouldn't start there with an untested offer. Start smaller, find what works, then raise the budget in steps rather than overnight.
 
 ![A weekly report should show cost per lead, not just reach and clicks.](work_dashboard)
 
 ## Facebook ads price: what about the management fee?
 
-The ad spend goes to Meta. The management fee goes to whoever runs the account. Keep them separate in your head, and ask for both in writing.
+The ad spend goes to Meta; the fee goes to whoever runs the account. Ask for both in writing.
 
 I've written a full breakdown of [what it costs to hire a Facebook ads agency or freelancer](/blog/facebook-ads-agency-or-freelancer-cost), including flat retainers versus a percentage of spend. The short version: most of your money should go into the ads, not the fee.
 
@@ -63,6 +75,20 @@ You pay Meta directly from your own ad account, so you can see every dollar spen
 - **Wrong goal.** Optimising for clicks when you want enquiries gets you clicks.
 
 One example from my results page: a hair transplant clinic's conversation ads cost ₹33 per chat (about $0.39), down from ₹93 (about $1.11) before. Same budget logic, better creative and targeting.
+
+## Frequently asked questions
+
+### Is it cheaper to boost a post or run Facebook ads?
+
+Boosting is quicker but gives you fewer goals and controls. For leads or sales, set up a campaign in Ads Manager so Meta optimises for the result you want.
+
+### Do Facebook ads cost the same on Instagram?
+
+Both run through Meta Ads Manager and the same auction, so costs are in the same range. Placement, format and audience change the price more than the app does.
+
+### Why are my Facebook ads so expensive?
+
+Usually the audience is narrow, the ad is tired, or the campaign is optimising for something rare. See [why Facebook ads stop working](/blog/why-are-my-facebook-ads-not-working) for the checks I run.
 
 ## The short version
 

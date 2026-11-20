@@ -1,14 +1,22 @@
 ---
 title: Facebook Ads Agency or Freelancer: What Does It Cost to Hire Help?
-description: Facebook ads agency or freelancer? How fees work, flat retainer vs percentage of spend, and whether $500 a month is enough for Facebook or Google Ads.
+metaTitle: "Facebook Ads Agency vs Freelancer: Fees, Costs, What to Ask"
+description: Hiring a Facebook ads agency or a freelancer? What they do, how fees work (retainer or % of spend), and whether $500 a month is enough to start.
 date: 2026-10-07
+updated: 2026-11-20
 keyword: facebook ads agency
 image: blog-facebook-ads-agency-or-freelancer-cost
 ---
 
 If you're comparing a Facebook ads agency with a freelancer, the first question is always the same: what will it cost me? I'm Aditya, a solo Meta Ads and Google Ads consultant working remotely from India. I'll tell you how the fees are usually built, what to watch for, and how I'd split a small budget.
 
-One honest note first. I'm not going to quote a price list here, because the right fee depends on your market, your spend and how much work the account needs. What I can give you is the structure, so you can judge any quote you receive, mine included.
+I won't quote a price list, because the right fee depends on your market, spend and workload. I'll give you the structure, so you can judge any quote, mine included.
+
+## What does a Facebook ads agency actually do?
+
+A good Facebook ads agency (or freelancer) plans the campaigns, builds the audiences, writes and tests the ads, sets up tracking so you can see leads and sales, watches the account every week, cuts what isn't working, and reports back in plain numbers. On Meta, the work that moves results most is testing new ads often and making sure the right action is being tracked.
+
+What you're paying for is that weekly attention. If nobody is changing anything in your account month to month, you're paying for setup you already have.
 
 ## Flat retainer or percentage of ad spend?
 
@@ -28,13 +36,13 @@ Your ad budget should be the bigger number. That's the money that reaches custom
 
 Here is a hypothetical example, not a quote. If you had $1,500 a month in total to put into ads, and a manager's fee took $1,000 of it, you'd have only $500 left for actual advertising. That's a lot to pay for a small test.
 
-There's no magic ratio. But I'd be wary of any setup where the fee dwarfs the ad spend and nobody can explain why.
+Be wary of any setup where the fee dwarfs the ad spend.
 
 ## Is $500 a month enough for Google Ads?
 
 It can be, in a narrow case. $500 a month is roughly $16 a day. If you serve a small local area and people search for exactly what you sell, that can produce a handful of enquiries. In a competitive market where clicks cost several dollars each, it will produce very few clicks.
 
-That's the point of a small budget: it's a test, not a growth plan. Pick one service, one area, track calls and form fills, and see what a single enquiry costs. Then decide whether to spend more.
+Treat it as a test: one service, one area, calls and forms tracked, then decide.
 
 On my [results page](/results) the Google numbers come from India, where clicks are far cheaper than in the US, UK or UAE. One restaurant campaign got 3,857 actions at ₹2.68 (about $0.03) each. Don't expect that in your market. The structure carries over, the prices don't.
 
@@ -42,17 +50,21 @@ On my [results page](/results) the Google numbers come from India, where clicks 
 
 Yes, for a test. Facebook and Instagram can work on a small budget, but you need patience. Meta's system learns from the results it gets, so very thin budgets can take several weeks before the numbers settle.
 
-My advice is to run one offer, one audience and a few different ads, and judge it on cost per lead or sale, not on likes. A small budget spread over five campaigns teaches you nothing.
+Run one offer, one audience and a few ads, and judge it on cost per lead or sale, not likes.
 
 ![A weekly report should show cost per lead, not just reach and clicks.](work_dashboard)
 
 ## Facebook ads agency or freelancer: where does the money go?
 
-With an agency, part of your fee pays for the team, the office and the sales process. Some of that is useful, since you get cover when someone is away. But on a small account you often end up with a junior account manager.
+With an agency, part of your fee pays for the team, office and sales process. You get cover when someone is away, but small accounts often get a junior manager.
 
 With a freelancer, more of the fee pays for the person who builds your campaigns. The catch is that one person can be busy or ill, so ask how they handle that.
 
 An India-based freelancer like me usually costs a fraction of a US or UK freelancer for similar work. That's the draw. The catch is that you have to be comfortable with a time-zone gap, so I run the day-to-day over WhatsApp and email, and you get a written report on a fixed schedule.
+
+## How to choose a Facebook ads agency
+
+Ask to see real results with numbers, including campaigns they stopped. Ask who will actually run your account each week, and talk to that person. Ask for a sample report. Agree a fee structure in writing, and make sure the ad account stays in your name. If one person answers all of that clearly, it matters less whether they call themselves an agency or a freelancer.
 
 ## What I'd check before paying anyone
 
@@ -63,6 +75,20 @@ An India-based freelancer like me usually costs a fraction of a US or UK freelan
 5. **Can they show real numbers?** I've managed 89 ad accounts and ₹93.4L (about $112K) of spend, and I list the campaigns that didn't work too.
 
 If you're still deciding who to hire, my guide on [how to hire a Facebook ads expert](/blog/how-to-hire-a-facebook-ads-expert) has the questions I'd ask.
+
+## Frequently asked questions
+
+### How much does a Facebook ads agency cost?
+
+It depends on your spend and how much work the account needs. Most charge a flat monthly retainer, a percentage of ad spend, or both. Ask for the structure in writing and compare it with your ad budget.
+
+### Is a Facebook ads agency worth it for a small business?
+
+It's worth it when the fee is clearly smaller than the waste it removes or the extra sales it brings, and when someone actually works on the account every week.
+
+### Should I hire a Facebook ads agency or do it myself?
+
+If you have time to learn and a small test budget, start yourself. Once the budget is big enough that mistakes cost more than the fee, hire help.
 
 ## The short version
 

@@ -1,12 +1,14 @@
 ---
-title: Facebook Ads for Real Estate: Lead Forms That Turn Into Site Visits
-description: Facebook ads for real estate can work, if leads get a fast callback. How I'd set up lead forms for agents, what leads cost, and what to ask a specialist.
+title: "Facebook Ads for Real Estate Agents: Lead Forms That Turn Into Site Visits"
+metaTitle: Facebook Ads for Real Estate Agents and Realtors
+description: Facebook ads for real estate agents and realtors: lead forms that become viewings, the housing ad rules, ad examples to adapt, and what leads cost.
 date: 2026-10-16
+updated: 2026-11-20
 keyword: facebook ads for real estate
 image: blog-facebook-ads-for-real-estate
 ---
 
-Facebook ads for real estate work when the lead form is built to produce a conversation, and when someone calls the lead back quickly. They fail when the form fills up with names nobody ever phones. I'm Aditya, a solo Meta Ads and Google Ads consultant working remotely from India with owners overseas, and this is how I'd approach facebook ads real estate campaigns for an agent or small agency.
+Facebook ads for real estate work when the lead form is built to produce a conversation, and when someone calls the lead back quickly. They fail when the form fills up with names nobody ever phones. I'm Aditya, a solo Meta Ads and Google Ads consultant working remotely from India with owners overseas, and this is how I'd run Facebook ads for real estate agents, realtors and small agencies.
 
 One honest note first: I haven't published a real estate case study on my [results page](/results), so I won't pretend to have one. What I can show is how lead campaigns behave in my other accounts, and the way I'd set this one up.
 
@@ -44,6 +46,34 @@ What I can give you is how lead cost behaves across my accounts. These are from 
 The pattern matters more than the figures: the same business can pay ₹45 or ₹21,691 per lead depending on the objective the campaign is set to. Here is a hypothetical example. If a campaign costs $1,000 and produces 40 leads, that's $25 a lead. If 10 of them take your call and 3 book a viewing, the real cost is about $333 per viewing. That last number is the one to track.
 
 ![The first call usually wins, so someone should phone every lead quickly.](ind_team_laptops)
+
+## Facebook ads for realtors: the housing ad rules
+
+In the US and several other countries, property ads have to run under Meta's Housing special ad category. That limits targeting: you can't narrow by age, gender or postcode the way other businesses can, and location targeting has a minimum radius. Plan for it rather than fighting it. Let the offer and the creative pick out the right people, and use your own lists and website visitors for retargeting. Meta's rules change and differ by country, so check the current Housing category rules for your market before you launch.
+
+## Real estate Facebook ad examples you can adapt
+
+These are examples to adapt, not real client ads:
+
+- **Seller valuation:** "Thinking of selling in [suburb]? Get a free, no-pressure valuation from a local agent. Takes 2 minutes."
+- **New listing:** a 20-second walkthrough video, the price and three facts, then "Book a viewing this weekend."
+- **Buyer list:** "Get new [suburb] listings before they hit the portals. Join our buyer list."
+
+Seller ads usually bring fewer leads than buyer ads, but each seller is worth far more to an agent.
+
+## Frequently asked questions
+
+### Do Facebook ads work for realtors?
+
+Yes, when the offer is specific (a valuation, a viewing, a new listing) and every lead gets a call quickly. They don't work as general brand ads.
+
+### Can real estate agents target by age or postcode on Facebook?
+
+Not under the Housing special ad category, which applies in the US and some other countries. Check Meta's rules for your market.
+
+### How much should a real estate agent spend on Facebook ads?
+
+Enough to test one offer properly, then judge by viewings and valuations booked, not by lead count.
 
 ## How I'd run it for an overseas owner
 

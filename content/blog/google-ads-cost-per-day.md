@@ -1,7 +1,9 @@
 ---
 title: Google Ads Cost: How Much Should You Spend Per Day?
-description: Google ads cost explained for small businesses: is $10 or $20 a day enough, what a good budget looks like, and how I test before spending more.
+metaTitle: "Google Ads Cost in 2026: Per Click, Per Day, Per Month"
+description: How much Google Ads cost per click, per day and per month for a small business, whether $10 or $20 a day is enough, and how to set a budget.
 date: 2026-11-01
+updated: 2026-11-20
 keyword: google ads cost
 image: blog-google-ads-cost-per-day
 ---
@@ -15,6 +17,18 @@ I've managed 89 ad accounts and ₹93.4L (about $112K) of ad spend, ₹21.1L (ab
 You pay Google when someone clicks your ad, and each click is priced in an auction. A plumber in a big US city and a café in a small town will pay very different amounts for the same click.
 
 On top of that, if you hire help, there's a management fee. I wrote about how those fees work in my guide on [how to hire a Google Ads consultant](/blog/how-to-hire-a-google-ads-consultant). Your daily budget is the part that actually reaches customers.
+
+## How much does Google Ads cost per click?
+
+You pay per click on most Search campaigns, and the price is set in an auction every time someone searches. There's no list price. The same click can cost cents in one industry and tens of dollars in another, such as legal or insurance.
+
+The quickest honest estimate is free: open Google's Keyword Planner, enter the searches your customers use, set your country, and read the "top of page bid" range. That range is what advertisers are paying to show at the top right now. It won't be exact, but it's your market, not someone else's average.
+
+## How much does Google Ads cost per month for a small business?
+
+Your monthly cost is your daily budget times about 30, plus any management fee. Google can spend up to twice your daily budget on a busy day, but over a month it keeps the average to what you set.
+
+So a $20 daily budget is roughly $600 a month in ad spend. If you hire help, the fee sits on top. I explain how those fees are built in [what freelancers and agencies charge](/blog/facebook-ads-agency-or-freelancer-cost).
 
 ## Is $10 a day enough for Google Ads?
 
@@ -53,6 +67,20 @@ These come from Indian accounts, where clicks are far cheaper than in the US, UK
 The most expensive mistake in my portfolio was a Google call campaign for an education client. I spent ₹4.79L (about $5.7K) for 157 conversions, which is ₹3,043 (about $36) each. I'd used Max Clicks bidding on broad course keywords with no negative keyword list.
 
 The budget wasn't the problem. The setup was. A bigger budget would only have lost money faster. I publish this on my results page because you should see the failures, not just the wins.
+
+## Frequently asked questions
+
+### Do you pay for Google Ads per click or per impression?
+
+On Search campaigns you usually pay per click. Some campaign types, like video or display, can charge per view or per thousand impressions, depending on the bidding you choose.
+
+### Can I run Google Ads for free?
+
+No. You pay for the clicks or views you get. Google sometimes offers new advertisers a promotional credit after they spend a set amount, and the terms vary by country, so check what's on offer in your account.
+
+### Why did Google charge me more than my daily budget?
+
+Google can spend up to twice your daily budget on a busy day, then spends less on quieter days, so the monthly total stays close to your daily budget times the days in the month.
 
 ## How I'd start if you hired me
 

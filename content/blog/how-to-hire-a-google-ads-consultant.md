@@ -1,14 +1,24 @@
 ---
 title: How to Hire a Google Ads Consultant: 7 Red Flags That Cost You Money
-description: Hiring a Google Ads consultant for a small business? 7 red flags to spot before you pay, plus who should own the account and what a report must show.
+metaTitle: "Google Ads Consultant: How to Hire One (7 Red Flags)"
+description: How to hire a Google Ads consultant: what they do, what they cost, 7 red flags to spot before you pay, and what your account and reports should look like.
 date: 2026-10-13
-keyword: google ads consultant for small business
+updated: 2026-11-20
+keyword: google ads consultant
 image: blog-how-to-hire-a-google-ads-consultant
 ---
 
 If you're looking for a Google Ads consultant for a small business, you'll find plenty of confident profiles and very few ways to tell the good ones from the expensive ones. I'm Aditya, a solo Google Ads and Meta Ads consultant based in India, working remotely with owners overseas. I've managed 89 ad accounts and ₹93.4L (~$112K) of spend, ₹21.1L (about $25K) of it on Google.
 
 I've also made the mistakes a bad consultant makes, and I publish them. These are the seven red flags I'd check for if I were hiring.
+
+## What does a Google Ads consultant do?
+
+A Google Ads consultant reviews and runs your account: choosing the searches you pay for, writing ads, setting bids and budgets, making sure calls and forms are tracked, blocking wasted searches every week, and reporting cost per enquiry. Some only audit and advise; others manage the account month to month. Ask which one you're getting.
+
+## How much does a Google Ads consultant cost?
+
+Consultants usually charge for a one-off audit, a monthly retainer, or a percentage of ad spend. The right number depends on your spend and how much work the account needs. I explain the models in [what freelancers and agencies charge](/blog/facebook-ads-agency-or-freelancer-cost).
 
 ## The 7 red flags
 
@@ -28,9 +38,7 @@ If they own it and "lend" it to you, you lose your campaigns, your conversion da
 
 ## What should a Google Ads report show?
 
-A useful report shows cost per conversion, the number of conversions (calls, form fills, bookings), total spend, and what changed since last time and why.
-
-It should also tell you what was cut. A report that only ever goes up and to the right is a report nobody has checked.
+A useful report shows cost per conversion, the number of conversions (calls, form fills, bookings), total spend, what changed and why, and what was cut.
 
 Clicks are supporting detail, never the headline. If calls and form fills aren't tracked, fix that first.
 
@@ -63,6 +71,20 @@ Those are red flags 5 and 6 above. A consultant who admits this, and shows what 
 ## Working with a consultant in another time zone
 
 I run day-to-day work over WhatsApp and email. You get a written report on a set schedule, and anything urgent is flagged straight away. Ad accounts don't need a call every day, so the time gap matters less than people expect. I've run Google Ads for a business in Ontario, Canada and for a film production company in the UK, both through a third party, and I'm now taking direct clients in the US, UK, UAE, Australia and Singapore.
+
+## Frequently asked questions
+
+### Is a Google Ads consultant worth it for a small business?
+
+It is when they cut more waste or add more profit than they cost. A good first sign is a free look at your search terms and tracking before you pay anything.
+
+### What's the difference between a Google Ads consultant and an agency?
+
+A consultant is usually one specialist who works on your account directly; an agency has a team and more overhead. I compare them in [Google Ads expert vs agency](/blog/google-ads-expert-vs-agency).
+
+### Can a Google Ads consultant work remotely?
+
+Yes. The account stays in your name and the consultant gets manager access, so location matters less than reporting and response times.
 
 ## Before you hire anyone
 

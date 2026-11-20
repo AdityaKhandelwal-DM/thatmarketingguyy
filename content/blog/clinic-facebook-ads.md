@@ -1,12 +1,14 @@
 ---
-title: Clinic Facebook Ads: The Setup Behind 78% More Walk-ins
-description: Clinic Facebook ads that fill appointment books: what I set up for a skin clinic that saw 78% more walk-ins, what the lead form should ask, and the rules.
+title: "Facebook Ads for Dentists and Clinics: The Setup Behind 78% More Walk-ins"
+metaTitle: "Facebook Ads for Dentists and Clinics: What Works"
+description: Facebook ads for dentists and clinics: the setup behind a skin clinic's 78% more walk-ins, what the lead form should ask, offers that book, and the rules.
 date: 2026-10-25
-keyword: clinic facebook ads
+updated: 2026-11-20
+keyword: facebook ads for dentists
 image: blog-clinic-facebook-ads
 ---
 
-Clinic Facebook ads can work well, but only if the ad is the first half of a system and not the whole thing. I'm Aditya, a solo Meta Ads and Google Ads consultant. I work remotely with owners overseas, and clinics are one of the businesses I know best.
+Facebook ads for dentists and clinics can work well, but only if the ad is the first half of a system and not the whole thing. I'm Aditya, a solo Meta Ads and Google Ads consultant. I work remotely with owners overseas, and clinics are one of the businesses I know best.
 
 The clearest example is a skin clinic in Jaipur. It started with an empty appointment book and low walk-ins. Over 90 days, on Meta lead ads plus a push on Google's map listing, it saw **78% more walk-ins at a 5.0× ROAS**, on ₹8L+ of ad spend (about $9,600). Here is the setup, and the parts that matter if you run a clinic in the US, UK, UAE, Australia or Singapore.
 
@@ -40,11 +42,25 @@ Then set a rule in the clinic: someone calls within an hour in opening hours. Th
 
 ![Fewer, better enquiries beat a pile of cheap ones.](ind_doctor_patient)
 
+## Facebook ads for dentists: offers that book chairs
+
+For a dental practice, the ad should sell one clear next step: a new-patient check-up, a whitening consultation, or a free smile assessment for aligners or implants. Show your own dentists and rooms, keep the copy about the treatment rather than the viewer's teeth, and send leads straight to whoever books appointments. High-value treatments deserve their own campaigns, because one implant patient can be worth dozens of check-ups.
+
 ## Does it get cheaper with better targeting of intent?
 
 A hair transplant clinic I worked with is a good example. High-ticket consultations were buried under unqualified enquiries. I moved to conversation ads with creative tuned for intent instead of volume. Cost per chat went from ₹93 to ₹33 (about $1.11 to $0.40), on ₹92K of spend (about $1,100), with 12.5L reach.
 
 The lesson: a cheaper enquiry is only good if it's from someone who could realistically become a patient. I'd always rather have fewer, better enquiries.
+
+## Frequently asked questions
+
+### Can dentists advertise on Facebook?
+
+Yes. Keep the copy about the service and the booking, avoid implying you know the viewer's dental problem, and check Meta's health rules and your local dental advertising rules.
+
+### What's the best Facebook ad offer for a dental practice?
+
+One specific, easy next step, such as a new-patient check-up or a free consultation for a high-value treatment.
 
 ## Working with a clinic from India
 

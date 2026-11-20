@@ -92,15 +92,15 @@ Google/Meta alternating, max 2 per topic group in 30 days. At one post every
 Volumes: Keyword Planner, 20 Nov 2026, US+UK+AU+SG+UAE. Refresh = retitle /
 add sections and FAQ for the bigger keyword, set `updated:`; never change the URL.
 
-| Post | Bigger keyword to target | Volume |
-|---|---|---|
-| /blog/google-ads-cost-per-day | google ads cost | 5,400 |
-| /blog/facebook-ads-cost | facebook ads cost (plus "instagram ads cost" link) | 1,900 |
-| /blog/facebook-ads-for-real-estate | facebook ads for real estate agents + realtors | 480 + 480 |
-| /blog/how-to-hire-a-google-ads-consultant | google ads consultant | 880 |
-| /blog/medical-practice-google-ads | google ads for dentists | 480 |
-| /blog/clinic-facebook-ads | facebook ads for dentists | 320 |
-| /blog/facebook-ads-agency-or-freelancer-cost | facebook ads agency | 2,900 |
+| Post | Bigger keyword to target | Volume | Status |
+|---|---|---|---|
+| /blog/google-ads-cost-per-day | google ads cost | 5,400 | done 2026-11-20 |
+| /blog/facebook-ads-cost | facebook ads cost (plus "instagram ads cost" link) | 1,900 | done 2026-11-20 |
+| /blog/facebook-ads-for-real-estate | facebook ads for real estate agents + realtors | 480 + 480 | done 2026-11-20 |
+| /blog/how-to-hire-a-google-ads-consultant | google ads consultant | 880 | done 2026-11-20 |
+| /blog/medical-practice-google-ads | google ads for dentists | 480 | done 2026-11-20 |
+| /blog/clinic-facebook-ads | facebook ads for dentists | 320 | done 2026-11-20 |
+| /blog/facebook-ads-agency-or-freelancer-cost | facebook ads agency | 2,900 | done 2026-11-20 |
 
 ## Later (learning phase, ~Apr 2027) — do not write yet
 
