@@ -57,12 +57,23 @@ H2/H3 in the searcher's wording.
 | 25 | todo | Meta | Are Instagram Ads Worth It for a Small Business? | are instagram ads worth it (ATP PAA) | [brief](blog-briefs/are-instagram-ads-worth-it.md) |
 | 28 | todo | Google | Google Ads for Hotels: Getting Direct Bookings, Calls and Walk-ins | google ads for hotels (ATP 390) | [brief](blog-briefs/google-ads-for-hotels.md) |
 | 29 | todo | Meta | Facebook Ads for Schools and Colleges: How to Fill Admissions | facebook ads for schools (ATP 210) | [brief](blog-briefs/facebook-ads-for-schools.md) |
-| — | research | Google | *Proven Google topic needed here (gate 6). Next seeds: google ads for retail stores (dry fruit store visits), google ads for schools (education call campaign lesson).* | — | — |
+| 31 | todo | Google | Google Ads for Retail Stores: How to Bring People Through the Door | google ads for retail stores (autocomplete) · guide | [brief](blog-briefs/google-ads-for-retail-stores.md) |
 | 27 | todo | Meta | Meta Ads Audit: What a Good One Checks (and What You Should Get) | meta ads audit (ATP) | [brief](blog-briefs/meta-ads-audit.md) |
-| — | research | Google | *Second proven Google topic needed before row 23.* | — | — |
+| 33 | todo | Google | Google Ads for Schools and Colleges: Admissions Without Wasted Spend | google ads for schools (autocomplete) · guide | [brief](blog-briefs/google-ads-for-schools.md) |
 | 23 | todo | Meta | Facebook Ads Agency Near Me, or a Remote Specialist? How to Choose | facebook ads agency near me (ATP 260) | [brief](blog-briefs/facebook-ads-agency-near-me.md) |
+| 35 | todo | Google | Google Ads Case Study: How 3 Small UK Brands Grew With Search and Performance Max | google ads case study (autocomplete) · case study | [brief](blog-briefs/google-ads-case-study-small-business.md) |
+| 30 | todo | Meta | Facebook Ads for Restaurants: A Step-by-Step Playbook That Fills Tables | facebook ads for restaurants (autocomplete) · guide | [brief](blog-briefs/facebook-ads-for-restaurants.md) |
+| 24 | todo | Google | Google Ads for Home Services: Plumbers, HVAC, Cleaners and Electricians | google ads for home services (autocomplete: plumbers, hvac, electricians, locksmith, cleaning business) · guide | [brief](blog-briefs/google-ads-for-home-services.md) |
+| 34 | todo | Meta | Facebook Ads Case Study: How 3 Local Businesses Grew With Meta Ads | facebook ads case study (autocomplete) · case study | [brief](blog-briefs/facebook-ads-case-study-local-businesses.md) |
+| 37 | todo | Google | Google Ads for Lawyers: How Small Firms Get Cases Without Burning Budget | google ads for lawyers (autocomplete) · guide | [brief](blog-briefs/google-ads-for-lawyers.md) |
+| 32 | todo | Meta | Facebook Ads for Events: How to Sell Tickets and Fill Venues | facebook ads for events (autocomplete) · guide | [brief](blog-briefs/facebook-ads-for-events.md) |
+| 40 | todo | Google | Google Ads for Real Estate Agents: Buyer and Seller Leads, Step by Step | google ads for real estate agents (autocomplete) · guide | [brief](blog-briefs/google-ads-for-real-estate-agents.md) |
+| 36 | todo | Meta | Facebook Ads for Contractors: Roofing, Remodeling and Painting Leads That Close | facebook ads for contractors (autocomplete) · guide | [brief](blog-briefs/facebook-ads-for-contractors.md) |
+| — | research | Google | *Proven Google topic needed here (gate 6).* | — | — |
+| 38 | todo | Meta | Facebook Ads for Hotels and Resorts: Direct Bookings Without the OTA Commission | facebook ads for hotels (autocomplete) · guide | [brief](blog-briefs/facebook-ads-for-hotels.md) |
+| 39 | todo | Google | YouTube Ads Case Study: A Heli-Ski Operator and a Physio Clinic | youtube ads case study (autocomplete) · case study | [brief](blog-briefs/youtube-ads-case-study.md) |
+| 41 | todo | Meta | Facebook Ads for Health and Wellness Businesses: Spas, Massage and Yoga Studios | facebook ads for health and wellness (autocomplete) · guide | [brief](blog-briefs/facebook-ads-for-health-and-wellness.md) |
 | 20 | merged into /blog/google-ads-expert-vs-agency (refresh 2026-11-20) | Google | When Should an Ecommerce Brand Hire a Google Ads Agency Instead of a Freelancer? | google ads agency vs freelancer (GSC pos 73–82) | [brief](blog-briefs/google-ads-agency-vs-freelancer-for-ecommerce.md) |
-| 24 | hold: rule 4, no home-services proof yet; write only if Aditya has run trade clients | Google | Google Ads for Home Services: Plumbers, HVAC, Cleaners and Electricians | google ads for home services (n/m) | [brief](blog-briefs/google-ads-for-home-services.md) |
 
 Rows 16–27 were researched on 18 Nov 2026 from Google Search Console (last 3
 months: 323 impressions, 2 clicks, avg. position 56) and AnswerThePublic

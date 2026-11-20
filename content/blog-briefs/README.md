@@ -45,3 +45,39 @@ brief wins on structure, keywords and links.
   Raw notes in `../marketing/seo-research/` (outside this repo).
 - Goal until ~Mar 2027: hire-intent searches from the US, UK, UAE, Australia
   and Singapore. DIY/how-to topics stay parked.
+
+## Standard outline — `guide` (industry playbook)
+
+A guide brief gives the industry specifics; the writer fits them into this
+outline (headings in the searcher's words, keyword in the first H2):
+
+1. Opening: the owner's real situation in this industry, keyword in sentence 1.
+2. `## Do [Facebook/Google] ads work for [business]?` — 40–55 word snippet answer.
+3. `## What's different about [business]` — the 3+ differences from the brief.
+4. `## How to set up [platform] ads for [business], step by step` — numbered,
+   with an H3 per step: objective/campaign type → location & audience (or
+   keywords) → offer → creative (or ad copy) → form / landing page →
+   conversion tracking → budget and schedule.
+5. `## Ad examples you can adapt` — 2–3 short sample headlines/primary texts
+   written for this industry (clearly examples, not real client ads).
+6. `## What results to expect` — how to judge it; benchmarks only from the
+   brief's sources or /results; otherwise a labelled hypothetical.
+7. `## Mistakes I see most` — bullets.
+8. `## Frequently asked questions` — 3–4 real questions.
+9. Closing: short recap; at most one natural sentence offering help, linked
+   to the service page. `type: guide` in frontmatter.
+
+## Standard outline — `case-study`
+
+1. Opening: what these businesses have in common and what the reader will
+   learn; keyword in sentence 1.
+2. A short "at a glance" list per business: who, where, platform, headline
+   result, source link.
+3. Per business, `## [Business]: [headline result]` with H3s: the challenge,
+   what they did, the results (exact figures, cited, "self-reported" where the
+   source says so).
+4. `## Why it worked` — Aditya's practitioner analysis across the stories.
+5. `## How to apply this to your business` — numbered steps.
+6. `## What I've seen in my own accounts` — one comparable /results campaign.
+7. `## Frequently asked questions`, then a short close with at most one
+   natural sentence offering help. `type: case-study` in frontmatter.

@@ -19,6 +19,7 @@ export interface PostMeta {
   readMinutes: number;
   metaTitle?: string; // <title> for Google when it should differ from the H1
   updated?: string; // YYYY-MM-DD of the last meaningful refresh
+  type: "post" | "guide" | "case-study"; // guides and case studies get a quieter CTA
 }
 
 export interface FaqItem {
@@ -121,6 +122,10 @@ export function renderMarkdown(md: string): string {
   return out.join("\n");
 }
 
+function postType(t?: string): PostMeta["type"] {
+  return t === "guide" || t === "case-study" ? t : "post";
+}
+
 /**
  * Questions under a "## Frequently asked questions" (or "## FAQ") section:
  * each "### Question" plus the text up to the next heading. Feeds FAQPage
@@ -166,6 +171,7 @@ export function getAllPosts(): PostMeta[] {
         readMinutes: Math.max(2, Math.round(body.split(/\s+/).length / 220)),
         metaTitle: meta.metaTitle || undefined,
         updated: meta.updated || undefined,
+        type: postType(meta.type),
       };
     })
     .sort((a, b) => (a.date < b.date ? 1 : -1));
@@ -186,6 +192,7 @@ export function getPost(slug: string): Post | null {
     readMinutes: Math.max(2, Math.round(body.split(/\s+/).length / 220)),
     metaTitle: meta.metaTitle || undefined,
     updated: meta.updated || undefined,
+    type: postType(meta.type),
     html: renderMarkdown(body),
     faq: extractFaq(body),
   };

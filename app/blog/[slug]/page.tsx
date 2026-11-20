@@ -123,9 +123,20 @@ export default async function PostPage({
             className="prose-post w-full max-w-[760px] mx-auto px-4 sm:px-6 lg:px-10"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
-          {/* Contact box: internal link to /contact on every post, plus the
-              service page that matches the post's platform. */}
+          {/* Guides and case studies are written to help first, so they end with
+              one quiet line instead of the contact box. Other posts keep the box:
+              /contact plus the service page that matches the post's platform. */}
           <div className="w-full max-w-[760px] mx-auto px-4 sm:px-6 lg:px-10 mt-12">
+            {post.type !== "post" ? (
+              <p className="text-[14px] text-text-secondary leading-relaxed border-t border-border pt-6">
+                If you&apos;d rather have someone run this for you, I manage{" "}
+                {isGoogle ? "Google Ads" : "Meta ads"} for small businesses.{" "}
+                <Link href={service.href} className="font-semibold text-primary hover:text-primary-dark">
+                  See how I work
+                </Link>
+                .
+              </p>
+            ) : (
             <div className="bg-bg-light border border-border rounded-card p-6 md:p-8">
               <h2 className="text-[20px] md:text-[24px] font-bold text-text-primary leading-snug">
                 Want me to look at your ads?
@@ -139,6 +150,7 @@ export default async function PostPage({
                 <Button href={service.href} variant="secondary">{service.label}</Button>
               </div>
             </div>
+            )}
             <div className="mt-6">
               <Link href="/blog" className="text-[14px] font-semibold text-primary hover:text-primary-dark">
                 ← More breakdowns

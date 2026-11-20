@@ -3,6 +3,7 @@
 | Field | Plan |
 |---|---|
 | Publish (routine run) | 13 Dec 2026 |
+| Post type | `type: guide` (see RULES.md section 0) |
 | Platform | Google |
 | URL slug | `/blog/google-ads-for-home-services` |
 | Meta title | Google Ads for Home Services: Get Calls, Not Just Clicks |
@@ -15,6 +16,12 @@
 | Why this topic | Home services is the biggest local "search when it breaks" category in the target markets: perfect Google intent. It extends the local cluster (restaurants, clinics) and links to the local-services Meta post. **GSC:** "google ads consultation" and "google ads expert" impressions show the Google service page needs supporting niche posts. **ATP:** "Is Google Ads worth it for a small business?", "How much does it cost to run Ads through Google?" |
 | Featured-snippet target | "How should a home services business set up Google Ads?" 5-step numbered list. |
 | Length | ~1,000 words |
+
+## What's different about this industry (gate 7)
+
+- Emergency intent: people search when something breaks and call the first credible result; call-only focus and answering 24/7 (or pausing at night).
+- Service area and job type decide profit: separate campaigns per service and tight location targeting.
+- Local Services Ads (where available) charge per lead and need background checks/verification; they sit alongside Search.
 
 ## Outline
 
@@ -38,7 +45,7 @@
 - Hotel: Performance Max + Search tuned for calls and directions, 1,170 actions at ₹9.87 (~$0.12), 47.9% conversion rate.
 - Dry fruit retail: 4,050 store actions at ₹25.62 (~$0.31) with per-store campaigns.
 - Failure: education call campaign, ₹3,043 per conversion on broad keywords with no negatives. Directly relevant.
-- No home-services client numbers exist: do not imply any.
+- No home-services client numbers exist: say plainly that Aditya hasn't run a trades client and that the examples are transferable. Industry-specific advice must follow Google's official help pages (call ads, Local Services Ads).
 
 ## Internal links
 

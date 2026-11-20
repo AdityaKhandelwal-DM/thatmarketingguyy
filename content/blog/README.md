@@ -16,6 +16,8 @@ image: work_dashboard
 ```
 
 `title` (the H1), `description`, `date`, `keyword` and `image` are required.
+`type:` is `post` (default), `guide` or `case-study` — see
+`content/blog-briefs/RULES.md` section 0 for lengths and endings.
 `metaTitle` is the `<title>` Google shows: ≤60 characters, copied from the
 brief; when it is set the site does not add "| thatmarketingguy". `updated:
 YYYY-MM-DD` is optional and only for meaningful refreshes of an older post.
@@ -62,7 +64,7 @@ real sentence. No tables, code fences, or raw HTML — they render as plain text
   revolutionize, delve, "in today's fast-paced world", "take it to the next level".
 - No fabricated data. Use only verified numbers from /results or clearly
   hypothetical examples labelled as such.
-- 900–1,200 words. Every post links to the matching service page
+- Length by type: post 600–1,200, guide 1,200–2,000, case study 1,000–1,600 words. Every post links to the matching service page
   (/facebook-ads-expert for Meta topics, /google-ads-expert for Google topics,
   both for comparison posts) using natural anchor text such as "hire a
   Facebook ads expert", plus /results (proof) and /contact near the end. Link one related earlier post when any exist. Do NOT link /learn or
