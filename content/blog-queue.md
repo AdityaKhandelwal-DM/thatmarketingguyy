@@ -1,7 +1,9 @@
 # Blog queue — what to write next
 
-Take the first row whose Status is `todo` **and that has no open pull request
-yet** (check `gh pr list --state open`; skip any row whose slug already has an
+**Read `content/blog-briefs/RULES.md` first.** A row may only be written if it
+passes all the topic gates there at the moment of writing (rows marked `hold`
+or `research` are never written). Take the first row whose Status is `todo`,
+that passes the gates, **and that has no open pull request yet** (check `gh pr list --state open`; skip any row whose slug already has an
 open `blog/<slug>` PR), write it (rules in content/blog/README.md), then change
 its Status to `done YYYY-MM-DD` in the same commit.
 
@@ -49,19 +51,22 @@ H2/H3 in the searcher's wording.
 | 17 | todo | Meta | Meta Ads Not Spending? 8 Reasons Your Facebook Ads Aren't Delivering | meta ads not spending (ATP) · "not working" cluster (GSC pos 35–68) | [brief](blog-briefs/meta-ads-not-spending.md) |
 | 18 | todo | Google | Is Google Ads Worth It for a Small Business in 2026? An Honest Answer | is google ads worth it for small business (ATP PAA ×4) | [brief](blog-briefs/is-google-ads-worth-it-for-small-business.md) |
 | 19 | todo | Meta | Facebook Ads for Ecommerce Brands: Agency, Freelancer or In-House? | facebook ads agency for ecommerce (ATP 40) | [brief](blog-briefs/facebook-ads-for-ecommerce.md) |
-| 20 | todo | Google | When Should an Ecommerce Brand Hire a Google Ads Agency Instead of a Freelancer? | google ads agency vs freelancer (GSC pos 73–82) | [brief](blog-briefs/google-ads-agency-vs-freelancer-for-ecommerce.md) |
-| 21 | todo | Meta | Facebook Ads for Local Service Businesses: What Actually Brings Booked Jobs | facebook ads for local service businesses (GSC pos 66) | [brief](blog-briefs/facebook-ads-for-local-service-businesses.md) |
 | 22 | todo | Google | Hiring a Remote Google Ads Consultant in Singapore, Australia or the UK | remote google ads consultant (GSC "google ads expert singapore"; ATP AU/UK/US) | [brief](blog-briefs/remote-google-ads-consultant.md) |
-| 23 | todo | Meta | Facebook Ads Agency Near Me, or a Remote Specialist? How to Choose | facebook ads agency near me (ATP 260) | [brief](blog-briefs/facebook-ads-agency-near-me.md) |
-| 24 | todo | Google | Google Ads for Home Services: Plumbers, HVAC, Cleaners and Electricians | google ads for home services (n/m) | [brief](blog-briefs/google-ads-for-home-services.md) |
-| 25 | todo | Meta | Are Instagram Ads Worth It for a Small Business? | are instagram ads worth it (ATP PAA) | [brief](blog-briefs/are-instagram-ads-worth-it.md) |
+| 21 | todo | Meta | Facebook Ads for Local Service Businesses: What Actually Brings Booked Jobs | facebook ads for local service businesses (GSC pos 66) | [brief](blog-briefs/facebook-ads-for-local-service-businesses.md) |
 | 26 | todo | Google | Why Are My Google Ads Not Working? 9 Things I Check First | why are my google ads not working ("not working" cluster, GSC) | [brief](blog-briefs/why-are-my-google-ads-not-working.md) |
+| 25 | todo | Meta | Are Instagram Ads Worth It for a Small Business? | are instagram ads worth it (ATP PAA) | [brief](blog-briefs/are-instagram-ads-worth-it.md) |
+| — | research | Google | *Needs a proven Google topic here (gate 6: keeps Google/Meta alternating). Candidates to check for demand: YouTube ads for clinics (physio 18.6× ROAS), Google Ads for hotels/resorts (1,170 actions at ₹9.87).* | — | — |
 | 27 | todo | Meta | Meta Ads Audit: What a Good One Checks (and What You Should Get) | meta ads audit (ATP) | [brief](blog-briefs/meta-ads-audit.md) |
+| — | research | Google | *Second proven Google topic needed before row 23.* | — | — |
+| 23 | todo | Meta | Facebook Ads Agency Near Me, or a Remote Specialist? How to Choose | facebook ads agency near me (ATP 260) | [brief](blog-briefs/facebook-ads-agency-near-me.md) |
+| 20 | hold: rule 4, no Google ecommerce proof; fold into /blog/google-ads-expert-vs-agency as a refresh | Google | When Should an Ecommerce Brand Hire a Google Ads Agency Instead of a Freelancer? | google ads agency vs freelancer (GSC pos 73–82) | [brief](blog-briefs/google-ads-agency-vs-freelancer-for-ecommerce.md) |
+| 24 | hold: rule 4, no home-services proof yet; write only if Aditya has run trade clients | Google | Google Ads for Home Services: Plumbers, HVAC, Cleaners and Electricians | google ads for home services (n/m) | [brief](blog-briefs/google-ads-for-home-services.md) |
 
 Rows 16–27 were researched on 18 Nov 2026 from Google Search Console (last 3
 months: 323 impressions, 2 clicks, avg. position 56) and AnswerThePublic
-(seeds: meta ads, google ads consultant, facebook ads agency). Expected run
-dates: 19 Nov, 22, 25, 28 Nov, 1, 4, 7, 10, 13, 16, 19, 22 Dec.
+(seeds: meta ads, google ads consultant, facebook ads agency). Re-checked
+against RULES.md on 20 Nov 2026: rows 20 and 24 held (no proof), order
+changed to keep Google/Meta alternating and to space out the hiring cluster.
 
 ## Later (learning phase, ~Apr 2027) — do not write yet
 

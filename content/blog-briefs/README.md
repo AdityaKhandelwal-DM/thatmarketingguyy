@@ -5,6 +5,9 @@ Each queue row in `content/blog-queue.md` points to a brief here
 into `content/blog/<slug>.md`. These files are never published (the blog only
 reads `content/blog/`).
 
+**`RULES.md` comes first:** the topic gates, writing checks, cadence and
+"never" list there override everything else in this folder.
+
 Write the post from the brief, not from scratch. If the brief and
 `content/blog/README.md` disagree, the README's voice and data rules win; the
 brief wins on structure, keywords and links.
