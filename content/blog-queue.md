@@ -55,7 +55,9 @@ H2/H3 in the searcher's wording.
 | 21 | todo | Meta | Facebook Ads for Local Service Businesses: What Actually Brings Booked Jobs | facebook ads for local service businesses (GSC pos 66) | [brief](blog-briefs/facebook-ads-for-local-service-businesses.md) |
 | 26 | todo | Google | Why Are My Google Ads Not Working? 9 Things I Check First | why are my google ads not working ("not working" cluster, GSC) | [brief](blog-briefs/why-are-my-google-ads-not-working.md) |
 | 25 | todo | Meta | Are Instagram Ads Worth It for a Small Business? | are instagram ads worth it (ATP PAA) | [brief](blog-briefs/are-instagram-ads-worth-it.md) |
-| — | research | Google | *Needs a proven Google topic here (gate 6: keeps Google/Meta alternating). Candidates to check for demand: YouTube ads for clinics (physio 18.6× ROAS), Google Ads for hotels/resorts (1,170 actions at ₹9.87).* | — | — |
+| 28 | todo | Google | Google Ads for Hotels: Getting Direct Bookings, Calls and Walk-ins | google ads for hotels (ATP 390) | [brief](blog-briefs/google-ads-for-hotels.md) |
+| 29 | todo | Meta | Facebook Ads for Schools and Colleges: How to Fill Admissions | facebook ads for schools (ATP 210) | [brief](blog-briefs/facebook-ads-for-schools.md) |
+| — | research | Google | *Proven Google topic needed here (gate 6). Next seeds: google ads for retail stores (dry fruit store visits), google ads for schools (education call campaign lesson).* | — | — |
 | 27 | todo | Meta | Meta Ads Audit: What a Good One Checks (and What You Should Get) | meta ads audit (ATP) | [brief](blog-briefs/meta-ads-audit.md) |
 | — | research | Google | *Second proven Google topic needed before row 23.* | — | — |
 | 23 | todo | Meta | Facebook Ads Agency Near Me, or a Remote Specialist? How to Choose | facebook ads agency near me (ATP 260) | [brief](blog-briefs/facebook-ads-agency-near-me.md) |
