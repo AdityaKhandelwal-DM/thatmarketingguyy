@@ -2,6 +2,7 @@
 
 | Field | Plan |
 |---|---|
+| Post type | `type: guide` (see RULES.md section 0) |
 | Platform | Google |
 | URL slug | `/blog/google-ads-for-hotels` |
 | Meta title | Google Ads for Hotels: More Direct Bookings and Calls |

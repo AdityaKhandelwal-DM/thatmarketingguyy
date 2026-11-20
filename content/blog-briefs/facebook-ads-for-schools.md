@@ -2,6 +2,7 @@
 
 | Field | Plan |
 |---|---|
+| Post type | `type: guide` (see RULES.md section 0) |
 | Platform | Meta |
 | URL slug | `/blog/facebook-ads-for-schools` |
 | Meta title | Facebook Ads for Schools: Get More Admission Enquiries |

@@ -48,38 +48,39 @@ H2/H3 in the searcher's wording.
 | 14 | done 2026-11-13 | Meta | Are Facebook Ads Worth It for Small Business? An Honest Answer | are facebook ads worth it (210) · facebook ads for business (4.4K) | Is it worth paying for ads on Facebook? · are facebook ads effective (40) |
 | 15 | done 2026-11-10 | Google | Google Ads vs SEO: Where a Small Business Should Spend First | google ads and seo (390) · google ads vs seo (170) | google ads vs local service ads (70) |
 | 16 | done 2026-11-19 | Google | Google Ads Consultation: What You Should Get From the First Call | google ads consultation (GSC: 25 impr, pos 10.7) | [brief](blog-briefs/google-ads-consultation.md) |
-| 17 | todo | Meta | Meta Ads Not Spending? 8 Reasons Your Facebook Ads Aren't Delivering | meta ads not spending (ATP) · "not working" cluster (GSC pos 35–68) | [brief](blog-briefs/meta-ads-not-spending.md) |
-| 18 | todo | Google | Is Google Ads Worth It for a Small Business in 2026? An Honest Answer | is google ads worth it for small business (ATP PAA ×4) | [brief](blog-briefs/is-google-ads-worth-it-for-small-business.md) |
-| 19 | todo | Meta | Facebook Ads for Ecommerce Brands: Agency, Freelancer or In-House? | facebook ads agency for ecommerce (ATP 40) | [brief](blog-briefs/facebook-ads-for-ecommerce.md) |
-| 22 | todo | Google | Hiring a Remote Google Ads Consultant in Singapore, Australia or the UK | remote google ads consultant (GSC "google ads expert singapore"; ATP AU/UK/US) | [brief](blog-briefs/remote-google-ads-consultant.md) |
-| 21 | todo | Meta | Facebook Ads for Local Service Businesses: What Actually Brings Booked Jobs | facebook ads for local service businesses (GSC pos 66) | [brief](blog-briefs/facebook-ads-for-local-service-businesses.md) |
-| 26 | todo | Google | Why Are My Google Ads Not Working? 9 Things I Check First | why are my google ads not working ("not working" cluster, GSC) | [brief](blog-briefs/why-are-my-google-ads-not-working.md) |
-| 25 | todo | Meta | Are Instagram Ads Worth It for a Small Business? | are instagram ads worth it (ATP PAA) | [brief](blog-briefs/are-instagram-ads-worth-it.md) |
-| 28 | todo | Google | Google Ads for Hotels: Getting Direct Bookings, Calls and Walk-ins | google ads for hotels (ATP 390) | [brief](blog-briefs/google-ads-for-hotels.md) |
-| 29 | todo | Meta | Facebook Ads for Schools and Colleges: How to Fill Admissions | facebook ads for schools (ATP 210) | [brief](blog-briefs/facebook-ads-for-schools.md) |
-| 31 | todo | Google | Google Ads for Retail Stores: How to Bring People Through the Door | google ads for retail stores (autocomplete) · guide | [brief](blog-briefs/google-ads-for-retail-stores.md) |
-| 27 | todo | Meta | Meta Ads Audit: What a Good One Checks (and What You Should Get) | meta ads audit (ATP) | [brief](blog-briefs/meta-ads-audit.md) |
-| 33 | todo | Google | Google Ads for Schools and Colleges: Admissions Without Wasted Spend | google ads for schools (autocomplete) · guide | [brief](blog-briefs/google-ads-for-schools.md) |
-| 23 | todo | Meta | Facebook Ads Agency Near Me, or a Remote Specialist? How to Choose | facebook ads agency near me (ATP 260) | [brief](blog-briefs/facebook-ads-agency-near-me.md) |
-| 35 | todo | Google | Google Ads Case Study: How 3 Small UK Brands Grew With Search and Performance Max | google ads case study (autocomplete) · case study | [brief](blog-briefs/google-ads-case-study-small-business.md) |
+| 17 | todo | Meta | Meta Ads Not Spending? 8 Reasons Your Facebook Ads Aren't Delivering | meta ads not spending (ATP) · "not working" cluster (GSC pos 35–68) · post | [brief](blog-briefs/meta-ads-not-spending.md) |
+| 28 | todo | Google | Google Ads for Hotels: Getting Direct Bookings, Calls and Walk-ins | google ads for hotels (ATP 390) · guide | [brief](blog-briefs/google-ads-for-hotels.md) |
 | 30 | todo | Meta | Facebook Ads for Restaurants: A Step-by-Step Playbook That Fills Tables | facebook ads for restaurants (autocomplete) · guide | [brief](blog-briefs/facebook-ads-for-restaurants.md) |
-| 24 | todo | Google | Google Ads for Home Services: Plumbers, HVAC, Cleaners and Electricians | google ads for home services (autocomplete: plumbers, hvac, electricians, locksmith, cleaning business) · guide | [brief](blog-briefs/google-ads-for-home-services.md) |
+| 18 | todo | Google | Is Google Ads Worth It for a Small Business in 2026? An Honest Answer | is google ads worth it for small business (ATP PAA ×4) · post | [brief](blog-briefs/is-google-ads-worth-it-for-small-business.md) |
 | 34 | todo | Meta | Facebook Ads Case Study: How 3 Local Businesses Grew With Meta Ads | facebook ads case study (autocomplete) · case study | [brief](blog-briefs/facebook-ads-case-study-local-businesses.md) |
+| 31 | todo | Google | Google Ads for Retail Stores: How to Bring People Through the Door | google ads for retail stores (autocomplete) · guide | [brief](blog-briefs/google-ads-for-retail-stores.md) |
+| 21 | todo | Meta | Facebook Ads for Local Service Businesses: What Actually Brings Booked Jobs | facebook ads for local service businesses (GSC pos 66) · post | [brief](blog-briefs/facebook-ads-for-local-service-businesses.md) |
+| 26 | todo | Google | Why Are My Google Ads Not Working? 9 Things I Check First | why are my google ads not working ("not working" cluster, GSC) · post | [brief](blog-briefs/why-are-my-google-ads-not-working.md) |
+| 29 | todo | Meta | Facebook Ads for Schools and Colleges: How to Fill Admissions | facebook ads for schools (ATP 210) · guide | [brief](blog-briefs/facebook-ads-for-schools.md) |
+| 35 | todo | Google | Google Ads Case Study: How 3 Small UK Brands Grew With Search and Performance Max | google ads case study (autocomplete) · case study | [brief](blog-briefs/google-ads-case-study-small-business.md) |
+| 19 | todo | Meta | Facebook Ads for Ecommerce Brands: Agency, Freelancer or In-House? | facebook ads agency for ecommerce (ATP 40) · post | [brief](blog-briefs/facebook-ads-for-ecommerce.md) |
+| 33 | todo | Google | Google Ads for Schools and Colleges: Admissions Without Wasted Spend | google ads for schools (autocomplete) · guide | [brief](blog-briefs/google-ads-for-schools.md) |
+| 27 | todo | Meta | Meta Ads Audit: What a Good One Checks (and What You Should Get) | meta ads audit (ATP) · post | [brief](blog-briefs/meta-ads-audit.md) |
 | 37 | todo | Google | Google Ads for Lawyers: How Small Firms Get Cases Without Burning Budget | google ads for lawyers (autocomplete) · guide | [brief](blog-briefs/google-ads-for-lawyers.md) |
 | 32 | todo | Meta | Facebook Ads for Events: How to Sell Tickets and Fill Venues | facebook ads for events (autocomplete) · guide | [brief](blog-briefs/facebook-ads-for-events.md) |
-| 40 | todo | Google | Google Ads for Real Estate Agents: Buyer and Seller Leads, Step by Step | google ads for real estate agents (autocomplete) · guide | [brief](blog-briefs/google-ads-for-real-estate-agents.md) |
-| 36 | todo | Meta | Facebook Ads for Contractors: Roofing, Remodeling and Painting Leads That Close | facebook ads for contractors (autocomplete) · guide | [brief](blog-briefs/facebook-ads-for-contractors.md) |
-| — | research | Google | *Proven Google topic needed here (gate 6).* | — | — |
+| 24 | todo | Google | Google Ads for Home Services: Plumbers, HVAC, Cleaners and Electricians | google ads for home services (autocomplete: plumbers, hvac, electricians, locksmith, cleaning business) · guide | [brief](blog-briefs/google-ads-for-home-services.md) |
+| 41 | todo | Meta | Facebook Ads for Health and Wellness Businesses: Spas, Massage and Yoga Studios | facebook ads for health and wellness (autocomplete) · guide | [brief](blog-briefs/facebook-ads-for-health-and-wellness.md) |
+| 22 | todo | Google | Hiring a Remote Google Ads Consultant in Singapore, Australia or the UK | remote google ads consultant (GSC "google ads expert singapore"; ATP AU/UK/US) · post | [brief](blog-briefs/remote-google-ads-consultant.md) |
 | 38 | todo | Meta | Facebook Ads for Hotels and Resorts: Direct Bookings Without the OTA Commission | facebook ads for hotels (autocomplete) · guide | [brief](blog-briefs/facebook-ads-for-hotels.md) |
 | 39 | todo | Google | YouTube Ads Case Study: A Heli-Ski Operator and a Physio Clinic | youtube ads case study (autocomplete) · case study | [brief](blog-briefs/youtube-ads-case-study.md) |
-| 41 | todo | Meta | Facebook Ads for Health and Wellness Businesses: Spas, Massage and Yoga Studios | facebook ads for health and wellness (autocomplete) · guide | [brief](blog-briefs/facebook-ads-for-health-and-wellness.md) |
+| 25 | todo | Meta | Are Instagram Ads Worth It for a Small Business? | are instagram ads worth it (ATP PAA) · post | [brief](blog-briefs/are-instagram-ads-worth-it.md) |
+| 40 | todo | Google | Google Ads for Real Estate Agents: Buyer and Seller Leads, Step by Step | google ads for real estate agents (autocomplete) · guide | [brief](blog-briefs/google-ads-for-real-estate-agents.md) |
+| 23 | todo | Meta | Facebook Ads Agency Near Me, or a Remote Specialist? How to Choose | facebook ads agency near me (ATP 260) · post | [brief](blog-briefs/facebook-ads-agency-near-me.md) |
+| — | research | Google | *Proven Google topic needed here (gate 6). ~06 Jan* | — | — |
+| 36 | todo | Meta | Facebook Ads for Contractors: Roofing, Remodeling and Painting Leads That Close | facebook ads for contractors (autocomplete) · guide | [brief](blog-briefs/facebook-ads-for-contractors.md) |
 | 20 | merged into /blog/google-ads-expert-vs-agency (refresh 2026-11-20) | Google | When Should an Ecommerce Brand Hire a Google Ads Agency Instead of a Freelancer? | google ads agency vs freelancer (GSC pos 73–82) | [brief](blog-briefs/google-ads-agency-vs-freelancer-for-ecommerce.md) |
 
 Rows 16–27 were researched on 18 Nov 2026 from Google Search Console (last 3
 months: 323 impressions, 2 clicks, avg. position 56) and AnswerThePublic
-(seeds: meta ads, google ads consultant, facebook ads agency). Re-checked
-against RULES.md on 20 Nov 2026: rows 20 and 24 held (no proof), order
-changed to keep Google/Meta alternating and to space out the hiring cluster.
+(seeds: meta ads, google ads consultant, facebook ads agency). Order set on 20 Nov 2026 as a mix of hiring posts, industry guides and case
+studies (roughly 2 : 2 : 1), strongest proof and Search Console demand first,
+Google/Meta alternating, max 2 per topic group in 30 days. At one post every
+2 days the first row runs 21 Nov and the list lasts to ~10 Jan 2027.
 
 ## Later (learning phase, ~Apr 2027) — do not write yet
 
