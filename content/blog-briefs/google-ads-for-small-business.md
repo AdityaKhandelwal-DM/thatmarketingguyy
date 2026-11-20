@@ -1,14 +1,15 @@
-# Brief 35 — Google Ads Case Study: How 3 Small UK Brands Grew With Search and Performance Max
+# Brief 35 — Google Ads for Small Business: How 3 Small Brands Grew (Real Case Studies)
 
 | Field | Plan |
 |---|---|
 | Post type | `type: case-study` (see RULES.md section 0 for length and ending) |
 | Platform | Google |
-| URL slug | `/blog/google-ads-case-study-small-business` |
-| Meta title | Google Ads Case Study: 3 Small Brands That Grew |
-| Meta description | A Google Ads case study of three small UK brands that grew with Search, Shopping and Performance Max: what they did, their results, and what to copy. |
-| H1 | Google Ads Case Study: How 3 Small UK Brands Grew With Search and Performance Max |
-| Primary keyword | google ads case study |
+| URL slug | `/blog/google-ads-for-small-business` |
+| Meta title | Google Ads for Small Business: 3 Case Studies to Copy |
+| Meta description | Google Ads for small business, through three real case studies of small UK brands that grew with Search and Performance Max, and the steps to copy. |
+| Search volume | Keyword Planner (20 Nov 2026, US+UK+AU+SG+UAE avg. monthly searches): "google ads for small business" **1,900**; "google ads case study" 40 |
+| H1 | Google Ads for Small Business: How 3 Small Brands Grew (Real Case Studies) |
+| Primary keyword | google ads for small business |
 | Secondary keywords | google search ads case study · performance max case study · google ads case study small business · google shopping case study |
 | Gate 1, demand | Google autocomplete (US, 20 Nov): "google ads case study", "google search ads case study", "google ads case study template", "google display ads case study". |
 | Gate 5, new information | Practitioner analysis of what the three have in common (brand vs non-brand split, Search first then Performance Max, measuring new customers), plus how a local business can borrow the sequence. |

@@ -1,14 +1,15 @@
-# Brief 25 — Are Instagram Ads Worth It for a Small Business?
+# Brief 25 — How Much Do Instagram Ads Cost, and Are They Worth It for a Small Business?
 
 | Field | Plan |
 |---|---|
 | Publish (routine run) | 16 Dec 2026 |
 | Platform | Meta |
-| URL slug | `/blog/are-instagram-ads-worth-it` |
-| Meta title | Are Instagram Ads Worth It for Small Business? |
-| Meta description | Are Instagram ads worth it for a small business? When Instagram beats Facebook, what it costs, and how to tell if it's paying off, with real numbers. |
-| H1 | Are Instagram Ads Worth It for a Small Business? |
-| Primary keyword | are instagram ads worth it |
+| URL slug | `/blog/instagram-ads-cost` |
+| Meta title | Instagram Ads Cost: What You Pay and Is It Worth It? |
+| Meta description | How much Instagram ads cost, what pushes the price up or down, and whether they are worth it for a small business, with real costs per lead. |
+| Search volume | Keyword Planner (20 Nov 2026, US+UK+AU+SG+UAE avg. monthly searches): "instagram ads cost" **2,900**, "are instagram ads worth it" 170 |
+| H1 | How Much Do Instagram Ads Cost, and Are They Worth It for a Small Business? |
+| Primary keyword | instagram ads cost |
 | Secondary keywords | is it worth paying for instagram ads · instagram ads vs facebook ads · how much do instagram ads cost · instagram ads for small business · meta ads instagram |
 | Search intent | Commercial investigation. |
 | Reader | Owner of a visual business (food, hospitality, beauty, D2C, events) deciding whether to pay for Instagram. |

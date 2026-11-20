@@ -7,6 +7,7 @@
 | URL slug | `/blog/facebook-ads-for-hotels` |
 | Meta title | Facebook Ads for Hotels: More Direct Bookings |
 | Meta description | How to run Facebook and Instagram ads for hotels and resorts: packages, origin-market targeting, retargeting, booking leads and real resort results. |
+| Search volume | Keyword Planner (20 Nov 2026, US+UK+AU+SG+UAE avg. monthly searches): "facebook ads for hotels" **720** |
 | H1 | Facebook Ads for Hotels and Resorts: Direct Bookings Without the OTA Commission |
 | Primary keyword | facebook ads for hotels |
 | Secondary keywords | instagram ads for hotels · facebook ads for resorts · hotel facebook ad examples · facebook ads for boutique hotels · direct bookings facebook ads |

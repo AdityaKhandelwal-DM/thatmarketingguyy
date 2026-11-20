@@ -7,6 +7,7 @@
 | URL slug | `/blog/facebook-ads-for-contractors` |
 | Meta title | Facebook Ads for Contractors: Leads That Turn Into Jobs |
 | Meta description | Facebook ads for contractors (roofing, remodeling, painting): service-area targeting, before-and-after creative, lead forms that filter, and budgets. |
+| Search volume | Keyword Planner (20 Nov 2026, US+UK+AU+SG+UAE avg. monthly searches): "facebook ads for contractors" **210**, "facebook ads for roofers" 90 |
 | H1 | Facebook Ads for Contractors: Roofing, Remodeling and Painting Leads That Close |
 | Primary keyword | facebook ads for contractors |
 | Secondary keywords | do facebook ads work for contractors · facebook ads for general contractors · facebook ads for painting contractors · facebook ads for construction companies · facebook ads for roofing |
@@ -38,11 +39,11 @@ Follow the standard `guide` outline in `content/blog-briefs/README.md`.
 ## Internal links
 
 - "hire a Facebook ads expert" → /facebook-ads-expert
-- "Facebook ads for local service businesses" → /blog/facebook-ads-for-local-service-businesses (only if live)
-- "Google Ads for home services" → /blog/google-ads-for-home-services (only if live)
+- "Facebook ads for local service businesses" → /blog/facebook-ads-for-local-business (only if live)
+- "Google Ads for home services" → /blog/google-ads-for-plumbers (only if live)
 - "Facebook ads cost" → /blog/facebook-ads-cost
 - /results and /contact near the end (the help offer stays to one natural sentence).
-- **Link to this post FROM:** /blog/facebook-ads-for-local-service-businesses (once live; otherwise /blog/facebook-ads-cost).
+- **Link to this post FROM:** /blog/facebook-ads-for-local-business (once live; otherwise /blog/facebook-ads-cost).
 
 ## External link
 

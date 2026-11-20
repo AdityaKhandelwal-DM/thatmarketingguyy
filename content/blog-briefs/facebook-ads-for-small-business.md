@@ -1,14 +1,15 @@
-# Brief 34 — Facebook Ads Case Study: How 3 Local Businesses Grew With Meta Ads
+# Brief 34 — Facebook Ads for Small Business: 3 Real Case Studies and What to Copy
 
 | Field | Plan |
 |---|---|
 | Post type | `type: case-study` (see RULES.md section 0 for length and ending) |
 | Platform | Meta |
-| URL slug | `/blog/facebook-ads-case-study-local-businesses` |
-| Meta title | Facebook Ads Case Study: 3 Local Businesses That Grew |
-| Meta description | A Facebook ads case study of three local businesses: a barbershop, a garden designer and an estate agency. What they did, their results, and what to copy. |
-| H1 | Facebook Ads Case Study: How 3 Local Businesses Grew With Meta Ads |
-| Primary keyword | facebook ads case study |
+| URL slug | `/blog/facebook-ads-for-small-business` |
+| Meta title | Facebook Ads for Small Business: 3 Real Case Studies |
+| Meta description | Facebook ads for small business, shown through three real case studies (a barbershop, a garden designer, an estate agency) and the steps you can copy. |
+| Search volume | Keyword Planner (20 Nov 2026, US+UK+AU+SG+UAE avg. monthly searches): "facebook ads for small business" **720**; "facebook ads case study" 20 |
+| H1 | Facebook Ads for Small Business: 3 Real Case Studies and What to Copy |
+| Primary keyword | facebook ads for small business |
 | Secondary keywords | facebook ads case study small business · facebook campaign case study · real estate facebook ads case study · local business facebook ads results |
 | Gate 1, demand | Google autocomplete (US, 20 Nov): "facebook ads case study", "facebook campaign case study", "real estate facebook ads case study", "facebook ads ecommerce case study". |
 | Gate 5, new information | The official stories only list outcomes. This post adds a practitioner's read on why each worked, what a small business can copy, and Aditya's own comparable campaign with exact costs. |
@@ -38,7 +39,7 @@ Follow the standard `case-study` outline in `content/blog-briefs/README.md`.
 ## Internal links
 
 - "hire a Facebook ads expert" → /facebook-ads-expert
-- "Facebook ads for local service businesses" → /blog/facebook-ads-for-local-service-businesses (only if live)
+- "Facebook ads for local service businesses" → /blog/facebook-ads-for-local-business (only if live)
 - "Facebook ads for real estate" → /blog/facebook-ads-for-real-estate
 - "results" → /results
 - /results and /contact near the end (the help offer stays to one natural sentence).

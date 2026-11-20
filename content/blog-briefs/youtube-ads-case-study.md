@@ -36,11 +36,11 @@ Follow the standard `case-study` outline in `content/blog-briefs/README.md`.
 ## Internal links
 
 - "hire a Google Ads expert" → /google-ads-expert
-- "Google Ads case study" → /blog/google-ads-case-study-small-business (only if live)
+- "Google Ads case study" → /blog/google-ads-for-small-business (only if live)
 - "Is Google Ads worth it" → /blog/is-google-ads-worth-it-for-small-business (only if live)
 - "results" → /results
 - /results and /contact near the end (the help offer stays to one natural sentence).
-- **Link to this post FROM:** /blog/google-ads-case-study-small-business (once live).
+- **Link to this post FROM:** /blog/google-ads-for-small-business (once live).
 
 ## External link
 

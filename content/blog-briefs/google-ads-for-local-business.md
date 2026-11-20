@@ -1,14 +1,15 @@
-# Brief 31 — Google Ads for Retail Stores: How to Bring People Through the Door
+# Brief 31 — Google Ads for Local Business: Calls, Directions and Store Visits, Step by Step
 
 | Field | Plan |
 |---|---|
 | Post type | `type: guide` (see RULES.md section 0 for length and ending) |
 | Platform | Google |
-| URL slug | `/blog/google-ads-for-retail-stores` |
-| Meta title | Google Ads for Retail Stores: Drive Store Visits |
-| Meta description | Google Ads for retail stores, step by step: local search, Maps and Performance Max set up per store, store-visit tracking, budgets and real results. |
-| H1 | Google Ads for Retail Stores: How to Bring People Through the Door |
-| Primary keyword | google ads for retail stores |
+| URL slug | `/blog/google-ads-for-local-business` |
+| Meta title | Google Ads for Local Business: A Step-by-Step Guide |
+| Meta description | Google Ads for local business, step by step: local search and Maps ads, per-location setup, call and store-visit tracking, budgets and real results. |
+| Search volume | Keyword Planner (20 Nov 2026, US+UK+AU+SG+UAE avg. monthly searches): "google ads for local business" **880** (retail stores are covered inside) |
+| H1 | Google Ads for Local Business: Calls, Directions and Store Visits, Step by Step |
+| Primary keyword | google ads for local business |
 | Secondary keywords | google ads for retail store · google ads for store visits · google ads for local business · local store google maps ads · performance max for retail |
 | Gate 1, demand | Google autocomplete (US, 20 Nov): "google ads for retail", "google ads for retail store", "google ads for store visits"; "google ads for local business" in the a–z list. |
 | Gate 5, new information | A real three-store retailer's per-store setup with store-visit tracking: 4,050 store actions at ₹25.62, and why it was split per store. |

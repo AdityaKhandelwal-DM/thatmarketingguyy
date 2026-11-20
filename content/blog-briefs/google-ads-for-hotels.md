@@ -7,6 +7,7 @@
 | URL slug | `/blog/google-ads-for-hotels` |
 | Meta title | Google Ads for Hotels: More Direct Bookings and Calls |
 | Meta description | Google Ads for hotels that bring direct bookings, calls and direction requests, not just clicks. The setup I use, what to track, and what it costs. |
+| Search volume | Keyword Planner (20 Nov 2026, US+UK+AU+SG+UAE avg. monthly searches): "google ads for hotels" **590** |
 | H1 | Google Ads for Hotels: Getting Direct Bookings, Calls and Walk-ins |
 | Primary keyword | google ads for hotels |
 | Secondary keywords | how to run google ads for hotels · hotel google ads management · google hotel ads · get more direct hotel bookings · is it cheaper to book a hotel directly |

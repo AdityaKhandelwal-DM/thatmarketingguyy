@@ -21,11 +21,22 @@ site adds a quiet line under the post automatically.
 
 ## 1. Choosing a topic: all seven gates must pass
 
-1. **Real demand.** The topic comes from evidence that people search for it:
-   a Google Search Console query with impressions, an AnswerThePublic keyword
-   or question, a Google "People also ask" question, or a Google autocomplete
-   suggestion (US, `suggestqueries.google.com`). Write the evidence in
-   the brief. No topic comes from guessing what "might rank".
+1. **Real, measurable demand (high search intent).** Every topic must be
+   worth ranking for, not just searched by someone:
+   - The primary keyword, or the cluster of close variants the post targets,
+     has **at least 100 average monthly searches** in Google Keyword Planner
+     for the target markets combined (US + UK + Australia + Singapore + UAE),
+     **or** Search Console shows the site already at position 30 or better for
+     it. Record the numbers in the brief ("Search volume" row).
+   - Pick the variant with the most volume as the primary keyword and put the
+     smaller variants in the secondary list (e.g. "instagram ads cost" 2,900
+     rather than "are instagram ads worth it" 170).
+   - AnswerThePublic, "People also ask" and autocomplete find the questions
+     and angles; Keyword Planner decides whether the topic gets a post.
+   - Prefer commercial or hire-adjacent intent (cost, management, "for
+     [business]", agency, worth it) over purely informational queries.
+   - Below 100 and not in Search Console: the topic goes on `hold`, or its
+     questions become a section/FAQ in a related post.
 2. **Right reader.** The searcher is a small-business owner (US, UK, UAE,
    Australia, Singapore) deciding whether or whom to hire for Meta or Google
    Ads. For `guide` posts the reader may also be an owner who wants to run ads

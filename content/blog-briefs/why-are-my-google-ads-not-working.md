@@ -7,8 +7,9 @@
 | URL slug | `/blog/why-are-my-google-ads-not-working` |
 | Meta title | Why Are My Google Ads Not Working? 9 Things to Check |
 | Meta description | Why are my Google Ads not working? The 9 things I check first, in order, from conversion tracking to search terms, and when to get outside help. |
+| Search volume | Keyword Planner (20 Nov 2026, US+UK+AU+SG+UAE avg. monthly searches): "google ads not working" **90**, "why are my google ads not working" 10 (borderline; written for the Search Console "not working" cluster) |
 | H1 | Why Are My Google Ads Not Working? 9 Things I Check First |
-| Primary keyword | why are my google ads not working |
+| Primary keyword | google ads not working |
 | Secondary keywords | google ads not working · google ads not getting conversions · google ads not showing · google ads getting clicks but no calls · google ads fix |
 | Search intent | Problem-solving with hire intent. |
 | Reader | Owner whose Google Ads spend is going out with few enquiries. |

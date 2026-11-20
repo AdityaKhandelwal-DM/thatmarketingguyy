@@ -7,6 +7,7 @@
 | URL slug | `/blog/meta-ads-not-spending` |
 | Meta title | Meta Ads Not Spending? 8 Reasons and How to Fix Them |
 | Meta description | Meta ads not spending or not showing? The 8 reasons I check first, in order, from 89 ad accounts, and when it's time to get someone to look at it. |
+| Search volume | Keyword Planner (20 Nov 2026, US+UK+AU+SG+UAE avg. monthly searches): "meta ads not spending" 70 + "facebook ads not spending" 70 + "facebook ads not delivering" 50 (cluster ~190) plus Search Console "not working" impressions |
 | H1 | Meta Ads Not Spending? 8 Reasons Your Facebook Ads Aren't Delivering |
 | Primary keyword | meta ads not spending |
 | Secondary keywords | why are my facebook ads not spending money · facebook ads not showing · facebook ads not delivering · meta ads not working · how to increase spending limit on facebook ads |

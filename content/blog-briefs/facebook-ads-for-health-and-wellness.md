@@ -40,7 +40,7 @@ Follow the standard `guide` outline in `content/blog-briefs/README.md`.
 
 - "hire a Facebook ads expert" → /facebook-ads-expert
 - "Facebook ads for clinics" → /blog/clinic-facebook-ads
-- "Are Instagram ads worth it" → /blog/are-instagram-ads-worth-it (only if live)
+- "Are Instagram ads worth it" → /blog/instagram-ads-cost (only if live)
 - "Facebook ads cost" → /blog/facebook-ads-cost
 - /results and /contact near the end (the help offer stays to one natural sentence).
 - **Link to this post FROM:** /blog/clinic-facebook-ads.

@@ -5,10 +5,11 @@
 | Publish (routine run) | 28 Nov 2026 |
 | Platform | Meta |
 | URL slug | `/blog/facebook-ads-for-ecommerce` |
-| Meta title | Facebook Ads Agency for Ecommerce: Who Should You Hire? |
-| Meta description | Choosing a Facebook ads agency for ecommerce? How agency, freelancer and in-house compare, what to ask, and real ROAS from D2C brands I've run. |
+| Meta title | Facebook Ads for Ecommerce: Agency, Freelancer or In-House? |
+| Meta description | Facebook ads for ecommerce brands: how agency, freelancer and in-house compare, what a good setup looks like, and real ROAS from D2C brands I have run. |
+| Search volume | Keyword Planner (20 Nov 2026, US+UK+AU+SG+UAE avg. monthly searches): "facebook ads for ecommerce" **210**; "facebook ads agency for ecommerce" 20 |
 | H1 | Facebook Ads for Ecommerce Brands: Agency, Freelancer or In-House? |
-| Primary keyword | facebook ads agency for ecommerce |
+| Primary keyword | facebook ads for ecommerce |
 | Secondary keywords | facebook ads for ecommerce · meta ads for ecommerce · facebook ads for shopify store · what is a good roas for ecommerce facebook ads · facebook ads marketing agency |
 | Search intent | Commercial investigation, hire intent. |
 | Reader | D2C / Shopify brand owner doing $10K–$200K/month online. |

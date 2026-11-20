@@ -7,6 +7,7 @@
 | URL slug | `/blog/facebook-ads-agency-near-me` |
 | Meta title | Facebook Ads Agency Near Me vs a Remote Specialist |
 | Meta description | Searching for a Facebook ads agency near me? Whether local actually matters, what a remote specialist does differently, and how to choose well. |
+| Search volume | Keyword Planner (20 Nov 2026, US+UK+AU+SG+UAE avg. monthly searches): "facebook ads agency near me" **720**, "facebook ads agency" 2,900 |
 | H1 | Facebook Ads Agency Near Me, or a Remote Specialist? How to Choose |
 | Primary keyword | facebook ads agency near me |
 | Secondary keywords | facebook ads expert near me · facebook ads expert · hire a facebook expert · benefits of hiring a social media advertising agency · facebook marketing expert |
@@ -44,7 +45,7 @@
 - "hire a Facebook ads expert" → /facebook-ads-expert
 - "how to hire a Facebook ads expert" → /blog/how-to-hire-a-facebook-ads-expert
 - "hiring an India-based specialist" → /blog/hire-facebook-ads-expert-india
-- "Facebook ads for local service businesses" → /blog/facebook-ads-for-local-service-businesses
+- "Facebook ads for local service businesses" → /blog/facebook-ads-for-local-business
 - /results, /contact
 - **Link to this post FROM:** /blog/how-to-hire-a-facebook-ads-expert.
 

@@ -1,14 +1,15 @@
-# Brief 40 — Google Ads for Real Estate Agents: Buyer and Seller Leads, Step by Step
+# Brief 40 — Google Ads for Real Estate: Buyer and Seller Leads for Agents, Step by Step
 
 | Field | Plan |
 |---|---|
 | Post type | `type: guide` (see RULES.md section 0 for length and ending) |
 | Platform | Google |
-| URL slug | `/blog/google-ads-for-real-estate-agents` |
+| URL slug | `/blog/google-ads-for-real-estate` |
 | Meta title | Google Ads for Real Estate Agents: Buyer and Seller Leads |
-| Meta description | Google Ads for real estate agents: seller valuation searches, buyer area searches, Local Services Ads, housing ad rules, and how to judge cost per lead. |
-| H1 | Google Ads for Real Estate Agents: Buyer and Seller Leads, Step by Step |
-| Primary keyword | google ads for real estate agents |
+| Meta description | Google Ads for real estate agents: seller valuation searches, buyer area searches, Local Services Ads, housing ad rules and how to judge cost per lead. |
+| Search volume | Keyword Planner (20 Nov 2026, US+UK+AU+SG+UAE avg. monthly searches): "google ads for real estate" **390**, "google ads for real estate agents" 210 |
+| H1 | Google Ads for Real Estate: Buyer and Seller Leads for Agents, Step by Step |
+| Primary keyword | google ads for real estate |
 | Secondary keywords | do google ads work for real estate agents · are google ads worth it for real estate agents · google screened ads for real estate agents · how to run google ads for real estate · google ads for realtors |
 | Gate 1, demand | Google autocomplete (US, 20 Nov): "google ads for real estate agents", "do google ads work for real estate agents", "are google ads worth it for real estate agents", "google screened ads for real estate agents", "how to run google ads for real estate". |
 | Gate 5, new information | Contrasts Google's intent-led approach with the Facebook real-estate setup already on the site, and gives a seller-first campaign plan. Aditya hasn't run a Google real-estate account and says so. |

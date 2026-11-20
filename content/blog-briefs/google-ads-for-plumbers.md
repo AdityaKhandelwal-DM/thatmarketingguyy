@@ -1,15 +1,16 @@
-# Brief 24 — Google Ads for Home Services: Plumbers, HVAC, Cleaners and Electricians
+# Brief 24 — Google Ads for Plumbers, HVAC and Home Services: Calls, Not Clicks
 
 | Field | Plan |
 |---|---|
 | Publish (routine run) | 13 Dec 2026 |
 | Post type | `type: guide` (see RULES.md section 0) |
 | Platform | Google |
-| URL slug | `/blog/google-ads-for-home-services` |
-| Meta title | Google Ads for Home Services: Get Calls, Not Just Clicks |
-| Meta description | Google Ads for home services like plumbing, HVAC and cleaning: the campaign setup that brings calls, what a lead should cost, and mistakes to avoid. |
-| H1 | Google Ads for Home Services: Plumbers, HVAC, Cleaners and Electricians |
-| Primary keyword | google ads for home services |
+| URL slug | `/blog/google-ads-for-plumbers` |
+| Meta title | Google Ads for Plumbers and Home Services: Get Calls |
+| Meta description | Google Ads for plumbers, HVAC, electricians and other home services: call-focused setup, service areas, Local Services Ads and what a lead should cost. |
+| Search volume | Keyword Planner (20 Nov 2026, US+UK+AU+SG+UAE avg. monthly searches): "google ads for plumbers" **260**, "google ads for cleaning business" 90, "google ads for home services" 90, "google ads for hvac" 70 |
+| H1 | Google Ads for Plumbers, HVAC and Home Services: Calls, Not Clicks |
+| Primary keyword | google ads for plumbers |
 | Secondary keywords | google ads for plumbers · google ads for hvac · google local services ads vs google ads · call ads · emergency plumber near me ads |
 | Search intent | Commercial; trade owners deciding whether and how to run Google Ads, and whom to hire. |
 | Reader | Owner-operator or small team (1–20 vans) in the US, UK or Australia. |
@@ -52,7 +53,7 @@
 - "hire a Google Ads expert" → /google-ads-expert
 - "how much to spend on Google Ads per day" → /blog/google-ads-cost-per-day
 - "Google Ads vs SEO" → /blog/google-ads-vs-seo
-- "Facebook ads for local service businesses" → /blog/facebook-ads-for-local-service-businesses
+- "Facebook ads for local service businesses" → /blog/facebook-ads-for-local-business
 - /results, /contact
 - **Link to this post FROM:** /blog/google-ads-for-restaurants (a line in its "Working with me" section).
 

@@ -1,14 +1,15 @@
-# Brief 37 — Google Ads for Lawyers: How Small Firms Get Cases Without Burning Budget
+# Brief 37 — Google Ads for Law Firms: How Small Firms Get Cases Without Burning Budget
 
 | Field | Plan |
 |---|---|
 | Post type | `type: guide` (see RULES.md section 0 for length and ending) |
 | Platform | Google |
-| URL slug | `/blog/google-ads-for-lawyers` |
-| Meta title | Google Ads for Lawyers: Get Cases Without Wasting Budget |
-| Meta description | Google Ads for lawyers and small law firms: practice-area campaigns, negative keywords, call handling, Local Services Ads, and how to judge cost per case. |
-| H1 | Google Ads for Lawyers: How Small Firms Get Cases Without Burning Budget |
-| Primary keyword | google ads for lawyers |
+| URL slug | `/blog/google-ads-for-law-firms` |
+| Meta title | Google Ads for Law Firms and Lawyers: A Practical Guide |
+| Meta description | Google Ads for law firms and lawyers: practice-area campaigns, negative keywords, call intake, Local Services Ads, and how to judge cost per case. |
+| Search volume | Keyword Planner (20 Nov 2026, US+UK+AU+SG+UAE avg. monthly searches): "google ads for law firms" **320**, "google ads for lawyers" 260 |
+| H1 | Google Ads for Law Firms: How Small Firms Get Cases Without Burning Budget |
+| Primary keyword | google ads for law firms |
 | Secondary keywords | google ads for law firms · google ads for personal injury lawyers · google local service ads for lawyers · google ads for solicitors · google ads agency for lawyers |
 | Gate 1, demand | Google autocomplete (US, 20 Nov): "google ads for lawyers", "google ads for solicitors", "google ads for personal injury lawyers", "google local service ads for lawyers", "google ads agency for lawyers". |
 | Gate 5, new information | Aditya hasn't run a law firm and says so. He uses his own costliest Google mistake (broad keywords, no negatives, Max Clicks: ₹3,043 per conversion) to show why legal accounts need tight structure from day one. |

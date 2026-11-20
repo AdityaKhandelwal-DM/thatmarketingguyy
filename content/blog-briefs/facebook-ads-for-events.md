@@ -7,6 +7,7 @@
 | URL slug | `/blog/facebook-ads-for-events` |
 | Meta title | Facebook Ads for Events: Sell Tickets and Fill Venues |
 | Meta description | How to run Facebook ads for events and venues: countdown timing, audiences, enquiry vs ticket ads, creative and budgets, with real venue results. |
+| Search volume | Keyword Planner (20 Nov 2026, US+UK+AU+SG+UAE avg. monthly searches): "facebook ads for events" **590** |
 | H1 | Facebook Ads for Events: How to Sell Tickets and Fill Venues |
 | Primary keyword | facebook ads for events |
 | Secondary keywords | how to promote an event on facebook ads · facebook event ads · facebook ads for venues · facebook ads for weddings venue · instagram ads for events |

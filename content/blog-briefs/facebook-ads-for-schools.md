@@ -7,6 +7,7 @@
 | URL slug | `/blog/facebook-ads-for-schools` |
 | Meta title | Facebook Ads for Schools: Get More Admission Enquiries |
 | Meta description | Facebook ads for schools and colleges that bring admission enquiries parents follow up on. The setup behind 2,766 leads at ₹34, and what to avoid. |
+| Search volume | Keyword Planner (20 Nov 2026, US+UK+AU+SG+UAE avg. monthly searches): "facebook ads for schools" **260** |
 | H1 | Facebook Ads for Schools and Colleges: How to Fill Admissions |
 | Primary keyword | facebook ads for schools |
 | Secondary keywords | facebook ads for school admission · facebook ads for private schools · how to run facebook ads for school · facebook ads agency for schools · facebook ads for colleges |
@@ -46,7 +47,7 @@
 - "hire a Facebook ads expert" → /facebook-ads-expert
 - "Facebook ads cost" → /blog/facebook-ads-cost
 - "why Facebook ads aren't working" → /blog/why-are-my-facebook-ads-not-working
-- "Facebook ads for local service businesses" → /blog/facebook-ads-for-local-service-businesses (only if live)
+- "Facebook ads for local service businesses" → /blog/facebook-ads-for-local-business (only if live)
 - /results, /contact
 - **Link to this post FROM:** /blog/facebook-ads-cost (the career-institute bullet can link here).
 

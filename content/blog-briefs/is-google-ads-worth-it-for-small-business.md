@@ -5,10 +5,11 @@
 | Publish (routine run) | 25 Nov 2026 |
 | Platform | Google |
 | URL slug | `/blog/is-google-ads-worth-it-for-small-business` |
-| Meta title | Is Google Ads Worth It for Small Business in 2026? |
+| Meta title | Are Google Ads Worth It for Small Business in 2026? |
 | Meta description | Is Google Ads worth it for a small business? When it pays, when it doesn't, and the simple sum I run before anyone spends a dollar, from 89 accounts. |
+| Search volume | Keyword Planner (20 Nov 2026, US+UK+AU+SG+UAE avg. monthly searches): "are google ads worth it" **390**, "is google ads worth it" 320 |
 | H1 | Is Google Ads Worth It for a Small Business in 2026? An Honest Answer |
-| Primary keyword | is google ads worth it for small business |
+| Primary keyword | are google ads worth it |
 | Secondary keywords | are google ads still worth it in 2026 · is google ads worth paying for · how much money do you need to run google ads · what is a good monthly budget for google ads · downsides of google ads |
 | Search intent | Commercial investigation, pre-hire. Mirror of the Facebook "worth it" post. |
 | Reader | Owner deciding whether to start (or restart) Google Ads. |

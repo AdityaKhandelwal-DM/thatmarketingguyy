@@ -7,6 +7,7 @@
 | URL slug | `/blog/facebook-ads-for-restaurants` |
 | Meta title | Facebook Ads for Restaurants: A Step-by-Step Playbook |
 | Meta description | How to run Facebook ads for restaurants, step by step: local targeting, offers, reservation and party-booking ads, budgets, and real examples that worked. |
+| Search volume | Keyword Planner (20 Nov 2026, US+UK+AU+SG+UAE avg. monthly searches): "facebook ads for restaurants" **260** |
 | H1 | Facebook Ads for Restaurants: A Step-by-Step Playbook That Fills Tables |
 | Primary keyword | facebook ads for restaurants |
 | Secondary keywords | how to run facebook ads for restaurants · do facebook ads work for restaurants · best facebook ads for restaurants · facebook ads for restaurants examples · instagram ads for restaurants |

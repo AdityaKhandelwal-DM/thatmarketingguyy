@@ -1,14 +1,15 @@
-# Brief 21 — Facebook Ads for Local Service Businesses: What Actually Brings Booked Jobs
+# Brief 21 — Facebook Ads for Local Business: What Actually Brings Customers In
 
 | Field | Plan |
 |---|---|
 | Publish (routine run) | 4 Dec 2026 |
 | Platform | Meta |
-| URL slug | `/blog/facebook-ads-for-local-service-businesses` |
-| Meta title | Facebook Ads for Local Service Businesses That Book Jobs |
-| Meta description | Facebook ads for local service businesses work when the offer is local and the follow-up is fast. The setup I use, real costs, and what to avoid. |
-| H1 | Facebook Ads for Local Service Businesses: What Actually Brings Booked Jobs |
-| Primary keyword | facebook ads for local service businesses |
+| URL slug | `/blog/facebook-ads-for-local-business` |
+| Meta title | Facebook Ads for Local Business: What Brings Customers In |
+| Meta description | Facebook ads for local business: the setup that brings booked jobs, walk-ins and calls, what a lead should cost, and what to avoid, with real numbers. |
+| Search volume | Keyword Planner (20 Nov 2026, US+UK+AU+SG+UAE avg. monthly searches): "facebook ads for local business" **260** |
+| H1 | Facebook Ads for Local Business: What Actually Brings Customers In |
+| Primary keyword | facebook ads for local business |
 | Secondary keywords | facebook ads specialist for local businesses · facebook ads for home services · do facebook ads work for local businesses · facebook lead ads for service businesses · whatsapp click to chat ads |
 | Search intent | Commercial investigation with hire intent. |
 | Reader | Owner of a cleaning, HVAC, plumbing, salon, physio, pest-control or similar business in the US/UK/Australia. |
@@ -49,7 +50,7 @@
 - "hire a Facebook ads expert" → /facebook-ads-expert
 - "Facebook ads for clinics" → /blog/clinic-facebook-ads
 - "Facebook ads vs Google ads for a local business" → /blog/facebook-ads-vs-google-ads-for-local-business
-- "Google Ads for home services" → /blog/google-ads-for-home-services (only once that post is live; otherwise skip)
+- "Google Ads for home services" → /blog/google-ads-for-plumbers (only once that post is live; otherwise skip)
 - /results, /contact
 - **Link to this post FROM:** /blog/facebook-ads-vs-google-ads-for-local-business.
 
