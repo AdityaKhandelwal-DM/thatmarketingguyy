@@ -61,7 +61,7 @@ H2/H3 in the searcher's wording.
 | 27 | todo | Meta | Meta Ads Audit: What a Good One Checks (and What You Should Get) | meta ads audit (ATP) | [brief](blog-briefs/meta-ads-audit.md) |
 | — | research | Google | *Second proven Google topic needed before row 23.* | — | — |
 | 23 | todo | Meta | Facebook Ads Agency Near Me, or a Remote Specialist? How to Choose | facebook ads agency near me (ATP 260) | [brief](blog-briefs/facebook-ads-agency-near-me.md) |
-| 20 | hold: rule 4, no Google ecommerce proof; fold into /blog/google-ads-expert-vs-agency as a refresh | Google | When Should an Ecommerce Brand Hire a Google Ads Agency Instead of a Freelancer? | google ads agency vs freelancer (GSC pos 73–82) | [brief](blog-briefs/google-ads-agency-vs-freelancer-for-ecommerce.md) |
+| 20 | merged into /blog/google-ads-expert-vs-agency (refresh 2026-11-20) | Google | When Should an Ecommerce Brand Hire a Google Ads Agency Instead of a Freelancer? | google ads agency vs freelancer (GSC pos 73–82) | [brief](blog-briefs/google-ads-agency-vs-freelancer-for-ecommerce.md) |
 | 24 | hold: rule 4, no home-services proof yet; write only if Aditya has run trade clients | Google | Google Ads for Home Services: Plumbers, HVAC, Cleaners and Electricians | google ads for home services (n/m) | [brief](blog-briefs/google-ads-for-home-services.md) |
 
 Rows 16–27 were researched on 18 Nov 2026 from Google Search Console (last 3

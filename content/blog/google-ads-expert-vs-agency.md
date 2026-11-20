@@ -1,7 +1,9 @@
 ---
 title: Google Ads Expert vs Agency: Which Should a Small Business Hire?
+metaTitle: Google Ads Expert vs Agency: Which Should You Hire?
 description: Google ads expert or google ads agency? How to choose for a small business: cost, account ownership, who does the work, and when each one fits.
 date: 2026-10-04
+updated: 2026-11-20
 keyword: google ads expert
 image: blog-google-ads-expert-vs-agency
 ---
@@ -54,6 +56,16 @@ Other downsides to know about:
 4. **Lock-in:** if the agency owns your account, you can lose your history when you leave.
 
 ![A weekly report should show cost per conversion, not just clicks.](work_charts)
+
+## When should a DTC ecommerce brand hire a Google Ads agency instead of a freelancer?
+
+When the work outgrows one person. A brand with a large catalogue, a feed that needs constant fixing and Shopping across several countries usually needs a team. A brand with one market, a manageable catalogue and spend one person can watch daily is often better served by a freelancer who knows the account inside out.
+
+I'll be straight about my own fit: my strongest ecommerce results are on Meta, not Google. My D2C textile accounts reached 8.2× and 5.4× ROAS on Facebook and Instagram. On Google my work is mostly local and lead generation (calls, directions, store visits). If you're a DTC brand whose growth depends on Google Shopping at scale, a specialist ecommerce agency may be the better hire, and I'd tell you that on a call.
+
+## Is hiring a Google Ads agency worth the cost?
+
+It's worth it when the fee is clearly smaller than the waste it removes or the profit it adds. Do the sum before you sign: if an agency charges a fixed fee each month, it needs to lower your cost per sale or lift revenue by more than that fee to pay for itself. I break down the fee models in [what it costs to hire a Facebook or Google Ads freelancer](/blog/facebook-ads-agency-or-freelancer-cost).
 
 ## Who should own my Google Ads account?
 
