@@ -10,7 +10,7 @@
 | Search volume | Keyword Planner (20 Nov 2026, US+UK+AU+SG+UAE avg. monthly searches): "facebook ads for contractors" **210**, "facebook ads for roofers" 90 |
 | H1 | Facebook Ads for Contractors: Roofing, Remodeling and Painting Leads That Close |
 | Primary keyword | facebook ads for contractors |
-| Secondary keywords | do facebook ads work for contractors · facebook ads for general contractors · facebook ads for painting contractors · facebook ads for construction companies · facebook ads for roofing |
+| Secondary keywords | do facebook ads work for contractors · facebook ads for general contractors · facebook ads for painting contractors · facebook ads for construction companies · facebook ads for roofing · facebook ads for landscaping (210) |
 | Gate 1, demand | Google autocomplete (US, 20 Nov): "facebook ads for contractors", "facebook ads for general contractors", "facebook ads for painting contractors", "facebook ads for construction companies", "do facebook ads work for contractors"; "roofing", "kitchen remodeling", "painters" in the a–z list. |
 | Gate 5, new information | Aditya hasn't run a roofing or remodeling client, and says so. The guide uses his closest real campaign (a tiles & sanitaryware showroom at ₹37 per chat) and Meta's official lead-ad guidance to give a filter-first setup. |
 

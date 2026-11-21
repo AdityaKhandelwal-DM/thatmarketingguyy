@@ -48,30 +48,38 @@ H2/H3 in the searcher's wording.
 | 14 | done 2026-11-13 | Meta | Are Facebook Ads Worth It for Small Business? An Honest Answer | are facebook ads worth it (210) · facebook ads for business (4.4K) | Is it worth paying for ads on Facebook? · are facebook ads effective (40) |
 | 15 | done 2026-11-10 | Google | Google Ads vs SEO: Where a Small Business Should Spend First | google ads and seo (390) · google ads vs seo (170) | google ads vs local service ads (70) |
 | 16 | done 2026-11-19 | Google | Google Ads Consultation: What You Should Get From the First Call | google ads consultation (GSC: 25 impr, pos 10.7) | [brief](blog-briefs/google-ads-consultation.md) |
-| 25 | todo | Meta | How Much Do Instagram Ads Cost, and Are They Worth It for a Small Business? | instagram ads cost (2,900) · post | [brief](blog-briefs/instagram-ads-cost.md) |
-| 28 | todo | Google | Google Ads for Hotels: Getting Direct Bookings, Calls and Walk-ins | google ads for hotels (590) · guide | [brief](blog-briefs/google-ads-for-hotels.md) |
 | 30 | todo | Meta | Facebook Ads for Restaurants: A Step-by-Step Playbook That Fills Tables | facebook ads for restaurants (260) · guide | [brief](blog-briefs/facebook-ads-for-restaurants.md) |
-| 35 | todo | Google | Google Ads for Small Business: How 3 Small Brands Grew (Real Case Studies) | google ads for small business (1,900) · case study | [brief](blog-briefs/google-ads-for-small-business.md) |
+| 28 | todo | Google | Google Ads for Hotels: Getting Direct Bookings, Calls and Walk-ins | google ads for hotels (590) · guide | [brief](blog-briefs/google-ads-for-hotels.md) |
 | 32 | todo | Meta | Facebook Ads for Events: How to Sell Tickets and Fill Venues | facebook ads for events (590) · guide | [brief](blog-briefs/facebook-ads-for-events.md) |
-| 31 | todo | Google | Google Ads for Local Business: Calls, Directions and Store Visits, Step by Step | google ads for local business (880) · guide | [brief](blog-briefs/google-ads-for-local-business.md) |
+| 35 | todo | Google | Google Ads for Small Business: How 3 Small Brands Grew (Real Case Studies) | google ads for small business (1,900) · case study | [brief](blog-briefs/google-ads-for-small-business.md) |
 | 34 | todo | Meta | Facebook Ads for Small Business: 3 Real Case Studies and What to Copy | facebook ads for small business (720) · case study | [brief](blog-briefs/facebook-ads-for-small-business.md) |
+| 31 | todo | Google | Google Ads for Local Business: Calls, Directions and Store Visits, Step by Step | google ads for local business (880) · guide | [brief](blog-briefs/google-ads-for-local-business.md) |
+| 25 | todo | Meta | How Much Do Instagram Ads Cost, and Are They Worth It for a Small Business? | instagram ads cost (2,900) · post | [brief](blog-briefs/instagram-ads-cost.md) |
 | 24 | todo | Google | Google Ads for Plumbers, HVAC and Home Services: Calls, Not Clicks | google ads for plumbers (260) + home services cluster (~600) · guide | [brief](blog-briefs/google-ads-for-plumbers.md) |
-| 17 | todo | Meta | Meta Ads Not Spending? 8 Reasons Your Facebook Ads Aren't Delivering | not spending/delivering cluster (~190) + Search Console · post | [brief](blog-briefs/meta-ads-not-spending.md) |
+| 49 | todo | Meta | Facebook Lead Ads: How to Get Leads That Actually Answer the Phone | facebook lead ads (880) · guide | [brief](blog-briefs/facebook-lead-ads.md) |
 | 37 | todo | Google | Google Ads for Law Firms: How Small Firms Get Cases Without Burning Budget | google ads for law firms (320) + lawyers (260) · guide | [brief](blog-briefs/google-ads-for-law-firms.md) |
 | 45 | todo | Meta | Facebook Ads for Chiropractors: New Patient Offers That Fill the Schedule | facebook ads for chiropractors (480) · guide | [brief](blog-briefs/facebook-ads-for-chiropractors.md) |
 | 40 | todo | Google | Google Ads for Real Estate: Buyer and Seller Leads for Agents, Step by Step | google ads for real estate (390) + agents (210) · guide | [brief](blog-briefs/google-ads-for-real-estate.md) |
-| 38 | todo | Meta | Facebook Ads for Hotels and Resorts: Direct Bookings Without the OTA Commission | facebook ads for hotels (720) · guide | [brief](blog-briefs/facebook-ads-for-hotels.md) |
+| 17 | todo | Meta | Meta Ads Not Spending? 8 Reasons Your Facebook Ads Aren't Delivering | not spending/delivering cluster (~190) + Search Console · post | [brief](blog-briefs/meta-ads-not-spending.md) |
 | 18 | todo | Google | Is Google Ads Worth It for a Small Business in 2026? An Honest Answer | are google ads worth it (390) + is google ads worth it (320) · post | [brief](blog-briefs/is-google-ads-worth-it-for-small-business.md) |
-| 29 | todo | Meta | Facebook Ads for Schools and Colleges: How to Fill Admissions | facebook ads for schools (260) · guide | [brief](blog-briefs/facebook-ads-for-schools.md) |
+| 38 | todo | Meta | Facebook Ads for Hotels and Resorts: Direct Bookings Without the OTA Commission | facebook ads for hotels (720) · guide | [brief](blog-briefs/facebook-ads-for-hotels.md) |
 | 42 | todo | Google | Google Ads Management: What It Includes, What It Costs and What to Ask | google ads management (1,900) · post | [brief](blog-briefs/google-ads-management.md) |
+| 29 | todo | Meta | Facebook Ads for Schools and Colleges: How to Fill Admissions | facebook ads for schools (260) · guide | [brief](blog-briefs/facebook-ads-for-schools.md) |
+| 48 | todo | Google | How Much Do YouTube Ads Cost? What I Paid and What It Brought Back | youtube ads cost (1,000) · post | [brief](blog-briefs/youtube-ads-cost.md) |
 | 21 | todo | Meta | Facebook Ads for Local Business: What Actually Brings Customers In | facebook ads for local business (260) · post | [brief](blog-briefs/facebook-ads-for-local-business.md) |
 | 43 | todo | Google | Google Ads for Contractors and Roofers: High-Ticket Jobs Without the Waste | google ads for contractors (170) + roofers (110) + landscaping (90) · guide | [brief](blog-briefs/google-ads-for-contractors.md) |
+| 50 | todo | Meta | Facebook Ads for Lawyers and Law Firms: Getting Cases Without Breaking the Rules | facebook ads for lawyers (390) + law firms (320) · guide | [brief](blog-briefs/facebook-ads-for-lawyers.md) |
+| 51 | todo | Google | Google Ads Audit: The 12 Things I Check First (and What You Should Get) | google ads audit (320) · post | [brief](blog-briefs/google-ads-audit.md) |
 | 19 | todo | Meta | Facebook Ads for Ecommerce Brands: Agency, Freelancer or In-House? | facebook ads for ecommerce (210) · post | [brief](blog-briefs/facebook-ads-for-ecommerce.md) |
 | 44 | todo | Google | Google Ads for Therapists and Counselors: Getting Clients, Within the Rules | google ads for therapists (210) · guide | [brief](blog-briefs/google-ads-for-therapists.md) |
 | 23 | todo | Meta | Facebook Ads Agency Near Me, or a Remote Specialist? How to Choose | facebook ads agency near me (720) · post | [brief](blog-briefs/facebook-ads-agency-near-me.md) |
+| 52 | todo | Google | Google Ads for Ecommerce and Shopify Stores: Shopping, Search and Performance Max | google ads for ecommerce (390) + shopify (390) · guide | [brief](blog-briefs/google-ads-for-ecommerce.md) |
+| 53 | todo | Meta | Facebook Ads for Car Dealerships: Inventory, Test Drives and Leads That Show Up | facebook ads for car dealerships (260) · guide | [brief](blog-briefs/facebook-ads-for-car-dealerships.md) |
 | 26 | todo | Google | Why Are My Google Ads Not Working? 9 Things I Check First | google ads not working (90) + Search Console cluster · post | [brief](blog-briefs/why-are-my-google-ads-not-working.md) |
 | 36 | todo | Meta | Facebook Ads for Contractors: Roofing, Remodeling and Painting Leads That Close | facebook ads for contractors (210) + roofers (90) · guide | [brief](blog-briefs/facebook-ads-for-contractors.md) |
 | 46 | todo | Google | Google Ads for Chiropractors: Get Found When Patients Search Nearby | google ads for chiropractors (170) · guide | [brief](blog-briefs/google-ads-for-chiropractors.md) |
+| 54 | todo | Meta | Facebook Ads for Personal Trainers and Gyms: Filling Sessions With Local Clients | facebook ads for personal trainers (210) + gyms (90) · guide | [brief](blog-briefs/facebook-ads-for-personal-trainers.md) |
+| 47 | todo | Google | PPC Agency or PPC Specialist? How to Choose (and What PPC Management Includes) | ppc agency (6,600) + ppc management (1,900) · post | [brief](blog-briefs/ppc-agency.md) |
 | 33 | hold: under 100 searches/mo (gate 1) | Google | Google Ads for Schools and Colleges | google ads for schools (40) | [brief](blog-briefs/google-ads-for-schools.md) |
 | 27 | hold: under 100 searches/mo (gate 1) | Meta | Meta Ads Audit: What a Good One Checks | meta ads audit (40) + facebook ads audit (40) | [brief](blog-briefs/meta-ads-audit.md) |
 | 22 | hold: under 100 searches/mo (gate 1) | Google | Hiring a Remote Google Ads Consultant in Singapore, Australia or the UK | remote google ads consultant (no data) | [brief](blog-briefs/remote-google-ads-consultant.md) |
@@ -81,11 +89,13 @@ H2/H3 in the searcher's wording.
 
 Rows 16–27 were researched on 18 Nov 2026 from Google Search Console (last 3
 months: 323 impressions, 2 clicks, avg. position 56) and AnswerThePublic
-(seeds: meta ads, google ads consultant, facebook ads agency). Re-ranked on 20 Nov 2026 by Keyword Planner volume (US+UK+AU+SG+UAE): every
+(seeds: meta ads, google ads consultant, facebook ads agency). Re-ranked 20–21 Nov 2026 by Keyword Planner volume (US+UK+AU+SG+UAE): every
 `todo` row targets a keyword or close cluster with 100+ monthly searches, or a
 Search Console cluster. Mix of hiring posts, guides and case studies,
-Google/Meta alternating, max 2 per topic group in 30 days. At one post every
-2 days it runs 21 Nov 2026 – 6 Jan 2027. Topics under 100 searches are on hold.
+Google/Meta alternating, max 2 per topic group in 30 days (cost posts:
+Instagram cost waits until 3 Dec because the Facebook and Google cost posts
+went live 31 Oct / 1 Nov). At one post every 2 days it runs to ~22 Jan 2027.
+Topics under 100 searches are on hold.
 
 ## Refresh backlog (existing posts with bigger keywords — 1 refresh per 6 new posts)
 
@@ -101,6 +111,13 @@ add sections and FAQ for the bigger keyword, set `updated:`; never change the UR
 | /blog/medical-practice-google-ads | google ads for dentists | 480 | done 2026-11-20 |
 | /blog/clinic-facebook-ads | facebook ads for dentists | 320 | done 2026-11-20 |
 | /blog/facebook-ads-agency-or-freelancer-cost | facebook ads agency | 2,900 | done 2026-11-20 |
+| /blog/google-ads-cost-per-day | google ads pricing + how much does google ads cost (add an H2 + FAQ) | 5,400 + 1,900 | todo |
+| /blog/facebook-ads-cost | how much does it cost to advertise on facebook (H2) + facebook ads cpm | 4,400 + 140 | todo |
+| /blog/facebook-ads-agency-or-freelancer-cost | facebook advertising agency + meta ads agency + facebook ads services | 2,900 + 880 + 320 | todo |
+| /blog/google-ads-expert-vs-agency | google ads specialist + google ads freelancer | 1,000 + 320 | todo |
+| /blog/facebook-ads-vs-google-ads-for-local-business | google ads vs facebook ads | 590 | todo |
+| /blog/how-to-hire-a-facebook-ads-expert | facebook ads specialist + meta ads specialist + meta ads expert | ~480 | todo |
+| /blog/medical-practice-google-ads | google ads for doctors + google ads for healthcare | 110 + 110 | todo |
 
 ## Later (learning phase, ~Apr 2027) — do not write yet
 
