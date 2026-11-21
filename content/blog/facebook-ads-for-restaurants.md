@@ -5,7 +5,7 @@ description: How to run Facebook ads for restaurants, step by step: local target
 date: 2026-11-21
 type: guide
 keyword: facebook ads for restaurants
-image: fb_cafe
+image: blog-facebook-ads-for-restaurants
 ---
 
 Facebook ads for restaurants work when you stop asking for "reach" and start asking for one specific thing: a booking, a message or a visit this week. Most restaurant owners I talk to have already tried boosting a post and got likes from people who live nowhere near the venue. This playbook shows how I set up Facebook ads for a restaurant, step by step, so you can run them yourself or judge whoever you hire.
