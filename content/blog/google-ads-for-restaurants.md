@@ -69,7 +69,7 @@ If your report only shows clicks and impressions, ask for the cost per action. I
 
 Often both, but in an order. Google catches people who are already hungry and searching. Meta (Facebook and Instagram) creates interest, which suits offers, events and party bookings. For example, my results page lists a restaurant party-bookings campaign on Meta that produced 301 leads at ₹77 (about $0.92) each.
 
-If budget is tight, I'd start with Google for walk-in and reservation intent, then add Meta for events. My post on [Facebook ads vs Google ads for a local business](/blog/facebook-ads-vs-google-ads-for-local-business) explains how I'd choose.
+If budget is tight, I'd start with Google for walk-in and reservation intent, then add Meta for events. If you want the Meta side step by step, I wrote a playbook on [Facebook ads for restaurants](/blog/facebook-ads-for-restaurants). My post on [Facebook ads vs Google ads for a local business](/blog/facebook-ads-vs-google-ads-for-local-business) explains how I'd choose.
 
 ## Working with me from overseas
 
