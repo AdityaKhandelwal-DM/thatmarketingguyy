@@ -10,7 +10,7 @@
 | Search volume | Keyword Planner (20 Nov 2026, US+UK+AU+SG+UAE avg. monthly searches): "instagram ads cost" **2,900**, "are instagram ads worth it" 170 |
 | H1 | How Much Do Instagram Ads Cost, and Are They Worth It for a Small Business? |
 | Primary keyword | instagram ads cost |
-| Secondary keywords | is it worth paying for instagram ads · instagram ads vs facebook ads · how much do instagram ads cost · instagram ads for small business · meta ads instagram |
+| Secondary keywords | is it worth paying for instagram ads · instagram ads vs facebook ads · how much do instagram ads cost · instagram ads for small business · meta ads instagram · how much does it cost to advertise on instagram (720) · instagram ads (14,800, head term — mention naturally) · instagram ads for business (590) |
 | Search intent | Commercial investigation. |
 | Reader | Owner of a visual business (food, hospitality, beauty, D2C, events) deciding whether to pay for Instagram. |
 | Why this topic | **ATP:** PAA "Is it worth paying for Instagram ads?", "How much do Facebook and Instagram ads cost?", keyword "meta ads instagram". Extends the "worth it" pair (Facebook, Google) to the third platform buyers ask about. Instagram is a new keyword family the site has no page for. |

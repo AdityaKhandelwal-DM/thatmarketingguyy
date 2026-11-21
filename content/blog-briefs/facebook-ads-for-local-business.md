@@ -10,7 +10,7 @@
 | Search volume | Keyword Planner (20 Nov 2026, US+UK+AU+SG+UAE avg. monthly searches): "facebook ads for local business" **260** |
 | H1 | Facebook Ads for Local Business: What Actually Brings Customers In |
 | Primary keyword | facebook ads for local business |
-| Secondary keywords | facebook ads specialist for local businesses · facebook ads for home services · do facebook ads work for local businesses · facebook lead ads for service businesses · whatsapp click to chat ads |
+| Secondary keywords | facebook ads specialist for local businesses · facebook ads for home services · do facebook ads work for local businesses · facebook lead ads for service businesses · whatsapp click to chat ads · facebook ads for plumbers (140) |
 | Search intent | Commercial investigation with hire intent. |
 | Reader | Owner of a cleaning, HVAC, plumbing, salon, physio, pest-control or similar business in the US/UK/Australia. |
 | Why this topic | **GSC:** "facebook ads specialist who knows local service businesses" (pos 66), plus "facebook marketing expert" (pos 76) and "facebook ads expert" (58 impressions, pos 72) that the service page alone isn't winning. A deep local-services post gives the service page topical support. |
