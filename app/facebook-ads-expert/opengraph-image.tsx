@@ -1,4 +1,5 @@
 import { ogSize, serviceOgImage } from "@/components/service/serviceOgImage";
+import { stats } from "@/lib/stats";
 
 export const alt = "Facebook Ads Expert for Hire: Aditya Khandelwal, thatmarketingguyy.com";
 export const size = ogSize;
@@ -9,6 +10,6 @@ export default function Image() {
     platform: "meta",
     headline: "Facebook Ads Expert for Hire",
     sub: "Meta ads for small businesses, run remotely by a hands-on specialist.",
-    stats: ["$66K+ ad spend managed", "12,550 leads"],
+    stats: [`${stats.metaSpendUsd}+ ad spend managed`, `${stats.metaLeads} leads`],
   });
 }

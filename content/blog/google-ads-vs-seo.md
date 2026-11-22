@@ -54,7 +54,7 @@ Local service ads are only offered in certain countries and business categories,
 
 ## What does this look like in my results?
 
-I've managed 89 ad accounts and ₹93.4L (about $112K) of ad spend, ₹21.1L (about $25K) of it on Google. That includes a restaurant's Google Business Profile ads that produced 3,857 actions at ₹2.68 each (about $0.03), on ₹10K of spend (about $120).
+I've managed {{accounts}} ad accounts and {{spend}} (about {{spendUsd}}) of ad spend, {{googleSpend}} (about {{googleSpendUsd}}) of it on Google. That includes a restaurant's Google Business Profile ads that produced 3,857 actions at ₹2.68 each (about $0.03), on ₹10K of spend (about $120).
 
 Those are Indian campaigns, where clicks cost far less than in the US, UK, UAE, Australia or Singapore. They show how I measure, not what you will pay. For budget thinking, read my post on [how much to spend on Google Ads per day](/blog/google-ads-cost-per-day).
 

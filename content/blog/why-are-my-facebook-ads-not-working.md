@@ -1,14 +1,14 @@
 ---
-title: Why Are My Facebook Ads Not Working? 9 Fixes From 89 Real Ad Accounts
-metaTitle: Facebook Ads Not Working? 9 Fixes From 89 Ad Accounts
-description: Facebook ads not working? The 9 reasons Meta ads fail that I see most, from 89 ad accounts and ₹93.4L (~$112K) of spend, with the fix for each.
+title: Why Are My Facebook Ads Not Working? 9 Fixes From {{accounts}} Real Ad Accounts
+metaTitle: Facebook Ads Not Working? 9 Fixes From {{accounts}} Ad Accounts
+description: Facebook ads not working? The 9 reasons Meta ads fail that I see most, from {{accounts}} ad accounts and {{spend}} (~{{spendUsd}}) of spend, with the fix for each.
 date: 2026-08-02
 updated: 2026-11-18
 keyword: why are my facebook ads not working
 image: work_dashboard
 ---
 
-Why are my Facebook ads not working? In almost every account I open, it comes down to one of nine problems: the wrong objective, weak offer, tired creative, the wrong audience, impatience, a slow landing page, unanswered leads, or losers nobody switched off. I've managed 89 ad accounts and ₹93.4L (~$112K) of spend across clinics, restaurants, D2C brands, resorts and entertainment venues, and the platform itself is rarely the problem.
+Why are my Facebook ads not working? In almost every account I open, it comes down to one of nine problems: the wrong objective, weak offer, tired creative, the wrong audience, impatience, a slow landing page, unanswered leads, or losers nobody switched off. I've managed {{accounts}} ad accounts and {{spend}} (~{{spendUsd}}) of spend across clinics, restaurants, D2C brands, resorts and entertainment venues, and the platform itself is rarely the problem.
 
 Here are the nine, with what each looks like in your Ads Manager and what I actually do about it.
 

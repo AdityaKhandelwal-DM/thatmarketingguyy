@@ -81,7 +81,7 @@ site adds a quiet line under the post automatically.
 - **No template feel.** The opening paragraph must not reuse the opening of
   any of the last 10 posts. Vary how Aditya is introduced; don't start every
   post with "I'm Aditya, a solo…".
-- **Vary the proof.** The portfolio totals line (89 accounts, ₹93.4L…) appears
+- **Vary the proof.** The portfolio totals line ({{accounts}} accounts, {{spend}}… — always written as tokens, see content/blog/README.md) appears
   at most once per post and not in the first paragraph of two posts in a row.
   Prefer the case studies most relevant to this topic over the same headline
   numbers.

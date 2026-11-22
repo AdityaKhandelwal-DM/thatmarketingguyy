@@ -36,6 +36,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 
+import { stats } from "@/lib/stats";
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const niches: { icon: LucideIcon; title: string; desc: string; img: string; alt: string }[] = [
@@ -216,7 +217,7 @@ export default function Home() {
                 Most business owners don&apos;t know the answer, and that&apos;s not their fault. Agencies are built to keep it complicated.
               </p>
               <p className="text-[17px] md:text-[18px] text-text-secondary max-w-[540px] leading-[1.7] mb-8">
-                I&apos;ve managed 89 ad accounts across clinics, restaurants, D2C, and local stores.{" "}
+                I&apos;ve managed {stats.accounts} ad accounts across clinics, restaurants, D2C, and local stores.{" "}
                 <strong className="text-text-primary">I teach you to read the numbers yourself.</strong>
               </p>
 
@@ -282,8 +283,8 @@ export default function Home() {
           <div className="grid grid-cols-3 gap-4 text-center">
             {[
               { n: "89",     l: "Ad accounts managed" },
-              { n: "₹93.4L", l: "Ad spend managed (~$112K)" },
-              { n: "79,212", l: "Leads & conversions delivered" },
+              { n: stats.spend, l: `Ad spend managed (~${stats.spendUsd})` },
+              { n: stats.leads, l: "Leads & conversions delivered" },
             ].map((c, i) => (
               <div key={i} className={`px-2 relative ${i > 0 ? "border-l border-border" : ""}`}>
                 <CountUp

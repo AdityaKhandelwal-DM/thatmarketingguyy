@@ -4,6 +4,7 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 import LeadPopup from "@/components/lead/LeadPopup";
 import { CONTACT_EMAIL } from "@/lib/contact";
 import "./globals.css";
+import { stats } from "@/lib/stats";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | thatmarketingguy",
   },
   description:
-    "I run Meta and Google Ads for small businesses worldwide. $112K+ managed, 79,212 leads, 8.2× best ROAS. No agency jargon, no long contracts.",
+    `I run Meta and Google Ads for small businesses worldwide. ${stats.spendUsd}+ managed, ${stats.leads} leads, 8.2× best ROAS. No agency jargon, no long contracts.`,
   alternates: { canonical: "/" },
   openGraph: {
     siteName: "thatmarketingguy",

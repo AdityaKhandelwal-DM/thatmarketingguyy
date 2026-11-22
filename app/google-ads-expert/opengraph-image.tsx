@@ -1,4 +1,5 @@
 import { ogSize, serviceOgImage } from "@/components/service/serviceOgImage";
+import { stats } from "@/lib/stats";
 
 export const alt = "Google Ads Expert for Hire: Aditya Khandelwal, thatmarketingguyy.com";
 export const size = ogSize;
@@ -9,6 +10,6 @@ export default function Image() {
     platform: "google",
     headline: "Google Ads Expert for Hire",
     sub: "Google Search, Maps and YouTube ads that bring calls, not clicks.",
-    stats: ["$25K+ ad spend managed", "66,662 conversions"],
+    stats: [`${stats.googleSpendUsd}+ ad spend managed`, `${stats.googleConversions} conversions`],
   });
 }

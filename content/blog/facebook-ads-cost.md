@@ -1,20 +1,20 @@
 ---
-title: Facebook Ads Cost: What I've Seen Across 89 Ad Accounts
-metaTitle: "Facebook Ads Cost in 2026: Real Numbers From 89 Accounts"
-description: Facebook ads cost and price explained, with real cost-per-lead numbers from 89 accounts I've managed, and whether $10 or $50 a day is a good budget.
+title: Facebook Ads Cost: What I've Seen Across {{accounts}} Ad Accounts
+metaTitle: "Facebook Ads Cost in 2026: Real Numbers From {{accounts}} Accounts"
+description: Facebook ads cost and price explained, with real cost-per-lead numbers from {{accounts}} accounts I've managed, and whether $10 or $50 a day is a good budget.
 date: 2026-10-31
 updated: 2026-11-20
 keyword: facebook ads cost
 image: blog-facebook-ads-cost
 ---
 
-Facebook ads cost whatever you tell Meta to spend, plus whatever you pay someone to run them. The real question is what you get back for each dollar. I'm Aditya, a solo Meta Ads and Google Ads consultant working remotely from India, and I've managed 89 ad accounts. Here is what I can say about Facebook ads cost and price, using only numbers I can show you.
+Facebook ads cost whatever you tell Meta to spend, plus whatever you pay someone to run them. The real question is what you get back for each dollar. I'm Aditya, a solo Meta Ads and Google Ads consultant working remotely from India, and I've managed {{accounts}} ad accounts. Here is what I can say about Facebook ads cost and price, using only numbers I can show you.
 
 One thing up front. My numbers come from Indian campaigns, where clicks and leads are far cheaper than in the US, UK, UAE, Australia or Singapore. Use them to see how the maths works, not as a price list for your market.
 
 ## What my own accounts show
 
-Across the 89 accounts I've managed, total ad spend is ₹93.4L (about $112K), and the campaigns have produced 79,212 leads and conversions. That portfolio includes Google Ads too. Every figure is on my [results page](/results), with the client names withheld.
+Across the {{accounts}} accounts I've managed, total ad spend is {{spend}} (about {{spendUsd}}), and the campaigns have produced {{leads}} leads and conversions. That portfolio includes Google Ads too. Every figure is on my [results page](/results), with the client names withheld.
 
 Here are some Facebook and Instagram campaigns from it. Each is one campaign, not a whole account:
 

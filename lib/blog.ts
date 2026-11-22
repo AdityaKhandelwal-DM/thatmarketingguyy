@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { fillStats } from "./stats";
 
 /**
  * Zero-dependency blog engine. Posts are .md files in content/blog with a
@@ -159,7 +160,7 @@ export function getAllPosts(): PostMeta[] {
     .readdirSync(BLOG_DIR)
     .filter((f) => f.endsWith(".md") && f.toLowerCase() !== "readme.md")
     .map((f) => {
-      const raw = fs.readFileSync(path.join(BLOG_DIR, f), "utf8");
+      const raw = fillStats(fs.readFileSync(path.join(BLOG_DIR, f), "utf8"));
       const { meta, body } = parseFrontmatter(raw);
       return {
         slug: f.replace(/\.md$/, ""),
@@ -180,7 +181,7 @@ export function getAllPosts(): PostMeta[] {
 export function getPost(slug: string): Post | null {
   const file = path.join(BLOG_DIR, `${slug}.md`);
   if (!fs.existsSync(file)) return null;
-  const raw = fs.readFileSync(file, "utf8");
+  const raw = fillStats(fs.readFileSync(file, "utf8"));
   const { meta, body } = parseFrontmatter(raw);
   return {
     slug,

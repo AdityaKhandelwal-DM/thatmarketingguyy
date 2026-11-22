@@ -1,12 +1,12 @@
 ---
 title: Facebook Ads vs Google Ads for a Local Business: Which One First?
-description: Facebook ads vs Google ads for a local business: which to start with, how to choose by demand and budget, and what I've seen across 89 ad accounts.
+description: Facebook ads vs Google ads for a local business: which to start with, how to choose by demand and budget, and what I've seen across {{accounts}} ad accounts.
 date: 2026-10-28
 keyword: facebook ads vs google ads
 image: blog-facebook-ads-vs-google-ads-for-local-business
 ---
 
-Facebook ads vs Google ads is the question almost every local business owner asks before spending a dollar. I'm Aditya, a solo Meta Ads and Google Ads consultant. I've managed 89 ad accounts and ₹93.4L (~$112K) of spend, and I've seen each platform win and lose for local businesses.
+Facebook ads vs Google ads is the question almost every local business owner asks before spending a dollar. I'm Aditya, a solo Meta Ads and Google Ads consultant. I've managed {{accounts}} ad accounts and {{spend}} (~{{spendUsd}}) of spend, and I've seen each platform win and lose for local businesses.
 
 The short version: start where your customers already show intent. Here is how I'd decide, in plain terms.
 
@@ -28,7 +28,7 @@ Here is the rule of thumb I use:
 - **Choose Meta first:** restaurants, event venues, resorts, D2C products, gyms, anything people choose on impulse or on looks.
 - **Use both:** once the first one pays back and you have budget left over.
 
-Across my accounts, I've run 73 Meta accounts (₹55.3L, 12,550 form leads) and 14 Google accounts (₹21.1L, 66,662 conversions such as calls, direction requests and form fills). I'm comfortable on both, so I'm not pushing you toward the one I like.
+Across my accounts, I've run {{metaAccounts}} Meta accounts ({{metaSpend}}, {{metaLeads}} form leads) and {{googleAccounts}} Google accounts ({{googleSpend}}, {{googleConversions}} conversions such as calls, direction requests and form fills). I'm comfortable on both, so I'm not pushing you toward the one I like.
 
 ## What does each look like for a local business?
 

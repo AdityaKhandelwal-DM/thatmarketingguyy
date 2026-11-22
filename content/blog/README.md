@@ -45,6 +45,23 @@ no banner could be made, pick the most topical existing file
   The site's own brand colours stay as they are.
 - Keep text away from the outer 60 px; the card is cropped on some screens.
 
+## Portfolio totals: always use tokens
+
+Never type the portfolio totals as numbers. Write the token and the site fills
+in the current figure from `lib/stats.ts` (updated after every data sync):
+
+| Token | Renders as (today) |
+|---|---|
+| `{{spend}}` / `{{spendUsd}}` | total ad spend managed, ₹ / $ (₹93.4L / $112K) |
+| `{{leads}}` | leads and conversions (79,212) |
+| `{{accounts}}` | ad accounts (89) |
+| `{{metaSpend}}` / `{{metaSpendUsd}}` / `{{metaAccounts}}` / `{{metaLeads}}` | Meta totals |
+| `{{googleSpend}}` / `{{googleSpendUsd}}` / `{{googleAccounts}}` / `{{googleConversions}}` | Google totals |
+
+Example: "I've managed {{accounts}} ad accounts and {{spend}} (about
+{{spendUsd}}) of spend." Case-study numbers for individual campaigns (₹34 per
+lead, 8.2× ROAS…) are fixed and stay as typed.
+
 ## Markdown subset (the renderer supports ONLY this)
 
 `## H2`, `### H3`, paragraphs, `**bold**`, `*italic*`,

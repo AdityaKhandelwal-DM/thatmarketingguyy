@@ -1,12 +1,12 @@
 ---
 title: Are Facebook Ads Worth It for Small Business? An Honest Answer
-description: Are Facebook ads worth it for a small business? When they pay off, when they don't, and what 89 ad accounts I've managed actually show.
+description: Are Facebook ads worth it for a small business? When they pay off, when they don't, and what {{accounts}} ad accounts I've managed actually show.
 date: 2026-11-13
 keyword: are facebook ads worth it
 image: blog-are-facebook-ads-worth-it-for-small-business
 ---
 
-Are Facebook ads worth it? Sometimes yes, sometimes no, and anyone who says "always" is selling something. I'm Aditya, a solo Meta Ads and Google Ads consultant working remotely from India with small businesses overseas. I've managed 89 ad accounts, so I've seen both outcomes.
+Are Facebook ads worth it? Sometimes yes, sometimes no, and anyone who says "always" is selling something. I'm Aditya, a solo Meta Ads and Google Ads consultant working remotely from India with small businesses overseas. I've managed {{accounts}} ad accounts, so I've seen both outcomes.
 
 Here is how I'd decide, before you spend a dollar or hire anyone.
 
@@ -27,7 +27,7 @@ They are a poor fit when:
 
 They can be very effective, but the platform is only one part. The offer, the creative, the landing page and your follow-up decide most of the result.
 
-Here is what's on my [results page](/results). Across 89 ad accounts I've managed ₹93.4L of ad spend (about $112K), which produced 79,212 leads and conversions. My best ROAS is 8.2× for a textile D2C brand.
+Here is what's on my [results page](/results). Across {{accounts}} ad accounts I've managed {{spend}} of ad spend (about {{spendUsd}}), which produced {{leads}} leads and conversions. My best ROAS is 8.2× for a textile D2C brand.
 
 A few individual campaigns, each one campaign and not a whole account:
 
@@ -43,7 +43,7 @@ I should be straight about one thing. These are Indian campaigns, where clicks a
 
 Yes, if you treat the first month as a test and not a verdict. Small budgets give you less data, so it takes longer to learn what works.
 
-My rule: start with one offer, one audience and a few ads. Judge it on cost per lead or sale. Likes and reach don't pay your bills. If you want the money side in detail, I broke it down in [Facebook ads cost: what I've seen across 89 ad accounts](/blog/facebook-ads-cost).
+My rule: start with one offer, one audience and a few ads. Judge it on cost per lead or sale. Likes and reach don't pay your bills. If you want the money side in detail, I broke it down in [Facebook ads cost: what I've seen across {{accounts}} ad accounts](/blog/facebook-ads-cost).
 
 ## Facebook ads for business: how do you know it's working?
 

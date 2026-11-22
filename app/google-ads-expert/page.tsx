@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import ServicePage from "@/components/service/ServicePage";
 import { GoogleAdsLogo } from "@/components/ui/BrandLogos";
 import { Search, Store, MapPin, PlayCircle, Gauge, Scissors } from "lucide-react";
+import { stats } from "@/lib/stats";
 
 /*
  * Hire-intent page for "google ads expert / specialist / consultant".
@@ -49,7 +50,7 @@ export const metadata: Metadata = {
   // stays under ~60 characters and isn't cut off in Google's results.
   title: { absolute: "Google Ads Expert for Hire | Google Ads Specialist" },
   description:
-    "Hire a Google Ads expert for your small business in the US, UK, UAE or Australia. $25K+ in ad spend managed, 66,662 conversions. You keep the ad account.",
+    `Hire a Google Ads expert for your small business in the US, UK, UAE or Australia. ${stats.googleSpendUsd}+ in ad spend managed, ${stats.googleConversions} conversions. You keep the ad account.`,
   keywords: [
     "google ads expert",
     "google ads specialist",
@@ -68,7 +69,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Google Ads Expert for Hire | Google Ads Specialist",
-    description: "Hire a Google Ads expert for your small business in the US, UK, UAE or Australia. $25K+ in ad spend managed, 66,662 conversions. You keep the ad account.",
+    description: `Hire a Google Ads expert for your small business in the US, UK, UAE or Australia. ${stats.googleSpendUsd}+ in ad spend managed, ${stats.googleConversions} conversions. You keep the ad account.`,
     url: "/google-ads-expert",
     type: "website",
     siteName: "thatmarketingguy",
@@ -77,7 +78,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Google Ads Expert for Hire | Google Ads Specialist",
-    description: "Hire a Google Ads expert for your small business in the US, UK, UAE or Australia. $25K+ in ad spend managed, 66,662 conversions. You keep the ad account.",
+    description: `Hire a Google Ads expert for your small business in the US, UK, UAE or Australia. ${stats.googleSpendUsd}+ in ad spend managed, ${stats.googleConversions} conversions. You keep the ad account.`,
   },
 };
 
@@ -98,9 +99,9 @@ export default function GoogleAdsExpertPage() {
       PlatformLogo={GoogleAdsLogo}
       platformName="Google Ads"
       stats={[
-        { k: "Google spend managed", v: "₹21.1L", sub: "≈ $25K" },
+        { k: "Google spend managed", v: stats.googleSpend, sub: `≈ ${stats.googleSpendUsd}` },
         { k: "Google Ads accounts", v: "14" },
-        { k: "Conversions", v: "66,662" },
+        { k: "Conversions", v: stats.googleConversions },
         { k: "Best ROAS", v: "18.6×", sub: "clinic, YouTube" },
       ]}
       statsNote="Lifetime figures from Google Ads manager-account reports, last synced 5 Nov 2026. Conversions are calls, direction requests and form fills."

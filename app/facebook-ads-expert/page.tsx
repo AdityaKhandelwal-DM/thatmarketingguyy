@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import ServicePage from "@/components/service/ServicePage";
 import { MetaLogo } from "@/components/ui/BrandLogos";
 import { SearchCheck, Target, Clapperboard, Users, TrendingUp, BarChart3 } from "lucide-react";
+import { stats } from "@/lib/stats";
 
 /*
  * Hire-intent page for "facebook ads expert / specialist / freelancer".
@@ -49,7 +50,7 @@ export const metadata: Metadata = {
   // stays under ~60 characters and isn't cut off in Google's results.
   title: { absolute: "Facebook Ads Expert for Hire | Meta Ads Specialist" },
   description:
-    "Hire a Facebook ads expert for your small business in the US, UK, UAE or Australia. $66K+ in Meta ad spend managed, 12,550 leads. You keep the ad account.",
+    `Hire a Facebook ads expert for your small business in the US, UK, UAE or Australia. ${stats.metaSpendUsd}+ in Meta ad spend managed, ${stats.metaLeads} leads. You keep the ad account.`,
   keywords: [
     "facebook ads expert",
     "facebook ads specialist",
@@ -68,7 +69,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Facebook Ads Expert for Hire | Meta Ads Specialist",
-    description: "Hire a Facebook ads expert for your small business in the US, UK, UAE or Australia. $66K+ in Meta ad spend managed, 12,550 leads. You keep the ad account.",
+    description: `Hire a Facebook ads expert for your small business in the US, UK, UAE or Australia. ${stats.metaSpendUsd}+ in Meta ad spend managed, ${stats.metaLeads} leads. You keep the ad account.`,
     url: "/facebook-ads-expert",
     type: "website",
     siteName: "thatmarketingguy",
@@ -77,7 +78,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Facebook Ads Expert for Hire | Meta Ads Specialist",
-    description: "Hire a Facebook ads expert for your small business in the US, UK, UAE or Australia. $66K+ in Meta ad spend managed, 12,550 leads. You keep the ad account.",
+    description: `Hire a Facebook ads expert for your small business in the US, UK, UAE or Australia. ${stats.metaSpendUsd}+ in Meta ad spend managed, ${stats.metaLeads} leads. You keep the ad account.`,
   },
 };
 
@@ -98,9 +99,9 @@ export default function FacebookAdsExpertPage() {
       PlatformLogo={MetaLogo}
       platformName="Meta Ads"
       stats={[
-        { k: "Meta spend managed", v: "₹55.3L", sub: "≈ $66K" },
+        { k: "Meta spend managed", v: stats.metaSpend, sub: `≈ ${stats.metaSpendUsd}` },
         { k: "Meta ad accounts", v: "73" },
-        { k: "Form leads", v: "12,550" },
+        { k: "Form leads", v: stats.metaLeads },
         { k: "Best ROAS", v: "8.2×", sub: "textile D2C" },
       ]}
       statsNote="Lifetime figures pulled from Meta's own reporting, last synced 30 Oct 2026. The 8.2× ROAS is a pre-2023 engagement reported from my own records, because that ad account has since closed."
