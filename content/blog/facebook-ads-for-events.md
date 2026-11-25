@@ -5,7 +5,7 @@ description: How to run Facebook ads for events and venues: countdown timing, au
 date: 2026-11-25
 type: guide
 keyword: facebook ads for events
-image: venue_wedding
+image: blog-facebook-ads-for-events
 ---
 
 An event has a date, and Facebook ads for events only make sense if you plan around it. Ads that run all year with no deadline get scrolled past. Ads that count down to a date, then stop, give people a reason to act now. This guide covers both kinds of business I see: someone selling tickets to a one-off event, and a venue that sells dates for weddings, parties and corporate bookings.
