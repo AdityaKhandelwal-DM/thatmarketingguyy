@@ -50,7 +50,7 @@ H2/H3 in the searcher's wording.
 | 16 | done 2026-11-19 | Google | Google Ads Consultation: What You Should Get From the First Call | google ads consultation (GSC: 25 impr, pos 10.7) | [brief](blog-briefs/google-ads-consultation.md) |
 | 30 | done 2026-11-21 | Meta | Facebook Ads for Restaurants: A Step-by-Step Playbook That Fills Tables | facebook ads for restaurants (260) · guide | [brief](blog-briefs/facebook-ads-for-restaurants.md) |
 | 28 | todo | Google | Google Ads for Hotels: Getting Direct Bookings, Calls and Walk-ins | google ads for hotels (590) · guide | [brief](blog-briefs/google-ads-for-hotels.md) |
-| 32 | todo | Meta | Facebook Ads for Events: How to Sell Tickets and Fill Venues | facebook ads for events (590) · guide | [brief](blog-briefs/facebook-ads-for-events.md) |
+| 32 | done 2026-11-25 | Meta | Facebook Ads for Events: How to Sell Tickets and Fill Venues | facebook ads for events (590) · guide | [brief](blog-briefs/facebook-ads-for-events.md) |
 | 35 | todo | Google | Google Ads for Small Business: How 3 Small Brands Grew (Real Case Studies) | google ads for small business (1,900) · case study | [brief](blog-briefs/google-ads-for-small-business.md) |
 | 34 | todo | Meta | Facebook Ads for Small Business: 3 Real Case Studies and What to Copy | facebook ads for small business (720) · case study | [brief](blog-briefs/facebook-ads-for-small-business.md) |
 | 31 | todo | Google | Google Ads for Local Business: Calls, Directions and Store Visits, Step by Step | google ads for local business (880) · guide | [brief](blog-briefs/google-ads-for-local-business.md) |

@@ -92,6 +92,6 @@ Usually the audience is narrow, the ad is tired, or the campaign is optimising f
 
 ## The short version
 
-Facebook ads cost depends on your market, your offer and your goal. Start with a test you can measure, keep most of your money in the ads, and judge by cost per lead or sale.
+Facebook ads cost depends on your market, your offer and your goal. Start with a test you can measure, keep most of your money in the ads, and judge by cost per lead or sale. If you sell tickets or venue dates, my guide to [Facebook ads for events](/blog/facebook-ads-for-events) shows how I plan the budget around a deadline.
 
 If you want to see how I've done this for other businesses, look at the [results](/results), including the campaigns that didn't go to plan. Then [get in touch](/contact) with your business, your market and your budget. I'll tell you honestly whether Facebook ads make sense for you, and what I'd charge to run them.
