@@ -5,12 +5,12 @@ description: Google Ads for hotels that bring direct bookings, calls and directi
 date: 2026-11-23
 type: guide
 keyword: google ads for hotels
-image: resort_pool
+image: blog-google-ads-for-hotels
 ---
 
-Google Ads for hotels can win back the guests you currently pay a booking site commission to reach, but only if the campaign is built around direct bookings, calls and direction requests rather than clicks. Most independent hotel owners I speak to already know the pain: a guest searches your name, lands on a travel site, books there, and you pay commission on someone who was already looking for you.
+If you run an independent hotel, the booking that hurts most is the one a travel site takes from a guest who searched your own name, and Google Ads for hotels, set up around direct bookings, calls and direction requests rather than clicks, is one of the few ways to win that guest back. The guest types your hotel's name, sees a travel site above your website, books there, and you pay commission on someone who was already looking for you.
 
-This guide shows how I set up Google Ads for a hotel, step by step, so you can run it yourself or judge whoever you hire. I'm Aditya, a solo Google Ads and Meta Ads consultant working remotely from India with small businesses overseas. One thing up front: I've run a hotel campaign, not a hotel chain's whole search programme, and my costs are Indian costs. Expect the method to carry over, not the prices.
+This guide walks through the setup I use, step by step, so you can run it yourself or judge whoever you hire. The proof comes from a hotel campaign I ran from India for a single property, not a hotel chain's whole search programme, so my costs are Indian costs. Expect the method to carry over, not the prices.
 
 ## Do Google Ads work for hotels?
 
@@ -44,7 +44,7 @@ Here's each step in a bit more detail.
 
 ### Step 1: Start with your own name
 
-Before I change anything in a hotel account, I search the hotel's name on a phone, the way a guest would, and look at what sits above the hotel's own website. If a travel site is first, that's the first thing I fix. A brand campaign is usually the cheapest traffic in the account because people searching your name already want you.
+Set up a small search campaign on your hotel's name and its common misspellings before anything else. The section after these steps explains why.
 
 ### Step 2: Target nearby, ready-to-book searches
 
@@ -68,6 +68,12 @@ If your booking engine can't send bookings back to Google, ask the provider whet
 ### Step 5: Set a budget and a schedule
 
 Work backwards. Hypothetically, say an average direct booking is worth $240 and a travel site would have charged 15% commission on it, which is $36. You can afford to spend well under $36 to win each of those bookings and still come out ahead. Start with the brand campaign and one local campaign, then adjust by season. For how I think about daily spend generally, read [how much to spend on Google Ads per day](/blog/google-ads-cost-per-day).
+
+## Why hotels should bid on their own name
+
+Before I change anything in a hotel account, I search the hotel's name on a phone, the way a guest would, and look at what sits above the hotel's own website. If a travel site is first, that's the first thing I fix. A brand campaign is usually the cheapest traffic in the account because people searching your name already want you.
+
+Travel sites and price-comparison sites often appear for a hotel's own name, and every guest they catch there is a guest you pay commission on. A brand ad sits above them, points to your own booking page and costs little, so the direct booking stays with you.
 
 ## Google Hotel Ads and free booking links
 
@@ -138,4 +144,4 @@ Yes, if you can check the search terms report weekly and your tracking is set up
 
 Bid on your own name, target nearby searches, track bookings, calls and directions separately, and let the season set your budget. Ignore click counts on their own.
 
-If you'd rather hand this over, you can [hire a Google Ads expert](/google-ads-expert) who shows you the numbers. Look at my [results](/results) first, including what went wrong, then [get in touch](/contact) with your property, your location and your budget. I'll tell you honestly whether Google Ads makes sense for you right now.
+If you'd rather hand this over, you can [hire a Google Ads expert](/google-ads-expert), and my [results page](/results) shows what I've run, including what went wrong.
