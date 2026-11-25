@@ -198,3 +198,10 @@ export function getPost(slug: string): Post | null {
     faq: extractFaq(body),
   };
 }
+
+/** A post's Markdown body with {{tokens}} filled — for llms-full.txt. */
+export function getPostMarkdown(slug: string): string | null {
+  const file = path.join(BLOG_DIR, `${slug}.md`);
+  if (!fs.existsSync(file)) return null;
+  return parseFrontmatter(fillStats(fs.readFileSync(file, "utf8"))).body.trim();
+}
