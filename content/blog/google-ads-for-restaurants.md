@@ -97,6 +97,8 @@ Usually, when your Google Business Profile is complete with photos, hours and a 
 
 It helps, but a strong Google Business Profile with your menu can carry map-led ads at first. If you send people to a website, it has to load fast on a phone.
 
+If you run a hotel rather than a restaurant, the same local logic applies and I cover it in [Google Ads for hotels](/blog/google-ads-for-hotels).
+
 ## The short version
 
 Target hungry people nearby, track calls and directions, run each outlet separately and answer your phone. Ignore click counts on their own.
