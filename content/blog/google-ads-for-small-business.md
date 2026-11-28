@@ -5,7 +5,7 @@ description: Google Ads for small business, through three real case studies of s
 date: 2026-11-27
 type: case-study
 keyword: google ads for small business
-image: work_dashboard
+image: blog-google-ads-for-small-business
 ---
 
 Google Ads for small business can look like a game only big budgets win, so it helps to read how three small UK brands actually grew with it. One started with a shop in Brighton, one was born in Manchester, and one began on a market stall. Each published its own numbers on Google's success-story pages, and I've added what I think they did right and what you can copy.
