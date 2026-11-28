@@ -51,7 +51,7 @@ H2/H3 in the searcher's wording.
 | 30 | done 2026-11-21 | Meta | Facebook Ads for Restaurants: A Step-by-Step Playbook That Fills Tables | facebook ads for restaurants (260) · guide | [brief](blog-briefs/facebook-ads-for-restaurants.md) |
 | 28 | done 2026-11-23 | Google | Google Ads for Hotels: Getting Direct Bookings, Calls and Walk-ins | google ads for hotels (590) · guide | [brief](blog-briefs/google-ads-for-hotels.md) |
 | 32 | done 2026-11-25 | Meta | Facebook Ads for Events: How to Sell Tickets and Fill Venues | facebook ads for events (590) · guide | [brief](blog-briefs/facebook-ads-for-events.md) |
-| 35 | todo | Google | Google Ads for Small Business: How 3 Small Brands Grew (Real Case Studies) | google ads for small business (1,900) · case study | [brief](blog-briefs/google-ads-for-small-business.md) |
+| 35 | done 2026-11-27 | Google | Google Ads for Small Business: How 3 Small Brands Grew (Real Case Studies) | google ads for small business (1,900) · case study | [brief](blog-briefs/google-ads-for-small-business.md) |
 | 34 | todo | Meta | Facebook Ads for Small Business: 3 Real Case Studies and What to Copy | facebook ads for small business (720) · case study | [brief](blog-briefs/facebook-ads-for-small-business.md) |
 | 31 | todo | Google | Google Ads for Local Business: Calls, Directions and Store Visits, Step by Step | google ads for local business (880) · guide | [brief](blog-briefs/google-ads-for-local-business.md) |
 | 25 | todo | Meta | How Much Do Instagram Ads Cost, and Are They Worth It for a Small Business? | instagram ads cost (2,900) · post | [brief](blog-briefs/instagram-ads-cost.md) |

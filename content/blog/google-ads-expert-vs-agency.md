@@ -61,7 +61,7 @@ Other downsides to know about:
 
 When the work outgrows one person. A brand with a large catalogue, a feed that needs constant fixing and Shopping across several countries usually needs a team. A brand with one market, a manageable catalogue and spend one person can watch daily is often better served by a freelancer who knows the account inside out.
 
-I'll be straight about my own fit: my strongest ecommerce results are on Meta, not Google. My D2C textile accounts reached 8.2× and 5.4× ROAS on Facebook and Instagram. On Google my work is mostly local and lead generation (calls, directions, store visits). If you're a DTC brand whose growth depends on Google Shopping at scale, a specialist ecommerce agency may be the better hire, and I'd tell you that on a call.
+I'll be straight about my own fit: my strongest ecommerce results are on Meta, not Google. My D2C textile accounts reached 8.2× and 5.4× ROAS on Facebook and Instagram. On Google my work is mostly local and lead generation (calls, directions, store visits). If you're a DTC brand whose growth depends on Google Shopping at scale, a specialist ecommerce agency may be the better hire, and I'd tell you that on a call. To see how small online brands have grown on Google, read these [Google Ads for small business case studies](/blog/google-ads-for-small-business).
 
 ## Is hiring a Google Ads agency worth the cost?
 
